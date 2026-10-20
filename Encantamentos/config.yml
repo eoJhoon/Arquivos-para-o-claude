@@ -1,0 +1,38 @@
+moedas:
+  money:
+    simbolo: $
+    tipo: 'multimoedas'
+    puxar: '%ghosteconomia_moeda_money%'
+    remove: money remove @jogador @qnt
+    adicionar: money add @jogador @qnt
+    sem-dinheiro: '&7[&4&l!&7] &cVocê não tem &a$@qnt de dinheiro'
+  gemas:
+    simbolo: '❒'
+    tipo: 'multimoedas'
+    puxar: '%ghosteconomia_moeda_gemas%'
+    remove: gemas remove @jogador @qnt
+    adicionar: gemas add @jogador @qnt
+    sem-dinheiro: '&7[&4&l!&7] &cVocê não tem &a❒@qnt de dinheiro'
+  tempo:
+    tipo: 'cmd'
+    puxar: '%ghosteconomia_segundosmoedatempo_tempo%'
+    remove: tempo remove @jogador @qnt
+    adicionar: tempo add @jogador @qnt
+    simbolo: ⌚
+    sem-dinheiro: '&7[&4&l!&7] &cVocê não tem &a⌚@qnt de tempo'
+
+evolutivo-damage-jogador: false
+recarregado: '&7[&a&l!&7] &fPlugin recarregado com sucesso.'
+nao-existe-item: '&7[&4&l!&7] &cEsse item não existe.'
+
+digite-no-chat-renomear:
+  - ""
+  - "&fDigite no chat o nome novo do item."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+
+cancelado: '&7[&4&l!&7] &cCancelado com sucesso.'
+renomeado: '&7[&a&l!&7] &fItem renomeado com sucesso.'
+erro-item-incorreto: '&7[&4&l!&7] &cError item incorreto.'
+
+use-exp-bottle-instataneo: true

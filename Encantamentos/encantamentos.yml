@@ -1,0 +1,5758 @@
+comandos-encantamentos:
+- ''
+- '&7&l➜ &e&lComandos encantamentos &9- ADMIN'
+- ''
+- '&a/es bigorna <jogador> <reparar> <quantia> &7- adicionar uma quantia para alguém.'
+- '&a/es runa <jogador> <quantia> &7- adicionar uma quantia para alguém.'
+- '&a/es levelup <jogador> <quantia> &7- adicionar uma quantia para alguém.'
+- '&a/es enchant <encantamento> <nível> &7- adicionar encantamentos.'
+- '&a/es livro <jogador> <encantamento> <nível> <chance> &7- pegar um livro.'
+- '&a/es reload &7- Recarrega a config do plugin.'
+- ''
+
+aumentar-porcentagem: '145\[N]{&fBigorna de Zeus}[N][L]{
+||&fEsse item faz com que seu livro
+||&faumente a chance de sucesso
+||
+||&fAumenta em: &a@qnt1-@qnt2
+||
+||&aColoque o item em cima do Livro}[L]'
+
+runa: '378\[N]{&d&lRuna}[N][L]{||&fEssa runa retira todos os encantamentos||&fdo item escolhido e transforma em||&flivros encantados de &a100% de chance}[L]'
+
+encantamento-level-up: '399\[N]{&d&lRuna da Ascensão Dracônica}[N][L]{||&7Um fragmento místico que pulsa com o||&7conhecimento do Dragão Celestial.||||&fAo aplicar este item em um equipamento,||&faumenta o nível de &aTODOS &fos encantamentos||&fpresentes nele em &a+1&f!||||&c[!] Importante:||&7O upgrade só será aplicado caso o||&7encantamento ainda não tenha atingido||&7o seu limite absoluto.||||&6&lLIMITES MÁXIMOS PERMITIDOS:||&8» &fProteção: &bNível VIII||&8» &fProteção contra Fogo: &bNível VIII||&8» &fPeso Pena: &bNível VIII||&8» &fProteção contra Explosões: &bNível VIII||&8» &fProteção contra Projéteis: &bNível VIII||&8» &fRespiração: &bNível III||&8» &fAfinidade com a Água: &bNível I||&8» &fPassos Profundos: &bNível III||&8» &fAfiação: &bNível VII||&8» &fJulgamento: &bNível VII||&8» &fRuína dos Artrópodes: &bNível VII||&8» &fAspecto Flamejante: &bNível V||&8» &fPilhagem: &bNível X||&8» &fEficiência: &bNível X||&8» &fToque de Seda: &bNível I||&8» &fInquebrável: &bNível X||&8» &fFortuna: &bNível X||&8» &fForça: &bNível VII||&8» &fChama: &bNível I||&8» &fInfinidade: &bNível I}[L]'
+
+#SE NÃO TIVER CONFIGURADO VAI PEGAR O NÍVEL MÁXIMO PADRÃO CONFIGURADO
+item-level-up-maximo:
+  PROTECTION_ENVIRONMENTAL: 8
+  PROTECTION_FIRE: 8
+  PROTECTION_FALL: 8
+  PROTECTION_EXPLOSIONS: 8
+  PROTECTION_PROJECTILE: 8
+  OXYGEN: 3
+  WATER_WORKER: 1
+  DEPTH_STRIDER: 3
+  DAMAGE_ALL: 7
+  DAMAGE_UNDEAD: 7
+  DAMAGE_ARTHROPODS: 7
+  FIRE_ASPECT: 5
+  LOOT_BONUS_MOBS: 10
+  DIG_SPEED: 10
+  SILK_TOUCH: 1
+  DURABILITY: 10
+  LOOT_BONUS_BLOCKS: 10
+  ARROW_DAMAGE: 7
+  ARROW_FIRE: 1
+  ARROW_INFINITE: 1
+
+comando-incorreto-runa: '&7[&4&l!&7] &c&lErro:&c uso incorreto! &fTente: &c/es runa <jogador> <quantidade>'
+comando-incorreto-levelup: '&7[&4&l!&7] &c&lErro:&c uso incorreto! &fTente: &c/es levelup <jogador> <quantidade>'
+comando-incorreto-bigorna: '&7[&4&l!&7] &c&lErro:&c uso incorreto! &fTente: &c/es bigorna <jogador> <reparar ex: 1-5> <quantidade>'
+comando-incorreto-livro: '&7[&4&l!&7] &c&lErro:&c uso incorreto! &fTente: &c/es livro <jogador> <encantamento> <nível> <chance | opcional>'
+comando-incorreto-enchant: '&7[&4&l!&7] &c&lErro:&c uso incorreto! &fTente: &c/es enchant <encantamento> <nível>'
+
+todos-encantamentos-esta-maximo: '&7[&4&l!&7] &cTodos os encantamentos está já está no nível máximo.'
+nao-tem-encantamentos: '&7[&4&l!&7] &cEsse item não tem encantamentos.'
+precisa-ser-um-item: '&7[&4&l!&7] &cA runa só funciona em itens.'
+apenas-1-item-runa: '&7[&4&l!&7] &cVocê pode colocar 1 runa por vez.'
+apenas-1-item-livro: '&7[&4&l!&7] &cVocê pode colocar 1 livro por vez.'
+apenas-1-item-bigorna: '&7[&4&l!&7] &cVocê pode colocar 1 bigorna por vez.'
+apenas-1-item-levelup: '&7[&4&l!&7] &cVocê pode colocar 1 levelup por vez.'
+reparar-precisa: '&7[&4&l!&7] &cVocê precisa colocar 1-5 para pode botar na bigorna.'
+jogador-off: '&7[&4&l!&7] &cEsse jogador está offline.'
+falhou: '&7[&4&l!&7] &cO Livro falhou e foi destruído.'
+livro-inferior: '&7[&4&l!&7] &cVocê precisa ser um livro do mesmo level ou superior.'
+level-maximo-item: '&7[&4&l!&7] &cSeu item já chegou ao nível máximo.'
+level-maximo-livro: '&7[&4&l!&7] &cSeu livro já chegou ao nível máximo.'
+nao-existe: '&7[&4&l!&7] &cEsse livro não existe'
+sem-item: '&7[&4&l!&7] &cO Livro desse encantamento não foi configurado.'
+item-nao-permitido: '&7[&4&l!&7] &cEsse item não e permitido colocar esse encantamento.'
+livro-precisa-ser-igual: '&7[&4&l!&7] &cOs livros precisam ser iguais.'
+item-iguais: '&7[&4&l!&7] &cOs itens precisam ser iguais.'
+sem-exp: '&7[&4&l!&7] &cVocê não tem exp para fazer a mixagem.'
+sem-blocos-quebrados: '&7[&4&l!&7] &cVocê precisa de @qnt/@maxqnt de @tipo quebrados'
+qualquer-bloco: 'Qualquer bloco'
+
+traduzir-lore-encantamento-natural: true
+lore-item: '&7@encantamento @level'
+
+bigorna-mix: true
+nao-pode-item: '&7[&4&l!&7] &cEsse item não pode ser forjado'
+
+custo-leveis:
+  BOW: 10
+  FISHING_ROD: 15
+
+  DIAMOND_HELMET: 20
+  DIAMOND_CHESTPLATE: 20
+  DIAMOND_LEGGINGS: 20
+  DIAMOND_BOOTS: 20
+  DIAMOND_SWORD: 20
+  DIAMOND_PICKAXE: 20
+  DIAMOND_AXE: 20
+  DIAMOND_SPADE: 20
+  DIAMOND_HOE: 20
+
+  IRON_HELMET: 15
+  IRON_CHESTPLATE: 15
+  IRON_LEGGINGS: 15
+  IRON_BOOTS: 15
+  IRON_SWORD: 15
+  IRON_PICKAXE: 15
+  IRON_AXE: 15
+  IRON_SPADE: 15
+  IRON_HOE: 15
+
+  GOLD_HELMET: 12
+  GOLD_CHESTPLATE: 12
+  GOLD_LEGGINGS: 12
+  GOLD_BOOTS: 12
+  GOLD_SWORD: 12
+  GOLD_PICKAXE: 12
+  GOLD_AXE: 12
+  GOLD_SPADE: 12
+  GOLD_HOE: 12
+
+  CHAINMAIL_HELMET: 10
+  CHAINMAIL_CHESTPLATE: 10
+  CHAINMAIL_LEGGINGS: 10
+  CHAINMAIL_BOOTS: 10
+  STONE_SWORD: 10
+  STONE_PICKAXE: 10
+  STONE_AXE: 10
+  STONE_SPADE: 10
+  STONE_HOE: 10
+
+  LEATHER_HELMET: 10
+  LEATHER_CHESTPLATE: 10
+  LEATHER_LEGGINGS: 10
+  LEATHER_BOOTS: 10
+  WOOD_SWORD: 10
+  WOOD_PICKAXE: 10
+  WOOD_AXE: 10
+  WOOD_SPADE: 10
+  WOOD_HOE: 10
+
+  ENCHANTED_BOOK: 5
+
+keys-bloqueada-mix:
+  - 'evolucao'
+  - 'encantamento'
+
+inv-mix: 'Mixagem\27'
+
+itens-mix:
+  - '384\[N]{&cCusto}[N][L]{
+  ||&f➥ &7Custo para Forjar:
+  ||&e★ &fNíveis: &a@custo &aEXP
+  ||&7}[L]\4\custo'
+  - '145\[N]{&fForja}[N][L]{
+  ||&f➥ &7Guia da Forja:
+  ||&4&l* &fUtilize este sistema para combinar os
+  ||&fencantamentos de dois itens iguais em um só.
+  ||
+  ||&e&lEX &61: &bProteção 3 &3+ &bProteção 3 &2= &bProteção 4
+  ||&e&lEX &62: &bProteção 4 &3+ &bInquebrável 3 &2= &bProteção 4 e Inquebrável 3
+  ||&e&lEX &63: &bProteção 4 &3+ &bProteção 4 &2= &bProteção 4
+  ||
+  ||&a&lVisualização: &fConfira o resultado final
+  ||&fdo item forjado no centro do menu.
+  ||
+  ||&c&lOBS 1: &fSempre verifique a &aVisualização
+  ||&fantes de confirmar a forja.
+  ||
+  ||&c&lOBS 2: &fCada encantamento respeita o limite
+  ||&fdo jogo padrão &4&l(ex: Proteção 4, Inquebrável 3).
+  ||
+  ||&e&l* &aClique para Forjar}[L]\22\mixagem'
+  - '397:3\[N]{&aPreview}[N][URL]{bd69e06e5dadfd84e5f3d1c21063f2553b2fa945ee1d4d7152fdc5425bc12a9}[URL]\14\voltar'
+  - '397:3\[N]{&aPreview}[N][URL]{19bf3292e126a105b54eba713aa1b152d541a1d8938829c56364d178ed22bf}[URL]\12\proximo'
+
+romanos:
+  '1': 'I'
+  '2': 'II'
+  '3': 'III'
+  '4': 'IV'
+  '5': 'V'
+  '6': 'VI'
+  '7': 'VII'
+  '8': 'VIII'
+  '9': 'IX'
+  '10': 'X'
+  '11': 'XI'
+
+pode-juntar-2-livros: true
+
+encantamentos-nivel-maximo-sistemas-extras-funciona: false
+encantamentos-nivel-maximo-com-sistemas-extras:
+  #EXEMPLO O ENCANTAMENTO MÁXIMO VAI PUXAR DE ACORDO COM O NÍVEL
+  #DA PLACEHOLDER ESCOLHIDA
+  DIG_SPEED:
+    '%ghostmcmmo_level_picareta%':
+      0-99:
+        nivel-maximo: 5
+      100-174:
+        nivel-maximo: 6
+      175-324:
+        nivel-maximo: 7
+      325-499:
+        nivel-maximo: 8
+      500-899:
+        nivel-maximo: 9
+      900-1000:
+        nivel-maximo: 10
+
+encantamentos:
+  PROTECTION_ENVIRONMENTAL:
+
+    nome: 'Proteção'
+    level-maximo-livro: 4
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+    ids:
+      DIAMOND_HELMET: true
+      LEATHER_HELMET: true
+      CHAINMAIL_HELMET: true
+      IRON_HELMET: true
+      GOLDEN_HELMET: true
+
+      DIAMOND_CHESTPLATE: true
+      LEATHER_CHESTPLATE: true
+      CHAINMAIL_CHESTPLATE: true
+      IRON_CHESTPLATE: true
+      GOLDEN_CHESTPLATE: true
+
+      DIAMOND_LEGGINGS: true
+      LEATHER_LEGGINGS: true
+      CHAINMAIL_LEGGINGS: true
+      IRON_LEGGINGS: true
+      GOLDEN_LEGGINGS: true
+
+      DIAMOND_BOOTS: true
+      LEATHER_BOOTS: true
+      CHAINMAIL_BOOTS: true
+      IRON_BOOTS: true
+      GOLDEN_BOOTS: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  PROTECTION_FIRE:
+
+    nome: 'Proteção Contra Fogo'
+    level-maximo-livro: 4
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+
+    ids:
+      DIAMOND_HELMET: true
+      LEATHER_HELMET: true
+      CHAINMAIL_HELMET: true
+      IRON_HELMET: true
+      GOLDEN_HELMET: true
+
+      DIAMOND_CHESTPLATE: true
+      LEATHER_CHESTPLATE: true
+      CHAINMAIL_CHESTPLATE: true
+      IRON_CHESTPLATE: true
+      GOLDEN_CHESTPLATE: true
+
+      DIAMOND_LEGGINGS: true
+      LEATHER_LEGGINGS: true
+      CHAINMAIL_LEGGINGS: true
+      IRON_LEGGINGS: true
+      GOLDEN_LEGGINGS: true
+
+      DIAMOND_BOOTS: true
+      LEATHER_BOOTS: true
+      CHAINMAIL_BOOTS: true
+      IRON_BOOTS: true
+      GOLDEN_BOOTS: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  PROTECTION_FALL:
+
+    nome: 'Peso Pena'
+    level-maximo-livro: 4
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_BOOTS: true
+      LEATHER_BOOTS: true
+      CHAINMAIL_BOOTS: true
+      IRON_BOOTS: true
+      GOLDEN_BOOTS: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  PROTECTION_EXPLOSIONS:
+
+    nome: 'Proteção Contra Explosões'
+    level-maximo-livro: 4
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+    ids:
+      DIAMOND_HELMET: true
+      LEATHER_HELMET: true
+      CHAINMAIL_HELMET: true
+      IRON_HELMET: true
+      GOLDEN_HELMET: true
+
+      DIAMOND_CHESTPLATE: true
+      LEATHER_CHESTPLATE: true
+      CHAINMAIL_CHESTPLATE: true
+      IRON_CHESTPLATE: true
+      GOLDEN_CHESTPLATE: true
+
+      DIAMOND_LEGGINGS: true
+      LEATHER_LEGGINGS: true
+      CHAINMAIL_LEGGINGS: true
+      IRON_LEGGINGS: true
+      GOLDEN_LEGGINGS: true
+
+      DIAMOND_BOOTS: true
+      LEATHER_BOOTS: true
+      CHAINMAIL_BOOTS: true
+      IRON_BOOTS: true
+      GOLDEN_BOOTS: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  PROTECTION_PROJECTILE:
+
+    nome: 'Proteção Contra Projéteis'
+    level-maximo-livro: 4
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+    ids:
+      DIAMOND_HELMET: true
+      LEATHER_HELMET: true
+      CHAINMAIL_HELMET: true
+      IRON_HELMET: true
+      GOLDEN_HELMET: true
+
+      DIAMOND_CHESTPLATE: true
+      LEATHER_CHESTPLATE: true
+      CHAINMAIL_CHESTPLATE: true
+      IRON_CHESTPLATE: true
+      GOLDEN_CHESTPLATE: true
+
+      DIAMOND_LEGGINGS: true
+      LEATHER_LEGGINGS: true
+      CHAINMAIL_LEGGINGS: true
+      IRON_LEGGINGS: true
+      GOLDEN_LEGGINGS: true
+
+      DIAMOND_BOOTS: true
+      LEATHER_BOOTS: true
+      CHAINMAIL_BOOTS: true
+      IRON_BOOTS: true
+      GOLDEN_BOOTS: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  OXYGEN:
+
+    nome: 'Respiração'
+    level-maximo-livro: 3
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+    ids:
+      DIAMOND_HELMET: true
+      LEATHER_HELMET: true
+      CHAINMAIL_HELMET: true
+      IRON_HELMET: true
+      GOLDEN_HELMET: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  WATER_WORKER:
+
+    nome: 'Afinidade Aquática'
+    level-maximo-livro: 1
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+      DIAMOND_HELMET: true
+      LEATHER_HELMET: true
+      CHAINMAIL_HELMET: true
+      IRON_HELMET: true
+      GOLDEN_HELMET: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  THORNS:
+
+    nome: 'Espinhos'
+    level-maximo-livro: 3
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+    ids:
+      DIAMOND_HELMET: true
+      LEATHER_HELMET: true
+      CHAINMAIL_HELMET: true
+      IRON_HELMET: true
+      GOLDEN_HELMET: true
+
+      DIAMOND_CHESTPLATE: true
+      LEATHER_CHESTPLATE: true
+      CHAINMAIL_CHESTPLATE: true
+      IRON_CHESTPLATE: true
+      GOLDEN_CHESTPLATE: true
+
+      DIAMOND_LEGGINGS: true
+      LEATHER_LEGGINGS: true
+      CHAINMAIL_LEGGINGS: true
+      IRON_LEGGINGS: true
+      GOLDEN_LEGGINGS: true
+
+      DIAMOND_BOOTS: true
+      LEATHER_BOOTS: true
+      CHAINMAIL_BOOTS: true
+      IRON_BOOTS: true
+      GOLDEN_BOOTS: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  DEPTH_STRIDER:
+
+    nome: 'Espinhos'
+    level-maximo-livro: 3
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_BOOTS: true
+      LEATHER_BOOTS: true
+      CHAINMAIL_BOOTS: true
+      IRON_BOOTS: true
+      GOLDEN_BOOTS: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  DAMAGE_ALL:
+
+    nome: 'Afiação'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  DAMAGE_UNDEAD:
+
+    nome: 'Julgamento'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+    ids:
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  DAMAGE_ARTHROPODS:
+
+    nome: 'Ruína dos Artrópodes'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+    ids:
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  KNOCKBACK:
+
+    nome: 'Repulsão'
+    level-maximo-livro: 2
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  FIRE_ASPECT:
+
+    nome: 'Aspecto Flamejante'
+    level-maximo-livro: 2
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+
+    ids:
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  LOOT_BONUS_MOBS:
+
+    nome: 'Pilhagem'
+    level-maximo-livro: 3
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  DIG_SPEED:
+
+    nome: 'Eficiência'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      DIAMOND_SPADE: true
+      WOOD_SPADE: true
+      STONE_SPADE: true
+      IRON_SPADE: true
+      GOLD_SPADE: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  SILK_TOUCH:
+
+    nome: 'Toque Suave'
+    level-maximo-livro: 1
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      DIAMOND_SPADE: true
+      WOOD_SPADE: true
+      STONE_SPADE: true
+      IRON_SPADE: true
+      GOLD_SPADE: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  DURABILITY:
+
+    nome: 'Inquebrável'
+    level-maximo-livro: 3
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+    ids:
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      DIAMOND_SPADE: true
+      WOOD_SPADE: true
+      STONE_SPADE: true
+      IRON_SPADE: true
+      GOLD_SPADE: true
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      DIAMOND_HOE: true
+      WOOD_HOE: true
+      STONE_HOE: true
+      IRON_HOE: true
+      GOLD_HOE: true
+
+      DIAMOND_HELMET: true
+      LEATHER_HELMET: true
+      CHAINMAIL_HELMET: true
+      IRON_HELMET: true
+      GOLDEN_HELMET: true
+
+      DIAMOND_CHESTPLATE: true
+      LEATHER_CHESTPLATE: true
+      CHAINMAIL_CHESTPLATE: true
+      IRON_CHESTPLATE: true
+      GOLDEN_CHESTPLATE: true
+
+      DIAMOND_LEGGINGS: true
+      LEATHER_LEGGINGS: true
+      CHAINMAIL_LEGGINGS: true
+      IRON_LEGGINGS: true
+      GOLDEN_LEGGINGS: true
+
+      DIAMOND_BOOTS: true
+      LEATHER_BOOTS: true
+      CHAINMAIL_BOOTS: true
+      IRON_BOOTS: true
+      GOLDEN_BOOTS: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  LOOT_BONUS_BLOCKS:
+
+    nome: 'Fortuna'
+    level-maximo-livro: 3
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      DIAMOND_SPADE: true
+      WOOD_SPADE: true
+      STONE_SPADE: true
+      IRON_SPADE: true
+      GOLD_SPADE: true
+
+      DIAMOND_HOE: true
+      WOOD_HOE: true
+      STONE_HOE: true
+      IRON_HOE: true
+      GOLD_HOE: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel: {}
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 12000
+        aumento-custo:
+          money: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+
+        requisitos:
+          LAPIS_ORE: 10
+          '*': 10
+        aumento-requisitos:
+          LAPIS_ORE: 100
+          '*': 100
+
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  ARROW_DAMAGE:
+
+    nome: 'Força'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      BOW: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  ARROW_KNOCKBACK:
+
+    nome: 'Impacto'
+    level-maximo-livro: 2
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore: 
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      BOW: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  ARROW_FIRE:
+
+    nome: 'Chama'
+    level-maximo-livro: 1
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+    ids:
+
+      BOW: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  ARROW_INFINITE:
+
+    nome: 'Infinidade'
+    level-maximo-livro: 1
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      BOW: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  LUCK:
+
+    nome: 'Sorte no mar'
+    level-maximo-livro: 3
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+    ids:
+
+      FISHING_ROD: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  LURE:
+
+    nome: 'Isca'
+    level-maximo-livro: 1
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+      
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      FISHING_ROD: true
+
+      ENCHANTED_BOOK: true
+    
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  Explosivo:
+
+    nome: 'Explosivo'
+    level-maximo-livro: 3
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1-1000':
+        chance: 0.00080
+        aumento-por-nivel: 0.00080
+        radios: '3x3x3'
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    upgrade:
+      0-10:
+        custo:
+          gemas: 30000
+          money: 50000
+        aumento:
+          gemas: 367
+          money: 1256
+        requisitos: {}
+        aumento-requisitos: {}
+
+      11-50:
+        custo:
+          gemas: 34138
+          money: 64263
+        aumento:
+          gemas: 468
+          money: 1703
+        requisitos: {}
+        aumento-requisitos: {}
+
+      51-100:
+        custo:
+          gemas: 53086
+          money: 133608
+        aumento:
+          gemas: 696
+          money: 2928
+        requisitos: {}
+        aumento-requisitos: {}
+
+      101-250:
+        custo:
+          gemas: 89010
+          money: 287908
+        aumento:
+          gemas: 1820
+          money: 10828
+        requisitos: {}
+        aumento-requisitos: {}
+
+      251-500:
+        custo:
+          gemas: 372511
+          money: 2047480
+        aumento:
+          gemas: 12321
+          money: 146200
+        requisitos: {}
+        aumento-requisitos: {}
+
+      501-750:
+        custo:
+          gemas: 3555320
+          money: 41337280
+        aumento:
+          gemas: 114880
+          money: 2886000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      751-900:
+        custo:
+          gemas: 32764707
+          money: 785218280
+        aumento:
+          gemas: 604267
+          money: 25267000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      901-1000:
+        custo:
+          gemas: 124572490
+          money: 4654501280
+        aumento:
+          gemas: 1772000
+          money: 104500000
+        requisitos: {}
+        aumento-requisitos: {}
+          
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-1000:
+        requisitos: {}
+          #LAPIS_ORE: 10
+        aumento-requisitos: {}
+          #LAPIS_ORE: 100
+        nivel-máximo: 1000 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  Drill:
+
+    nome: 'Drill'
+    level-maximo-livro: 10
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1-1000':
+        chance: 0.00050
+        aumento-por-nivel: 0.00050
+        radios: '1x15'
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    upgrade:
+      0-10:
+        custo:
+          gemas: 30000
+          money: 50000
+        aumento:
+          gemas: 700
+          money: 2522
+        requisitos: {}
+        aumento-requisitos: {}
+
+      11-50:
+        custo:
+          gemas: 37000
+          money: 75220
+        aumento:
+          gemas: 870
+          money: 3405
+        requisitos: {}
+        aumento-requisitos: {}
+
+      51-100:
+        custo:
+          gemas: 71800
+          money: 211420
+        aumento:
+          gemas: 1302
+          money: 5854
+        requisitos: {}
+        aumento-requisitos: {}
+
+      101-250:
+        custo:
+          gemas: 136900
+          money: 504120
+        aumento:
+          gemas: 3388
+          money: 21656
+        requisitos: {}
+        aumento-requisitos: {}
+
+      251-500:
+        custo:
+          gemas: 645100
+          money: 3752520
+        aumento:
+          gemas: 22802
+          money: 292400
+        requisitos: {}
+        aumento-requisitos: {}
+
+      501-750:
+        custo:
+          gemas: 6345600
+          money: 76852520
+        aumento:
+          gemas: 211640
+          money: 5772000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      751-900:
+        custo:
+          gemas: 59255600
+          money: 1519852520
+        aumento:
+          gemas: 1109000
+          money: 50533000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      901-1000:
+        custo:
+          gemas: 225605600
+          money: 9099802520
+        aumento:
+          gemas: 3243000
+          money: 209000000
+        requisitos: {}
+        aumento-requisitos: {}
+          
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-1000:
+        requisitos: {}
+          #LAPIS_ORE: 10
+        aumento-requisitos: {}
+          #LAPIS_ORE: 100
+        nivel-máximo: 1000 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  Vampirismo:
+
+    nome: 'Vampirismo'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - '&fItem permitido: &eEspadas'
+      - ''
+      - '&7Uma antiga e proibida maldicao de sangue. Cada'
+      - '&7golpe tem chance de extrair a essencia vital'
+      - '&7do alvo para curar suas proprias feridas.'
+      - ''
+      - '&7Atributos por Nivel (Chance | Vida Drenada):'
+      - '&7- Nivel I: &a0.5% &7| &c0.5 Coração'
+      - '&7- Nivel II: &a1.0% &7| &c1.0 Coração'
+      - '&7- Nivel III: &a1.5% &7| &c1.5 Corações'
+      - '&7- Nivel IV: &a2.0% &7| &c2.0 Corações'
+      - '&7- Nivel V: &a2.5% &7| &c2.5 Corações'
+      - ''
+      - '&6Estreita relacao com a noite... e com a fome.'
+      - ''
+      - '&cAviso: &7Apos ser aplicado, o encantamento &cnao podera ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e> &aColoque o livro sobre o item desejado.'
+    ids:
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      ENCHANTED_BOOK: true
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  Furia:
+
+    nome: 'Fúria'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 50
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - '&fItem permitido: &eEspadas e Machados'
+      - ''
+      - '&7Desperte o seu poder destrutivo no limiar da'
+      - '&7morte. Ao ficar com 40% ou menos de vida.'
+      - ''
+      - '&7Atributos por Nivel (Dano Extra):'
+      - '&7- Nivel I: &c+3% Dano'
+      - '&7- Nivel II: &c+6% Dano'
+      - '&7- Nivel III: &c+9% Dano'
+      - '&7- Nivel IV: &c+12% Dano'
+      - '&7- Nivel V: &c+15% Dano'
+      - ''
+      - '&6O verdadeiro poder surge quando voce esta encurralado.'
+      - ''
+      - '&cAviso: &7Apos ser aplicado, o encantamento &cnao podera ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e> &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+      
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        chance: 100
+        porcentagem-vida: 40
+        dano-extra: 3
+
+      '2':
+        chance: 100
+        porcentagem-vida: 40
+        dano-extra: 6
+
+      '3':
+        chance: 100
+        porcentagem-vida: 40
+        dano-extra: 9
+
+      '4':
+        chance: 100
+        porcentagem-vida: 40
+        dano-extra: 12
+
+      '5':
+        chance: 100
+        porcentagem-vida: 40
+        dano-extra: 15
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  Executor:
+
+    nome: 'Executor'
+    level-maximo-livro: 3
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 50
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - '&fItem permitido: &eMachados'
+      - ''
+      - '&7Torne-se o carrasco dos seus oponentes. Ativa'
+      - '&7quando o alvo tiver 40% ou menos de vida.'
+      - ''
+      - '&7Atributos por Nivel (Dano Extra):'
+      - '&7- Nivel I: &c+3% Dano'
+      - '&7- Nivel II: &c+6% Dano'
+      - '&7- Nivel III: &c+9% Dano'
+      - ''
+      - '&6O golpe de misericordia para quem ja esta caido.'
+      - ''
+      - '&cAviso: &7Apos ser aplicado, o encantamento &cnao podera ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e> &aColoque o livro sobre o item desejado.'
+
+    ids:
+      
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        chance: 100
+        porcentagem-vida: 40
+        dano-extra: 3
+
+      '2':
+        chance: 100
+        porcentagem-vida: 40
+        dano-extra: 6
+
+      '3':
+        chance: 100
+        porcentagem-vida: 40
+        dano-extra: 9
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  Assassino:
+
+    nome: 'Assassino'
+    level-maximo-livro: 3
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 50
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - '&fItem permitido: &eEspadas'
+      - ''
+      - '&7Aproveite a fraqueza das suas presas. Ativa'
+      - '&7quando o alvo tiver 40% ou menos de vida.'
+      - ''
+      - '&7Atributos por Nivel (Dano Extra):'
+      - '&7- Nivel I: &c+3% Dano'
+      - '&7- Nivel II: &c+6% Dano'
+      - '&7- Nivel III: &c+9% Dano'
+      - ''
+      - '&6Um ataque cirurgico e fatal para encerrar o combate.'
+      - ''
+      - '&cAviso: &7Apos ser aplicado, o encantamento &cnao podera ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e> &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        chance: 100
+        porcentagem-vida: 40
+        dano-extra: 3
+
+      '2':
+        chance: 100
+        porcentagem-vida: 40
+        dano-extra: 6
+
+      '3':
+        chance: 100
+        porcentagem-vida: 40
+        dano-extra: 9
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  Atordoamento:
+
+    nome: 'Atordoamento'
+    level-maximo-livro: 2
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 50
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        chance: 100
+
+        id: 'SLOW'
+        tempo: 5
+        nivel: 1
+      '2':
+        chance: 100
+        id: 'SLOW'
+        tempo: 5
+        nivel: 1
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  Velocidade:
+
+    nome: 'Velocidade'
+    level-maximo-livro: 2
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - '&fItem permitido: &eBotas'
+      - ''
+      - '&7Sinta a leveza do vento guiar seus passos.'
+      - '&7Equipar esta bota concede o efeito de'
+      - '&bVelocidade II permanente&7 ao portador.'
+      - ''
+      - '&6Nenhum inimigo será capaz de alcançar seus rastros.'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_BOOTS: true
+      IRON_BOOTS: true
+      CHAINMAIL_BOOTS: true
+      GOLD_BOOTS: true
+      LEATHER_BOOTS: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+
+        id: 'SPEED'
+        tempo: 10
+        nivel: 2 
+      '2':
+
+        id: 'SPEED'
+        tempo: 10
+        nivel: 2
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  Sangramento:
+
+    nome: 'Sangramento'
+    level-maximo-livro: 4
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 100.0
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - '&fItem permitido: &eEspadas e Machados'
+      - ''
+      - '&7Abra feridas profundas em seus oponentes.'
+      - '&7Faz com que o alvo sangre continuamente.'
+      - ''
+      - '&7Atributos por Nivel (Chance | Duracao | Dano):'
+      - '&7- Nivel I: &a1.0% &7| &e4s &7| &c0.5 Coracao/s'
+      - '&7- Nivel II: &a1.5% &7| &e5s &7| &c0.5 Coracao/s'
+      - '&7- Nivel III: &a2.0% &7| &e6s &7| &c0.5 Coracao/s'
+      - '&7- Nivel IV: &a2.5% &7| &e7s &7| &c0.5 Coracao/s'
+      - ''
+      - '&6Assista seus inimigos enfraquecerem a cada segundo.'
+      - ''
+      - '&cAviso: &7Apos ser aplicado, o encantamento &cnao podera ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e> &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        chance: 1
+        tempo-em-segundos: 4
+        dano-por-segundo: 1
+      '2':
+        chance: 1.5
+        tempo-em-segundos: 5
+        dano-por-segundo: 1
+      '3':
+        chance: 2
+        tempo-em-segundos: 6
+        dano-por-segundo: 1
+      '4':
+        chance: 2.5
+        tempo-em-segundos: 7
+        dano-por-segundo: 1
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  Critico:
+
+    nome: 'Crítico'
+    level-maximo-livro: 4
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 50
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - '&fItem permitido: &eEspadas'
+      - ''
+      - '&7Encontre a brecha perfeita na defesa do rival.'
+      - '&7Concede a chance de desferir um acerto crítico.'
+      - ''
+      - '&7Atributos por Nível (Chance | Dano Extra):'
+      - '&7• Nível I: &a1.5% &7| &c+3% Dano'
+      - '&7• Nível II: &a2.0% &7| &c+6% Dano'
+      - '&7• Nível III: &a2.5% &7| &c+9% Dano'
+      - '&7• Nível IV: &a3.0% &7| &c+12% Dano'
+      - ''
+      - '&6Um único movimento preciso pode mudar o rumo da batalha.'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        chance: 1.5
+        aumento-dano-critico: 3
+      '2':
+        chance: 2.0
+        aumento-dano-critico: 6
+      '3':
+        chance: 2.5
+        aumento-dano-critico: 9
+      '4':
+        chance: 3
+        aumento-dano-critico: 12
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+
+  Veneno:
+
+    nome: 'Veneno'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - '&fItem permitido: &eEspadas, Machados e Arcos'
+      - ''
+      - '&7Impregne suas armas com uma toxina letal.'
+      - '&7Injeta Veneno I no alvo ao acertar um golpe.'
+      - ''
+      - '&7Atributos por Nível (Tempo | Lâminas | Arco):'
+      - '&7• Nível I: &e5s &7| &a0.5% &7| &b5%'
+      - '&7• Nível II: &e10s &7| &a1.0% &7| &b8%'
+      - '&7• Nível III: &e15s &7| &a1.5% &7| &b10%'
+      - '&7• Nível IV: &e20s &7| &a2.0% &7| &b15%'
+      - '&7• Nível V: &e25s &7| &a2.5% &7| &b25%'
+      - ''
+      - '&6A dor silenciosa que consome suas presas de longe ou de perto.'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      BOW: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        chance: 0.5
+        chance-arco: 5
+
+        id: 'POISON'
+        tempo: 5
+        nivel: 1 
+      '2':
+        chance: 1.0
+        chance-arco: 8
+        id: 'POISON'
+        tempo: 10
+        nivel: 1 
+      '3':
+        chance: 1.5
+        chance-arco: 10
+        id: 'POISON'
+        tempo: 15
+        nivel: 1 
+      '4':
+        chance: 2
+        chance-arco: 15
+        id: 'POISON'
+        tempo: 20
+        nivel: 1 
+      '5':
+        chance: 2.5
+        chance-arco: 25
+        id: 'POISON'
+        tempo: 25
+        nivel: 1
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  Experiencia:
+
+    nome: 'Experiência'
+    level-maximo-livro: 4
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      BOW: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        multiplicador-de-exp: 1.2
+      '2':
+        multiplicador-de-exp: 1.5
+      '3':
+        multiplicador-de-exp: 2.0
+      '4':
+        multiplicador-de-exp: 500.0
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+        
+  ReparacaoAutomatica:
+
+    nome: 'Reparação Automática'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      BOW: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        multiplicadorexp: 2
+      '2':
+        multiplicadorexp: 4
+      '3':
+        multiplicadorexp: 6
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+        
+  Dano:
+
+    nome: 'Dano'
+    level-maximo-livro: 3
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - '&fItem permitido: &eEspadas, Machados e Arcos'
+      - ''
+      - '&7Libere uma força devastadora capaz de pulverizar'
+      - '&7as defesas inimigas com um bônus de dano.'
+      - ''
+      - '&7Aumento de Dano por Nível:'
+      - '&7• Nível I: &c+2.5 ❤ &7(Lâminas: 0.5% | Arco: 20%)'
+      - '&7• Nível II: &c+5.0 ❤ &7(Lâminas: 1.0% | Arco: 30%)'
+      - '&7• Nível III: &c+7.5 ❤ &7(Lâminas: 1.5% | Arco: 50%)'
+      - ''
+      - '&6Um único impacto pode ser o fim da linha para o alvo.'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+    ids:
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      BOW: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        chance: 0.5
+        chance-arco: 20.0
+        dano: 5
+      '2':
+        chance: 1.0
+        chance-arco: 30.0
+        dano: 10
+      '3':
+        chance: 1.5
+        chance-arco: 50.0
+        dano: 15
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  Lentidão:
+
+    nome: 'Lentidão'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      BOW: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        chance: 0.5
+        chance-arco: 5.0
+        id: 'SLOW'
+        tempo: 2
+        nivel: 1 
+      '2':
+        chance: 1
+        chance-arco: 10.0
+        id: 'SLOW'
+        tempo: 4
+        nivel: 1 
+      '3':
+        chance: 1.5
+        chance-arco: 15.0
+        id: 'SLOW'
+        tempo: 6
+        nivel: 1 
+      '4':
+        chance: 2
+        chance-arco: 20.0
+        id: 'SLOW'
+        tempo: 8
+        nivel: 1 
+      '5':
+        chance: 2.5
+        chance-arco: 25.0
+        id: 'SLOW'
+        tempo: 10
+        nivel: 1
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  Terremoto:
+
+    nome: 'Terremoto'
+    level-maximo-livro: 1
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 0.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - '&fItem permitido: &eEspadas e Machados'
+      - ''
+      - '&7Clique com o Botao Direito para invocar tremores'
+      - '&7na direcao do seu olhar por ate 20 blocos.'
+      - ''
+      - '&7Se acertar, o alvo sera lancado ao ar e'
+      - '&7sofrera os seguintes efeitos por 20 segundos:'
+      - '&7- Lentidao II, Veneno II, Wither II'
+      - '&7- Nausea II e Fraqueza II'
+      - ''
+      - '&7Tempo de Recarga: &e120 segundos'
+      - ''
+      - '&6Faca o solo tremer e engolir a audacia dos rivais.'
+      - ''
+      - '&cAviso: &7Apos ser aplicado, o encantamento &cnao podera ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e> &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      ENCHANTED_BOOK: true
+
+    cooldown: '&7[&4&l!&7] &cVocê precisa aguarda @tempo'
+    ativado: true
+    efeito:
+      '1':
+        distancia: 20
+        tempo-recarga: 120
+        efeitos:
+          
+          - 'SLOW:20:1'
+          - 'POISON:20:1'
+          - 'WITHER:20:1'
+          - 'CONFUSION:20:1'
+          - 'WEAKNESS:20:1'
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  Wither:
+
+    nome: 'Wither'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - '&fItem permitido: &eEspadas, Machados e Arcos'
+      - ''
+      - '&7Amaldiçoe o corpo de suas vitimas. Cada acerto'
+      - '&7pode infligir o efeito Wither I apodrecendo o alvo.'
+      - ''
+      - '&7Atributos por Nivel (Tempo | Laminas | Arco):'
+      - '&7- Nivel I: &e2s &7| &a0.5% &7| &b5%'
+      - '&7- Nivel II: &e4s &7| &a1.0% &7| &b10%'
+      - '&7- Nivel III: &e6s &7| &a1.5% &7| &b15%'
+      - '&7- Nivel IV: &e8s &7| &a2.0% &7| &b20%'
+      - '&7- Nivel V: &e10s &7| &a2.5% &7| &b25%'
+      - ''
+      - '&6A escuridao consome a energia vital de quem cruza seu caminho.'
+      - ''
+      - '&cAviso: &7Apos ser aplicado, o encantamento &cnao podera ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e> &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      BOW: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        chance: 0.5
+        chance-arco: 5.0
+        id: 'WITHER'
+        tempo: 2
+        nivel: 1 
+      '2':
+        chance: 1
+        chance-arco: 10.0
+        id: 'WITHER'
+        tempo: 4
+        nivel: 1 
+      '3':
+        chance: 1.5
+        chance-arco: 15.0
+        id: 'WITHER'
+        tempo: 6
+        nivel: 1 
+      '4':
+        chance: 2
+        chance-arco: 20.0
+        id: 'WITHER'
+        tempo: 8
+        nivel: 1 
+      '5':
+        chance: 2.5
+        chance-arco: 25.0
+        id: 'WITHER'
+        tempo: 10
+        nivel: 1
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  Raio:
+
+    nome: 'Raio'
+    level-maximo-livro: 2
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - '&fItem permitido: &eEspadas, Machados e Arcos'
+      - ''
+      - '&7Invoque a furia dos ceus sobre seus inimigos.'
+      - '&7Causa a queda de um raio com dano massivo.'
+      - ''
+      - '&7Atributos por Nivel (Dano | Laminas | Arco):'
+      - '&7- Nivel I: &c15.0 Dano (7.5 s) &7| &a1.5% &7| &b5%'
+      - '&7- Nivel II: &c35.0 Dano (17.5 s) &7| &a0.5% &7| &b10%'
+      - ''
+      - '&6A tempestade escolhe quem ira queimar.'
+      - ''
+      - '&cAviso: &7Apos ser aplicado, o encantamento &cnao podera ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e> &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      BOW: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        chance: 1.5
+        chance-arco: 5.0
+        dano: 15.0
+      '2':
+        chance: 0.5
+        chance-arco: 10.0
+        dano: 35.0
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  Nausea:
+
+    nome: 'Nausea'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      BOW: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        chance: 1.5
+        chance-arco: 5.0
+        id: 'CONFUSION'
+        tempo: 2
+        nivel: 1 
+      '2':
+        chance: 0.2
+        chance-arco: 10.0
+        id: 'CONFUSION'
+        tempo: 4
+        nivel: 1 
+      '3':
+        chance: 0.3
+        chance-arco: 15.0
+        id: 'CONFUSION'
+        tempo: 6
+        nivel: 1 
+      '4':
+        chance: 0.4
+        chance-arco: 20.0
+        id: 'CONFUSION'
+        tempo: 8
+        nivel: 1 
+      '5':
+        chance: 0.5
+        chance-arco: 25.0
+        id: 'CONFUSION'
+        tempo: 10
+        nivel: 1
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  Cegueira:
+
+    nome: 'Cegueira'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      BOW: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        chance: 1.5
+        chance-arco: 5.0
+        id: 'BLINDNESS'
+        tempo: 2
+        nivel: 1 
+      '2':
+        chance: 0.2
+        chance-arco: 10.0
+        id: 'BLINDNESS'
+        tempo: 4
+        nivel: 1 
+      '3':
+        chance: 0.3
+        chance-arco: 15.0
+        id: 'BLINDNESS'
+        tempo: 6
+        nivel: 1 
+      '4':
+        chance: 0.4
+        chance-arco: 20.0
+        id: 'BLINDNESS'
+        tempo: 8
+        nivel: 1 
+      '5':
+        chance: 0.5
+        chance-arco: 25.0
+        id: 'BLINDNESS'
+        tempo: 10
+        nivel: 1
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  Fraqueza:
+
+    nome: 'Fraqueza'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - '&fItem permitido: &eEspadas, Machados e Arcos'
+      - ''
+      - '&7Drene as forcas físicas dos seus oponentes.'
+      - '&7Aplica Fraqueza I, reduzindo o dano que o alvo causa.'
+      - ''
+      - '&7Atributos por Nivel (Tempo | Laminas | Arco):'
+      - '&7- Nivel I: &e2s &7| &a0.5% &7| &b5%'
+      - '&7- Nivel II: &e4s &7| &a1.0% &7| &b10%'
+      - '&7- Nivel III: &e6s &7| &a1.5% &7| &b15%'
+      - '&7- Nivel IV: &e8s &7| &a2.0% &7| &b20%'
+      - '&7- Nivel V: &e10s &7| &a2.5% &7| &b25%'
+      - ''
+      - '&6Deixe seus inimigos indefesos e sem forcas para revidar.'
+      - ''
+      - '&cAviso: &7Apos ser aplicado, o encantamento &cnao podera ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e> &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      BOW: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        chance: 0.5
+        chance-arco: 5.0
+        id: 'WEAKNESS'
+        tempo: 2
+        nivel: 1 
+      '2':
+        chance: 1.0
+        chance-arco: 10.0
+        id: 'WEAKNESS'
+        tempo: 4
+        nivel: 1 
+      '3':
+        chance: 1.5
+        chance-arco: 15.0
+        id: 'WEAKNESS'
+        tempo: 6
+        nivel: 1 
+      '4':
+        chance: 2.0
+        chance-arco: 20.0
+        id: 'WEAKNESS'
+        tempo: 8
+        nivel: 1 
+      '5':
+        chance: 2.5
+        chance-arco: 25.0
+        id: 'WEAKNESS'
+        tempo: 10
+        nivel: 1
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  QuebraArmadura:
+
+    nome: 'Quebra Armadura'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - '&fItem permitido: &eMachados'
+      - ''
+      - '&7Destrua as defesas do oponente com golpes brutais.'
+      - '&7Chance de causar dano extra na durabilidade da armadura.'
+      - ''
+      - '&7Atributos por Nivel (Chance | Dano na Durabilidade):'
+      - '&7- Nivel I: &a2.0% &7| &c5 a 10 pontos'
+      - '&7- Nivel II: &a4.0% &7| &c10 a 15 pontos'
+      - '&7- Nivel III: &a6.0% &7| &c15 a 20 pontos'
+      - '&7- Nivel IV: &a8.0% &7| &c20 a 25 pontos'
+      - '&7- Nivel V: &a10.0% &7| &c25 a 30 pontos'
+      - ''
+      - '&6Nenhuma armadura e forte o suficiente contra a sua furia.'
+      - ''
+      - '&cAviso: &7Apos ser aplicado, o encantamento &cnao podera ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e> &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        chance: 2
+        dano-minimo: 5
+        dano-maximo: 10
+      '2':
+        chance: 4
+        dano-minimo: 10
+        dano-maximo: 15
+      '3':
+        chance: 6
+        dano-minimo: 15
+        dano-maximo: 20
+      '4':
+        chance: 8
+        dano-minimo: 20
+        dano-maximo: 25
+      '5':
+        chance: 10
+        dano-minimo: 25
+        dano-maximo: 30
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  ToqueDourado:
+
+    nome: 'Toque Dourado'
+    level-maximo-livro: 1
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        chance: 100.0
+        
+        drops:
+          - '1\1\1\100.0'
+        cmd:
+          - 'say @jogador e foda\100.0'
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          DIAMOND_ORE: 10
+        aumento-requisitos:
+          DIAMOND_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  mobexplosivo:
+
+    nome: 'Mob Explosivo'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1-1000':
+        chance: 0.00050
+        mob: 'PIG'
+        tempo: 5
+        radios: '5x5x5'
+        aumento-por-nivel: 0.00050
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    upgrade:
+      0-10:
+        custo:
+          gemas: 30000
+          money: 50000
+        aumento:
+          gemas: 700
+          money: 2522
+        requisitos: {}
+        aumento-requisitos: {}
+
+      11-50:
+        custo:
+          gemas: 37000
+          money: 75220
+        aumento:
+          gemas: 870
+          money: 3405
+        requisitos: {}
+        aumento-requisitos: {}
+
+      51-100:
+        custo:
+          gemas: 71800
+          money: 211420
+        aumento:
+          gemas: 1302
+          money: 5854
+        requisitos: {}
+        aumento-requisitos: {}
+
+      101-250:
+        custo:
+          gemas: 136900
+          money: 504120
+        aumento:
+          gemas: 3388
+          money: 21656
+        requisitos: {}
+        aumento-requisitos: {}
+
+      251-500:
+        custo:
+          gemas: 645100
+          money: 3752520
+        aumento:
+          gemas: 22802
+          money: 292400
+        requisitos: {}
+        aumento-requisitos: {}
+
+      501-750:
+        custo:
+          gemas: 6345600
+          money: 76852520
+        aumento:
+          gemas: 211640
+          money: 5772000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      751-900:
+        custo:
+          gemas: 59255600
+          money: 1519852520
+        aumento:
+          gemas: 1109000
+          money: 50533000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      901-1000:
+        custo:
+          gemas: 225605600
+          money: 9099802520
+        aumento:
+          gemas: 3243000
+          money: 209000000
+        requisitos: {}
+        aumento-requisitos: {}
+          
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-1000:
+        requisitos: {}
+          #LAPIS_ORE: 10
+        aumento-requisitos: {}
+          #LAPIS_ORE: 100
+        nivel-máximo: 1000 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  cruz:
+
+    nome: 'Cruz'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      ENCHANTED_BOOK: true
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    efeito:
+      '1-1000':
+        chance: 0.00070
+        radios: '10x7x8'
+        aumento-por-nivel: 0.00070
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    upgrade:
+      0-10:
+        custo:
+          gemas: 30000
+          money: 50000
+        aumento:
+          gemas: 467
+          money: 1578
+        requisitos: {}
+        aumento-requisitos: {}
+
+      11-50:
+        custo:
+          gemas: 35258
+          money: 67925
+        aumento:
+          gemas: 588
+          money: 2145
+        requisitos: {}
+        aumento-requisitos: {}
+
+      51-100:
+        custo:
+          gemas: 59660
+          money: 157423
+        aumento:
+          gemas: 882
+          money: 3698
+        requisitos: {}
+        aumento-requisitos: {}
+
+      101-250:
+        custo:
+          gemas: 106079
+          money: 356124
+        aumento:
+          gemas: 2319
+          money: 13801
+        requisitos: {}
+        aumento-requisitos: {}
+
+      251-500:
+        custo:
+          gemas: 469850
+          money: 2615154
+        aumento:
+          gemas: 15921
+          money: 188880
+        requisitos: {}
+        aumento-requisitos: {}
+
+      501-750:
+        custo:
+          gemas: 4601100
+          money: 53624154
+        aumento:
+          gemas: 151000
+          money: 3789000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      751-900:
+        custo:
+          gemas: 43154367
+          money: 1034427154
+        aumento:
+          gemas: 803267
+          money: 33553000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      901-1000:
+        custo:
+          gemas: 166017417
+          money: 6207077154
+        aumento:
+          gemas: 2373000
+          money: 139700000
+        requisitos: {}
+        aumento-requisitos: {}
+          
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-1000:
+        requisitos: {}
+          #LAPIS_ORE: 10
+        aumento-requisitos: {}
+          #LAPIS_ORE: 100
+        nivel-máximo: 1000 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  laser:
+
+    nome: 'Laser'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1-1000':
+        chance: 0.00040
+        radios: '4x30'
+        aumento-por-nivel: 0.00040
+
+    upgrade:
+      0-10:
+        custo:
+          gemas: 30000
+          money: 50000
+        aumento:
+          gemas: 700
+          money: 2522
+        requisitos: {}
+        aumento-requisitos: {}
+
+      11-50:
+        custo:
+          gemas: 37000
+          money: 75220
+        aumento:
+          gemas: 870
+          money: 3405
+        requisitos: {}
+        aumento-requisitos: {}
+
+      51-100:
+        custo:
+          gemas: 71800
+          money: 211420
+        aumento:
+          gemas: 1302
+          money: 5854
+        requisitos: {}
+        aumento-requisitos: {}
+
+      101-250:
+        custo:
+          gemas: 136900
+          money: 504120
+        aumento:
+          gemas: 3388
+          money: 21656
+        requisitos: {}
+        aumento-requisitos: {}
+
+      251-500:
+        custo:
+          gemas: 645100
+          money: 3752520
+        aumento:
+          gemas: 22802
+          money: 292400
+        requisitos: {}
+        aumento-requisitos: {}
+
+      501-750:
+        custo:
+          gemas: 6345600
+          money: 76852520
+        aumento:
+          gemas: 211640
+          money: 5772000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      751-900:
+        custo:
+          gemas: 59255600
+          money: 1519852520
+        aumento:
+          gemas: 1109000
+          money: 50533000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      901-1000:
+        custo:
+          gemas: 225605600
+          money: 9099802520
+        aumento:
+          gemas: 3243000
+          money: 209000000
+        requisitos: {}
+        aumento-requisitos: {}
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel: {}
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-3000:
+        custo:
+          gemas: 12000
+          money: 12000
+        aumento-custo:
+          gemas: 100
+          money: 100
+        requisitos: {}
+          #LAPIS_ORE: 10
+        aumento-requisitos: {}
+          #LAPIS_ORE: 100
+        nivel-máximo: 3000 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  meteoro:
+
+    nome: 'Meteoro'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      ENCHANTED_BOOK: true
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    efeito:
+      '1-1000':
+        chance: 0.00015
+        radios: '10'
+        aumento-por-nivel: 0.00015
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    upgrade:
+      0-10:
+        custo:
+          gemas: 30000
+          money: 50000
+        aumento:
+          gemas: 1889
+          money: 9422
+        requisitos: {}
+        aumento-requisitos: {}
+
+      11-50:
+        custo:
+          gemas: 48890
+          money: 144220
+        aumento:
+          gemas: 2368
+          money: 12630
+        requisitos: {}
+        aumento-requisitos: {}
+
+      51-100:
+        custo:
+          gemas: 143610
+          money: 649420
+        aumento:
+          gemas: 3572
+          money: 22000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      101-250:
+        custo:
+          gemas: 322210
+          money: 1749420
+        aumento:
+          gemas: 9465
+          money: 80733
+        requisitos: {}
+        aumento-requisitos: {}
+
+      251-500:
+        custo:
+          gemas: 1741960
+          money: 13859370
+        aumento:
+          gemas: 65800
+          money: 1084000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      501-750:
+        custo:
+          gemas: 18191960
+          money: 284859370
+        aumento:
+          gemas: 633160
+          money: 21258000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      751-900:
+        custo:
+          gemas: 176481960
+          money: 5599359370
+        aumento:
+          gemas: 3404000
+          money: 185600000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      901-1000:
+        custo:
+          gemas: 687081960
+          money: 33439359370
+        aumento:
+          gemas: 10128000
+          money: 765600000
+        requisitos: {}
+        aumento-requisitos: {}
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel: {}
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-3000:
+        custo:
+          gemas: 12000
+          money: 12000
+        aumento-custo:
+          gemas: 100
+          money: 100
+        requisitos: {}
+          #LAPIS_ORE: 10
+        aumento-requisitos: {}
+          #LAPIS_ORE: 100
+        nivel-máximo: 3000 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  speed:
+
+    nome: 'Speed'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1-1':
+        chance: 5
+        id: 'SPEED'
+        tempo: 20
+        nivel: 1
+        aumento-por-nivel: 0
+      '2-2':
+        chance: 5
+        id: 'SPEED'
+        tempo: 20
+        nivel: 2
+        aumento-por-nivel: 0
+
+    upgrade:
+      0-0:
+        custo:
+          gemas: 20000
+          money: 20000
+        aumento:
+          gemas: 0
+          money: 0
+        requisitos: {}
+        aumento-requisitos: {}
+
+      1-2:
+        custo:
+          gemas: 100000
+          money: 100000
+        aumento:
+          gemas: 0
+          money: 0
+        requisitos: {}
+        aumento-requisitos: {}
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-2:
+        requisitos: {}
+          #LAPIS_ORE: 10
+        aumento-requisitos: {}
+          #LAPIS_ORE: 100
+        nivel-máximo: 2 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  haste:
+
+    nome: 'Haste'
+    level-maximo-livro: 3
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      ENCHANTED_BOOK: true
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+    efeito:
+      '1-1':
+        chance: 5
+        id: 'FAST_DIGGING'
+        tempo: 20
+        nivel: 1
+        aumento-por-nivel: 0
+      '2-2':
+        chance: 5
+        id: 'FAST_DIGGING'
+        tempo: 20
+        nivel: 2
+        aumento-por-nivel: 0
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    upgrade:
+      0-0:
+        custo:
+          gemas: 10000
+          money: 10000
+        aumento:
+          gemas: 0
+          money: 0
+        requisitos: {}
+        aumento-requisitos: {}
+
+      1-2:
+        custo:
+          gemas: 50000
+          money: 50000
+        aumento:
+          gemas: 0
+          money: 0
+        requisitos: {}
+        aumento-requisitos: {}
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-2:
+        requisitos: {}
+          #LAPIS_ORE: 10
+        aumento-requisitos: {}
+          #LAPIS_ORE: 100
+        nivel-máximo: 2 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  tempestadedefogo:
+
+    nome: 'Tempestade de Fogo'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      ENCHANTED_BOOK: true
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    efeito:
+      '1-1000':
+        chance: 0.00010
+        radios: '10x12'
+        aumento-por-nivel: 0.00010
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    upgrade:
+      0-10:
+        custo:
+          gemas: 30000
+          money: 50000
+        aumento:
+          gemas: 1889
+          money: 9422
+        requisitos: {}
+        aumento-requisitos: {}
+
+      11-50:
+        custo:
+          gemas: 48890
+          money: 144220
+        aumento:
+          gemas: 2368
+          money: 12630
+        requisitos: {}
+        aumento-requisitos: {}
+
+      51-100:
+        custo:
+          gemas: 143610
+          money: 649420
+        aumento:
+          gemas: 3572
+          money: 22000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      101-250:
+        custo:
+          gemas: 322210
+          money: 1749420
+        aumento:
+          gemas: 9465
+          money: 80733
+        requisitos: {}
+        aumento-requisitos: {}
+
+      251-500:
+        custo:
+          gemas: 1741960
+          money: 13859370
+        aumento:
+          gemas: 65800
+          money: 1084000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      501-750:
+        custo:
+          gemas: 18191960
+          money: 284859370
+        aumento:
+          gemas: 633160
+          money: 21258000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      751-900:
+        custo:
+          gemas: 176481960
+          money: 5599359370
+        aumento:
+          gemas: 3404000
+          money: 185600000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      901-1000:
+        custo:
+          gemas: 687081960
+          money: 33439359370
+        aumento:
+          gemas: 10128000
+          money: 765600000
+        requisitos: {}
+        aumento-requisitos: {}
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel: {}
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-3000:
+        custo:
+          gemas: 12000
+          money: 12000
+        aumento-custo:
+          gemas: 100
+          money: 100
+        requisitos: {}
+          #LAPIS_ORE: 10
+        aumento-requisitos: {}
+          #LAPIS_ORE: 100
+        nivel-máximo: 3000 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  chuvaacida:
+
+    nome: 'Chuva Acida'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      ENCHANTED_BOOK: true
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    efeito:
+      '1-1000':
+        chance: 0.00007
+        radios: '10x10x25'
+        aumento-por-nivel: 0.00007
+        
+    upgrade:
+      0-10:
+        custo:
+          gemas: 30000
+          money: 50000
+        aumento:
+          gemas: 3722
+          money: 18889
+        requisitos: {}
+        aumento-requisitos: {}
+
+      11-50:
+        custo:
+          gemas: 67222
+          money: 238890
+        aumento:
+          gemas: 4653
+          money: 25250
+        requisitos: {}
+        aumento-requisitos: {}
+
+      51-100:
+        custo:
+          gemas: 253342
+          money: 1248890
+        aumento:
+          gemas: 6976
+          money: 43000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      101-250:
+        custo:
+          gemas: 602142
+          money: 3398890
+        aumento:
+          gemas: 18211
+          money: 157200
+        requisitos: {}
+        aumento-requisitos: {}
+
+      251-500:
+        custo:
+          gemas: 3333792
+          money: 26978890
+        aumento:
+          gemas: 123160
+          money: 2064000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      501-750:
+        custo:
+          gemas: 34123792
+          money: 542978890
+        aumento:
+          gemas: 1149000
+          money: 39582000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      751-900:
+        custo:
+          gemas: 321373792
+          money: 10438478890
+        aumento:
+          gemas: 6056000
+          money: 339600000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      901-1000:
+        custo:
+          gemas: 1229773792
+          money: 61378478890
+        aumento:
+          gemas: 17700000
+          money: 1386000000
+        requisitos: {}
+        aumento-requisitos: {}
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-1000:
+        requisitos: {}
+          #LAPIS_ORE: 10
+        aumento-requisitos: {}
+          #LAPIS_ORE: 100
+        nivel-máximo: 1000 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  nuclear:
+
+    nome: 'Nuclear'
+    level-maximo-livro: 1
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 0.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1-1000':
+        chance: 0.00001
+        aumento-por-nivel: 0.00001
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    upgrade:
+      0-10:
+        custo:
+          gemas: 30000
+          money: 50000
+        aumento:
+          gemas: 8889
+          money: 61111
+        requisitos: {}
+        aumento-requisitos: {}
+
+      11-50:
+        custo:
+          gemas: 118890
+          money: 661110
+        aumento:
+          gemas: 11750
+          money: 81000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      51-100:
+        custo:
+          gemas: 588890
+          money: 3901110
+        aumento:
+          gemas: 17400
+          money: 137200
+        requisitos: {}
+        aumento-requisitos: {}
+
+      101-250:
+        custo:
+          gemas: 1458890
+          money: 10761110
+        aumento:
+          gemas: 45467
+          money: 483333
+        requisitos: {}
+        aumento-requisitos: {}
+
+      251-500:
+        custo:
+          gemas: 8278940
+          money: 83261060
+        aumento:
+          gemas: 307920
+          money: 5927000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      501-750:
+        custo:
+          gemas: 85258940
+          money: 1565011060
+        aumento:
+          gemas: 2872000
+          money: 105880000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      751-900:
+        custo:
+          gemas: 803258940
+          money: 28035011060
+        aumento:
+          gemas: 15106000
+          money: 865933000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      901-1000:
+        custo:
+          gemas: 3069158940
+          money: 157924961060
+        aumento:
+          gemas: 44300000
+          money: 3421000000
+        requisitos: {}
+        aumento-requisitos: {}
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-1000:
+        requisitos: {}
+          #LAPIS_ORE: 10
+        aumento-requisitos: {}
+          #LAPIS_ORE: 100
+        nivel-máximo: 1000 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  destruidor:
+
+    nome: 'Destruidor'
+    level-maximo-livro: 1
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 0.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1-1000':
+        chance: 0.00003
+        aumento-por-nivel: 0.00003
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    upgrade:
+      0-10:
+        custo:
+          gemas: 30000
+          money: 50000
+        aumento:
+          gemas: 4744
+          money: 25556
+        requisitos: {}
+        aumento-requisitos: {}
+
+      11-50:
+        custo:
+          gemas: 77440
+          money: 305560
+        aumento:
+          gemas: 5970
+          money: 34000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      51-100:
+        custo:
+          gemas: 316240
+          money: 1665560
+        aumento:
+          gemas: 8970
+          money: 58600
+        requisitos: {}
+        aumento-requisitos: {}
+
+      101-250:
+        custo:
+          gemas: 764740
+          money: 4595560
+        aumento:
+          gemas: 24067
+          money: 216600
+        requisitos: {}
+        aumento-requisitos: {}
+
+      251-500:
+        custo:
+          gemas: 4374790
+          money: 37085560
+        aumento:
+          gemas: 169520
+          money: 2924000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      501-750:
+        custo:
+          gemas: 46754790
+          money: 768085560
+        aumento:
+          gemas: 1655000
+          money: 57720000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      751-900:
+        custo:
+          gemas: 460504790
+          money: 15198085560
+        aumento:
+          gemas: 8994000
+          money: 505267000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      901-1000:
+        custo:
+          gemas: 1809604790
+          money: 90988135560
+        aumento:
+          gemas: 26900000
+          money: 2090000000
+        requisitos: {}
+        aumento-requisitos: {}
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-1000:
+        requisitos: {}
+          #LAPIS_ORE: 10
+        aumento-requisitos: {}
+          #LAPIS_ORE: 100
+        nivel-máximo: 1000 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  trincheira:
+
+    nome: 'Trincheira'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.5
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      ENCHANTED_BOOK: true
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    efeito:
+      '1-1000':
+        chance: 0.00025
+        radios: '9x7'
+        aumento-por-nivel: 0.00025
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    upgrade:
+      0-10:
+        custo:
+          gemas: 30000
+          money: 50000
+        aumento:
+          gemas: 1422
+          money: 6333
+        requisitos: {}
+        aumento-requisitos: {}
+
+      11-50:
+        custo:
+          gemas: 46000
+          money: 121905
+        aumento:
+          gemas: 1780
+          money: 8575
+        requisitos: {}
+        aumento-requisitos: {}
+
+      51-100:
+        custo:
+          gemas: 119888
+          money: 479705
+        aumento:
+          gemas: 2688
+          money: 14800
+        requisitos: {}
+        aumento-requisitos: {}
+
+      101-250:
+        custo:
+          gemas: 261432
+          money: 1274838
+        aumento:
+          gemas: 7144
+          money: 55133
+        requisitos: {}
+        aumento-requisitos: {}
+
+      251-500:
+        custo:
+          gemas: 1382872
+          money: 10300348
+        aumento:
+          gemas: 49840
+          money: 755560
+        requisitos: {}
+        aumento-requisitos: {}
+
+      501-750:
+        custo:
+          gemas: 14324992
+          money: 214355348
+        aumento:
+          gemas: 482120
+          money: 15165000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      751-900:
+        custo:
+          gemas: 137455992
+          money: 4139738348
+        aumento:
+          gemas: 2601000
+          money: 134133000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      901-1000:
+        custo:
+          gemas: 535360992
+          money: 24818588348
+        aumento:
+          gemas: 7755000
+          money: 558900000
+        requisitos: {}
+        aumento-requisitos: {}
+          
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-1000:
+        requisitos: {}
+          #LAPIS_ORE: 10
+        aumento-requisitos: {}
+          #LAPIS_ORE: 100
+        nivel-máximo: 1000 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  selo:
+
+    nome: 'Selo'
+    level-maximo-livro: 1
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      ENCHANTED_BOOK: true
+
+    efeito: {}
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          LAPIS_ORE: 10
+        aumento-requisitos:
+          LAPIS_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+
+        requisitos:
+          LAPIS_ORE: 10
+          '*': 10
+        aumento-requisitos:
+          LAPIS_ORE: 100
+          '*': 100
+
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  indestrutivel:
+
+    nome: 'Indestrutível'
+    level-maximo-livro: 1
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.0
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - '&fItem permitido: &eFerramentas e Armas'
+      - ''
+      - '&7Sela o item com uma protecao divina eterna.'
+      - '&7Torna o equipamento totalmente indestrutivel.'
+      - ''
+      - '&7Atributos:'
+      - '&7- Durabilidade: &cInfinita (Nao quebra)'
+      - ''
+      - '&6Uma reliquia eterna que resistira ao fim dos tempos.'
+      - ''
+      - '&cAviso: &7Apos ser aplicado, o encantamento &cnao podera ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e> &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_SPADE: true
+      WOOD_SPADE: true
+      STONE_SPADE: true
+      IRON_SPADE: true
+      GOLD_SPADE: true
+
+      DIAMOND_SWORD: true
+      WOOD_SWORD: true
+      STONE_SWORD: true
+      IRON_SWORD: true
+      GOLD_SWORD: true
+
+      DIAMOND_AXE: true
+      WOOD_AXE: true
+      STONE_AXE: true
+      IRON_AXE: true
+      GOLD_AXE: true
+
+      DIAMOND_PICKAXE: true
+      WOOD_PICKAXE: true
+      STONE_PICKAXE: true
+      IRON_PICKAXE: true
+      GOLD_PICKAXE: true
+
+      ENCHANTED_BOOK: true
+
+    efeito:
+      '1':
+        chance: 100.0
+        radios: '5x3'
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          LAPIS_ORE: 10
+        aumento-requisitos:
+          LAPIS_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+
+        requisitos:
+          LAPIS_ORE: 10
+          '*': 10
+        aumento-requisitos:
+          LAPIS_ORE: 100
+          '*': 100
+
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  booster_chaveiro:
+
+    nome: 'Chaveiro'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.0
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      ENCHANTED_BOOK: true
+
+    booster:
+      '1-1000':
+        quantidade: 0.02
+        aumento-por-nivel: 0.02  # (0.05 * 2 = 0.10 no nv 10)
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    upgrade:
+      0-10:
+        custo:
+          gemas: 30000
+          money: 50000
+        aumento:
+          gemas: 322
+          money: 933
+        requisitos: {}
+        aumento-requisitos: {}
+
+      11-50:
+        custo:
+          gemas: 33615
+          money: 60590
+        aumento:
+          gemas: 395
+          money: 1260
+        requisitos: {}
+        aumento-requisitos: {}
+
+      51-100:
+        custo:
+          gemas: 49612
+          money: 111884
+        aumento:
+          gemas: 592
+          money: 2154
+        requisitos: {}
+        aumento-requisitos: {}
+
+      101-250:
+        custo:
+          gemas: 80129
+          money: 225287
+        aumento:
+          gemas: 1509
+          money: 7857
+        requisitos: {}
+        aumento-requisitos: {}
+
+      251-500:
+        custo:
+          gemas: 314772
+          money: 1499180
+        aumento:
+          gemas: 9802
+          money: 103200
+        requisitos: {}
+        aumento-requisitos: {}
+
+      501-750:
+        custo:
+          gemas: 2843030
+          money: 29173980
+        aumento:
+          gemas: 87560
+          money: 1978000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      751-900:
+        custo:
+          gemas: 25092270
+          money: 538683980
+        aumento:
+          gemas: 446800
+          money: 16988000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      901-1000:
+        custo:
+          gemas: 92948470
+          money: 3139195980
+        aumento:
+          gemas: 1283000
+          money: 69300000
+        requisitos: {}
+        aumento-requisitos: {}
+          
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-1000:
+        requisitos: {}
+          #LAPIS_ORE: 10
+        aumento-requisitos: {}
+          #LAPIS_ORE: 100
+        nivel-máximo: 1000 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  booster_gemas:
+
+    nome: 'Gemado'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.0
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      ENCHANTED_BOOK: true
+
+    booster:
+      '1-1000':
+        quantidade: 0.05
+        aumento-por-nivel: 0.05  # (0.05 * 2 = 0.10 no nv 10)
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    upgrade:
+      0-10:
+        custo:
+          gemas: 30000
+          money: 50000
+        aumento:
+          gemas: 278
+          money: 633
+        requisitos: {}
+        aumento-requisitos: {}
+
+      11-50:
+        custo:
+          gemas: 33123
+          money: 57188
+        aumento:
+          gemas: 343
+          money: 858
+        requisitos: {}
+        aumento-requisitos: {}
+
+      51-100:
+        custo:
+          gemas: 47012
+          money: 92128
+        aumento:
+          gemas: 512
+          money: 1478
+        requisitos: {}
+        aumento-requisitos: {}
+
+      101-250:
+        custo:
+          gemas: 73417
+          money: 170064
+        aumento:
+          gemas: 1317
+          money: 5514
+        requisitos: {}
+        aumento-requisitos: {}
+
+      251-500:
+        custo:
+          gemas: 278333
+          money: 1067206
+        aumento:
+          gemas: 8683
+          money: 75556
+        requisitos: {}
+        aumento-requisitos: {}
+
+      501-750:
+        custo:
+          gemas: 2518960
+          money: 21396650
+        aumento:
+          gemas: 78560
+          money: 1516000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      751-900:
+        custo:
+          gemas: 22485467
+          money: 412288650
+        aumento:
+          gemas: 405067
+          money: 13408000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      901-1000:
+        custo:
+          gemas: 84012450
+          money: 2464980650
+        aumento:
+          gemas: 1172000
+          money: 55900000
+        requisitos: {}
+        aumento-requisitos: {}
+          
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-1000:
+        requisitos: {}
+          #LAPIS_ORE: 10
+        aumento-requisitos: {}
+          #LAPIS_ORE: 100
+        nivel-máximo: 1000 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+
+  booster_money:
+
+    nome: 'Fortuna'
+    level-maximo-livro: 5
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.0
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_HELMET: true
+      DIAMOND_CHESTPLATE: true
+      DIAMOND_LEGGINGS: true
+      DIAMOND_BOOTS: true
+
+      ENCHANTED_BOOK: true
+
+    booster:
+      '1-1000':
+        quantidade: 0.05
+        aumento-por-nivel: 0.05  # (0.05 * 2 = 0.10 no nv 10)
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    upgrade:
+      0-10:
+        custo:
+          gemas: 30000
+          money: 50000
+        aumento:
+          gemas: 222
+          money: 633
+        requisitos: {}
+        aumento-requisitos: {}
+
+      11-50:
+        custo:
+          gemas: 32503
+          money: 57180
+        aumento:
+          gemas: 283
+          money: 850
+        requisitos: {}
+        aumento-requisitos: {}
+
+      51-100:
+        custo:
+          gemas: 43958
+          money: 91794
+        aumento:
+          gemas: 418
+          money: 1464
+        requisitos: {}
+        aumento-requisitos: {}
+
+      101-250:
+        custo:
+          gemas: 65503
+          money: 168945
+        aumento:
+          gemas: 1063
+          money: 5415
+        requisitos: {}
+        aumento-requisitos: {}
+
+      251-500:
+        custo:
+          gemas: 230736
+          money: 1048879
+        aumento:
+          gemas: 6846
+          money: 73099
+        requisitos: {}
+        aumento-requisitos: {}
+
+      501-750:
+        custo:
+          gemas: 1995710
+          money: 20693530
+        aumento:
+          gemas: 60320
+          money: 1443000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      751-900:
+        custo:
+          gemas: 17320590
+          money: 392600530
+        aumento:
+          gemas: 305200
+          money: 12600000
+        requisitos: {}
+        aumento-requisitos: {}
+
+      901-1000:
+        custo:
+          gemas: 63667490
+          money: 2322300530
+        aumento:
+          gemas: 872100
+          money: 52300000
+        requisitos: {}
+        aumento-requisitos: {}
+          
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-1000:
+        requisitos: {}
+          #LAPIS_ORE: 10
+        aumento-requisitos: {}
+          #LAPIS_ORE: 100
+        nivel-máximo: 1000 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cNível máximo'
+  desconto_money:
+
+    nome: 'Desconto de Dinheiro'
+    level-maximo-livro: 10
+    livro: '403\[N]{&eLivro Encantado | @nome @romano}[N]'
+    mesa-de-encantamento:
+
+      ativo: false
+      chance: 1.0
+      level-min: 1
+      level-max: 1
+
+      nivel-minimo-custo: 30
+
+      vir-livro-chance: false
+      chance-minima: 1
+      chance-maximo: 100
+
+    lore:
+      - ''
+      - '&fEncantamento: &a@nome @romano'
+      - ''
+      - '&cAviso: &7Após ser aplicado, o encantamento &cnão poderá ser'
+      - '&cremovido. &7Pense bem antes de confirmar.'
+      - ''
+      - '&e‣ &aColoque o livro sobre o item desejado.'
+
+    ids:
+
+      DIAMOND_HELMET: true
+      DIAMOND_CHESTPLATE: true
+      DIAMOND_LEGGINGS: true
+      DIAMOND_BOOTS: true
+
+      ENCHANTED_BOOK: true
+
+    desconto:
+      '1':
+        quantidade: 5
+      '2':
+        quantidade: 10
+      '3':
+        quantidade: 15
+      '4':
+        quantidade: 20
+      '5':
+        quantidade: 25
+
+    #INFORMAÇÕES PARA ITENS EVOLUTIVOS
+
+    custo-fixo-nivel:
+      '5': 10000
+      '6': 20000
+    level-necessario:
+      #NÍVEL DA PICARETA ENTRE 0 - 5
+      0-5:
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+        requisitos:
+          LAPIS_ORE: 10
+        aumento-requisitos:
+          LAPIS_ORE: 100
+        nivel-máximo: 5 # NÍVEL MÁXIMO DA PROTEÇÃO
+        mensagem: '&f[&c&l!&f] &cPara desbloquear novos nívels precisa ter level chegar no nível 6 da armadura'
+      6-99999:
+
+        requisitos:
+          LAPIS_ORE: 10
+          '*': 10
+        aumento-requisitos:
+          LAPIS_ORE: 100
+          '*': 100
+
+        custo:
+          money: 100
+        aumento-custo:
+          money: 100
+
+        nivel-máximo: 40
+        mensagem: '&f[&c&l!&f] &cNível máximo'
