@@ -1,0 +1,273 @@
+
+
+moedas:
+  money:
+    booster-adicionar:
+    - '%ghostencantamentos_booster_money%'
+    desconto-adicionar: {}
+    action-bar: '&7▐ &2$@qnt '
+  gemas:
+    booster-adicionar:
+    - '%ghostencantamentos_booster_gemas%'
+    desconto-adicionar: {}
+    action-bar: '&7▐ &d❒@qnt'
+
+action-bar-na-frente: '&6&lMINA '
+
+drop-inv-cheio: 'chao'
+drop-inv-vazio: 'inv'
+
+#Obs: isso só bloqueia para mina de blocos especiais
+mundos-bloqueados:
+  world: false
+  eventos: true
+  world_plotworld: true
+
+comando-drops-incorreto: '&7[&4&l!&7] &cComando incorreto use /drops <mina>'
+mina-nao-existe: '&7[&4&l!&7] &cEssa mina não existe'
+
+nao-setado-local: '&7[&4&l!&7] &cO local da mina privada não foi setado.'
+sem-permissao: '&7[&4&l!&7] &cVocê não tem permissão para usar esse comando.'
+resetado-com-sucesso: '&7[&a&l!&7] &fResetado com sucesso'
+ultrapassou: '&7[&4&l!&7] &cVocê ultrapassou &f100% &cde toda a mina, você está em &f@chance%'
+nao-existe: '&7[&4&l!&7] &cMina não existente, verifique se está correta.'
+removido: '&7[&a&l!&7] &fMina &a@mina &fexcluida com sucesso'
+setado-com-sucesso: '&7[&4&l!&7] &fMina setada com sucesso'
+ja-existe: '&7[&4&l!&7] &cMina já existente, tente outro nome'
+holograma-setado: '&7[&a&l!&7] &fHolograma setado com sucesso'
+local-setado: '&7[&a&l!&7] &fLocal setado com sucesso'
+recarregado-com-sucesso: '&7[&a&l!&7] &fPlugin recarregado com sucesso'
+nao-setou-pos1: '&7[&a&l!&7] &fVocê ainda não definiu a pos1. Se não tiver o item de seleção, digite &a/mrl setar <mina> &fe pegue um.'
+nao-setou-pos2: '&7[&a&l!&7] &fVocê ainda não definiu a pos2. Se não tiver o item de seleção, digite &a/mrl setar <mina> &fe pegue um.'
+selecionado-pos1: '&7[&a&l!&7] &fPos1 selecionada com sucesso nas coordenadas &7(&a@world, @X, @Y, @Z&7)&f. Para setar, use &a/mrl setar @mina'
+selecionado-pos2: '&7[&a&l!&7] &fPos2 selecionada com sucesso nas coordenadas &7(&a@world, @X, @Y, @Z&7)&f. Para setar, use &a/mrl setar @mina'
+item-adicionado: '&7[&a&l!&7] &fItem enviado para seu inventário.'
+mina-nao-existe: '&7[&a&l!&7] &cEssa mina não existe.'
+region-nao-existe: '&7[&a&l!&7] &cEssa região não existe.'
+setado-com-sucesso: '&7[&a&l!&7] &fA região da mina foi setada com sucesso.'
+removido-region: '&7[&a&l!&7] &fRegião removida com sucesso.'
+editor-error-setar: '&4✘ &cComando incorreto. &fUse: &a/mrl setar <mina>'
+editor-error-unsetar: '&4✘ &cComando incorreto. &fUse: &a/mrl unsetar <mina>'
+editor-error-editar: '&4✘ &cComando incorreto. &fUse: &a/mrl editar <mina>'
+precisa-colocar: '&7[&4&l!&7] &cVocê precisa colocar 1-5 EXP'
+precisa-colocar-fortuna: '&7[&4&l!&7] &cVocê precisa colocar 1-5 Fortuna'
+precisa-colocar-porcentagem: '&7[&4&l!&7] &cVocê precisa colocar &f1%25 &cpara alterar a &f% &cdo comando'
+precisa-colocar-a-porcentagem-mina: '&7[&4&l!&7] &cprecisa colocar a chance exemplo ID CHANCE|LAPIS_ORE 25'
+chance-precisa-ser-um-numero: '&7[&4&l!&7] &ca chance precisa ser um número'
+o-tempo-precisa-ser-um-numero: '&7[&4&l!&7] &co tempo precisa ser um número'
+precisa-ter-o-bloco-na-mao: '&7[&4&l!&7] &cVocê precisa ter o bloco que vai editar na mão'
+
+item-sel: '277\[N]{&aSelecione a mina}[N][L]{|| &7Selecione a pos1 e a pos2 || &7da sua arena setada||&7}[L]'
+
+holograma:
+  - ''
+  - '&f〘&3 Mina Informações &f〙'
+  - ''
+  - '&7◈ &fReseta em: &e@time'
+  - '&7◈ &fBlocos quebrados: &e@blocos&8/&f@maxblocos'
+  - '&7◈ &fJá foi utilizada: &a@porcentagem% &7de &2100%'
+  - ''
+  - '&f* &bCaso atingir &f@reset%&b antes do tempo'
+  - '&bela resetará automatica.'
+
+holograma-sem-porcentagem:
+  - ''
+  - '&f〘&3 Mina Informações &f〙'
+  - ''
+  - '&7◈ &fReseta em: &e@time'
+  - '&7◈ &fBlocos quebrados: &e@blocos&8/&f@maxblocos'
+  - '&7◈ &fJá foi utilizada: &a@porcentagem% &7de &2100%'
+  - ''
+mrl:
+  - ''
+  - '&e&lComandos Mina Reset &7- &4&lADMIN'
+  - ''
+  - '&a/mrl criar <mina> &7- Criar a mina'
+  - '&a/mrl editar <mina> &7- Editar a mina'
+  - '&a/mrl editarbloco &7- Editar o bloco da mina, com o bloco na mão'
+  - '&a/mrl unset <mina> &7- Remover a pos1 e pos2 da mina'
+  - '&a/mrl setar <mina> &7- Setar a pos1 e pos2 da mina'
+  - '&a/mrl reset <mina> &7- Resetar a mina'
+  - '&a/mrl reload &7- Recarregar o plugin'
+
+digite-no-chat-a-data-final:
+  - ""
+  - "&fDigite no chat a data final do bloco."
+  - "&fBom para usar em plantações que o final"
+  - "&fdas datas são o crescimento"
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+
+digite-no-chat-o-data:
+  - ""
+  - "&fDigite no chat a data que vai funcionar."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+
+digite-no-chat-o-idinicial:
+  - ""
+  - "&fDigite no chat o id do bloco inicial."
+  - "&fUse : para coloca data exemplo 1:0 ou só ID 1"
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+
+digite-no-chat-reset-porcentagem:
+  - ""
+  - "&fDigite no chat a porcentagem que vai resetar a mina."
+  - "&fDigite &c'0' &fpara remover a % para resetar"
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+
+digite-no-chat-moeda:
+  - ""
+  - "&fDigite no chat a moeda que deseja adicionar."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+  - "&fExemplo:"
+  - ""
+  - "&ffunciona-fortuna = sim ou não"
+  - "&fmoeda = moeda do multimoedas ou vault"
+  - "&ftipo-msg = actionbar ou mensagem ou semmensagem"
+  - "&fmsg = a mensagem que o jogador vai receber"
+  - ""
+  - "&fquantia moeda funciona-fortuna tipo-msg msg"
+  - "&f1000 money sim actionbar Você recebeu @quantia"
+  - ""
+
+digite-no-chat-a-porcentagem:
+  - ""
+  - "&fDigite no chat a porcentagem."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+
+digite-no-chat-a-min:
+  - ""
+  - "&fDigite no chat o minimo geral drops da fortuna."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+  - "&a0-@max &ftodas as fortunas que existem"
+  - ""
+  - "&fExemplo:"
+  - ""
+  - "&f5 0-10 10"
+  - ""
+  - "&f5 &7= &adrop minimo"
+  - "&f0-@max &7= &afortunas alteradas"
+  - "&f10 &7= &aaumenta &f10% &apor cada um"
+  - ""
+
+
+digite-no-chat-a-max:
+  - ""
+  - "&fDigite no chat o máximo geral drops da fortuna."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+  - "&a0-@max &ftodas as fortunas que existem"
+  - ""
+  - "&fExemplo:"
+  - ""
+  - "&f5 0-10 10"
+  - ""
+  - "&f5 &7= &adrop máximo"
+  - "&f0-@max &7= &afortunas alteradas"
+  - "&f10 &7= &aaumenta &f10% &apor cada um"
+  - ""
+
+digite-no-chat-o-exp:
+  - ""
+  - "&fDigite no chat o novo EXP."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+  - "&fExemplo:"
+  - ""
+  - "&f1-5"
+  - ""
+  - "&f1 &7= &aMinimo EXP"
+  - "&f5 &7= &aMáximo EXP"
+  - ""
+
+digite-no-chat-porcentagem:
+  - ""
+  - "&fDigite no chat a porcentagem do drop."
+  - "&fDigite &c'cancelar' &fpara cancelar"
+  - ""
+
+digite-no-chat-a-fortuna:
+  - ""
+  - "&fDigite no chat a quantia minima e máxima da fortuna."
+  - "&fDigite &c'cancelar' &apara cancelar"
+  - ""
+  - "&fExemplo:"
+  - ""
+  - "&f1-5"
+  - ""
+  - "&f1 &7= &aMinimo drop"
+  - "&f5 &7= &aMáximo drop"
+  - ""
+
+digite-no-chat-o-tempo-cada-bloco:
+  - ""
+  - "&fDigite no chat o tempo para reseta do bloco."
+  - "&fDigite &c'cancelar' &fpara cancelar a operação."
+  - ""
+
+digite-no-chat-o-tempo:
+  - ""
+  - "&fDigite no chat o tempo para reseta a mina."
+  - "&fDigite &c'cancelar' &fpara cancelar a operação."
+  - ""
+
+digite-no-chat-minerios:
+  - ""
+  - "&fDigite no chat o mínerio e a porcentagem que deseja adicionar."
+  - ""
+  - "&fExemplo:"
+  - ""
+  - "&f21 10"
+  - "&f(ID) (PORCENTAGEM)"
+  - ""
+  - "&fOu digite o número que deseja excluir abaixo."
+  - "&fDigite &c'cancelar' &fpara cancelar a operação."
+
+minerios-mensagem: '&f@numero - &aMinério: @minerio &7| &aPorcentagem: @chance'
+chance-final-minerio: '&fDisponível: &a@quantia'
+
+digite-no-chat-comandos:
+  - ""
+  - "&fDigite no chat o comando que deseja adicionar."
+  - "&fOu digite o número que deseja excluir abaixo."
+  - "&fDigite &c'cancelar' &fpara cancelar a operação."
+  - "&fVariáveis: &a@jogador"
+
+cancelado: '&7[&4&l!&7] &cCancelado com sucesso'
+
+comandos-msg: '&f@numero &7- &a@comando'
+
+config-padrao:
+  funciona: false
+  desativar-drops-no-chao: true
+  drops:
+    - '351:4\@qnt\1\100.0\padrao\padrao'
+  cmds: {}
+  XP:
+    min: 4
+    max: 4
+  fortuna:
+    '0':
+      min: 4
+      max: 5
+    '1':
+      min: 5
+      max: 7
+    '2':
+      min: 6
+      max: 8
+    '3':
+      min: 7
+      max: 9
+    '4':
+      min: 8
+      max: 10
+    '5':
+      min: 64
+      max: 128

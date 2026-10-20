@@ -1,0 +1,1427 @@
+moedas:
+  money:
+    simbolo: $
+    tipo: cmd
+    puxar: '%ghosteconomia_moeda_money%'
+    remove: money remove @jogador @qnt
+    sem-dinheiro: '&7[&4&l!&7] &cVocê não tem &2$&a@qnt.'
+    lore-item: '&aR$ @custo'
+  tempo:
+    simbolo: ✝
+    tipo: cmd
+    puxar: '%ghosteconomia_segundosmoedatempo_tempo%'
+    remove: ''
+    sem-dinheiro: '&7[&4&l!&7] &cVocê não tem &d@qnt&c.'
+    lore-item: '&d⌚ @datacusto'
+rankup:
+  default:
+    rank: default
+    rank-prox: rank1
+    prestigio:
+      '1':
+        tag: '&7[Cidadão I]'
+        grupo-lp: default
+        custo:
+          money: 10000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&7[Cidadão I]}[N][URL]{63e0a92d482dff8acabeb0abef1b0513fde3c7af5f0c42082302495ebe66b976}[URL]
+  rank1:
+    rank: rank1
+    rank-prox: rank2
+    prestigio:
+      '1':
+        tag: '&7[Cidadão II]'
+        grupo-lp: rank1
+        custo:
+          money: 20000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&7[Cidadão II]}[N][URL]{63e0a92d482dff8acabeb0abef1b0513fde3c7af5f0c42082302495ebe66b976}[URL]
+  rank2:
+    rank: rank2
+    rank-prox: rank3
+    prestigio:
+      '1':
+        tag: '&7[Cidadão III]'
+        grupo-lp: rank2
+        custo:
+          money: 30000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&7[Cidadão III]}[N][URL]{63e0a92d482dff8acabeb0abef1b0513fde3c7af5f0c42082302495ebe66b976}[URL]
+  rank3:
+    rank: rank3
+    rank-prox: rank4
+    prestigio:
+      '1':
+        tag: '&7[Cidadão IV]'
+        grupo-lp: rank3
+        custo:
+          money: 40000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&7[Cidadão IV]}[N][URL]{63e0a92d482dff8acabeb0abef1b0513fde3c7af5f0c42082302495ebe66b976}[URL]
+  rank4:
+    rank: rank4
+    rank-prox: rank5
+    prestigio:
+      '1':
+        tag: '&7[Cidadão V]'
+        grupo-lp: rank4
+        custo:
+          money: 50000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&7[Cidadão V]}[N][URL]{63e0a92d482dff8acabeb0abef1b0513fde3c7af5f0c42082302495ebe66b976}[URL]
+  rank5:
+    rank: rank5
+    rank-prox: rank6
+    prestigio:
+      '1':
+        tag: '&7[Cidadão VI]'
+        grupo-lp: rank5
+        custo:
+          money: 60000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&7[Cidadão VI]}[N][URL]{63e0a92d482dff8acabeb0abef1b0513fde3c7af5f0c42082302495ebe66b976}[URL]
+  rank6:
+    rank: rank6
+    rank-prox: rank7
+    prestigio:
+      '1':
+        tag: '&7[Cidadão VII]'
+        grupo-lp: rank6
+        custo:
+          money: 70000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&7[Cidadão VII]}[N][URL]{63e0a92d482dff8acabeb0abef1b0513fde3c7af5f0c42082302495ebe66b976}[URL]
+  rank7:
+    rank: rank7
+    rank-prox: rank8
+    prestigio:
+      '1':
+        tag: '&7[Cidadão VIII]'
+        grupo-lp: rank7
+        custo:
+          money: 80000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&7[Cidadão VIII]}[N][URL]{63e0a92d482dff8acabeb0abef1b0513fde3c7af5f0c42082302495ebe66b976}[URL]
+  rank8:
+    rank: rank8
+    rank-prox: rank9
+    prestigio:
+      '1':
+        tag: '&7[Cidadão IX]'
+        grupo-lp: rank8
+        custo:
+          money: 90000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&7[Cidadão IX]}[N][URL]{63e0a92d482dff8acabeb0abef1b0513fde3c7af5f0c42082302495ebe66b976}[URL]
+  rank9:
+    rank: rank9
+    rank-prox: rank10
+    prestigio:
+      '1':
+        tag: '&7[Cidadão X]'
+        grupo-lp: rank9
+        custo:
+          money: 100000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&7[Cidadão X]}[N][URL]{63e0a92d482dff8acabeb0abef1b0513fde3c7af5f0c42082302495ebe66b976}[URL]
+  rank10:
+    rank: rank10
+    rank-prox: rank11
+    prestigio:
+      '1':
+        tag: '&2[Explorador I]'
+        grupo-lp: rank10
+        custo:
+          money: 110000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&2[Explorador I]}[N][URL]{16338322d26c6a7c08fb9fd22959a136728fa2d4dccd22b1563eb1bbaa1d5471}[URL]
+  rank11:
+    rank: rank11
+    rank-prox: rank12
+    prestigio:
+      '1':
+        tag: '&2[Explorador II]'
+        grupo-lp: rank11
+        custo:
+          money: 120000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&2[Explorador II]}[N][URL]{16338322d26c6a7c08fb9fd22959a136728fa2d4dccd22b1563eb1bbaa1d5471}[URL]
+  rank12:
+    rank: rank12
+    rank-prox: rank13
+    prestigio:
+      '1':
+        tag: '&2[Explorador III]'
+        grupo-lp: rank12
+        custo:
+          money: 130000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&2[Explorador III]}[N][URL]{16338322d26c6a7c08fb9fd22959a136728fa2d4dccd22b1563eb1bbaa1d5471}[URL]
+  rank13:
+    rank: rank13
+    rank-prox: rank14
+    prestigio:
+      '1':
+        tag: '&2[Explorador IV]'
+        grupo-lp: rank13
+        custo:
+          money: 140000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&2[Explorador IV]}[N][URL]{16338322d26c6a7c08fb9fd22959a136728fa2d4dccd22b1563eb1bbaa1d5471}[URL]
+  rank14:
+    rank: rank14
+    rank-prox: rank15
+    prestigio:
+      '1':
+        tag: '&2[Explorador V]'
+        grupo-lp: rank14
+        custo:
+          money: 150000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&2[Explorador V]}[N][URL]{16338322d26c6a7c08fb9fd22959a136728fa2d4dccd22b1563eb1bbaa1d5471}[URL]
+  rank15:
+    rank: rank15
+    rank-prox: rank16
+    prestigio:
+      '1':
+        tag: '&2[Explorador VI]'
+        grupo-lp: rank15
+        custo:
+          money: 160000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&2[Explorador VI]}[N][URL]{16338322d26c6a7c08fb9fd22959a136728fa2d4dccd22b1563eb1bbaa1d5471}[URL]
+  rank16:
+    rank: rank16
+    rank-prox: rank17
+    prestigio:
+      '1':
+        tag: '&2[Explorador VII]'
+        grupo-lp: rank16
+        custo:
+          money: 170000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&2[Explorador VII]}[N][URL]{16338322d26c6a7c08fb9fd22959a136728fa2d4dccd22b1563eb1bbaa1d5471}[URL]
+  rank17:
+    rank: rank17
+    rank-prox: rank18
+    prestigio:
+      '1':
+        tag: '&2[Explorador VIII]'
+        grupo-lp: rank17
+        custo:
+          money: 180000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&2[Explorador VIII]}[N][URL]{16338322d26c6a7c08fb9fd22959a136728fa2d4dccd22b1563eb1bbaa1d5471}[URL]
+  rank18:
+    rank: rank18
+    rank-prox: rank19
+    prestigio:
+      '1':
+        tag: '&2[Explorador IX]'
+        grupo-lp: rank18
+        custo:
+          money: 190000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&2[Explorador IX]}[N][URL]{16338322d26c6a7c08fb9fd22959a136728fa2d4dccd22b1563eb1bbaa1d5471}[URL]
+  rank19:
+    rank: rank19
+    rank-prox: rank20
+    prestigio:
+      '1':
+        tag: '&2[Explorador X]'
+        grupo-lp: rank19
+        custo:
+          money: 200000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&2[Explorador X]}[N][URL]{16338322d26c6a7c08fb9fd22959a136728fa2d4dccd22b1563eb1bbaa1d5471}[URL]
+  rank20:
+    rank: rank20
+    rank-prox: rank21
+    prestigio:
+      '1':
+        tag: '&8[Guerreiro I]'
+        grupo-lp: rank20
+        custo:
+          money: 210000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Guerreiro I]}[N][URL]{128d2edf0e9a11a492d36b57f923e93a60e80486372b24ff0f52f460bd39b9d6}[URL]
+  rank21:
+    rank: rank21
+    rank-prox: rank22
+    prestigio:
+      '1':
+        tag: '&8[Guerreiro II]'
+        grupo-lp: rank21
+        custo:
+          money: 220000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Guerreiro II]}[N][URL]{128d2edf0e9a11a492d36b57f923e93a60e80486372b24ff0f52f460bd39b9d6}[URL]
+  rank22:
+    rank: rank22
+    rank-prox: rank23
+    prestigio:
+      '1':
+        tag: '&8[Guerreiro III]'
+        grupo-lp: rank22
+        custo:
+          money: 230000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Guerreiro III]}[N][URL]{128d2edf0e9a11a492d36b57f923e93a60e80486372b24ff0f52f460bd39b9d6}[URL]
+  rank23:
+    rank: rank23
+    rank-prox: rank24
+    prestigio:
+      '1':
+        tag: '&8[Guerreiro IV]'
+        grupo-lp: rank23
+        custo:
+          money: 240000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Guerreiro IV]}[N][URL]{128d2edf0e9a11a492d36b57f923e93a60e80486372b24ff0f52f460bd39b9d6}[URL]
+  rank24:
+    rank: rank24
+    rank-prox: rank25
+    prestigio:
+      '1':
+        tag: '&8[Guerreiro V]'
+        grupo-lp: rank24
+        custo:
+          money: 250000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Guerreiro V]}[N][URL]{128d2edf0e9a11a492d36b57f923e93a60e80486372b24ff0f52f460bd39b9d6}[URL]
+  rank25:
+    rank: rank25
+    rank-prox: rank26
+    prestigio:
+      '1':
+        tag: '&8[Guerreiro VI]'
+        grupo-lp: rank25
+        custo:
+          money: 260000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Guerreiro VI]}[N][URL]{128d2edf0e9a11a492d36b57f923e93a60e80486372b24ff0f52f460bd39b9d6}[URL]
+  rank26:
+    rank: rank26
+    rank-prox: rank27
+    prestigio:
+      '1':
+        tag: '&8[Guerreiro VII]'
+        grupo-lp: rank26
+        custo:
+          money: 270000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Guerreiro VII]}[N][URL]{128d2edf0e9a11a492d36b57f923e93a60e80486372b24ff0f52f460bd39b9d6}[URL]
+  rank27:
+    rank: rank27
+    rank-prox: rank28
+    prestigio:
+      '1':
+        tag: '&8[Guerreiro VIII]'
+        grupo-lp: rank27
+        custo:
+          money: 280000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Guerreiro VIII]}[N][URL]{128d2edf0e9a11a492d36b57f923e93a60e80486372b24ff0f52f460bd39b9d6}[URL]
+  rank28:
+    rank: rank28
+    rank-prox: rank29
+    prestigio:
+      '1':
+        tag: '&8[Guerreiro IX]'
+        grupo-lp: rank28
+        custo:
+          money: 290000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Guerreiro IX]}[N][URL]{128d2edf0e9a11a492d36b57f923e93a60e80486372b24ff0f52f460bd39b9d6}[URL]
+  rank29:
+    rank: rank29
+    rank-prox: rank30
+    prestigio:
+      '1':
+        tag: '&8[Guerreiro X]'
+        grupo-lp: rank29
+        custo:
+          money: 300000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Guerreiro X]}[N][URL]{128d2edf0e9a11a492d36b57f923e93a60e80486372b24ff0f52f460bd39b9d6}[URL]
+  rank30:
+    rank: rank30
+    rank-prox: rank31
+    prestigio:
+      '1':
+        tag: '&b[Tritão I]'
+        grupo-lp: rank30
+        custo:
+          money: 310000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&b[Tritão I]}[N][URL]{6fd361198532d6bf67c08b449a7632a757f3315941d2683b6fce428457cc9c72}[URL]
+  rank31:
+    rank: rank31
+    rank-prox: rank32
+    prestigio:
+      '1':
+        tag: '&b[Tritão II]'
+        grupo-lp: rank31
+        custo:
+          money: 320000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&b[Tritão II]}[N][URL]{6fd361198532d6bf67c08b449a7632a757f3315941d2683b6fce428457cc9c72}[URL]
+  rank32:
+    rank: rank32
+    rank-prox: rank33
+    prestigio:
+      '1':
+        tag: '&b[Tritão III]'
+        grupo-lp: rank32
+        custo:
+          money: 330000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&b[Tritão III]}[N][URL]{6fd361198532d6bf67c08b449a7632a757f3315941d2683b6fce428457cc9c72}[URL]
+  rank33:
+    rank: rank33
+    rank-prox: rank34
+    prestigio:
+      '1':
+        tag: '&b[Tritão IV]'
+        grupo-lp: rank33
+        custo:
+          money: 340000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&b[Tritão IV]}[N][URL]{6fd361198532d6bf67c08b449a7632a757f3315941d2683b6fce428457cc9c72}[URL]
+  rank34:
+    rank: rank34
+    rank-prox: rank35
+    prestigio:
+      '1':
+        tag: '&b[Tritão V]'
+        grupo-lp: rank34
+        custo:
+          money: 350000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&b[Tritão V]}[N][URL]{6fd361198532d6bf67c08b449a7632a757f3315941d2683b6fce428457cc9c72}[URL]
+  rank35:
+    rank: rank35
+    rank-prox: rank36
+    prestigio:
+      '1':
+        tag: '&b[Tritão VI]'
+        grupo-lp: rank35
+        custo:
+          money: 360000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&b[Tritão VI]}[N][URL]{6fd361198532d6bf67c08b449a7632a757f3315941d2683b6fce428457cc9c72}[URL]
+  rank36:
+    rank: rank36
+    rank-prox: rank37
+    prestigio:
+      '1':
+        tag: '&b[Tritão VII]'
+        grupo-lp: rank36
+        custo:
+          money: 370000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&b[Tritão VII]}[N][URL]{6fd361198532d6bf67c08b449a7632a757f3315941d2683b6fce428457cc9c72}[URL]
+  rank37:
+    rank: rank37
+    rank-prox: rank38
+    prestigio:
+      '1':
+        tag: '&b[Tritão VIII]'
+        grupo-lp: rank37
+        custo:
+          money: 380000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&b[Tritão VIII]}[N][URL]{6fd361198532d6bf67c08b449a7632a757f3315941d2683b6fce428457cc9c72}[URL]
+  rank38:
+    rank: rank38
+    rank-prox: rank39
+    prestigio:
+      '1':
+        tag: '&b[Tritão IX]'
+        grupo-lp: rank38
+        custo:
+          money: 390000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&b[Tritão IX]}[N][URL]{6fd361198532d6bf67c08b449a7632a757f3315941d2683b6fce428457cc9c72}[URL]
+  rank39:
+    rank: rank39
+    rank-prox: rank40
+    prestigio:
+      '1':
+        tag: '&b[Tritão X]'
+        grupo-lp: rank39
+        custo:
+          money: 400000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&b[Tritão X]}[N][URL]{6fd361198532d6bf67c08b449a7632a757f3315941d2683b6fce428457cc9c72}[URL]
+  rank40:
+    rank: rank40
+    rank-prox: rank41
+    prestigio:
+      '1':
+        tag: '&3[Guardião I]'
+        grupo-lp: rank40
+        custo:
+          money: 410000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&3[Guardião I]}[N][URL]{60354b079cea00f11a28e7c21ba9c13a17cccb06056019cb4c64bc243575529a}[URL]
+  rank41:
+    rank: rank41
+    rank-prox: rank42
+    prestigio:
+      '1':
+        tag: '&3[Guardião II]'
+        grupo-lp: rank41
+        custo:
+          money: 420000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&3[Guardião II]}[N][URL]{60354b079cea00f11a28e7c21ba9c13a17cccb06056019cb4c64bc243575529a}[URL]
+  rank42:
+    rank: rank42
+    rank-prox: rank43
+    prestigio:
+      '1':
+        tag: '&3[Guardião III]'
+        grupo-lp: rank42
+        custo:
+          money: 430000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&3[Guardião III]}[N][URL]{60354b079cea00f11a28e7c21ba9c13a17cccb06056019cb4c64bc243575529a}[URL]
+  rank43:
+    rank: rank43
+    rank-prox: rank44
+    prestigio:
+      '1':
+        tag: '&3[Guardião IV]'
+        grupo-lp: rank43
+        custo:
+          money: 440000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&3[Guardião IV]}[N][URL]{60354b079cea00f11a28e7c21ba9c13a17cccb06056019cb4c64bc243575529a}[URL]
+  rank44:
+    rank: rank44
+    rank-prox: rank45
+    prestigio:
+      '1':
+        tag: '&3[Guardião V]'
+        grupo-lp: rank44
+        custo:
+          money: 450000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&3[Guardião V]}[N][URL]{60354b079cea00f11a28e7c21ba9c13a17cccb06056019cb4c64bc243575529a}[URL]
+  rank45:
+    rank: rank45
+    rank-prox: rank46
+    prestigio:
+      '1':
+        tag: '&3[Guardião VI]'
+        grupo-lp: rank45
+        custo:
+          money: 460000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&3[Guardião VI]}[N][URL]{60354b079cea00f11a28e7c21ba9c13a17cccb06056019cb4c64bc243575529a}[URL]
+  rank46:
+    rank: rank46
+    rank-prox: rank47
+    prestigio:
+      '1':
+        tag: '&3[Guardião VII]'
+        grupo-lp: rank46
+        custo:
+          money: 470000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&3[Guardião VII]}[N][URL]{60354b079cea00f11a28e7c21ba9c13a17cccb06056019cb4c64bc243575529a}[URL]
+  rank47:
+    rank: rank47
+    rank-prox: rank48
+    prestigio:
+      '1':
+        tag: '&3[Guardião VIII]'
+        grupo-lp: rank47
+        custo:
+          money: 480000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&3[Guardião VIII]}[N][URL]{60354b079cea00f11a28e7c21ba9c13a17cccb06056019cb4c64bc243575529a}[URL]
+  rank48:
+    rank: rank48
+    rank-prox: rank49
+    prestigio:
+      '1':
+        tag: '&3[Guardião IX]'
+        grupo-lp: rank48
+        custo:
+          money: 490000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&3[Guardião IX]}[N][URL]{60354b079cea00f11a28e7c21ba9c13a17cccb06056019cb4c64bc243575529a}[URL]
+  rank49:
+    rank: rank49
+    rank-prox: rank50
+    prestigio:
+      '1':
+        tag: '&3[Guardião X]'
+        grupo-lp: rank49
+        custo:
+          money: 500000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&3[Guardião X]}[N][URL]{60354b079cea00f11a28e7c21ba9c13a17cccb06056019cb4c64bc243575529a}[URL]
+  rank50:
+    rank: rank50
+    rank-prox: rank51
+    prestigio:
+      '1':
+        tag: '&e[Monge I]'
+        grupo-lp: rank50
+        custo:
+          money: 510000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&e[Monge I]}[N][URL]{e3e940965763c01db9d58292ff1b71a76b12925446944c9ef8be74ca75e97916}[URL]
+  rank51:
+    rank: rank51
+    rank-prox: rank52
+    prestigio:
+      '1':
+        tag: '&e[Monge II]'
+        grupo-lp: rank51
+        custo:
+          money: 520000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&e[Monge II]}[N][URL]{e3e940965763c01db9d58292ff1b71a76b12925446944c9ef8be74ca75e97916}[URL]
+  rank52:
+    rank: rank52
+    rank-prox: rank53
+    prestigio:
+      '1':
+        tag: '&e[Monge III]'
+        grupo-lp: rank52
+        custo:
+          money: 530000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&e[Monge III]}[N][URL]{e3e940965763c01db9d58292ff1b71a76b12925446944c9ef8be74ca75e97916}[URL]
+  rank53:
+    rank: rank53
+    rank-prox: rank54
+    prestigio:
+      '1':
+        tag: '&e[Monge IV]'
+        grupo-lp: rank53
+        custo:
+          money: 540000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&e[Monge IV]}[N][URL]{e3e940965763c01db9d58292ff1b71a76b12925446944c9ef8be74ca75e97916}[URL]
+  rank54:
+    rank: rank54
+    rank-prox: rank55
+    prestigio:
+      '1':
+        tag: '&e[Monge V]'
+        grupo-lp: rank54
+        custo:
+          money: 550000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&e[Monge V]}[N][URL]{e3e940965763c01db9d58292ff1b71a76b12925446944c9ef8be74ca75e97916}[URL]
+  rank55:
+    rank: rank55
+    rank-prox: rank56
+    prestigio:
+      '1':
+        tag: '&e[Monge VI]'
+        grupo-lp: rank55
+        custo:
+          money: 560000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&e[Monge VI]}[N][URL]{e3e940965763c01db9d58292ff1b71a76b12925446944c9ef8be74ca75e97916}[URL]
+  rank56:
+    rank: rank56
+    rank-prox: rank57
+    prestigio:
+      '1':
+        tag: '&e[Monge VII]'
+        grupo-lp: rank56
+        custo:
+          money: 570000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&e[Monge VII]}[N][URL]{e3e940965763c01db9d58292ff1b71a76b12925446944c9ef8be74ca75e97916}[URL]
+  rank57:
+    rank: rank57
+    rank-prox: rank58
+    prestigio:
+      '1':
+        tag: '&e[Monge VIII]'
+        grupo-lp: rank57
+        custo:
+          money: 580000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&e[Monge VIII]}[N][URL]{e3e940965763c01db9d58292ff1b71a76b12925446944c9ef8be74ca75e97916}[URL]
+  rank58:
+    rank: rank58
+    rank-prox: rank59
+    prestigio:
+      '1':
+        tag: '&e[Monge IX]'
+        grupo-lp: rank58
+        custo:
+          money: 590000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&e[Monge IX]}[N][URL]{e3e940965763c01db9d58292ff1b71a76b12925446944c9ef8be74ca75e97916}[URL]
+  rank59:
+    rank: rank59
+    rank-prox: rank60
+    prestigio:
+      '1':
+        tag: '&e[Monge X]'
+        grupo-lp: rank59
+        custo:
+          money: 600000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&e[Monge X]}[N][URL]{e3e940965763c01db9d58292ff1b71a76b12925446944c9ef8be74ca75e97916}[URL]
+  rank60:
+    rank: rank60
+    rank-prox: rank61
+    prestigio:
+      '1':
+        tag: '&9[Avatar I]'
+        grupo-lp: rank60
+        custo:
+          money: 610000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&9[Avatar I]}[N][URL]{c1eac842039eaf1fd975051eab113b63ac710784199b258a7244ccb93a7638cc}[URL]
+  rank61:
+    rank: rank61
+    rank-prox: rank62
+    prestigio:
+      '1':
+        tag: '&9[Avatar II]'
+        grupo-lp: rank61
+        custo:
+          money: 620000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&9[Avatar II]}[N][URL]{c1eac842039eaf1fd975051eab113b63ac710784199b258a7244ccb93a7638cc}[URL]
+  rank62:
+    rank: rank62
+    rank-prox: rank63
+    prestigio:
+      '1':
+        tag: '&9[Avatar III]'
+        grupo-lp: rank62
+        custo:
+          money: 630000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&9[Avatar III]}[N][URL]{c1eac842039eaf1fd975051eab113b63ac710784199b258a7244ccb93a7638cc}[URL]
+  rank63:
+    rank: rank63
+    rank-prox: rank64
+    prestigio:
+      '1':
+        tag: '&9[Avatar IV]'
+        grupo-lp: rank63
+        custo:
+          money: 640000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&9[Avatar IV]}[N][URL]{c1eac842039eaf1fd975051eab113b63ac710784199b258a7244ccb93a7638cc}[URL]
+  rank64:
+    rank: rank64
+    rank-prox: rank65
+    prestigio:
+      '1':
+        tag: '&9[Avatar V]'
+        grupo-lp: rank64
+        custo:
+          money: 650000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&9[Avatar V]}[N][URL]{c1eac842039eaf1fd975051eab113b63ac710784199b258a7244ccb93a7638cc}[URL]
+  rank65:
+    rank: rank65
+    rank-prox: rank66
+    prestigio:
+      '1':
+        tag: '&9[Avatar VI]'
+        grupo-lp: rank65
+        custo:
+          money: 660000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&9[Avatar VI]}[N][URL]{c1eac842039eaf1fd975051eab113b63ac710784199b258a7244ccb93a7638cc}[URL]
+  rank66:
+    rank: rank66
+    rank-prox: rank67
+    prestigio:
+      '1':
+        tag: '&9[Avatar VII]'
+        grupo-lp: rank66
+        custo:
+          money: 670000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&9[Avatar VII]}[N][URL]{c1eac842039eaf1fd975051eab113b63ac710784199b258a7244ccb93a7638cc}[URL]
+  rank67:
+    rank: rank67
+    rank-prox: rank68
+    prestigio:
+      '1':
+        tag: '&9[Avatar VIII]'
+        grupo-lp: rank67
+        custo:
+          money: 680000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&9[Avatar VIII]}[N][URL]{c1eac842039eaf1fd975051eab113b63ac710784199b258a7244ccb93a7638cc}[URL]
+  rank68:
+    rank: rank68
+    rank-prox: rank69
+    prestigio:
+      '1':
+        tag: '&9[Avatar IX]'
+        grupo-lp: rank68
+        custo:
+          money: 690000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&9[Avatar IX]}[N][URL]{c1eac842039eaf1fd975051eab113b63ac710784199b258a7244ccb93a7638cc}[URL]
+  rank69:
+    rank: rank69
+    rank-prox: rank70
+    prestigio:
+      '1':
+        tag: '&9[Avatar X]'
+        grupo-lp: rank69
+        custo:
+          money: 700000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&9[Avatar X]}[N][URL]{c1eac842039eaf1fd975051eab113b63ac710784199b258a7244ccb93a7638cc}[URL]
+  rank70:
+    rank: rank70
+    rank-prox: rank71
+    prestigio:
+      '1':
+        tag: '&f[Yeti I]'
+        grupo-lp: rank70
+        custo:
+          money: 710000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&f[Yeti I]}[N][URL]{98c699e3a8b40c61d4a3590404ae9ba5262ab4a35d842f271af413d7f4d20f5a}[URL]
+  rank71:
+    rank: rank71
+    rank-prox: rank72
+    prestigio:
+      '1':
+        tag: '&f[Yeti II]'
+        grupo-lp: rank71
+        custo:
+          money: 720000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&f[Yeti II]}[N][URL]{98c699e3a8b40c61d4a3590404ae9ba5262ab4a35d842f271af413d7f4d20f5a}[URL]
+  rank72:
+    rank: rank72
+    rank-prox: rank73
+    prestigio:
+      '1':
+        tag: '&f[Yeti III]'
+        grupo-lp: rank72
+        custo:
+          money: 730000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&f[Yeti III]}[N][URL]{98c699e3a8b40c61d4a3590404ae9ba5262ab4a35d842f271af413d7f4d20f5a}[URL]
+  rank73:
+    rank: rank73
+    rank-prox: rank74
+    prestigio:
+      '1':
+        tag: '&f[Yeti IV]'
+        grupo-lp: rank73
+        custo:
+          money: 740000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&f[Yeti IV]}[N][URL]{98c699e3a8b40c61d4a3590404ae9ba5262ab4a35d842f271af413d7f4d20f5a}[URL]
+  rank74:
+    rank: rank74
+    rank-prox: rank75
+    prestigio:
+      '1':
+        tag: '&f[Yeti V]'
+        grupo-lp: rank74
+        custo:
+          money: 750000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&f[Yeti V]}[N][URL]{98c699e3a8b40c61d4a3590404ae9ba5262ab4a35d842f271af413d7f4d20f5a}[URL]
+  rank75:
+    rank: rank75
+    rank-prox: rank76
+    prestigio:
+      '1':
+        tag: '&f[Yeti VI]'
+        grupo-lp: rank75
+        custo:
+          money: 760000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&f[Yeti VI]}[N][URL]{98c699e3a8b40c61d4a3590404ae9ba5262ab4a35d842f271af413d7f4d20f5a}[URL]
+  rank76:
+    rank: rank76
+    rank-prox: rank77
+    prestigio:
+      '1':
+        tag: '&f[Yeti VII]'
+        grupo-lp: rank76
+        custo:
+          money: 770000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&f[Yeti VII]}[N][URL]{98c699e3a8b40c61d4a3590404ae9ba5262ab4a35d842f271af413d7f4d20f5a}[URL]
+  rank77:
+    rank: rank77
+    rank-prox: rank78
+    prestigio:
+      '1':
+        tag: '&f[Yeti VIII]'
+        grupo-lp: rank77
+        custo:
+          money: 780000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&f[Yeti VIII]}[N][URL]{98c699e3a8b40c61d4a3590404ae9ba5262ab4a35d842f271af413d7f4d20f5a}[URL]
+  rank78:
+    rank: rank78
+    rank-prox: rank79
+    prestigio:
+      '1':
+        tag: '&f[Yeti IX]'
+        grupo-lp: rank78
+        custo:
+          money: 790000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&f[Yeti IX]}[N][URL]{98c699e3a8b40c61d4a3590404ae9ba5262ab4a35d842f271af413d7f4d20f5a}[URL]
+  rank79:
+    rank: rank79
+    rank-prox: rank80
+    prestigio:
+      '1':
+        tag: '&f[Yeti X]'
+        grupo-lp: rank79
+        custo:
+          money: 800000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&f[Yeti X]}[N][URL]{98c699e3a8b40c61d4a3590404ae9ba5262ab4a35d842f271af413d7f4d20f5a}[URL]
+  rank80:
+    rank: rank80
+    rank-prox: rank81
+    prestigio:
+      '1':
+        tag: '&8[Necromante I]'
+        grupo-lp: rank80
+        custo:
+          money: 810000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Necromante I]}[N][URL]{2afc9436b99d29f133b15c53bef148072dc9d1207a17fb9eb9bf06a061b0b7d}[URL]
+  rank81:
+    rank: rank81
+    rank-prox: rank82
+    prestigio:
+      '1':
+        tag: '&8[Necromante II]'
+        grupo-lp: rank81
+        custo:
+          money: 820000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Necromante II]}[N][URL]{2afc9436b99d29f133b15c53bef148072dc9d1207a17fb9eb9bf06a061b0b7d}[URL]
+  rank82:
+    rank: rank82
+    rank-prox: rank83
+    prestigio:
+      '1':
+        tag: '&8[Necromante III]'
+        grupo-lp: rank82
+        custo:
+          money: 830000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Necromante III]}[N][URL]{2afc9436b99d29f133b15c53bef148072dc9d1207a17fb9eb9bf06a061b0b7d}[URL]
+  rank83:
+    rank: rank83
+    rank-prox: rank84
+    prestigio:
+      '1':
+        tag: '&8[Necromante IV]'
+        grupo-lp: rank83
+        custo:
+          money: 840000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Necromante IV]}[N][URL]{2afc9436b99d29f133b15c53bef148072dc9d1207a17fb9eb9bf06a061b0b7d}[URL]
+  rank84:
+    rank: rank84
+    rank-prox: rank85
+    prestigio:
+      '1':
+        tag: '&8[Necromante V]'
+        grupo-lp: rank84
+        custo:
+          money: 850000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Necromante V]}[N][URL]{2afc9436b99d29f133b15c53bef148072dc9d1207a17fb9eb9bf06a061b0b7d}[URL]
+  rank85:
+    rank: rank85
+    rank-prox: rank86
+    prestigio:
+      '1':
+        tag: '&8[Necromante VI]'
+        grupo-lp: rank85
+        custo:
+          money: 860000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Necromante VI]}[N][URL]{2afc9436b99d29f133b15c53bef148072dc9d1207a17fb9eb9bf06a061b0b7d}[URL]
+  rank86:
+    rank: rank86
+    rank-prox: rank87
+    prestigio:
+      '1':
+        tag: '&8[Necromante VII]'
+        grupo-lp: rank86
+        custo:
+          money: 870000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Necromante VII]}[N][URL]{2afc9436b99d29f133b15c53bef148072dc9d1207a17fb9eb9bf06a061b0b7d}[URL]
+  rank87:
+    rank: rank87
+    rank-prox: rank88
+    prestigio:
+      '1':
+        tag: '&8[Necromante VIII]'
+        grupo-lp: rank87
+        custo:
+          money: 880000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Necromante VIII]}[N][URL]{2afc9436b99d29f133b15c53bef148072dc9d1207a17fb9eb9bf06a061b0b7d}[URL]
+  rank88:
+    rank: rank88
+    rank-prox: rank89
+    prestigio:
+      '1':
+        tag: '&8[Necromante IX]'
+        grupo-lp: rank88
+        custo:
+          money: 890000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Necromante IX]}[N][URL]{2afc9436b99d29f133b15c53bef148072dc9d1207a17fb9eb9bf06a061b0b7d}[URL]
+  rank89:
+    rank: rank89
+    rank-prox: rank90
+    prestigio:
+      '1':
+        tag: '&8[Necromante X]'
+        grupo-lp: rank89
+        custo:
+          money: 900000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&8[Necromante X]}[N][URL]{2afc9436b99d29f133b15c53bef148072dc9d1207a17fb9eb9bf06a061b0b7d}[URL]
+  rank90:
+    rank: rank90
+    rank-prox: rank91
+    prestigio:
+      '1':
+        tag: '&4[Dragão I]'
+        grupo-lp: rank90
+        custo:
+          money: 910000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&4[Dragão I]}[N][URL]{ffc3c71c784d56094cb934ce88126a7e983467661aac02860107cc5f38d07170}[URL]
+  rank91:
+    rank: rank91
+    rank-prox: rank92
+    prestigio:
+      '1':
+        tag: '&4[Dragão II]'
+        grupo-lp: rank91
+        custo:
+          money: 920000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&4[Dragão II]}[N][URL]{ffc3c71c784d56094cb934ce88126a7e983467661aac02860107cc5f38d07170}[URL]
+  rank92:
+    rank: rank92
+    rank-prox: rank93
+    prestigio:
+      '1':
+        tag: '&4[Dragão III]'
+        grupo-lp: rank92
+        custo:
+          money: 930000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&4[Dragão III]}[N][URL]{ffc3c71c784d56094cb934ce88126a7e983467661aac02860107cc5f38d07170}[URL]
+  rank93:
+    rank: rank93
+    rank-prox: rank94
+    prestigio:
+      '1':
+        tag: '&4[Dragão IV]'
+        grupo-lp: rank93
+        custo:
+          money: 940000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&4[Dragão IV]}[N][URL]{ffc3c71c784d56094cb934ce88126a7e983467661aac02860107cc5f38d07170}[URL]
+  rank94:
+    rank: rank94
+    rank-prox: rank95
+    prestigio:
+      '1':
+        tag: '&4[Dragão V]'
+        grupo-lp: rank94
+        custo:
+          money: 950000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&4[Dragão V]}[N][URL]{ffc3c71c784d56094cb934ce88126a7e983467661aac02860107cc5f38d07170}[URL]
+  rank95:
+    rank: rank95
+    rank-prox: rank96
+    prestigio:
+      '1':
+        tag: '&4[Dragão VI]'
+        grupo-lp: rank95
+        custo:
+          money: 960000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&4[Dragão VI]}[N][URL]{ffc3c71c784d56094cb934ce88126a7e983467661aac02860107cc5f38d07170}[URL]
+  rank96:
+    rank: rank96
+    rank-prox: rank97
+    prestigio:
+      '1':
+        tag: '&4[Dragão VII]'
+        grupo-lp: rank96
+        custo:
+          money: 970000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&4[Dragão VII]}[N][URL]{ffc3c71c784d56094cb934ce88126a7e983467661aac02860107cc5f38d07170}[URL]
+  rank97:
+    rank: rank97
+    rank-prox: rank98
+    prestigio:
+      '1':
+        tag: '&4[Dragão VIII]'
+        grupo-lp: rank97
+        custo:
+          money: 980000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&4[Dragão VIII]}[N][URL]{ffc3c71c784d56094cb934ce88126a7e983467661aac02860107cc5f38d07170}[URL]
+  rank98:
+    rank: rank98
+    rank-prox: rank99
+    prestigio:
+      '1':
+        tag: '&4[Dragão IX]'
+        grupo-lp: rank98
+        custo:
+          money: 990000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&4[Dragão IX]}[N][URL]{ffc3c71c784d56094cb934ce88126a7e983467661aac02860107cc5f38d07170}[URL]
+  rank99:
+    rank: rank99
+    rank-prox: rank100
+    prestigio:
+      '1':
+        tag: '&4[Dragão X]'
+        grupo-lp: rank99
+        custo:
+          money: 1000000.0
+          itens: []
+        itens: []
+        cmds: []
+        descricao: Sim
+        item: 397:3\1\[N]{&4[Dragão X]}[N][URL]{ffc3c71c784d56094cb934ce88126a7e983467661aac02860107cc5f38d07170}[URL]
+itens-acougue:
+  ? 397:3\[N]{&bCabeça de Iron Golem}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeçasCONVERTER_PONTO||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{e13f34227283796bc017244cb46557d64bd562fa9dab0e12af5d23ad699cf697}[URL]
+  : '149533674'
+  ? 397:3\[N]{&bCabeça de Vaca}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeçasCONVERTER_PONTO||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{8f8ce3915a21168d8394214552cdb5652e855e9e382001d596972fe3c009ea7d}[URL]
+  : '337562877'
+  ? 397:3\[N]{&bCabeça de Porco}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeçasCONVERTER_PONTO||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{319b7fcd8ab72e293edbdb1c615d658908d2ed354880eb6964634a4657898c60}[URL]
+  : '128483212'
+  ? 397:2\[N]{&bCabeça de Zumbi}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeçasCONVERTER_PONTO||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L]
+  : '843894810'
+  ? 397:0\[N]{&bCabeça de Esqueleto}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeçasCONVERTER_PONTO||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L]
+  : '746168253'

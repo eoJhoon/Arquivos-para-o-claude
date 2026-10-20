@@ -1,0 +1,77 @@
+# 
+# 1. RAINHA DAS PENOSAS
+moedas:
+  money:
+    soma-lucro: true
+    soma-desconto: true
+    simbolo: '&a$'
+    tipo: multimoedas
+    puxar: '%ghosteconomia_moeda_money%'
+    remove: money remove @jogador @qnt
+    adicionar: money remove @jogador @qnt
+    sem-dinheiro: '&7[&4&l!&7] &cVocê não tem &2$&a@qnt &cde dinheiro'
+    lore-item: '&e★ &fDinheiro: &2$&a@custo'
+    lore-item-com-desconto-ou-lucro: '&e★ &fDinheiro: &2$&a&m@custo&8 ⇄ &2$&a@novocusto
+      &8(&a+@extra%&8)'
+    booster: '397:3\[N]{&6Bônus}[N][N]{&e&lBooster de Dinheiro &7(&a@multiplicadorx&7)}[N][L]{&7||&7Use
+      este item para acelerar||&7os seus ganhos de dinheiro||&7em todo o servidor.||||&7»
+      &fBônus: &a+@qnt1%||&7» &fDuração: &a@qnt2 hora(s)||||&e&l» &aClique para ativar
+      o multiplicador!}[L][URL]{9fd108383dfa5b02e86635609541520e4e158952d68c1c8f8f200ec7e88642d}[URL]'
+    desconto: '397:3\[N]{&6Desconto}[N][L]{&7||&fTipo: &aDinheiro||&fQuantidade: &a@qnt1%||&fTempo:
+      &a@qnt2 hora(s)}[L][URL]{e467a7b9d76ba6d0fed743602533fc98c87af0c60f80f38da774f7a01a2093fa}[URL]'
+    ativou-booster: '&7[&a&l!&7] &fVocê ativou um booster de &2dinheiro &fde &a@qnt1%
+      &fpor &a@qnt2 &fhora(s)'
+    ativou-desconto: '&7[&a&l!&7] &fVocê ativou um desconto de &2dinheiro &fde &a@qnt1%
+      &fpor &a@qnt2 &fhora(s)'
+    booster-adicionar:
+    - '%ghostgemas_booster_money%'
+    - '%ghostpets_booster_money%'
+    - '%ghostencantamentos_booster_money%'
+    - '%ghostdominacao_booster_arena%'
+    - '%ghostdominacao_booster_minapvp%'
+    desconto-adicionar:
+    - '%ghostgemas_desconto_money%'
+    - '%ghostpets_desconto_money%'
+    - '%ghostencantamentos_desconto_money%'
+  tempo:
+    tipo: multimoedas
+    puxar: '%ghosteconomia_segundosmoedatempo_moedatempo%'
+    remove: moedatempo remove @jogador @qnt
+    adicionar: moedatempo add @jogador @qnt
+    simbolo: ⌚
+    sem-dinheiro: '&7[&4&l!&7] &cVocê não tem &d@qnt &cde tempo'
+    lore-item: '&e★ &fTempo: &d⌚ @datacusto'
+    lore-item-com-desconto-ou-lucro: '&e★ &fTempo: &d⌚ @datacusto'
+  cash:
+    tipo: multimoedas
+    puxar: '%ghosteconomia_moeda_cash%'
+    remove: cash remove @jogador @qnt false
+    adicionar: cash add @jogador @qnt false
+    sem-dinheiro: '&7[&4&l!&7] &cVocê não tem &6✪@qnt &cde cash'
+    simbolo: '&6✪'
+    lore-item: '&e★ &fCash: &6✪@custo'
+    lore-item-com-desconto-ou-lucro: '&e★ &fCash: &6✪&m@custo&a @novocusto &c@extra%'
+    booster: '397:3\[N]{&6Booster}[N][L]{&7||&fTipo: &6Cash||&fQuantidade: &a@qnt1%||&fTempo:
+      &a@qnt2 hora(s)}[L][URL]{cb067ae612d5256a24ccfc74c11814f01962b4d81817a618134b45f36fe6fcb3}[URL]'
+    desconto: '397:3\[N]{&6Desconto}[N][L]{&7||&fTipo: &6Cash||&fQuantidade: &a@qnt1%||&fTempo:
+      &a@qnt2 hora(s)}[L][URL]{cb067ae612d5256a24ccfc74c11814f01962b4d81817a618134b45f36fe6fcb3}[URL]'
+    ativou-booster: '&7[&a&l!&7] &fVocê ativou um booster de almas de &a@qnt1% &fpor
+      &a@qnt2 &fhora(s)'
+    ativou-desconto: '&7[&a&l!&7] &fVocê ativou um desconto de almas de &a@qnt1% &fpor
+      &a@qnt2 &fhora(s)'
+  dominacao:
+    tipo: multimoedas
+    puxar-cargo: '%ghostclan_cargo%'
+    puxar-clan: '%ghostclan_id%'
+    cargo-pode-comprar:
+    - lider
+    - admin
+    mensagem-apenas-cargo: '&cApenas líder e admin pode comprar.'
+    puxar: '%ghostclan_moeda_dominacao%'
+    remove: clan remove @clan dominacao @qnt
+    adicionar: clan add @clan dominacao @qnt
+    sem-dinheiro: '&8[&2&lLoja&8] &7Seu clan não tem ⚒@qnt de dominação'
+    simbolo: '&c⚒'
+    lore-item: '&e★ &fDominação: &c⚒ @custo'
+    lore-item-com-desconto-ou-lucro: '&e★ &fDominação: &c⚒ &m@custo&a @novocusto &c@extra%'
+lojas: {}

@@ -1,0 +1,195 @@
+digite-no-chat-o-nome:
+  - ""
+  - "&fDigite no chat o nome da &acategoria &fpara renomear."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+  
+ativado-todos-os-itens-com-lucro: '&7[&a&l!&7] &fAtivado todos os itens com lucro.'
+ativado-todos-os-itens-com-desconto: '&7[&a&l!&7] &fAtivado todos os itens com desconto.'
+desativado-todos-os-itens-com-lucro: '&7[&a&l!&7] &fDesativado todos os itens com lucro.'
+desativado-todos-os-itens-com-desconto: '&7[&a&l!&7] &fDesativado todos os itens com desconto.'
+nao-foi-configurado: '&7[&4&l!&7] &cEssa loja ainda não está configurada.'
+
+esta-faltando-o-tempo: '&7[&4&l!&7] &cEstá faltando o tempo do estoque!'
+precisa-se-um-valor-em-numero: '&7[&4&l!&7] &cPrecisa ser um valor numérico.'
+
+digite-no-chat-o-nome-loja:
+  - ""
+  - "&fDigite no chat o nome do &aitem &fpara renomear."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+
+digite-no-chat-o-valor-compra:
+  - ""
+  - "&fDigite no chat o &fvalor de compra."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - "&fDigite &c'-1' &fpara remover a opção de compra."
+  - ""
+
+digite-no-chat-o-valor-venda:
+  - ""
+  - "&fDigite no chat o &fvalor de venda."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - "&fDigite &c'-1' &fpara remover a opção de venda."
+  - ""
+
+digite-no-chat-o-stock-tempo:
+  - ""
+  - "&fDigite no chat o &astock &fe o &atempo&f."
+  - "&fExemplo:&a 60 1200"
+  - "&fSerá &a60 &fde stock"
+  - "&fe &a1200 &fsegundos de duração."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - "&fDigite &c'-1' &fpara remover o stock."
+  - ""
+
+
+digite-no-chat-a-permission:
+  - ""
+  - "&fDigite no chat a &apermissão &fque deseja adicionar."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - "&fDigite o &anúmero &fpara remover uma permissão."
+  - ""
+
+permission-msg-chat: '&f@numero: &a@permission'
+
+digite-no-chat-o-cmd:
+  - ""
+  - "&fDigite no chat o &acomando &fque deseja adicionar."
+  - "&fVariáveis:"
+  - "&f@jogador: &apuxa o nome do jogador&f."
+  - "&f@qnt: &apuxa a quantidade de itens&f."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - "&fDigite o &anúmero &fpara remover um comando."
+  - ""
+
+permission-cmd-chat: '&f@numero: &a@cmd'
+
+digite-no-chat-a-compermission:
+  - ""
+  - "&fDigite no chat a &apermissão &fque deseja adicionar."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - "&fPara remover, digite &c'remove'&f."
+  - ""
+
+recebeu-booster: '&7[&a&l!&7] &aBooster recebido com sucesso.'
+recebeu-desconto: '&7[&a&l!&7] &eDesconto recebido com sucesso.'
+nao-tem-booster: '&7[&4&l!&7] &cEssa moeda não tem booster configurado.'
+nao-tem-desconto: '&7[&4&l!&7] &cEssa moeda não tem desconto configurado.'
+clan-comprar: '&7[&4&l!&7] &cApenas o &alíder &cpode usar as moedas de dominação.'
+sem-item: '&7[&4&l!&7] &cVocê não tem &f@quantx @item&c.'
+comprou: '&7[&a&l!&7] &fVocê comprou &a@qnt1x @item &fpor &a@custo&f.'
+comprou-desconto: ' com &6@qnt% &acom desconto.'
+sem-stock: '&7[&4&l!&7] &cSem stock &4@stock.'
+sem-permissao: '&7[&4&l!&7] &cVocê não tem permissão para comprar isso.'
+cancelado: '&7[&4&l!&7] &cOperação cancelada.'
+sem-itens-suficientes-para-vender: '&7[&4&l!&7] &cVocê não possui &f@qnt1x &cde &f@item &cpara vender.'
+
+botao-voltar-dentro-da-loja: false
+mensagem-auto-vender-chat: true
+vendeu: '&7[&a&l!&7] &fVocê vendeu &a@qnt1x &a@item &fpor &a@custo&f.'
+vendeu-desconto: ' com &6@qnt% &ade lucro.'
+#Essa mensagem e apenas para o auto vender
+title-bar:
+  ativo: true
+  title: ''
+  subtitle: '+@qnt'
+  aparecer: 5
+  estabilizar: 20
+  desaparecer: 0
+
+ativado-auto: '&7[&a&l!&7] &aVocê ativou a venda automática.'
+desativou-auto: '&7[&4&l!&7] &cVocê desativou a venda automática.'
+ativado: '&7[&a&l!&7] &aVocê ativou a venda com shift.'
+desativou: '&7[&4&l!&7] &cVocê desativou a venda com shift.'
+sem-permissao: '&7[&4&l!&7] &cVocê não tem permissão para executar esse comando.'
+sem-level-clan: '&7[&4&l!&7] &cSeu clan precisa atingir o nível &a@level.'
+reloaded: '&7[&a&l!&7] &fPlugin recarregado com sucesso.'
+inv-cheio: '&7[&4&l!&7] &cSeu inventário está cheio.'
+
+descricao-cancelar:
+  - ''
+  - '&cClique aqui para cancelar'
+  - ''
+descricao-64:
+  - ''
+  - '&fClique aqui para selecionar &a64 &fitens'
+  - ''
+descricao-inventario:
+  - ''
+  - '&fClique aqui para selecionar o &aInventário &fde itens'
+  - ''
+descricao-confirmar:
+  - ''
+  - '&fClique aqui para confirmar'
+  - ''
+digite-no-chat:
+  - ''
+  - '&2&l⎹ &a&aInsira no chat a quantidade que deseja comprar'
+  - '&2&l⎹ &a'
+  - '&2&l⎹ &4&lCANCELAR  &f|  &b&lINVENTÁRIO  &f|  &664x'
+  - '&2&l⎹ &a'
+  - '&2&l⎹ &aDigite &8[&ccancelar&8] &apara cancelar'
+  - ''
+digite-no-chat-confirmar:
+  - ''
+  - '&2&l⎹ &aVocê vai comprar &6@qnt &ade @item'
+  - '&2&l⎹ &aValor total: &6@preço'
+  - '&2&l⎹ &a'
+  - '&2&l⎹ &a&lCONFIRMAR  &f|  &4&lCANCELAR'
+  - '&2&l⎹ &a'
+  - '&2&l⎹ &aDigite &8[&ccancelar&8] &apara cancelar'
+  - ''
+digite-no-chat-confirmar-desconto:
+  - ''
+  - '&2&l⎹ &aVocê vai comprar &6@qnt &ade @item'
+  - '&2&l⎹ &aValor total: &6@valordesconto &acom &6@desconto% &ade desconto'
+  - '&2&l⎹ &a'
+  - '&2&l⎹ &a&lCONFIRMAR  &f|  &4&lCANCELAR'
+  - '&2&l⎹ &a'
+  - '&2&l⎹ &aDigite &8[&ccancelar&8] &apara cancelar'
+  - ''
+
+permission-cmd-lore: '&a@numero - @cmd'
+lore-sem-comando: '&aNão tem nenhum comando.'
+permission-msg-lore: '&a@numero - @permission'
+lore-sem-permissao: '&aNão tem nenhuma permissão.'
+lore-extra-itens-apenas-venda:
+- ''
+- '&f➥ &7Venda:'
+- '@custos'
+lore-extra-itens-apenas-compra:
+- ''
+- '&f➥ &7Custo:'
+- '@custos'
+
+lore-custo-itens:
+- ''
+- '&f➥ &7Custo Fragmentos:'
+- '@custos'
+stock-lore:
+- ''
+- '&fStock: &a@stock'
+custo-item-lore: '&e★ &f@qntx &a@item'
+editar-slot-loja: Editar slots da loja
+
+gui-ativo: '&aAtivo'
+gui-desativado: '&cDesativado'
+lore-item:
+- ''
+- '&eClique para remove o item'
+- '&eQuantidade: &f@qnt'
+
+item-categoria-inicial-ao-criar: '166\1\[N]{&eCategoria nova}[N][L]{&7||&fCategoria:
+  &a@id||||&7Clique com Shift para||&7editar a categoria.||&7}[L]'
+
+item-loja-inicial-ao-criar: '166\1\[N]{&eAdicionar um item}[N][L]{&7||&fItem: &a@id||||&7Clique
+  com Shift para||&7editar o item.||}[L]'
+
+item-editor-moeda: '266\1\[N]{&eEditar preço do @moeda}[N][L]{||&7Clique com o botão
+  esquerdo||&7para alterar o valor de compra.||&7Segure Shift e clique para ativar
+  o desconto.||&fValor de compra: &a@valorcompra||&fDesconto: &a@desconto||||&7Clique
+  com o botão direito||&7para alterar o valor de venda.||&7Segure Shift e clique para
+  ativar o lucro.||&fValor de venda: &a@valorvenda||&fLucro: &a@lucro||&7}[L]'
+
+item-editor-moeda-itens: '54\1\[N]{&aEditar o custo em itens}[N][L]{||&7Clique aqui para alterar||&7os custos por item.||||&7Caso um item seja renomeado,||&7a lore padrão usará||&7o nome desse item.||&7}[L]'

@@ -1,0 +1,192 @@
+menu-tipo-menu: true
+#criar cheque ou coletar o fragmento
+cheque: false
+#
+comando-cabecas-menu:
+  1:
+    nome: 'Cabeças'
+    proximo: 397:3\[N]{&aPróxima Página}[N][URL]{19bf3292e126a105b54eba713aa1b152d541a1d8938829c56364d178ed22bf}[URL]\53
+    voltar: 397:3\[N]{&aPágina Anterior}[N][URL]{bd69e06e5dadfd84e5f3d1c21063f2553b2fa945ee1d4d7152fdc5425bc12a9}[URL]\45
+    tamanho: 36
+    itens:
+      - '397:3\1\[N]{&bCabeça de Vaca}[N][L]{&7||&fQuantidade: &a%ghostrankup_formatmoedaid_@id%||||&7Clique aqui para coletar}[L][URL]{8f8ce3915a21168d8394214552cdb5652e855e9e382001d596972fe3c009ea7d}[URL]\11\337562877'
+      - '397:3\1\[N]{&bCabeça de Porco}[N][L]{&7||&fQuantidade: &a%ghostrankup_formatmoedaid_@id%||||&7Clique aqui para coletar}[L][URL]{d875eb45aca34a4d24c3dc1395fc020ccf37f825a17b054a22fd24b189c24c}[URL]\12\128483212'
+      - '397:2\1\[N]{&bCabeça de Zumbi}[N][L]{&7||&fQuantidade: &a%ghostrankup_formatmoedaid_@id%||||&7Clique aqui para coletar}[L]\13\843894810'
+      - '397:0\1\[N]{&bCabeça de Esqueleto}[N][L]{&7||&fQuantidade: &a%ghostrankup_formatmoedaid_@id%||||&7Clique aqui para coletar}[L]\14\746168253'
+      - '397:3\1\[N]{&bCabeça de Iron Golem}[N][L]{&7||&fQuantidade: &a%ghostrankup_formatmoedaid_@id%||||&7Clique aqui para coletar}[L][URL]{e13f34227283796bc017244cb46557d64bd562fa9dab0e12af5d23ad699cf697}[URL]\15\149533674'
+comando-cabecas:
+  - ''
+  - '&eCabeças de Bosses'
+  - ''
+  - '&fCabeça de Galinha: &a%ghostrankup_moedaid_928219134%'
+  - '&fCabeça de Vaca Brava: &a%ghostrankup_moedaid_925672054%'
+  - '&fCabeça de O Magma de Esmeralda: &a%ghostrankup_moedaid_797510193%'
+  - '&fCabeça de Cavaleiro Sombrio: &a%ghostrankup_moedaid_396129449%'
+  - '&fCabeça de Arqueiro Mistico: &a%ghostrankup_moedaid_245002908%'
+  - '&fCabeça de Aracton: &a%ghostrankup_moedaid_151600103%'
+  - '&fCabeça de Senhor das Dimensões: &a%ghostrankup_moedaid_137181686%'
+  - '&fCabeça de Devorador de Almas: &a%ghostrankup_moedaid_453260606%'
+  - '&fCabeça de Colosso de Ferro: &a%ghostrankup_moedaid_837174681%'
+  - '&fCabeça de Herobrine: &a%ghostrankup_moedaid_290358370%'
+  - ''
+  - '&eCabeça de Mobs'
+  - ''
+  - '&fCabeça de Galinha: &a%ghostrankup_moedaid_868816944%'
+  - '&fCabeça de Coelho: &a%ghostrankup_moedaid_624066624%'
+  - '&fCabeça de Porco: &a%ghostrankup_moedaid_594120578%'
+  - '&fCabeça de Vaca: &a%ghostrankup_moedaid_492259469%'
+  - '&fCabeça de Ovelha: &a%ghostrankup_moedaid_462493478%'
+  - '&fCabeça de Jaguatirica: &a%ghostrankup_moedaid_558411504%'
+  - '&fCabeça de Lula: &a%ghostrankup_moedaid_646198607%'
+  - '&fCabeça de Villager: &a%ghostrankup_moedaid_687676131%'
+  - '&fCabeça de Zumbi: &a%ghostrankup_moedaid_465316996%'
+  - '&fCabeça de Cavalo Esqueleto: &a%ghostrankup_moedaid_655646122%'
+  - '&fCabeça de Esqueleto: &a%ghostrankup_moedaid_962571461%'
+  - '&fCabeça de Aranha: &a%ghostrankup_moedaid_854647275%'
+  - '&fCabeça de Aranha da Caverna: &a%ghostrankup_moedaid_188765446%'
+  - '&fCabeça de Slime: &a%ghostrankup_moedaid_429806090%'
+  - '&fCabeça de Pig Zumbi: &a%ghostrankup_moedaid_829526084%'
+  - '&fCabeça de Endermite: &a%ghostrankup_moedaid_661888522%'
+  - '&fCabeça de SnowGolem: &a%ghostrankup_moedaid_860137115%'
+  - '&fCabeça de Creeper: &a%ghostrankup_moedaid_824820612%'
+  - '&fCabeça de Blaze: &a%ghostrankup_moedaid_118403888%'
+  - '&fCabeça de Guardian: &a%ghostrankup_moedaid_147504990%'
+  - '&fCabeça de Magma Cube: &a%ghostrankup_moedaid_871653598%'
+  - '&fCabeça de Bruxa: &a%ghostrankup_moedaid_946024790%'
+  - '&fCabeça de Esqueleto Do Wither: &a%ghostrankup_moedaid_343536640%'
+  - '&fCabeça de Enderman: &a%ghostrankup_moedaid_546975399%'
+  - '&fCabeça de Golem: &a%ghostrankup_moedaid_605808104%'
+  - '&fCabeça de Wither: &a%ghostrankup_moedaid_535681383%'
+  - ''
+  - '&eFragmentos'
+  - ''
+  - '&fFragmento de Pesca: &a%ghostrankup_moedaid_855834182%'
+  - '&fFragmento de Plantação: &a%ghostrankup_moedaid_844154454%'
+  - '&fFragmento de Arena: &a%ghostrankup_moedaid_919145230%'
+  - '&fFragmento de Mineração: &a%ghostrankup_moedaid_439151339%'
+  - ''
+  - '&fColoque as cabecas/fragmentos no &a/acougue'
+
+sem-item-acougue: '&7[&4&l!&7] &cVocê não tem &a@qntx @item &fno &a/acougue'
+
+# [!] É necessário criar uma moeda no MultiMoedas com o nome: topranks
+usar-multimoedas-contagem-de-rank: false
+
+# [!] Mensagens gerais
+sem-ranks: '&7[&4&l!&7] &cVocê chegou ao fim dos ranks!'
+rank-resetado: '&7[&a&l!&7] &fRanks resetados com sucesso.'
+faltando: '&7[&4&l!&7] &cVocê não possui @quantx @item suficiente.'
+money: '&7[&4&l!&7] &cVocê não possui &a$@money&c suficiente.'
+upou-de-rank: '&7[&a&l!&7] &fParabéns! Agora você é rank &a@rank&f.'
+upou-de-prestigio: '&7[&a&l!&7] &fParabéns! Agora você está no prestígio @prestigio&f.'
+ja-existe: '&7[&4&l!&7] &cEste rank já existe.'
+nao-existe: '&7[&4&l!&7] &cEste rank não existe.'
+criado-com-sucesso: '&7[&a&l!&7] &fRank criado com sucesso!'
+removido-com-sucesso: '&7[&a&l!&7] &fRank removido com sucesso!'
+atualizado-com-sucesso: '&7[&a&l!&7] &fRank atualizado com sucesso!'
+gui-itens: '&eEditor de Itens RankUP'
+recarregado: '&7[&a&l!&7] &fPlugin recarregado com êxito.'
+sem-money: '&7[&4&l!&7] &cVocê não possui $@qnt suficiente.'
+sem-item: '&7[&4&l!&7] &cVocê não possui @quantx @item suficiente.'
+format-item: '&a@qntx &b@item'
+acougue-colocado: '&7[&a&l!&7] &fVocê colocou @itens &fno acougue.'
+
+# [!] LuckPerms integração
+adicionar-group: lp user @player parent add @rank
+remove-group: lp user @player parent remove @rank
+
+# [!] Aparência da barra de progresso
+prox-rank-max: '&cMAX.'
+corprogress: '&a'
+corsemprogress: '&7'
+simboloprogress: '❘'
+quantia-de-barrinha: 10
+mensagenscoreboard: '@simbolo'
+inicial: '&7[&b00|&b10&7]'
+
+# [!] Informações exibidas no GUI
+
+# [!] Comandos de ajuda
+ajuda:
+  - ''
+  - '&a/rankup reset <nick> &7- Redefine o progresso de rank do jogador.'
+  - '&a/rankup editar &7- Abre o menu para editar configurações de ranks.'
+  - '&a/rankup reload &7- Recarrega todas as configurações do sistema de rankup.'
+  - ''
+
+comando-criar-grupo: 'lp creategroup @rank'
+comando-atualizar-prefix: 'lp group @rank meta setprefix @prefix'
+comando-atualizar-peso: 'lp group @rank setweight @peso'
+
+intervalo-porcentagem-incorreto: '&7[&4&l!&7] &cIntervalo do número inválido. &7Use no formato: &f(1000%10)&7.'
+
+# [!] Editor especial de preços
+editar-grupo-comando:
+  - ""
+  - "&eExplicação:"
+  - "&fPermite editar vários grupos de forma mais rápida e prática."
+  - ""
+  - "&eExemplo:"
+  - "&flp group 0-3 parent add default"
+  - ""
+  - "&eCálculo para usar:"
+  - "&f(100%10) — Começa em 100 e aumenta 10% a cada rank."
+  - ""
+  - "&7Total de ranks disponíveis: &f0-@qnt"
+  - ""
+
+# [!] Editor especial de preços
+editar-rank-especial:
+  - ""
+  - "&eExplicação:"
+  - "&fAqui você pode editar rapidamente os preços dos ranks."
+  - ""
+  - "&eExemplo de uso:"
+  - "&f10000 10 0-10 1 money"
+  - ""
+  - "&6➤ &f10000 &8= &7Preço inicial"
+  - "&6➤ &f10% &8= &7Acréscimo por rank"
+  - "&6➤ &f0-10 &8= &7Intervalo de ranks afetados"
+  - "&6➤ &f1 &8= &7Prestígio selecionado"
+  - "&6➤ &fmoney &8= &7Moeda utilizada"
+  - ""
+  - "&eDigite '&ccancelar&e' para sair sem aplicar alterações."
+  - "&7Total de ranks disponíveis: &f0-@qnt"
+  - ""
+
+faltando-mudanças-necessarias: '&7[&4&l!&7] &cVocê não completou todas as etapas necessárias. &8Preencha: &fValor inicial&7, &fAumento&7, &fIntervalo&7, &fPrestígio&7 e &fMoeda&7.'
+valor-inicial-incorreto: '&7[&4&l!&7] &cValor inicial inválido. &7Use apenas números positivos.'
+aumento-preço-incorreto: '&7[&4&l!&7] &cAumento de preço inválido. &7Informe em porcentagem (ex: &f10%&7).'
+intervalo-ranks-incorreto: '&7[&4&l!&7] &cIntervalo de ranks inválido. &7Use no formato: &f0-10&7.'
+prestigio-incorreto: '&7[&4&l!&7] &cPrestígio incorreto. &7Informe um número válido.'
+
+# [!] Editores de Tag, Valores, Descrição e Comandos
+editar-tag:
+  - ""
+  - "&eDigite no chat a &fNova Tag"
+  - "&7Use '&c cancelar &7' para sair sem alterar"
+  - ""
+
+editar-valor:
+  - ""
+  - "&eDigite no chat o &fValor desejado"
+  - "&7Use '&c cancelar &7' para sair sem alterar"
+  - ""
+
+editar-cmds:
+  - ""
+  - "&eDigite no chat o &fNovo Comando"
+  - "&7Use &a@jogador &7para mencionar o jogador"
+  - "&7Use '&c cancelar &7' para sair sem alterar"
+  - "&7Para &cremover&7, digite o número ao lado do comando"
+  - ""
+
+reset-todas-moedas-antes-de-fazer-calculo: true
+
+comandos-executar:
+  # --- Ranks Iniciais (0-49) ---
+  #- '0 0 0-9 1 todas'
+  - '1250000 100 0-10 1 Sim money'
+comando-executando: '&aComando sendo executado...'
+comando-executado-com-sucesso: '&aComando executado com sucesso'
+em-execucao: '&cJá está em execução'

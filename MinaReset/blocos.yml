@@ -1,0 +1,554 @@
+blocos:
+  STAINED_CLAY:
+    '9':
+      rank1:
+        funciona: true
+        desativar-drops-no-chao: true
+        drops:
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até
+          o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e*
+          &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.10\padrao\padrao'
+        cmds: {}
+        XP:
+          min: 4
+          max: 4
+        fortuna:
+          '0':
+            min: 4
+            max: 5
+          '1':
+            min: 5
+            max: 7
+          '2':
+            min: 6
+            max: 8
+          '3':
+            min: 7
+            max: 9
+          '4':
+            min: 8
+            max: 10
+          '5':
+            min: 64
+            max: 128
+        moeda:
+          money:
+            quantia: 1.0
+            chance: 100.0
+            fortunefunciona: false
+          gemas:
+            quantia: 1.0
+            chance: 100.0
+            funcionafortuna: false
+        moeda-tipo-msg: actionbar
+        moeda-mensagem: '@formatmensagem'
+      '*':
+        funciona: false
+        desativar-drops-no-chao: true
+        drops:
+        - 351:4\@qnt\1\100.0\padrao\padrao
+        cmds: {}
+        XP:
+          min: 4
+          max: 4
+        fortuna:
+          '0':
+            min: 4
+            max: 5
+          '1':
+            min: 5
+            max: 7
+          '2':
+            min: 6
+            max: 8
+          '3':
+            min: 7
+            max: 9
+          '4':
+            min: 8
+            max: 10
+          '5':
+            min: 64
+            max: 128
+      mina12:
+        funciona: false
+        desativar-drops-no-chao: true
+        drops:
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até
+          o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e*
+          &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.10\padrao\padrao'
+        cmds: {}
+        XP:
+          min: 4
+          max: 4
+        fortuna:
+          '0':
+            min: 4
+            max: 5
+          '1':
+            min: 5
+            max: 7
+          '2':
+            min: 6
+            max: 8
+          '3':
+            min: 7
+            max: 9
+          '4':
+            min: 8
+            max: 10
+          '5':
+            min: 64
+            max: 128
+    '13':
+      rank2:
+        funciona: true
+        desativar-drops-no-chao: true
+        drops:
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até
+          o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e*
+          &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.105\padrao\padrao'
+        cmds: {}
+        XP:
+          min: 4
+          max: 4
+        fortuna:
+          '0':
+            min: 4
+            max: 5
+          '1':
+            min: 5
+            max: 7
+          '2':
+            min: 6
+            max: 8
+          '3':
+            min: 7
+            max: 9
+          '4':
+            min: 8
+            max: 10
+          '5':
+            min: 64
+            max: 128
+        moeda:
+          money:
+            quantia: 3.0
+            chance: 100.0
+            fortunefunciona: false
+          gemas:
+            quantia: 1.2
+            chance: 100.0
+            funcionafortuna: false
+        moeda-tipo-msg: actionbar
+        moeda-mensagem: '@formatmensagem'
+  COBBLESTONE:
+    '0':
+      rank3:
+        funciona: true
+        desativar-drops-no-chao: true
+        drops:
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até
+          o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e*
+          &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.11\padrao\padrao'
+        cmds: {}
+        XP:
+          min: 4
+          max: 4
+        fortuna:
+          '0':
+            min: 4
+            max: 5
+          '1':
+            min: 5
+            max: 7
+          '2':
+            min: 6
+            max: 8
+          '3':
+            min: 7
+            max: 9
+          '4':
+            min: 8
+            max: 10
+          '5':
+            min: 64
+            max: 128
+        moeda:
+          money:
+            quantia: 8.0
+            chance: 100.0
+            fortunefunciona: false
+          gemas:
+            quantia: 1.5
+            chance: 100.0
+            funcionafortuna: false
+        moeda-tipo-msg: actionbar
+        moeda-mensagem: '@formatmensagem'
+  EMERALD_BLOCK:
+    '0':
+      vip:
+        funciona: true
+        desativar-drops-no-chao: true
+        drops:
+        - '131:0\1\[N]{&7Chave &lMineração}[N][L]{&bClique com o botão direito na
+          Caixa Mineração.||&b||&7Uma chave robusta distribuída para os mineradores
+          de elite,||&7capaz de abrir caixas básicas e liberar ferramentas e recursos
+          valiosos.||&b||&6Raridade: &9&l&oRARA}[L][G][KEY]{chave☢Mineracaoo}[KEY]\0.20\correio\padrao'
+        cmds: {}
+        XP:
+          min: 4
+          max: 4
+        fortuna:
+          '0':
+            min: 4
+            max: 5
+          '1':
+            min: 5
+            max: 7
+          '2':
+            min: 6
+            max: 8
+          '3':
+            min: 7
+            max: 9
+          '4':
+            min: 8
+            max: 10
+          '5':
+            min: 64
+            max: 128
+        moeda:
+          quantia: 2000.0
+          moeda: gemas
+          fortunefunciona: nao
+          tipo-msg: actionbar
+          mensagem: '&fVocê recebeu &d@quantia Gemas'
+  LAPIS_BLOCK:
+    '0':
+      rank4:
+        funciona: true
+        desativar-drops-no-chao: true
+        drops:
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até
+          o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e*
+          &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.115\padrao\padrao'
+        cmds: {}
+        XP:
+          min: 4
+          max: 4
+        fortuna:
+          '0':
+            min: 4
+            max: 5
+          '1':
+            min: 5
+            max: 7
+          '2':
+            min: 6
+            max: 8
+          '3':
+            min: 7
+            max: 9
+          '4':
+            min: 8
+            max: 10
+          '5':
+            min: 64
+            max: 128
+        moeda:
+          money:
+            quantia: 20.0
+            chance: 100.0
+            fortunefunciona: false
+          gemas:
+            quantia: 2.0
+            chance: 100.0
+            funcionafortuna: false
+        moeda-tipo-msg: actionbar
+        moeda-mensagem: '@formatmensagem'
+  PRISMARINE:
+    '0':
+      rank5:
+        funciona: true
+        desativar-drops-no-chao: true
+        drops:
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até
+          o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e*
+          &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.12\padrao\padrao'
+        cmds: {}
+        XP:
+          min: 4
+          max: 4
+        fortuna:
+          '0':
+            min: 4
+            max: 5
+          '1':
+            min: 5
+            max: 7
+          '2':
+            min: 6
+            max: 8
+          '3':
+            min: 7
+            max: 9
+          '4':
+            min: 8
+            max: 10
+          '5':
+            min: 64
+            max: 128
+        moeda:
+          money:
+            quantia: 50.0
+            chance: 100.0
+            fortunefunciona: false
+          gemas:
+            quantia: 2.5
+            chance: 100.0
+            funcionafortuna: false
+        moeda-tipo-msg: actionbar
+        moeda-mensagem: '@formatmensagem'
+  GOLD_BLOCK:
+    '0':
+      rank6:
+        funciona: true
+        desativar-drops-no-chao: true
+        drops:
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até
+          o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e*
+          &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.125\padrao\padrao'
+        cmds: {}
+        XP:
+          min: 4
+          max: 4
+        fortuna:
+          '0':
+            min: 4
+            max: 5
+          '1':
+            min: 5
+            max: 7
+          '2':
+            min: 6
+            max: 8
+          '3':
+            min: 7
+            max: 9
+          '4':
+            min: 8
+            max: 10
+          '5':
+            min: 64
+            max: 128
+        moeda:
+          money:
+            quantia: 120.0
+            chance: 100.0
+            fortunefunciona: false
+          gemas:
+            quantia: 3.0
+            chance: 100.0
+            funcionafortuna: false
+        moeda-tipo-msg: actionbar
+        moeda-mensagem: '@formatmensagem'
+  IRON_BLOCK:
+    '0':
+      rank7:
+        funciona: true
+        desativar-drops-no-chao: true
+        drops:
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até
+          o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e*
+          &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.13\padrao\padrao'
+        cmds: {}
+        XP:
+          min: 4
+          max: 4
+        fortuna:
+          '0':
+            min: 4
+            max: 5
+          '1':
+            min: 5
+            max: 7
+          '2':
+            min: 6
+            max: 8
+          '3':
+            min: 7
+            max: 9
+          '4':
+            min: 8
+            max: 10
+          '5':
+            min: 64
+            max: 128
+        moeda:
+          money:
+            quantia: 280.0
+            chance: 100.0
+            fortunefunciona: false
+          gemas:
+            quantia: 4.0
+            chance: 100.0
+            funcionafortuna: false
+        moeda-tipo-msg: actionbar
+        moeda-mensagem: '@formatmensagem'
+  QUARTZ_BLOCK:
+    '0':
+      rank8:
+        funciona: true
+        desativar-drops-no-chao: true
+        drops:
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até
+          o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e*
+          &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.135\padrao\padrao'
+        cmds: {}
+        XP:
+          min: 4
+          max: 4
+        fortuna:
+          '0':
+            min: 4
+            max: 5
+          '1':
+            min: 5
+            max: 7
+          '2':
+            min: 6
+            max: 8
+          '3':
+            min: 7
+            max: 9
+          '4':
+            min: 8
+            max: 10
+          '5':
+            min: 64
+            max: 128
+        moeda:
+          money:
+            quantia: 650.0
+            chance: 100.0
+            fortunefunciona: false
+          gemas:
+            quantia: 5.0
+            chance: 100.0
+            funcionafortuna: false
+        moeda-tipo-msg: actionbar
+        moeda-mensagem: '@formatmensagem'
+  COAL_BLOCK:
+    '0':
+      rank9:
+        funciona: true
+        desativar-drops-no-chao: true
+        drops:
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até
+          o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e*
+          &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.14\padrao\padrao'
+        cmds: {}
+        XP:
+          min: 4
+          max: 4
+        fortuna:
+          '0':
+            min: 4
+            max: 5
+          '1':
+            min: 5
+            max: 7
+          '2':
+            min: 6
+            max: 8
+          '3':
+            min: 7
+            max: 9
+          '4':
+            min: 8
+            max: 10
+          '5':
+            min: 64
+            max: 128
+        moeda:
+          money:
+            quantia: 1500.0
+            chance: 100.0
+            fortunefunciona: false
+          gemas:
+            quantia: 6.5
+            chance: 100.0
+            funcionafortuna: false
+        moeda-tipo-msg: actionbar
+        moeda-mensagem: '@formatmensagem'
+      rank10:
+        funciona: false
+        desativar-drops-no-chao: true
+        drops:
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até
+          o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e*
+          &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.15\padrao\padrao'
+        cmds: {}
+        XP:
+          min: 4
+          max: 4
+        fortuna:
+          '0':
+            min: 4
+            max: 5
+          '1':
+            min: 5
+            max: 7
+          '2':
+            min: 6
+            max: 8
+          '3':
+            min: 7
+            max: 9
+          '4':
+            min: 8
+            max: 10
+          '5':
+            min: 64
+            max: 128
+  REDSTONE_BLOCK:
+    '0':
+      rank10:
+        funciona: true
+        desativar-drops-no-chao: true
+        drops: {}
+        cmds: {}
+        XP:
+          min: 4
+          max: 4
+        fortuna:
+          '0':
+            min: 4
+            max: 5
+          '1':
+            min: 5
+            max: 7
+          '2':
+            min: 6
+            max: 8
+          '3':
+            min: 7
+            max: 9
+          '4':
+            min: 8
+            max: 10
+          '5':
+            min: 64
+            max: 128
+        moeda:
+          money:
+            quantia: 3500.0
+            chance: 100.0
+            fortunefunciona: false
+          gemas:
+            quantia: 8.0
+            chance: 100.0
+            funcionafortuna: false
+        moeda-tipo-msg: actionbar
+        moeda-mensagem: '@formatmensagem'

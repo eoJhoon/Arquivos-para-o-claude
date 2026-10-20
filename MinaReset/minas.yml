@@ -1,0 +1,352 @@
+mina:
+  rank1:
+    reset: 1200
+    totalblocos: 751060
+    pos1:
+      world: world
+      x: 2060.0
+      y: 110.0
+      z: -480.0
+      yaw: 0.0
+      pitch: 0.0
+    pos2:
+      world: world
+      x: 1967.0
+      y: 26.0
+      z: -573.0
+      yaw: 0.0
+      pitch: 0.0
+    minerios:
+    - STAINED_CLAY:9\100
+    holograma:
+      world: world
+      x: 2015.0128984464104
+      y: 114.5096044102626
+      z: -478.93912090566147
+      yaw: 359.755
+      pitch: 23.370285
+    porcentagem: 40
+  rank2:
+    reset: 1200
+    minerios:
+    - STAINED_CLAY:13\100
+    totalblocos: 751060
+    pos1:
+      world: world
+      x: 2265.0
+      y: 110.0
+      z: -721.0
+      yaw: 0.0
+      pitch: 0.0
+    pos2:
+      world: world
+      x: 2358.0
+      y: 26.0
+      z: -628.0
+      yaw: 0.0
+      pitch: 0.0
+    holograma:
+      world: world
+      x: 2312.105537197321
+      y: 114.22663817974191
+      z: -719.8847313713778
+      yaw: 182.61835
+      pitch: 76.29415
+    porcentagem: 40
+  rank3:
+    reset: 1200
+    totalblocos: 751060
+    pos1:
+      world: world
+      x: 2114.0
+      y: 110.0
+      z: -721.0
+      yaw: 0.0
+      pitch: 0.0
+    pos2:
+      world: world
+      x: 2207.0
+      y: 26.0
+      z: -628.0
+      yaw: 0.0
+      pitch: 0.0
+    minerios:
+    - COBBLESTONE\100
+    holograma:
+      world: world
+      x: 2115.288107853433
+      y: 114.64407148749777
+      z: -674.0901191969226
+      yaw: 88.93164
+      pitch: 33.395535
+    porcentagem: 40
+  rank4:
+    reset: 1200
+    minerios:
+    - LAPIS_BLOCK\100
+    porcentagem: 40
+    holograma:
+      world: world
+      x: 1968.1517970208797
+      y: 115.37030746420936
+      z: -673.7934857699289
+      yaw: 89.32495
+      pitch: 49.255455
+    totalblocos: 751060
+    pos1:
+      world: world
+      x: 1967.0
+      y: 110.0
+      z: -721.0
+      yaw: 0.0
+      pitch: 0.0
+    pos2:
+      world: world
+      x: 2060.0
+      y: 26.0
+      z: -628.0
+      yaw: 0.0
+      pitch: 0.0
+  rank5:
+    reset: 1200
+    totalblocos: 751060
+    pos1:
+      world: world
+      x: 1818.0
+      y: 110.0
+      z: -628.0
+      yaw: 0.0
+      pitch: 0.0
+    pos2:
+      world: world
+      x: 1911.0
+      y: 26.0
+      z: -721.0
+      yaw: 0.0
+      pitch: 0.0
+    holograma:
+      world: world
+      x: 1865.985841698118
+      y: 115.69957799983538
+      z: -627.8063807335607
+      yaw: 2.0964355
+      pitch: 41.538513
+    porcentagem: 40
+    minerios:
+    - PRISMARINE\100
+  rank6:
+    reset: 1200
+    holograma:
+      world: world
+      x: 2162.079158693169
+      y: 115.6056920039903
+      z: -481.0405403019463
+      yaw: 0.8532715
+      pitch: 31.996145
+    porcentagem: 40
+    totalblocos: 751060
+    pos1:
+      world: world
+      x: 2207.0
+      y: 110.0
+      z: -480.0
+      yaw: 0.0
+      pitch: 0.0
+    pos2:
+      world: world
+      x: 2114.0
+      y: 26.0
+      z: -573.0
+      yaw: 0.0
+      pitch: 0.0
+    minerios:
+    - GOLD_BLOCK\100
+  rank7:
+    reset: 1200
+    porcentagem: 40
+    minerios:
+    - IRON_BLOCK\100
+    totalblocos: 751060
+    pos1:
+      world: world
+      x: 2413.0
+      y: 110.0
+      z: -574.0
+      yaw: 0.0
+      pitch: 0.0
+    pos2:
+      world: world
+      x: 2506.0
+      y: 26.0
+      z: -481.0
+      yaw: 0.0
+      pitch: 0.0
+    holograma:
+      world: world
+      x: 2414.3746143585226
+      y: 115.32250093720893
+      z: -526.6586469375536
+      yaw: 90.94824
+      pitch: 31.015675
+  rank8:
+    reset: 1200
+    minerios:
+    - QUARTZ_BLOCK\100
+    porcentagem: 40
+    totalblocos: 751060
+    pos1:
+      world: world
+      x: 2265.0
+      y: 110.0
+      z: -481.0
+      yaw: 0.0
+      pitch: 0.0
+    pos2:
+      world: world
+      x: 2358.0
+      y: 26.0
+      z: -574.0
+      yaw: 0.0
+      pitch: 0.0
+    holograma:
+      world: world
+      x: 2265.6048394586765
+      y: 115.55527441085992
+      z: -526.5564779272081
+      yaw: 91.16943
+      pitch: 46.033394
+  rank9:
+    reset: 1200
+    totalblocos: 751060
+    pos1:
+      world: world
+      x: 1912.0
+      y: 110.0
+      z: -480.0
+      yaw: 0.0
+      pitch: 0.0
+    pos2:
+      world: world
+      x: 1819.0
+      y: 26.0
+      z: -573.0
+      yaw: 0.0
+      pitch: 0.0
+    minerios:
+    - COAL_BLOCK\100
+    porcentagem: 40
+    holograma:
+      world: world
+      x: 1866.9757037822237
+      y: 115.62088895307632
+      z: -479.59573263459447
+      yaw: 0.12982178
+      pitch: 43.077217
+  rank10:
+    reset: 1200
+    holograma:
+      world: world
+      x: 1764.7613151937423
+      y: 116.59052041787228
+      z: -674.1290483613234
+      yaw: 271.36646
+      pitch: 39.011147
+    porcentagem: 40
+    minerios:
+    - REDSTONE_BLOCK\100
+    totalblocos: 751060
+    pos1:
+      world: world
+      x: 1764.0
+      y: 110.0
+      z: -721.0
+      yaw: 0.0
+      pitch: 0.0
+    pos2:
+      world: world
+      x: 1671.0
+      y: 26.0
+      z: -628.0
+      yaw: 0.0
+      pitch: 0.0
+  vip:
+    reset: 1200
+    minerios:
+    - EMERALD_BLOCK\100
+    porcentagem: 40
+    holograma:
+      world: world
+      x: 1818.2234016041816
+      y: 115.30068719810627
+      z: -380.905365385906
+      yaw: 90.57031
+      pitch: 36.91685
+    totalblocos: 751060
+    pos1:
+      world: world
+      x: 1818.0
+      y: 110.0
+      z: -335.0
+      yaw: 0.0
+      pitch: 0.0
+    pos2:
+      world: world
+      x: 1911.0
+      y: 26.0
+      z: -428.0
+      yaw: 0.0
+      pitch: 0.0
+  mina12:
+    reset: 1200
+    totalblocos: 751060
+    pos1:
+      world: world
+      x: 2060.0
+      y: 110.0
+      z: -331.0
+      yaw: 0.0
+      pitch: 0.0
+    pos2:
+      world: world
+      x: 1967.0
+      y: 26.0
+      z: -424.0
+      yaw: 0.0
+      pitch: 0.0
+    minerios:
+    - STAINED_CLAY:9\100
+    porcentagem: 40
+    holograma:
+      world: world
+      x: 2014.9678508967925
+      y: 116.11321569026903
+      z: -331.64155495882324
+      yaw: 1.4552612
+      pitch: 32.590023
+  minapvp:
+    reset: 1200
+    totalblocos: 743070
+    pos1:
+      world: world
+      x: 1613.0
+      y: 110.0
+      z: -629.0
+      yaw: 0.0
+      pitch: 0.0
+    pos2:
+      world: world
+      x: 1520.0
+      y: 26.0
+      z: -721.0
+      yaw: 0.0
+      pitch: 0.0
+    holograma:
+      world: world
+      x: 1566.9828262057458
+      y: 114.0
+      z: -674.0420393708819
+      yaw: 89.112305
+      pitch: 52.27545
+    porcentagem: 40
+    minerios:
+    - LAPIS_BLOCK\100
