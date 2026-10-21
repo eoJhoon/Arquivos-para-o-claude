@@ -1,0 +1,241 @@
+categorias:
+
+  plantações:
+    item: '293\1\[N]{&aPlantações}[N][L]{||&eClique para abrir}[L]'
+    slot: 21
+    tamanho: 27
+    itens:
+      '1':
+        cacto:
+          id: 81:0\1
+          gerarporsegundo: 0.0222222
+          moedas:
+            money: 1.0
+            sementes: 2.5
+          idautomatizacao: 'CACTUS'
+          slot: 11
+          mercado: true
+          tipo: 'coletarevender'
+          name: '&aCacto'
+          lore:
+            - ''
+            - '&fQuantidade: &a@quant/@capacidade'
+            - ''
+            - '&fPreço unitário: &2$&a@formatvalor'
+            - ''
+            - '&fRendimento/m: &a@rendimentom'
+            - '&fRendimento/h: &a@rendimentoh'
+            - '&fRendimento/d: &a@rendimentod'
+            - ''
+            - '&fCactos plantados: &a@qnt'
+            - ''
+            - '&eClique com esquerdo para vender'
+            - '&eClique com direito para recolher'
+
+        cana:
+          id: 338:0\1
+          gerarporsegundo: 0.003225
+          moedas:
+            money: 1.0
+            sementes: 2.5
+          idautomatizacao: 'SUGAR_CANE_BLOCK'
+          slot: 12
+          mercado: true
+          tipo: 'coletarevender'
+          name: '&aCana'
+          lore:
+            - ''
+            - '&fQuantidade: &a@quant/@capacidade'
+            - ''
+            - '&fPreço unitário: &2☘&a@formatvalor'
+            - ''
+            - '&eClique com esquerdo para vender'
+            - '&eClique com direito para recolher'
+
+        melancia:
+          id: 103:0\1
+          gerarporsegundo: 0.003225
+          moedas:
+            money: 1.0
+            sementes: 2.5
+          idautomatizacao: 'MELON_STEM'
+          slot: 13
+          mercado: true
+          tipo: 'coletarevender'
+          name: '&aMelancia'
+          lore:
+            - ''
+            - '&fQuantidade: &a@quant/@capacidade'
+            - ''
+            - '&fPreço unitário: &2☘&a@formatvalor'
+            - ''
+            - '&eClique com esquerdo para vender'
+            - '&eClique com direito para recolher'
+
+        cenoura:
+          id: 391:0\1
+          idautomatizacao: 391:0\1
+          slot: 14
+          mercado: true
+          tipo: 'coletarevender'
+          coletar-drop: true
+          economia: 'sementes'
+          moedas:
+            money: 1.0
+            sementes: 2.5
+          name: '&aCenoura'
+          lore:
+            - ''
+            - '&fQuantidade: &a@quant/@capacidade'
+            - ''
+            - '&fPreço unitário: &2☘&a@formatvalor'
+            - ''
+            - '&eClique com esquerdo para vender'
+            - '&eClique com direito para recolher'
+
+        fungo:
+          id: 372:0\1
+          idautomatizacao: 372:0\1
+          slot: 15
+          mercado: true
+          tipo: 'coletarevender'
+          coletar-drop: true
+          economia: 'sementes'
+          moedas:
+            money: 1.0
+            sementes: 2.5
+          name: '&aFungo'
+          lore:
+            - ''
+            - '&fQuantidade: &a@quant/@capacidade'
+            - ''
+            - '&fPreço unitário: &2☘&a@formatvalor'
+            - ''
+            - '&eClique com esquerdo para vender'
+            - '&eClique com direito para recolher'
+  spawners:
+    item: '52\1\[N]{&aSpawners}[N][L]{||&eClique para abrir}[L]'
+    slot: 23
+    tamanho: 27
+    itens:
+      '1': 
+        vaca:
+          id: 397:3\[N]{&bCabeça de Vaca}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{8f8ce3915a21168d8394214552cdb5652e855e9e382001d596972fe3c009ea7d}[URL]
+          slot: 11
+          tipo: 'coletarevender'
+          idautomatizacao: '397:3\[N]{&bCabeça de Vaca}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{8f8ce3915a21168d8394214552cdb5652e855e9e382001d596972fe3c009ea7d}[URL]'
+          moedas:
+            money: 1.0
+            almas: 2.5
+          economia: 'almas'
+          name: '&bCabeça de Vaca'
+          lore:
+            - ''
+            - '&fQuantidade: &b✟@quant/@capacidade'
+            - ''
+            - '&fPreço unitário: &b✟&a@formatvalor'
+            - ''
+            - '&fBooster: &a%ghostloja_boostertotal_almas%%'
+            - '&fTempo: &a%ghostloja_boostertempo_almas%'
+            - ''
+            - '&eClique com o botão esquerdo para vender'
+            - '&eClique com o botão direito para vender'
+            - '&c&lDepois de coletar não consegue vender!'
+
+        porco:
+          id: 397:3\[N]{&bCabeça de Porco}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{319b7fcd8ab72e293edbdb1c615d658908d2ed354880eb6964634a4657898c60}[URL]
+          slot: 12
+          mercado: true
+          tipo: 'coletarevender'
+          idautomatizacao: '397:3\[N]{&bCabeça de Porco}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{319b7fcd8ab72e293edbdb1c615d658908d2ed354880eb6964634a4657898c60}[URL]'
+          moedas:
+            money: 1.0
+            almas: 2.5
+          economia: 'almas'
+          name: '&bCabeça de Porco'
+          lore:
+            - ''
+            - '&fQuantidade: &b✟@quant/@capacidade'
+            - ''
+            - '&fPreço unitário: &b✟&a@formatvalor'
+            - ''
+            - '&fBooster: &a%ghostloja_boostertotal_almas%%'
+            - '&fTempo: &a%ghostloja_boostertempo_almas%'
+            - ''
+            - '&eClique com o botão esquerdo para vender'
+            - '&eClique com o botão direito para vender'
+            - '&c&lDepois de coletar não consegue vender!'
+
+        zumbi:
+          id: 397:2\[N]{&bCabeça de Zumbi}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L]
+          slot: 13
+          mercado: true
+          tipo: 'coletarevender'
+          idautomatizacao: '397:2\[N]{&bCabeça de Zumbi}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L]'
+          moedas:
+            money: 1.0
+            almas: 2.5
+          economia: 'almas'
+          name: '&bCabeça de Zumbi'
+          lore:
+            - ''
+            - '&fQuantidade: &b✟@quant/@capacidade'
+            - ''
+            - '&fPreço unitário: &b✟&a@formatvalor'
+            - ''
+            - '&fBooster: &a%ghostloja_boostertotal_almas%%'
+            - '&fTempo: &a%ghostloja_boostertempo_almas%'
+            - ''
+            - '&eClique com o botão esquerdo para vender'
+            - '&eClique com o botão direito para vender'
+            - '&c&lDepois de coletar não consegue vender!'
+
+        esqueleto:
+          id: 397:0\[N]{&bCabeça de Esqueleto}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L]
+          slot: 14
+          mercado: true
+          tipo: 'coletarevender'
+          idautomatizacao: '397:0\[N]{&bCabeça de Esqueleto}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L]'
+          moedas:
+            money: 1.0
+            almas: 2.5
+          economia: 'almas'
+          name: '&bCabeça de Esqueleto'
+          lore:
+            - ''
+            - '&fQuantidade: &b✟@quant/@capacidade'
+            - ''
+            - '&fPreço unitário: &b✟&a@formatvalor'
+            - ''
+            - '&fBooster: &a%ghostloja_boostertotal_almas%%'
+            - '&fTempo: &a%ghostloja_boostertempo_almas%'
+            - ''
+            - '&eClique com o botão esquerdo para vender'
+            - '&eClique com o botão direito para vender'
+            - '&c&lDepois de coletar não consegue vender!'
+        
+        golem:
+          id: 397:3\[N]{&bCabeça de Iron Golem}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{e13f34227283796bc017244cb46557d64bd562fa9dab0e12af5d23ad699cf697}[URL]
+          slot: 15
+          mercado: true
+          tipo: 'coletarevender'
+          idautomatizacao: '397:3\[N]{&bCabeça de Iron Golem}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{e13f34227283796bc017244cb46557d64bd562fa9dab0e12af5d23ad699cf697}[URL]'
+          moedas:
+            money: 1.0
+            almas: 2.5
+          economia: 'almas'
+          name: '&bCabeça de Golem'
+          lore:
+            - ''
+            - '&fQuantidade: &b✟@quant/@capacidade'
+            - ''
+            - '&fPreço unitário: &b✟&a@formatvalor'
+            - ''
+            - '&fBooster: &a%ghostloja_boostertotal_almas%%'
+            - '&fTempo: &a%ghostloja_boostertempo_almas%'
+            - ''
+            - '&eClique com o botão esquerdo para vender'
+            - '&eClique com o botão direito para vender'
+            - '&c&lDepois de coletar não consegue vender!'
+
+        

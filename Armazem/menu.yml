@@ -1,0 +1,27 @@
+menus:
+  confirmacao:
+    nome: 'Menu Booster'
+    tamanho: 27
+    itens:
+      - '397:3\1\[N]{&a&lCONFIRMAR!}[N][L]{||&aClique aqui para ativar o booster||||&c&lALERTA:
+      &fSe você tiver um booster ativo||&fesse booster vai ativar por cima!||}[L][VALUE]{eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzZmNjlmN2I3NTM4YjQxZGMzNDM5ZjM2NThhYmJkNTlmYWNjYTM2NmYxOTBiY2YxZDZkMGEwMjZjOGY5NiJ9fX0}[VALUE]\12\confirmar'
+      - 397:3\1\[N]{&c&lCANCELAR!}[N][L]{||&cToque para cancelar||}[L][VALUE]{eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTdjMWYxZWFkNGQ1MzFjYWE0YTViMGQ2OWVkYmNlMjlhZjc4OWEyNTUwZTVkZGJkMjM3NzViZTA1ZTJkZjJjNCJ9fX0}[VALUE]\14\cancelar
+  armazem:
+    nome: 'Armazém'
+    tamanho: 36
+    itens:
+      - '348\1\[N]{&aAuto Vender}[N][L]{||&fStatus: @ativo||&7Clique aqui para desativar||&7auto vender||&7}[L]\3\autovender'
+      - '397:3\1\[N]{&bAmigos}[N][L]{||&7Clique aqui para adicionar||&7um jogador no seu terrenos||&7}[L]\5\amigos'
+  armazem-categoria:
+    nome: 'Armazém'
+    voltar: '397:3\1\[N]{&cVoltar página}[N][URL]{3625902b389ed6c147574e422da8f8f361c8eb57e7631676a72777e7b1d}[URL]\18'
+    proximo: '397:3\1\[N]{&cPróxima página}[N][URL]{d4be8aeec11849697adc6fd1f189b16642dff19f2955c05deaba68c9dff1be}[URL]\26'
+  amigos:
+    nome: 'Adicionar amigos no armazém'
+    tamanho: 27
+    itens:
+      - '397:3\1\[N]{&eAmizade}[N][URL]{2b9f2d4e87a25db4b5ee2f2f1077d7edbec864d991d1fd2feeb08b7841e}[URL]\4\adicionar'
+    item: '397:3\1\[N]{&e@jogador}[N][L]{||&7Clique aqui para remover||&7esse jogador do seu armazém||&7}[L][CN]{@jogador}[CN]'
+    slots: '10, 11, 12, 13, 14, 15, 16'
+    voltar: '397:3\1\[N]{&cVoltar página}[N][URL]{3625902b389ed6c147574e422da8f8f361c8eb57e7631676a72777e7b1d}[URL]\18'
+    proximo: '397:3\1\[N]{&cPróxima página}[N][URL]{d4be8aeec11849697adc6fd1f189b16642dff19f2955c05deaba68c9dff1be}[URL]\26'

@@ -1,0 +1,262 @@
+#tipos
+#vaca, ghast, neve, porco, galinha,
+#bruxa, wither, witherskeleton, endermite,
+#blaze, aranhac, aranha, giant, creeper,
+#guardian, golem, cavalo, magma, zombie,
+#lobo, villager, lula, silverfish, ovelha
+#coelho, pigzombie, gato, vacacogumelo,
+#morcego, enderman e dragon
+
+#Solução colisão do ghost(bug minecraft 1.8)
+#use essa solução apenas se você for usa spawner de ghast no seu servidor
+bloquear-colisao-terrenos: 'DISABLED'
+
+ativado: '&aAtivado'
+desativado: '&cDesativado'
+
+sem-moeda: 'Sem moeda configurada'
+comandos-lore: '&f@numero - @comando | @chance'
+sem-comando: '&cSem comando'
+
+
+mob-principal-villager: true
+villager-bloquear-troca: true
+
+#COW: 'Vaca'
+#chicken: 'Galinha'
+#WITCH: 'Bruxa'
+#SKELETON-1: 'Esqueleto_wither'
+#CAVE_SPIDER: 'Aranha_da_caverna'
+#SPIDER: 'Aranha'
+#HORSE: 'Cavalo'
+#WOLF: 'Lobo'
+#squid: 'Lula'
+#SHEEP: 'Silverfish'
+#RABBIT: 'Coelho'
+#ocelot: 'Gato'
+#BAT: 'Morcego'
+#ENDERMAN: 'Enderman'
+#ENDER_DRAGON: 'Dragon'
+#SILVERFISH: 'Ovelha'
+#GUARDIAN: 'Guardian'
+#GIANT: 'Giant'
+#WITHER: 'Wither'
+#GHAST: 'Ghast'
+
+animais:
+  PIG: 'Porco'
+  COW: 'Vaca'
+  SHEEP: 'Ovelha'
+  CHICKEN: 'Galinha'
+  VILLAGER: 'Aldeão'
+  BAT: 'Morcego'
+  SQUID: 'Lula'
+  OCELOT: 'Jaquatirica'
+  HORSE: 'Cavalo'
+  HORSE-1: 'Cavalo Esqueleto'
+  HORSE-2: 'Cavalo Zumbi'
+  HORSE-3: 'Mula'
+  HORSE-4: 'Burro'
+  RABBIT: 'Coelho'
+  ENDERMITE: 'Endermite'
+
+  ENDERMAN: 'Enderman'
+
+  SPIDER: 'Aranha'
+  CAVE_SPIDER: 'Aranha da Caverna'
+
+  WITCH: 'Bruxa'
+  WITHER: 'Wither'
+  SILVERFISH: 'Traça'
+  GHAST: 'Fantasma'
+  GUARDIAN: 'Guardião'
+
+  ZOMBIE: 'Zombie'
+  SKELETON: 'Esqueleto'
+  MUSHROOM_COW: 'Vaca cogumelo'
+  PIG_ZOMBIE: 'Pig zombie'
+  MAGMA_CUBE: 'Magma Cube'
+  SLIME: 'Slime'
+  BLAZE: 'Blaze'
+  CREEPER: 'Creeper'
+  IRON_GOLEM: 'Iron golem'
+  SNOWMAN: 'Boneco de neve'
+  SKELETON-1: 'Esqueleto wither'
+  WOLF: 'Lobo'
+
+digite-no-chat-moeda:
+  - ""
+  - "&fDigite no chat a moeda que deseja adicionar."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+  - "&fExemplo:"
+  - ""
+  - "&ffunciona-fortuna = sim ou não"
+  - "&fmoeda = moeda do multimoedas ou vault"
+  - "&ftipo-msg = actionbar ou mensagem ou semmensagem"
+  - "&fmsg = a mensagem que o jogador vai receber"
+  - ""
+  - "&fquantia moeda funciona-fortuna tipo-msg msg"
+  - "&f1000 money sim actionbar Você recebeu @quantia"
+  - ""
+
+removeu-holograma: '&7[&a&l!&7] &fVocê removeu o holograma.'
+setou-holograma: '&7[&a&l!&7] &fVocê setou o holograma.'
+comando-holograma-incorreto: '&8[&4&l⚔&8] Comando incorreto use /spawnersadmin holograma'
+comando-delholograma-incorreto: '&8[&4&l⚔&8] Comando incorreto use /spawnersadmin delholograma'
+comando-setnpc-incorreto: '&8[&4&l⚔&8] Comando incorreto use /spawnersadmin setnpc <1/2/3>'
+comando-delnpc-incorreto: '&8[&4&l⚔&8] Comando incorreto use /spawnersadmin delnpc <1/2/3>'
+nao-tem-npc: '&7[&4&l!&7] &cVocê não tem nenhum npc selecionado.'
+setou-npc: '&7[&a&l!&7] &fVocê setou o npc @id para stack spawners.'
+removeu-npc: '&7[&a&l!&7] &fVocê removeu o npc de stack spawners.'
+nao-setado-npc: '&7[&4&l!&7] &cEsse top não foi setado.'
+comando-loja-spawners: 'warp spawners'
+
+spawner: '52\[N]{&bSpawner de @tipo}[N][L]{
+||&fTipo: &a@tipo
+||&fQuantidade: &a@qnt||&a}[L]'
+
+drop-inv-cheio: 'armazem'
+drop-inv-vazio: 'armazem'
+
+#ATIVAR OU DESATIVAR STACK POR PLAYER
+#Não = INFINITO
+#Sim = Os jogadores podem coloca stack de acordo com quantos eles tem
+stack-por-player: false
+#MAXIMO DE STACK QUE O JOGADOR PODE ATIVAR
+max-stack-spawners: 10000.0
+stack-mobs: 10.0
+limite-mobs: 100000.0
+shiftkill: true
+adicional-holograma:
+  x: 0
+  y: 2
+  z: 0
+
+holograma-spawners:
+  - 'Holograma'
+  - '@dono'
+  - '@spawner'
+  - 'Holograma'
+
+publica: '&7[&4&l!&7] &fVocê Colocou seu spawners para &aPúblico&2! &8(&7Todos podem hitar&8)&7.'
+nao-publica: '&7[&4&l!&7] &fVocê Colocou seu spawners para &cPrivado&4! &8(&7Só você pode hitar&8)&7.'
+sem-permission: '&7[&4&l!&7] &cVocê não tem permissão para colocar esse spawner.'
+dono-da-plot-sem-permission: '&7[&4&l!&7] &cO dono da plot não tem permissão para colocar esse spawner.'
+esse-mob-nao-existe: '&7[&4&l!&7] &cEsse mob não existe.'
+radios-stack: 5.0
+correio-msg: '&7[&4&l!&7] &fItem recebido no &a/correio'
+max-stack: '&7[&4&l!&7] &cVocê atingiu o máximo de stack: &4@stack'
+max-stack-spawner: '&7[&4&l!&7] &cO spawner já está no máximo de stack, que é &4@stack'
+mob-name: '&a@qntx | @health'
+nao-existe: '&7[&4&l!&7] &cEsse spawner não existe'
+recebeu: '&7[&a&l!&7] &fVocê recebeu &a@qntx &fspawner(s) de &a@tipo'
+setado: '&7[&a&l!&7] &fLocal setado com sucesso'
+colocou-spawners: '&7[&4&l!&7] &aVocê colocou &2@qntx spawner(s) de &2@tipo'
+apenas-dono: '&7[&4&l!&7] &cApenas o &4@dono &cpode quebrar'
+quebrar-spawners: '&7[&a&l!&7] &fVocê quebrou o spawner de &a@tipo'
+recarregado: '&7[&a&l!&7] &fPlugin recarregado com sucesso'
+stack-adicionado: '&7[&a&l!&7] &a+@quantidade &fstack(s) de spawners adicionados. Total: &a@qq/@max'
+item-stack: '397:3\[N]{&bStack de Spawners}[N][L]{||&fQuantidade: &a+@qnt}[L][URL]{8dfd15dbf5c3ffac8a48843381492bf0703f41ecf5b6b0336ddfa61754403d67}[URL]'
+comando-correto: '&7[&4&l!&7] &cUse: /spawnersadmin stack <nick> <qnt>'
+comando-correto-editar: '&7[&4&l!&7] &cUse: /spawnersadmin editar <mob>'
+comando-correto-spawners: '&7[&4&l!&7] &cUse: /spawnersadmin spawners <nick> <nome> <quantidade>'
+quantidade-precisa-numero: '&7[&4&l!&7] &cA quantidade precisa ser um número.'
+fora-do-terreno: '&7[&4&l!&7] &cVocê não pode setar o local de spawn fora do terreno!'
+
+precisa-colocar-porcentagem: '&7[&4&l!&7] &cVocê precisa colocar uma 0%25 | ID%CHANCE'
+
+digite-no-chat-o-limite:
+  - ""
+  - "&fDigite no chat o máximo de mobs que vai spawnar."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+
+digite-no-chat-o-tempo:
+  - ""
+  - "&fDigite no chat o tempo que vai spawnar."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+
+digite-no-chat-o-exp:
+  - ""
+  - "&fDigite no chat o EXP que vai dropar do mob."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+
+digite-no-chat-a-porcentagem:
+  - ""
+  - "&fDigite no chat a nova chance do drop."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+
+digite-no-chat-comandos:
+  - ""
+  - "&fDigite no chat o comando que deseja adicionar."
+  - "&fOu digite o número que deseja excluir abaixo."
+  - "&fDigite &c'cancelar' &fpara cancelar a operação."
+  - "&fAltere a chance de um comando EX: &aID%CHANCE &f| &a0%25"
+  - "&fVariáveis: &a@jogador"
+
+comandos-msg: '@numero - @comando | chance: @chance'
+
+ajuda:
+  - ''
+  - '&e&lComandos de Spawners &7- &4&lADMIN'
+  - ''
+  - '&a/spawnersadmin spawners <nick> <nome> <quantidade> &7- pegar um spawner.'
+  - '&a/spawnersadmin stack <nick> <quantidade> &7- pegar o item de stack.'
+  - '&a/spawnersadmin setnpc <1/2/3> &7- setar npc top stack spawners.'
+  - '&a/spawnersadmin delnpc <1/2/3> &7- remove npc top stack spawners.'
+  - '&a/spawnersadmin holograma &7- colocar holograma de top stack spawners.'
+  - '&a/spawnersadmin delholograma &7- remover holograma de top stack spawners.'
+  - '&a/spawnersadmin reload &7- recarregar o plugin.'
+
+digite-no-chat-a-min:
+  - ""
+  - "&fDigite no chat o minimo geral drops da looting."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+  - "&a0-@max &ftodas as lootings que existem"
+  - ""
+  - "&fExemplo:"
+  - ""
+  - "&f5 0-10 10"
+  - ""
+  - "&f5 &7= &adrop minimo"
+  - "&f0-@max &7= &alootings alteradas"
+  - "&f10 &7= &aaumenta &f10% &apor cada um"
+  - ""
+
+
+digite-no-chat-a-max:
+  - ""
+  - "&fDigite no chat o máximo geral drops da looting."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+  - "&a0-@max &ftodas as lootings que existem"
+  - ""
+  - "&fExemplo:"
+  - ""
+  - "&f5 0-10 10"
+  - ""
+  - "&f5 &7= &adrop máximo"
+  - "&f0-@max &7= &lootings alteradas"
+  - "&f10 &7= &aaumenta &f10% &apor cada um"
+  - ""
+
+digite-no-chat-a-looting:
+  - ""
+  - "&fDigite no chat a quantia minima e máxima da looting."
+  - "&fDigite &c'cancelar' &apara cancelar"
+  - ""
+  - "&fExemplo:"
+  - ""
+  - "&f1-5"
+  - ""
+  - "&f1 &7= &aMinimo drop"
+  - "&f5 &7= &aMáximo drop"
+  - ""
+
+precisa-colocar-looting: '&7[&4&l!&7] &fPrecisa colocar o valor da looting.'
+precisa-colocar-um-numero: '&7[&4&l!&7] &fO valor precisa ser um número.'

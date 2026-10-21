@@ -1,0 +1,160 @@
+menus:
+  gui-caixa:
+    nome: 'Abrindo a caixa'
+    tamanho: 27
+    itens:
+       # ID\QUANTIDADE\META\SLOT\KEY
+       - '35:5\1\[N]{&aAbrir}[N][L]{||&fClique para abrir a caixa||&fQnt: &a&nx1||&7}[L]\10\abrir-1'
+       - '35:5\10\[N]{&aAbrir}[N][L]{||&fClique para abrir a caixa||&fQnt: &a&nx10||&7}[L]\12\abrir-10'
+       - '35:5\64\[N]{&aAbrir}[N][L]{||&fClique para abrir a caixa||&fQnt: &a&lTudo||&7}[L]\14\abrir-tudo'
+       - '35:14\1\[N]{&cCancelar}[N][L]{||&fCancelar}[L]\16\cancelar'
+  
+  animacao:
+    nome: 'Abrindo a caixa...'
+    slots: 10, 11, 12, 13, 14, 15, 16
+    tamanho: 27
+  
+    itens:
+      # ID\QUANTIDADE\META\SLOT\KEY
+      - '397:3\1\[N]{&1}[N][URL]{7437346d8bda78d525d19f540a95e4e79daeda795cbc5a13256236312cf}[URL]\4\nada'
+      - '397:3\1\[N]{&1}[N][URL]{3040fe836a6c2fbd2c7a9c8ec6be5174fddf1ac20f55e366156fa5f712e10}[URL]\22\nada'
+  
+  gui-caixa-preview:
+    nome: 'Prévia da Caixa' # Corrigido (Estava invertido com tamanho)
+    slots-vazio: '160:15\1\[N]{&1}[N]'
+    tamanho: 54             # Corrigido (Estava invertido com nome)
+    slots: '10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34'
+    proximo: '397:3\1\[N]{&aPróxima Página}[N][URL]{19bf3292e126a105b54eba713aa1b152d541a1d8938829c56364d178ed22bf}[URL]\8'
+    voltar: '397:3\1\[N]{&cPágina Anterior}[N][URL]{bd69e06e5dadfd84e5f3d1c21063f2553b2fa945ee1d4d7152fdc5425bc12a9}[URL]\0'
+    botao-voltar-pagina-1: false
+    lore:
+      - ''
+      - '&aChance ao abrir: &b@chance%'
+  
+  gui-animacoes:
+    nome: 'Animações'
+    slots-vazio: '160:15\1\[N]{&1}[N]'
+    tamanho: 27
+    itens:
+      # ID\QUANTIDADE\META\SLOT\KEY
+      - '166\1\[N]{&fNenhuma}[N][L]{||&7Clique aqui para remover||&7a animação da caixa||&7}[L]\10\Nenhum'
+      - '145\1\[N]{&aRoleta}[N][L]{||&7Clique aqui para alterar||&7a animação da caixa||&7}[L]\11\Roleta'
+      - '397:3\1\[N]{&cVoltar}[N][URL]{bd69e06e5dadfd84e5f3d1c21063f2553b2fa945ee1d4d7152fdc5425bc12a9}[URL]\18\voltar'
+
+  efeitos:
+    nome: 'Menu de Efeitos'
+    tamanho: 45
+    itens:
+      # ID\QUANTIDADE\META\SLOT\KEY
+    #- '399\1\[N]{&e&lCoroa Celestial}[N][L]{||&7Uma coroa forjada com pura||&7luz divina das estrelas.|| ||&8▶ &fRaridade: &6&lLENDÁRIO|| ||&a&l[!] &aClique para equipar!||&fQnt: &a&nx1||&7}[L]\10\coroa'
+    - '288\1\[N]{&d&lAsas de Borboleta}[N][L]{||&7Asas mágicas e vibrantes que||&7trazem leveza aos seus passos.|| ||&8▶ &fRaridade: &d&lÉPICO|| ||&a&l[!] &aClique para equipar!||&fQnt: &a&nx1||&7}[L]\11\asaborboleta'
+    - '289\1\[N]{&b&lFuracão Místico}[N][L]{||&7Um redemoinho de ventos arcanos||&7que orbita ferozmente ao seu redor.|| ||&8▶ &fRaridade: &9&lRARO|| ||&a&l[!] &aClique para equipar!||&fQnt: &a&nx1||&7}[L]\12\furacao'
+    - '397\1\[N]{&8&lAura de Sombra}[N][L]{||&7Energia sombria e misteriosa||&7emanando diretamente da sua alma.|| ||&8▶ &fRaridade: &5&lMÍTICO|| ||&a&l[!] &aClique para equipar!||&fQnt: &a&nx1||&7}[L]\13\aurasombra'
+    - '276\1\[N]{&c&lEspadas Carmesim}[N][L]{||&7Lâminas espectrais sedentas por||&7batalha, flutuando em suas costas.|| ||&8▶ &fRaridade: &6&lLENDÁRIO|| ||&a&l[!] &aClique para equipar!||&fQnt: &a&nx1||&7}[L]\14\espadascostas'
+    - '348\1\[N]{&6&lAuréola Arcana}[N][L]{||&7Círculos mágicos flutuantes||&7carregados de energia ancestral.|| ||&8▶ &fRaridade: &d&lÉPICO|| ||&a&l[!] &aClique para equipar!||&fQnt: &a&nx1||&7}[L]\15\aureolaarcana'
+    - '377\1\[N]{&4&lChifres Demoníacos}[N][L]{||&7Chifres em chamas que invocam||&7o terror nas linhas inimigas.|| ||&8▶ &fRaridade: &5&lMÍTICO|| ||&a&l[!] &aClique para equipar!||&fQnt: &a&nx1||&7}[L]\16\chifresdemoniacos'
+    - '351\1\[N]{&5&lAsas Arcanas}[N][L]{||&7Majestosas asas tecidas com||&7pura magia dimensional.|| ||&8▶ &fRaridade: &6&lLENDÁRIO|| ||&a&l[!] &aClique para equipar!||&fQnt: &a&nx1||&7}[L]\19\asarcanas'
+    - '347\1\[N]{&3&lGiroscópio Arcano}[N][L]{||&7Anéis mecânicos infundidos com||&7magia, girando em alta precisão.|| ||&8▶ &fRaridade: &9&lRARO|| ||&a&l[!] &aClique para equipar!||&fQnt: &a&nx1||&7}[L]\20\giroscopioarcano'
+    - '381\1\[N]{&5&lImplosão do Vazio}[N][L]{||&7Forças cósmicas incontroláveis||&7sendo sugadas para o centro.|| ||&8▶ &fRaridade: &5&lMÍTICO|| ||&a&l[!] &aClique para equipar!||&fQnt: &a&nx1||&7}[L]\21\implosaovazio'
+    - '388\1\[N]{&2&lPulsar Terrestre}[N][L]{||&7Ondas de choque da própria||&7natureza expandindo a cada pulso.|| ||&8▶ &fRaridade: &a&lINCOMUM|| ||&a&l[!] &aClique para equipar!||&fQnt: &a&nx1||&7}[L]\22\pulsarterrestre'
+    - '378\1\[N]{&6&lTrilha de Fogo}[N][L]{||&7Deixe pegadas de chamas intensas||&7por onde quer que você passe.|| ||&8▶ &fRaridade: &d&lÉPICO|| ||&a&l[!] &aClique para equipar!||&fQnt: &a&nx1||&7}[L]\23\trilhafogo'
+    - '415\1\[N]{&c&lAsas de Dragão}[N][L]{||&7Asas colossais arrancadas de um||&7dragão ancião e temido.|| ||&8▶ &fRaridade: &6&lLENDÁRIO|| ||&a&l[!] &aClique para equipar!||&fQnt: &a&nx1||&7}[L]\24\asadragao'
+    - '370\1\[N]{&f&lTornado Místico}[N][L]{||&7Uma tempestade violenta em forma||&7de tornado ao seu redor.|| ||&8▶ &fRaridade: &9&lRARO|| ||&a&l[!] &aClique para equipar!||&fQnt: &a&nx1||&7}[L]\10\tornadomistico'
+    - '397\1\[N]{&f&lCaveira}[N][L]{||&7Invoque uma presença sombria com||&7uma caveira flutuante que acompanha||&7cada movimento do seu olhar.|| ||&8▶ &fRaridade: &9&lRARO|| ||&a&l[!] &aClique para equipar!||&fQnt: &a&nx1||&7}[L]\25\caveira'
+    - '340\1\[N]{&a&lMenu de Partículas}[N][L]{||&7Retorne ao menu principal para||&7gerenciar seus outros cosméticos.|| ||&a&l[!] &aClique para abrir||&7}[L]\32\particulas'
+  particulas:
+    nome: 'Menu de Particulas'
+    tamanho: 54
+    itens:
+      # ID\QUANTIDADE\META\SLOT\KEY
+      - '401\1\[N]{&e&lFaíscas de Fogo}[N][L]{||&7Partículas brilhantes como||&7fogos de artifício.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\10\FIREWORKS_SPARK'
+      - '373\1\[N]{&b&lBolhas de Água}[N][L]{||&7Pequenas bolhas flutuantes||&7como se estivesse submerso.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\11\WATER_BUBBLE'
+      - '326\1\[N]{&b&lRespingos de Água}[N][L]{||&7Gotas de água respingando||&7refrescantes ao seu redor.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\12\WATER_SPLASH'
+      - '349\1\[N]{&3&lRastro Aquático}[N][L]{||&7Um rastro de água idêntico||&7ao que fica quando você nada.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\13\WATER_WAKE'
+      - '351\1\[N]{&1&lProfundeza}[N][L]{||&7Partículas do fundo do mar||&7trazendo mistério ao ambiente.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\14\SUSPENDED_DEPTH'
+      - '276\1\[N]{&c&lDano Crítico}[N][L]{||&7Mostre sua força com as||&7estrelas de um acerto crítico.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\15\CRIT'
+      - '403\1\[N]{&9&lCrítico Mágico}[N][L]{||&7A aura azul brilhante de||&7um golpe mágico e letal.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\16\CRIT_MAGIC'
+      - '318\1\[N]{&8&lFumaça Suave}[N][L]{||&7Uma leve fumaça escura||&7escapando do seu corpo.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\19\SMOKE_NORMAL'
+      - '259\1\[N]{&7&lFumaça Densa}[N][L]{||&7Grandes nuvens de fumaça||&7escondendo seus passos.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\20\SMOKE_LARGE'
+      - '379\1\[N]{&d&lFeitiço Puro}[N][L]{||&7Pequenos redemoinhos brancos||&7de pura energia mágica.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\21\SPELL'
+      - '348\1\[N]{&e&lFeitiço Luminoso}[N][L]{||&7Magia instantânea que||&7brilha por onde você passa.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\22\SPELL_INSTANT'
+      - '375\1\[N]{&5&lAura Sombria}[N][L]{||&7A energia escura e sinistra||&7que envolve criaturas da noite.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\23\SPELL_MOB'
+      - '376\1\[N]{&8&lAura Fantasma}[N][L]{||&7Uma presença quase invisível||&7que assombra o ambiente.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\24\SPELL_MOB_AMBIENT'
+      - '373\1\[N]{&a&lMagia de Bruxa}[N][L]{||&7O feitiço tóxico e borbulhante||&7direto de um caldeirão.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\25\SPELL_WITCH'
+      - '346\1\[N]{&b&lGotas de Água}[N][L]{||&7Água pingando suavemente||&7como em uma caverna úmida.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\28\DRIP_WATER'
+      - '327\1\[N]{&c&lGotas de Lava}[N][L]{||&7Lava ardente pingando e||&7derretendo o chão ao redor.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\29\DRIP_LAVA'
+      - '385\1\[N]{&c&lFúria}[N][L]{||&7Mostre que você não está||&7para brincadeiras hoje!|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\30\VILLAGER_ANGRY'
+      - '388\1\[N]{&a&lFelicidade}[N][L]{||&7Espalhe alegria e energia||&7verde por onde quer que vá!|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\31\VILLAGER_HAPPY'
+      - '3\1\[N]{&7&lAura Terrestre}[N][L]{||&7Pequenas esporas da terra||&7flutuando pacificamente.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\32\TOWN_AURA'
+      - '84\1\[N]{&aN&bo&ct&da&es &aM&bu&cs&di&ec&aa&bi&cs}[N][L]{||&7Deixe uma trilha sonora||&7invisível ao seu redor.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\33\NOTE'
+      - '49\1\[N]{&5&lEnergia do Nether}[N][L]{||&7As partículas roxas misteriosas||&7de um portal dimensional.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\34\PORTAL'
+      - '116\1\[N]{&d&lLetras Mágicas}[N][L]{||&7Conhecimento antigo voando||&7das páginas para você.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\37\ENCHANTMENT_TABLE'
+      - '377\1\[N]{&6&lChamas Ardentes}[N][L]{||&7Fogo intenso e escaldante||&7apenas para os mais corajosos.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\38\FLAME'
+      - '35\1\[N]{&f&lNuvens}[N][L]{||&7Leve como o vento, deixe||&7um rastro de nuvens brancas.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\39\CLOUD'
+      - '331\1\[N]{&c&lEnergia Redstone}[N][L]{||&7A força mecânica e viva||&7pulsando em cor vermelha.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\40\REDSTONE'
+      - '332\1\[N]{&f&lFlocos de Neve}[N][L]{||&7Pequenos estilhaços de neve||&7congelando o seu caminho.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\41\SNOWBALL'
+      - '256\1\[N]{&f&lNeve Escavada}[N][L]{||&7Uma espessa nuvem de neve||&7recém-tirada do chão.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\42\SNOW_SHOVEL'
+      - '341\1\[N]{&a&lGosma Verde}[N][L]{||&7Partículas pegajosas que||&7quicam junto com você.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\43\SLIME'
+      - '351\1\[N]{&c&lChuva de Corações}[N][L]{||&7Espalhe amor e romance||&7por todo o servidor.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\51\HEART'
+      - '338\1\[N]{&b&lGotículas Suaves}[N][L]{||&7O respingo suave da chuva||&7ao tocar o chão no seu rastro.|| ||&a&l[!] &aClique para selecionar!||&fQnt: &a&nx1||&7}[L]\47\WATER_DROP'
+      - '166\1\[N]{&c&lVoltar}[N][L]{||&7Clique aqui para voltar.||&7}[L]\49\voltar'
+
+  editor-caixa:
+    nome: 'Editar Caixa'
+    tamanho: 36
+    itens:
+      # ID\QUANTIDADE\META\SLOT\KEY
+      - '264\1\[N]{&eEditar item}[N][L]{||&7Clique aqui para alterar||&7os itens da caixa.||&7}[L]\10\editaritem'
+      - '54\1\[N]{&eEditar itens}[N][L]{||&7Clique aqui para alterar||&7as recompensas da caixa.||&7}[L]\11\editaritens'
+      - '280\1\[N]{&eEditar quantidade de drops}[N][L]{||&fQuantidade atual: &a@qnt||||&7Clique aqui para alterar||&7a quantia de drops da caixa||&7}[L]\12\editarquantidade'
+      - '388\1\[N]{&eEditar editar mensagem}[N][L]{||&fMensagem: ||&a@msg||||&7Clique aqui para alterar||&7a mensagem exibida ao abrir a caixa.||&7}[L]\13\editarmensagem'
+      - '58\1\[N]{&eAnimação}[N][L]{||&fAnimação: &a@animacao||||&7Clique aqui para alterar||&7a animação da caixa||&7}[L]\14\editaranimacao'
+      - '25\1\[N]{&eHolograma}[N][L]{&fHolograma atual:||@holograma||&7Clique aqui para adicionar||&7ou remover uma linha do||&7holograma da caixa.||&7}[L]\15\editarholograma'
+      - '47\1\[N]{&eAdicional Holograma}[N][L]{||&fExtra X: &a@X||&fExtra Y: &a@Y||&fExtra Z: &a@Z||||&7Clique aqui para adicionar||&7um valor extra à localização do holograma||&7da caixa.||&7}[L]\16\editarextra'
+      - '76\1\[N]{&eModo virtual}[N][L]{||&fModo virtual: &a@virtual||||&7Clique aqui para colocar||&7a caixa no modo virtual||&7assim poderá abri-la pelo||&7comando &a/caixa &7ou &a/caixa ver&4 (admin)||&7}[L]\19\editarvirtual'
+      - '175\1\[N]{&eLimite de abrir caixa}[N][L]{||&fLimite: &a@limite||||&7Clique aqui para ativar||&7o limite de abertura de caixas||&7de acordo com a quantidade||&7permitida ao jogador.||&7}[L]\20\editarlimite'
+      - '388\1\[N]{&eEscolher o slot}[N][L]{||&7Clique aqui para alterar||&7o slot do item no preview.||&7}[L]\21\editarslot'
+      - '1\1\[N]{&eArmorStand Animation}[N][L]{||&fModo virtual: &a@armorstand||||&7Clique aqui para colocar||&7a caixa no modo virtual||&7assim poderá abri-la pelo||&7comando &a/caixa &7ou &a/caixa ver&4 (admin)||&7}[L]\22\editararmorstand'
+      - '2\1\[N]{&eAdicional Holograma anima}[N][L]{||&fExtra X: &a@AX||&fExtra Y: &a@AY||&fExtra Z: &a@AZ||||&7Clique aqui para adicionar||&7um valor extra à localização do holograma||&7da caixa.||&7}[L]\23\editarextraanimation'
+      - '3\1\[N]{&eAdicional Holograma armor}[N][L]{||&fExtra X: &a@SX||&fExtra Y: &a@SY||&fExtra Z: &a@SZ||||&7Clique aqui para adicionar||&7um valor extra à localização do holograma||&7da caixa.||&7}[L]\24\editarextraarmorstand'
+      - '4\1\[N]{&eParticula e Efeito}[N][L]{||&aEfeito: &f@efeito||&aParticula: &f@particula}[L]\25\editarparticula'
+      - '5\1\[N]{&cRotation}[N][L]{||&aRotation: &f@rotation}[L]\28\editarrotation'
+      - '166\1\[N]{&cExcluir}[N]\29\excluir'
+  
+  itens-recompensas-caixas-gui:
+    nome: 'Editar os itens dos caixas'
+    botao-voltar-pagina-1: true
+    tamanho: 54
+    slots: '10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43'
+    voltar: '397:3\1\[N]{&aPágina anterior}[N][URL]{bd69e06e5dadfd84e5f3d1c21063f2553b2fa945ee1d4d7152fdc5425bc12a9}[URL]\0'
+    proximo: '397:3\1\[N]{&aPróxima Página}[N][URL]{19bf3292e126a105b54eba713aa1b152d541a1d8938829c56364d178ed22bf}[URL]\8'
+    lore:
+      - ''
+      - '&eShift + Clique para alterar a porcentagem'
+      - '&aChance ao abrir: &b@chance%'
+  
+  itens-caixas-gui:
+    nome: 'Editar os itens dos caixas'
+    slots-vazio: '160:15\1\[N]{&1}[N]'
+    tamanho: 27
+    itens:
+      # ID\QUANTIDADE\META\SLOT\KEY
+      - '397:3\1\[N]{&fItem da caixa}[N][L]{||&7Caixa para abrir no inventário.||&7}[L][URL]{7437346d8bda78d525d19f540a95e4e79daeda795cbc5a13256236312cf}[URL]\1\info'
+      - '397:3\1\[N]{&fCaixa no chão}[N][L]{||&7Esse item será a caixa||&7que ficará no chão||&7para ser aberta com a chave||&7}[L][URL]{7437346d8bda78d525d19f540a95e4e79daeda795cbc5a13256236312cf}[URL]\3\info'
+      - '397:3\1\[N]{&fChave}[N][L]{||&7Esse item será||&7a chave para abrir a caixa||&7quando estiver no chão||&7}[L][URL]{7437346d8bda78d525d19f540a95e4e79daeda795cbc5a13256236312cf}[URL]\5\info'
+      - '397:3\1\[N]{&fItem Virtual}[N][L]{||&7Esse item ficará no||&a/caixa &7ou &a/caixa ver (admin)||&7}[L][URL]{7437346d8bda78d525d19f540a95e4e79daeda795cbc5a13256236312cf}[URL]\7\preview'
+      - '35:5\1\[N]{&aConfirmar}[N][URL]{7437346d8bda78d525d19f540a95e4e79daeda795cbc5a13256236312cf}[URL]\26\confirmar'
+    caixa-slot: 10
+    caixa-chao-slot: 12
+    chave-slot: 14
+    preview-slot: 16
+  
+  gui-escolher-slot:
+    nome: 'Escolher o slot do item no preview'
+    #tamanho: 54
+    slots-vazio: '166\1\[N]{&fSlot}[N][L]{||&7Clique para alterar||&7o slot do item no preview.||&7}[L]'
+
+sem-mensagem: Nenhuma
+
+ativado: '&aAtivado'
+desativado: '&cDesativado'

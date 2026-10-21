@@ -1,0 +1,218 @@
+#LUCRO EXTRA POR PERMISSÃO armazem.lucro.(moeda)@10.0
+#EXEMPLO
+#armazem.lucro.money@10.0
+
+moedas:
+  money:
+    simbolo: $
+    tipo: 'multimoedas'
+    puxar: '%ghosteconomia_moeda_money%'
+    remove: money remove @jogador @qnt false
+    adicionar: money add @jogador @qnt false
+    booster: '397:3\[N]{&6Booster de Armazem}[N][L]{&7||&fTipo: &aDinheiro||&fQuantidade: &a@qnt1%||&fTempo: &a@qnt2 hora(s)||||&aClique para ativar}[L][URL]{e467a7b9d76ba6d0fed743602533fc98c87af0c60f80f38da774f7a01a2093fa}[URL]'
+    ativou: '&cVocê ativou booster de armazém de dinheiro'
+    sem-moeda: '&7[&4&l!&7] &cVocê não tem $@qnt para aprimorar o armazém.'
+    booster-adicionar:
+    # - '%placeholder_booster%'
+      - '%ghostloja_boostertotal_money%'
+
+#tempo-crescimento-plantacoes: 5
+
+#permissão armazem.autoreplante.use
+#auto replante precisa da planta no inventário ?
+auto-replante-precisa-de-planta: false
+permissao-para-plantar-e-quebrar: false
+#permissão ficaria de cada plantação
+#crops.use - sementes
+#carrot.use - cenoura
+#potato.use - batata
+#nether_warts.use - fungo do nether
+#cactus.use - cactu
+#melon_steam.use = melancia
+#pumpkin_stem.use = abobora
+#sugar_cane_block.use = cana de açucar
+
+sem-permissao-para-isso: '&7[&4&l!&7] &cVocê não tem permissão para fazer isso.'
+inv-cheio-msg: '&7[&4&l!&7] &cVocê não pode coletar com inventário cheio!'
+dono-da-plot-sem-permission: '&7[&4&l!&7] &cVocê não tem permissão para colocar essa plantação.'
+sem-permissão-quebrar: '&7[&4&l!&7] &cVocê não tem permissão de quebrar essa plantação.'
+sem-permissão-colocar: '&7[&4&l!&7] &cVocê não tem permissão de colocar essa plantação.'
+
+mundos-bloqueados:
+  world: true
+  eventos: true
+  world_plotworld: false
+
+#Qual estagio funciona-auto-replante ?
+qual-estagio-auto-replanta:
+#  CROPS:
+#    - '7'
+#  CARROT:
+#    - '7'
+#  POTATO:
+#    - '7'
+#  COCOA:
+#    - '8'
+#    - '9'
+#    - '10'
+#    - '11'
+#    - '12'
+  NETHER_WARTS:
+    - '3'
+
+#Esse blocos só pode quebrar com shift!!
+qual-estagio-bloqueado-quebrar:
+#  CROPS:
+#    - '0'
+#    - '1'
+#    - '2'
+#    - '3'
+#    - '4'
+#    - '5'
+#    - '6'
+#  CARROT:
+#    - '0'
+#    - '1'
+#    - '2'
+#    - '3'
+#   - '4'
+#    - '5'
+#    - '6'
+#  POTATO:
+#    - '0'
+#    - '1'
+#    - '2'
+#    - '3'
+#    - '4'
+#    - '5'
+#    - '6'
+#  COCOA:
+#    - '0'
+#    - '1'
+#    - '2'
+#    - '3'
+#    - '4'
+#    - '5'
+#    - '6'
+#    - '7'
+  NETHER_WARTS:
+    - '0'
+    - '1'
+    - '2'
+
+crescimento-tempo:
+  SUGAR_CANE_BLOCK:
+    min: 90
+    max: 90
+  MELON_STEM:
+    min: 75
+    max: 100
+  PUMPKIN_STEM:
+    min: 60
+    max: 60
+  CROPS:
+    min: 60
+    max: 60
+  CARROT:
+    min: 60
+    max: 60
+  POTATO:
+    min: 60
+    max: 60
+  NETHER_WARTS:
+    min: 30
+    max: 45
+  COCOA:
+    min: 60
+    max: 60
+
+carregar-manual: false
+sistema-automatico:
+  CACTUS: true
+  SUGAR_CANE_BLOCK: false
+  MELON_STEM: false
+  PUMPKIN_STEM: false
+  
+  MELON_BLOCK: false
+  PUMPKIN: false
+
+  CROPS: false
+  CARROT: false
+  POTATO: false
+  NETHER_WARTS: false
+  COCOA: false
+
+#BLOQUEAR CRESCIMENTO NATURAL
+bloquear-crescimento:
+  CACTUS: true
+  MELON_STEM: false
+  PUMPKIN_STEM: false
+  SUGAR_CANE_BLOCK: false
+  CROPS: false
+  CARROT: false
+  POTATO: false
+  NETHER_WARTS: false
+  COCOA: false
+
+removeu-holograma: '&7[&a&l!&7] &fVocê removeu o holograma.'
+setou-holograma: '&7[&a&l!&7] &fVocê setou o holograma.'
+comando-holograma-incorreto: '&8[&4&l⚔&8] &cComando incorreto use /armazem holograma'
+comando-delholograma-incorreto: '&8[&4&l⚔&8] &cComando incorreto use /armazem delholograma'
+comando-setnpc-incorreto: '&8[&4&l⚔&8] &cComando incorreto use /armazem setnpc <1/2/3>'
+comando-delnpc-incorreto: '&8[&4&l⚔&8] &cComando incorreto use /armazem delnpc <1/2/3>'
+nao-tem-npc: '&7[&4&l!&7] &cVocê não tem nenhum npc selecionado.'
+setou-npc: '&7[&a&l!&7] &fVocê setou o npc @id da skill @tipo.'
+removeu-npc: '&7[&a&l!&7] &fVocê removeu o npc skill @tipo.'
+nao-setado-npc: '&7[&4&l!&7] &cEsse top não foi setado.'
+
+limite-inicial: 1000
+max-limite: '&7[&4&l!&7] &cVocê atingiu o máximo de limite: &4@limite'
+#Limite do jogador = true ou limite por level = false
+limite-player: false
+max-stack-limite: 10000000000000000000
+limite-adicionado: '&7[&a&l!&7] &a+@quantidade &flimite(s) de armazém adicionados. Total: &a@qq/@max'
+jogador-off: '&7[&4&l!&7] &cO jogador que você escolheu está offline.'
+numero-limite: '&7[&4&l!&7] &cO limite precisa ser um número.'
+limite-item: '397:3\1\[N]{&eLimite de Armazém}[N][L]{||&fQuantidade: &a+@qnt}[L][URL]{7fd36422815d810f10a9a12afe5dcd1960a7f714f60d1157360cd7dd746a0d78}[URL]'
+recebeu-armazem: '&7[&a&l!&7] &fVocê recebeu o booster de @tipo.'
+necessario-coletar: 1.0
+plugin-recarregado: '&7[&a&l!&7] &fPlugin recarregado com êxito.'
+ativado: '&aAtivado'
+desativado: '&cDesativado'
+ativou-booster: '&7[&a&l!&7] &fVocê ativou um booster de crescimento &fde &a@qnt1%
+  &fpor &a@qnt2 h'
+recebeu-booster-item: '&7[&a&l!&7] &fVocê recebeu um booster.'
+necessario-coleta: '&f[&4!&f] &fVocê precisa ter no mínimo &a@moeda@quant1 &fpara coletar.'
+total-recebido: '&f[&a!&f] &fTotal recebido: &a@moeda@quant1'
+total-recebido-booster: '&f[&a!&f] &fTotal recebido: &a@moeda@quant1 &a+@booster%'
+contabilizar: '&cContabilizando as plantas do terreno @plantas...'
+nao-esta-adicionado: '&f[&4!&f] &cVocê não tem permissão para acessar este armazém.'
+comando-correto-abrir: '&f[&4!&f] &cComando incorreto. Use: /armazem abrir <nick>'
+comando-correto-add: '&f[&4!&f] &cComando incorreto. Use: /armazem trust <nick>'
+comando-correto-remove: '&f[&4!&f] &cComando incorreto. Use: /armazem untrust <nick>'
+comando-correto-limite: '&f[&4!&f] &cComando incorreto. Use: /armazem limite <jogador> <qnt>'
+adicionado: '&f[&a!&f] &fAdicionado com sucesso.'
+ja-esta-adicionado: '&f[&4!&f] &cEste jogador já foi adicionado ao seu armazém.'
+removido: '&f[&a!&f] &fRemovido com sucesso.'
+ja-esta-removido: '&f[&4!&f] &cEste jogador não está adicionado ao seu armazém.'
+plugin-recarregado: '&7[&a&l!&7] &fPlugin recarregado com êxito.'
+nivel-maximo: '&7[&4&l!&7] &cSeu armazém já está no nível máximo.'
+necessarios-gerados: '&7[&4&l!&7] &cVocê precisa ter @qnt gerado pelo seu armazém.'
+aprimorado: '&7[&a&l!&7] &fSeu armazém foi aprimorado com sucesso.'
+nao-tem-booster: '&7[&4&l!&7] &cEsse booster não existe.'
+
+armazem-vendeu: '&7[&a&l!&7] &fSeu armazém acabou de vender &a@moeda@qnt'
+armazem-vendeu-booster: '&7[&a&l!&7] &fSeu armazém acabou de vender &a@moeda@qnt &a+@booster%'
+
+chat-adicionar:
+  - ''
+  - "&fDigite no chat o nome do jogador que deseja adicionar."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ''
+
+cancelado: '&7[&4&l!&7] &fCancelado com sucesso.'
+
+ajuda:
+  - ''
+  - '&a/armazem reload &7- recarrega os plugins'
+  - ''

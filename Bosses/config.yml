@@ -1,0 +1,391 @@
+drop-inv-cheio: 'correio'
+drop-inv-vazio: 'inv'
+
+comandos-lore: '@numero - @comando'
+sem-comando: 'Sem comandos'
+
+tipos:
+  - ""
+  - "&aDigite o tipo de entidade que será o boss:"
+  - ""
+  - "&aTipos disponíveis:"
+  - ""
+  - "&aZombie, Creeper, Skeleton, WitherSkeleton, Wither, Ghast, Sheep,"
+  - "&aPig, Ocelot, Wolf, Witch, Cow, Snowman, Chicken, Cave_Spider,"
+  - "&aSpider, Horse, Squid, Rabbit, Pig_Zombie, Mushroom_Cow, Bat,"
+  - "&aEnderman, Ender_Dragon, Silverfish, Magma_Cube, Iron_Golem,"
+  - "&aGuardian, Giant e Blaze"
+  - ""
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+holograma-vivo:
+  - '@nomereal'
+  - '&a@quantidade&7\&a@maxquant vivos'
+holograma-morto:
+  - '@nomereal'
+  - '&c@quantidade&7\&a@maxquant vivos'
+  - '&f&m--------------------'
+  - '&cO Boss irá spawnar em'
+  - '&c@tempo'
+  - '&f&m--------------------'
+lore-gui-drops:
+  - ''
+  - '&b@chance% de chance'
+comando-multi-moeda: essencia add @jogador 1
+comando-abrir-top: essencia top
+correio-enviar: '&7[&a&l!&7] &fOs drops foram enviados para o &a/correio'
+status: '&eVida: &f@vida&0/&f@maxvida &0| &eDano: &f@dano'
+critou: '&0| &eCrit: &f+@crit'
+spawnou: '&7[&a&l!&7] &fO &a@boss &ffoi spawnado com sucesso.'
+boss-nao-existe: '&7[&4&l!&7] &cO boss &c@boss &cnão existe.'
+local-nao-existe: '&7[&4&l!&7] &cO local &c@local &cnão existe.'
+recarregado: '&7[&a&l!&7] &fO Plugin foi recarregado com sucesso&f.'
+atualizado-com-sucesso: '&7[&a&l!&7] &fOs bosses foram atualizados com sucesso.'
+cancelado: '&7[&4&l!&7] &cEssa ação foi cancelada com sucesso.'
+dano-recebido: '&7[&4&l!&7] &cDano recebido &4@dano&c.'
+removido-com-sucesso: '&7[&a&l!&7] &fRemovido com sucesso.'
+
+o-valor-precisa-ser-numero: '&7[&4&l!&7] &cO valor precisa ser um número.'
+
+precisa-ser-url-skin: '&7[&4&l!&7] &cA skin precisa ser da https://mineskin.org'
+
+skin-chat:
+  - ""
+  - "&aDigite no chat a skin do mob."
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+
+quantidade-chat:
+  - ""
+  - "&aDigite no chat a quantidade de drops."
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+
+max-distance-chat:
+  - ""
+  - "&aDigite no chat a distância máximo que o boss pode andar."
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+
+vida-chat:
+  - ""
+  - "&aDigite no chat a vida do boss."
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+
+armor-chat:
+  - ""
+  - "&aDigite no chat o armor do boss."
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+
+range-chat:
+  - ""
+  - "&aDigite no chat o range do boss."
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+
+attackrate-chat:
+  - ""
+  - "&aDigite no chat o attack rate do boss."
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+
+reach-chat:
+  - ""
+  - "&aDigite no chat o reach do boss."
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+
+
+nome-chat:
+  - ""
+  - "&aDigite no chat o nome do boss."
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+dano-chat:
+  - ""
+  - "&aDigite no chat o dano do boss."
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+potion-chat:
+  - ""
+  - "&aDigite no chat o efeito da poção."
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+  - "&aExemplo:"
+  - "&aID:TEMPO:NÍVEL"
+  - "&a0:60:1"
+  - ""
+effect-chat:
+  - ""
+  - "&aDigite no chat o efeito do hit em poção."
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+  - "&aExemplo:"
+  - "&aID:TEMPO:NÍVEL"
+  - "&a0:60:1"
+  - ""
+velocidade-chat:
+  - ""
+  - "&aDigite no chat o dano do boss."
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+  - "&fVelocidade padrão: &a0.23"
+  - ""
+escolher-qnt:
+  - ""
+  - "&aDigite no chat a quantia de bosses."
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+
+escolher-max:
+  - ""
+  - "&aDigite no chat a quantia máxima de bosses."
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+
+escolher-respawn:
+  - ""
+  - "&aDigite no chat o tempo de respawn em minuto(s)."
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+
+vivo: '&aTODOS VIVO'
+#morto: '&cRespawn em @tempo @quant vivos'
+mundo-invalido: mundo invalido
+recebeu-mensagem: '&7[&a&l!&7] &fVocê Recebeu uma Matadora.'
+alterado-com-sucesso: '&7[&a&l!&7] &fAlterado com sucesso.'
+digite-no-chat-porcentagem:
+  - ""
+  - "&aDigite no chat a porcentagem do drop."
+  - "&aDigite &c'cancelar' &apara cancelar"
+  - ""
+
+mundos-ovos:
+  - world_plotworld
+mundos:
+  - world_plotworld
+lore-item:
+  - ''
+  - '&fChance: &a@chance'
+  - ''
+  - '&7Segure Shift e clique com o botão direito'
+  - '&7para editar a porcentagem do item'
+ajuda:
+  - ''
+  - '&7➜ &eComandos de Bosses &7- &4ADMIN'
+  - ''
+  - '&a/boss criar <boss> &7- cria um boss'
+  - '&a/boss editar <boss> &7- edita um boss'
+  - '&a/boss criarlocal <local> &7- cria um local de respawn'
+  - '&a/boss editarlocal <local> &7- edita um local de respawn'
+  - '&a/boss spawnar <boss> &7- spawna um boss'
+  - '&a/boss ovo <jogador> <boss> <quantidade> &7- gera um ovo de boss'
+  - '&a/boss matadora <jogador> <id> <dano> <critico> <aumento-critico> <sorte> <bonus> &7- cria uma arma matadora'
+  - '&a/boss armadura <jogador> <id> <defesa> &7- cria uma armadura'
+  - '&a/boss reload &7- recarrega o plugin'
+  - ''
+
+digite-no-chat-a-porcentagem:
+  - ""
+  - "&fDigite no chat a porcentagem desejada do item."
+  - "&fDigite &c'cancelar' &fpara cancelar a operação."
+  - ""
+
+digite-no-chat-comandos:
+  - 'Digite o comando no chat'
+
+comandos-msg: '@numero - @comando'
+
+precisa-colocar-porcentagem: 'Você precisa colocar uma %'
+
+ja-existe: '&7[&a&l!&7] &fBoss já existe! Para editar, digite &a/boss editar @boss'
+criou: '&7[&a&l!&7] &fBoss criado com sucesso! Para editar, digite &a/boss editar @boss'
+local-criado: '&7[&a&l!&7] &fLocal criado com sucesso! Para editar, digite &a/boss editarlocal @local'
+local-ja-existe: '&7[&a&l!&7] &fO Local já existe! Para editar, digite &a/boss editarlocal @local'
+nao-existe-matadora: '&f[&4&l!&7] &cA matadora informada não existe.'
+nao-existe-armadura: '&f[&4&l!&7] &cA armadura informada não existe.'
+matadora:
+  primaria:
+    id: '276'
+    nome: '&bEspada Primária'
+    dano: 30
+    sorte: 0
+    bonus: 0
+    indestrutivel: true
+    glow: true
+    lore:
+      - ''
+      - '&fDano: &a@dano'
+      - '&fSorte: &a@sorte'
+      - '&fBônus: &a@bonus'
+  magica:
+    id: '276'
+    nome: '&5Espada Mágica'
+    dano: 50
+    sorte: 5
+    bonus: 5
+    indestrutivel: true
+    glow: true
+    lore:
+      - ''
+      - '&fDano: &a@dano'
+      - '&fSorte: &a@sorte'
+      - '&fBônus: &a@bonus'
+  dragao:
+    id: '276'
+    nome: '&cEspada do dragão'
+    dano: 75
+    sorte: 10
+    bonus: 10
+    indestrutivel: true
+    glow: true
+    lore:
+      - ''
+      - '&fDano: &a@dano'
+      - '&fSorte: &a@sorte'
+      - '&fBônus: &a@bonus'
+  duelista:
+    id: '276'
+    nome: '&2Espada do duelista'
+    dano: 100
+    sorte: 15
+    bonus: 15
+    indestrutivel: true
+    glow: true
+    lore:
+      - ''
+      - '&fDano: &a@dano'
+      - '&fSorte: &a@sorte'
+      - '&fBônus: &a@bonus'
+  herobrine:
+    id: '276'
+    nome: '&bEspada do Herobrine'
+    dano: 200
+    sorte: 20
+    bonus: 20
+    indestrutivel: true
+    glow: true
+    lore:
+      - ''
+      - '&fDano: &a@dano'
+      - '&fSorte: &a@sorte'
+      - '&fBônus: &a@bonus'
+  reiarthur:
+    id: '276'
+    nome: '&3Espada do Rei Arthur'
+    dano: 250
+    sorte: 25
+    bonus: 25
+    indestrutivel: true
+    glow: true
+    lore:
+      - ''
+      - '&fDano: &a@dano'
+      - '&fSorte: &a@sorte'
+      - '&fBônus: &a@bonus'
+  escuridao:
+    id: '276'
+    nome: '&8Espada da Escuridão'
+    dano: 300
+    sorte: 30
+    bonus: 30
+    indestrutivel: true
+    glow: true
+    lore:
+      - ''
+      - '&fDano: &a@dano'
+      - '&fSorte: &a@sorte'
+      - '&fBônus: &a@bonus'
+  luz:
+    id: '276'
+    nome: '&fEspada da Luz'
+    dano: 350
+    sorte: 35
+    bonus: 35
+    indestrutivel: true
+    glow: true
+    lore:
+      - ''
+      - '&fDano: &a@dano'
+      - '&fSorte: &a@sorte'
+      - '&fBônus: &a@bonus'
+  chucknorris:
+    id: '276'
+    nome: '&6Espada Chuck Norris'
+    dano: 400
+    sorte: 40
+    bonus: 40
+    indestrutivel: true
+    glow: true
+    lore:
+      - ''
+      - '&fDano: &a@dano'
+      - '&fSorte: &a@sorte'
+      - '&fBônus: &a@bonus'
+  universal:
+    id: '276'
+    nome: '&9Espada Universal'
+    dano: 500
+    sorte: 50
+    bonus: 50
+    indestrutivel: true
+    glow: true
+    lore:
+      - ''
+      - '&fDano: &a@dano'
+      - '&fSorte: &a@sorte'
+      - '&fBônus: &a@bonus'
+  poder:
+    id: '276'
+    nome: '&4Espada do poder'
+    dano: 750
+    sorte: 75
+    bonus: 75
+    indestrutivel: true
+    glow: true
+    lore:
+      - ''
+      - '&fDano: &a@dano'
+      - '&fSorte: &a@sorte'
+      - '&fBônus: &a@bonus'
+  lendaria:
+    id: '276'
+    nome: '&6Espada Lendária'
+    dano: 950
+    sorte: 95
+    bonus: 95
+    indestrutivel: true
+    glow: true
+    lore:
+      - ''
+      - '&fDano: &a@dano'
+      - '&fSorte: &a@sorte'
+      - '&fBônus: &a@bonus'
+  mistica:
+    id: '276'
+    nome: '&bEspada Mística'
+    dano: 1100
+    sorte: 110
+    bonus: 110
+    indestrutivel: true
+    glow: true
+    lore:
+      - ''
+      - '&fDano: &a@dano'
+      - '&fSorte: &a@sorte'
+      - '&fBônus: &a@bonus'
+  ghost:
+    id: '276'
+    nome: '&dEspada Ghost'
+    dano: 1200
+    sorte: 120
+    bonus: 120
+    indestrutivel: true
+    glow: true
+    lore:
+      - ''
+      - '&fDano: &a@dano'
+      - '&fSorte: &a@sorte'
+      - '&fBônus: &a@bonus'

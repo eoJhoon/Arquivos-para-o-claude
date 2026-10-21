@@ -1,0 +1,395 @@
+bosses:
+  5vaca:
+    tipo: COW
+    vida: 40000.0
+    nome: §4§lVaca Braba
+    nome-qnt: §b@qntx
+    baby: false
+    capacete: 0\1\0
+    peito: 0\1\0
+    calça: 0\1\0
+    bota: 0\1\0
+    mao: 0\1\0
+    item-ovo: 383:92\[N]{&4&lVaca Braba}[N][L]{&r||&7Invoca este poderoso Boss.||&7Derrote-o e conquiste||&7recompensas especiais!||&7}[L]
+    IA: false
+    dano: 25
+    potion: 'null'
+    effecthit: 'null'
+    stack: false
+    velocidade: 1.8
+    quantidade: 1
+    exp: 750
+    max-distance: 30.0
+    armor: 0.0
+    range: 0.0
+    attackrate: 0.0
+    npc: true
+    drops:
+    - 397:3\1\[N]{&4Vaca Braba}[N][L]{§7||§7Esse item e utilizado para várias||§7coisas como rankup e trocas}[L][URL]{8f8ce3915a21168d8394214552cdb5652e855e9e382001d596972fe3c009ea7d}[URL]\80.0
+    - 122:0\1\[N]{&4Vaca Braba}[N][L]{||&7Utilize ele para spawnar||&7um boss no seu terreno}[L][KEY]{ovoboss☢vaca}[KEY]\5.0
+    - 384:0\64\1\40.0
+    - 421:0\1\[N]{&4&lVaca Braba}[N][L]{||&aClique Para Ativar na sua Coleção &8(&7/tags&8)}[L][G][KEY]{tags☢&4&lVaca Braba}[KEY]\1.0
+    - '397:3\1\[N]{&bStack de Maquinas}[N][L]{||&fQuantidade: &a+2}[L][URL]{582705730f2505700333958fcaf2f18d58aa3780ebc19f4ca37795510e644406}[URL][KEY]{stack-maquinas☢2}[KEY]\50.0'
+    - '397:3\1\[N]{&bStack de Spawners}[N][L]{||&fQuantidade: &a+2}[L][URL]{8dfd15dbf5c3ffac8a48843381492bf0703f41ecf5b6b0336ddfa61754403d67}[URL][KEY]{stack-spawner☢2}[KEY]\50.0'
+    - '397:3\1\[N]{&eLimite de Armazém}[N][L]{||&fQuantidade: &a+2}[L][URL]{7fd36422815d810f10a9a12afe5dcd1960a7f714f60d1157360cd7dd746a0d78}[URL][KEY]{limitearmazem☢2}[KEY]\50.0'
+    - '263:0\1\[N]{&eCombustível}[N][L]{||&fQuantidade: &a15||||&7Usado para abastecer
+      a sua maquina}[L][KEY]{combu☢eyJxdWFudGlkYWRlIjoxNS4wLCJ0aXBvIjoiY29tYnVzdGl2ZWwifQ==}[KEY]\80.0'
+    - '397:3\1\[N]{&cUpdate}[N][L]{||&fQuantidade: &a2||||&7Usado para aprimorar a
+      sua maquina}[L][URL]{f9ff98842cb66405d20a8e6b2effac46010b8f5602ea7326d4d185b9b5dce06}[URL][KEY]{update☢eyJxdWFudGlkYWRlIjoyLjAsInRpcG8iOiJ1cGRhdGUifQ==}[KEY]\35.0'
+    reach: 0.0
+    skills: []
+    cmds: []
+    mensagem-spawnou: []
+    mensagem-matou: []
+    
+    
+  6aldeao:
+    tipo: VILLAGER
+    vida: 2000.0
+    nome: §a§lO Magnata de Esmeraldas
+    nome-qnt: §b@qntx
+    baby: false
+    capacete: 0\1\0
+    peito: 0\1\0
+    calça: 0\1\0
+    bota: 0\1\0
+    mao: 0\1\0
+    item-ovo: 383:120\[N]{&a&lO Magnata de Esmeraldas}[N][L]{&r||&7Invoca este poderoso Boss.||&7Derrote-o e conquiste||&7recompensas especiais!||&7}[L]
+    IA: false
+    dano: 50
+    potion: SPEED:60:0
+    stack: true
+    velocidade: 0.7
+    quantidade: 1
+    exp: 1000
+    max-distance: 50.0
+    armor: 0.0
+    range: 0.0
+    attackrate: 0.0
+    npc: true
+    drops:
+    - 397:3\1\[N]{&aO Magnata de Esmeraldas}[N][L]{§7||§7Esse item e utilizado para várias||§7coisas como rankup e trocas}[L][URL]{450d75dcd2a7e990903966c8535004d41eaae52d5398ccb00534f7b5e7f20780}[URL]\80.0
+    - 122:0\1\[N]{&aO Magnata de Esmeraldas}[N][L]{||&7Utilize ele para spawnar||&7um boss no seu terreno}[L][KEY]{ovoboss☢villager}[KEY]\5.0
+    - 384:0\64\1\40.0
+    - 421:0\1\[N]{&a&lO Magnata de Esmeraldas}[N][L]{||&aClique Para Ativar na sua Coleção &8(&7/tags&8)}[L][G][KEY]{tags☢&a&lO Magnata de Esmeraldas}[KEY]\1.0
+    - '397:3\1\[N]{&bStack de Maquinas}[N][L]{||&fQuantidade: &a+3}[L][URL]{582705730f2505700333958fcaf2f18d58aa3780ebc19f4ca37795510e644406}[URL][KEY]{stack-maquinas☢3}[KEY]\50.0'
+    - '397:3\1\[N]{&bStack de Spawners}[N][L]{||&fQuantidade: &a+3}[L][URL]{8dfd15dbf5c3ffac8a48843381492bf0703f41ecf5b6b0336ddfa61754403d67}[URL][KEY]{stack-spawner☢3}[KEY]\50.0'
+    - '397:3\1\[N]{&eLimite de Armazém}[N][L]{||&fQuantidade: &a+3}[L][URL]{7fd36422815d810f10a9a12afe5dcd1960a7f714f60d1157360cd7dd746a0d78}[URL][KEY]{limitearmazem☢3}[KEY]\50.0'
+    - '263:0\1\[N]{&eCombustível}[N][L]{||&fQuantidade: &a20||||&7Usado para abastecer
+      a sua maquina}[L][KEY]{combu☢eyJxdWFudGlkYWRlIjoyMC4wLCJ0aXBvIjoiY29tYnVzdGl2ZWwifQ==}[KEY]\80.0'
+    - '397:3\1\[N]{&cUpdate}[N][L]{||&fQuantidade: &a3||||&7Usado para aprimorar a
+      sua maquina}[L][URL]{f9ff98842cb66405d20a8e6b2effac46010b8f5602ea7326d4d185b9b5dce06}[URL][KEY]{update☢eyJxdWFudGlkYWRlIjozLjAsInRpcG8iOiJ1cGRhdGUifQ==}[KEY]\35.0'
+    reach: 0.0
+    skills: []
+    cmds: []
+    mensagem-spawnou: []
+    mensagem-matou: []
+    effecthit: 100.0\1:60:0,5:60:0
+    
+    
+  7esqueleto:
+    tipo: SKELETON
+    vida: 60000.0
+    nome: §7§lArqueiro Mistico
+    nome-qnt: §b@qntx
+    baby: false
+    capacete: 41:0\1
+    peito: 307:0\1
+    calça: 308:0\1
+    bota: 309:0\1
+    mao: 258:0\1\[E]{16:1,19:2}[E]
+    item-ovo: 383:51\[N]{&7&lArqueiro Mistico}[N][L]{&r||&7Invoca este poderoso Boss.||&7Derrote-o e conquiste||&7recompensas especiais!||&7}[L]
+    IA: false
+    dano: 55
+    potion: 'null'
+    stack: false
+    velocidade: 1.5
+    max-distance: 50.0
+    armor: 0.0
+    range: 0.0
+    attackrate: 0.0
+    npc: true
+    quantidade: 5
+    exp: 1500
+    effecthit: 100\15:200:0,2:200:0
+    skills: []
+    drops:
+    - 397\1\[N]{&7Arqueiro Mistico}[N][L]{§7||§7Esse item e utilizado para várias||§7coisas como rankup e trocas}[L]\80.0
+    - 122:0\1\[N]{&7Arqueiro Mistico}[N][L]{||&7Utilize ele para spawnar||&7um boss no seu terreno}[L][KEY]{ovoboss☢arqueiromistico}[KEY]\5.0
+    - 384:0\64\1\40.0
+    - 421:0\1\[N]{&7Arqueiro Mistico}[N][L]{||&aClique Para Ativar na sua Coleção &8(&7/tags&8)}[L][G][KEY]{tags☢&7Arqueiro Mistico}[KEY]\1.0
+    - '397:3\1\[N]{&bStack de Maquinas}[N][L]{||&fQuantidade: &a+5}[L][URL]{582705730f2505700333958fcaf2f18d58aa3780ebc19f4ca37795510e644406}[URL][KEY]{stack-maquinas☢5}[KEY]\50.0'
+    - '397:3\1\[N]{&bStack de Spawners}[N][L]{||&fQuantidade: &a+5}[L][URL]{8dfd15dbf5c3ffac8a48843381492bf0703f41ecf5b6b0336ddfa61754403d67}[URL][KEY]{stack-spawner☢5}[KEY]\50.0'
+    - '397:3\1\[N]{&eLimite de Armazém}[N][L]{||&fQuantidade: &a+5}[L][URL]{7fd36422815d810f10a9a12afe5dcd1960a7f714f60d1157360cd7dd746a0d78}[URL][KEY]{limitearmazem☢5}[KEY]\50.0'
+    - '263:0\1\[N]{&eCombustível}[N][L]{||&fQuantidade: &a30||||&7Usado para abastecer
+      a sua maquina}[L][KEY]{combu☢eyJxdWFudGlkYWRlIjozMC4wLCJ0aXBvIjoiY29tYnVzdGl2ZWwifQ==}[KEY]\80.0'
+    - '397:3\1\[N]{&cUpdate}[N][L]{||&fQuantidade: &a5||||&7Usado para aprimorar a
+      sua maquina}[L][URL]{f9ff98842cb66405d20a8e6b2effac46010b8f5602ea7326d4d185b9b5dce06}[URL][KEY]{update☢eyJxdWFudGlkYWRlIjo1LjAsInRpcG8iOiJ1cGRhdGUifQ==}[KEY]\35.0'
+    reach: 0.0
+    cmds: []
+    mensagem-spawnou: []
+    mensagem-matou: []
+    
+    
+  8aranha:
+    tipo: SPIDER
+    vida: 75000.0
+    nome: §cAracton
+    nome-qnt: §b@qntx
+    baby: false
+    capacete: 0\1
+    peito: 0\1
+    calça: 0\1
+    bota: 0\1
+    mao: 0\1
+    item-ovo: 383:52\[N]{&c&lAracton}[N][L]{&r||&7Invoca este poderoso Boss.||&7Derrote-o e conquiste||&7recompensas especiais!||&7}[L]
+    IA: false
+    dano: 65
+    max-distance: 50.0
+    armor: 0.0
+    range: 0.0
+    attackrate: 0.0
+    npc: true
+    potion: 'null'
+    stack: false
+    velocidade: 1.5
+    quantidade: 6
+    exp: 1750
+    effecthit: 100\19:200:2,2:200:0
+    skills: []
+    drops:
+    - 397:3\1\[N]{&cAracton}[N][L]{§7||§7Esse item e utilizado para várias||§7coisas como rankup e trocas}[L][URL]{eec5574603f3048f21ad5a3c94d97115706011fe6ba67781091b8a9ac10af54f}[URL]\80.0
+    - 122:0\1\[N]{&cAracton}[N][L]{||&7Utilize ele para spawnar||&7um boss no seu terreno}[L][KEY]{ovoboss☢aracton}[KEY]\5.0
+    - 384:0\64\1\40.0
+    - 421:0\1\[N]{&cAracton}[N][L]{||&aClique Para Ativar na sua Coleção &8(&7/tags&8)}[L][G][KEY]{tags☢&cAracton}[KEY]\1.0
+    - '397:3\1\[N]{&bStack de Maquinas}[N][L]{||&fQuantidade: &a+6}[L][URL]{582705730f2505700333958fcaf2f18d58aa3780ebc19f4ca37795510e644406}[URL][KEY]{stack-maquinas☢6}[KEY]\50.0'
+    - '397:3\1\[N]{&bStack de Spawners}[N][L]{||&fQuantidade: &a+6}[L][URL]{8dfd15dbf5c3ffac8a48843381492bf0703f41ecf5b6b0336ddfa61754403d67}[URL][KEY]{stack-spawner☢6}[KEY]\50.0'
+    - '397:3\1\[N]{&eLimite de Armazém}[N][L]{||&fQuantidade: &a+6}[L][URL]{7fd36422815d810f10a9a12afe5dcd1960a7f714f60d1157360cd7dd746a0d78}[URL][KEY]{limitearmazem☢6}[KEY]\50.0'
+    - '263:0\1\[N]{&eCombustível}[N][L]{||&fQuantidade: &a35||||&7Usado para abastecer
+      a sua maquina}[L][KEY]{combu☢eyJxdWFudGlkYWRlIjozNS4wLCJ0aXBvIjoiY29tYnVzdGl2ZWwifQ==}[KEY]\80.0'
+    - '397:3\1\[N]{&cUpdate}[N][L]{||&fQuantidade: &a6||||&7Usado para aprimorar a
+      sua maquina}[L][URL]{f9ff98842cb66405d20a8e6b2effac46010b8f5602ea7326d4d185b9b5dce06}[URL][KEY]{update☢eyJxdWFudGlkYWRlIjo2LjAsInRpcG8iOiJ1cGRhdGUifQ==}[KEY]\35.0'
+    reach: 0.0
+    cmds: []
+    mensagem-spawnou: []
+    mensagem-matou: []
+    
+    
+  9whiteresqueleto:
+    tipo: SKELETON-1
+    vida: 90000.0
+    nome: §4§lDevorador de Almas
+    nome-qnt: §b@qntx
+    baby: false
+    capacete: 397:3\[URL]{2f955fa01692f3d9e80adea6913e0e327795e28ccfb8b0a46a0af5197d450f12}[URL]
+    peito: 311\1
+    calça: 312\1
+    bota: 313\1
+    mao: 293\1\[E]{16:2}[E]
+    item-ovo: 383:51\[N]{&4&lDevorador de Almas}[N][L]{&r||&7Invoca este poderoso Boss.||&7Derrote-o e conquiste||&7recompensas especiais!||&7}[L]
+    IA: false
+    dano: 85
+    max-distance: 50.0
+    armor: 0.0
+    range: 0.0
+    attackrate: 0.0
+    npc: true
+    potion: 'null'
+    stack: false
+    velocidade: 1.5
+    quantidade: 7
+    exp: 2000
+    effecthit: 100\20:200:4,2:200:0
+    skills: []
+    drops:
+    - 397:3\1\[N]{&4Devorador de Almas}[N][L]{&7||&7Esse item e utilizado para||&7várias coisas como rankup e trocas}[L][URL]{2f955fa01692f3d9e80adea6913e0e327795e28ccfb8b0a46a0af5197d450f12}[URL]\80.0
+    - 122:0\1\[N]{&4Devorador de Almas}[N][L]{||&7Utilize ele para spawnar||&7um boss no seu terreno}[L][KEY]{ovoboss☢devoradoralmas}[KEY]\5.0
+    - 384:0\64\1\40.0
+    - 421:0\1\[N]{&4Devorador de Almas}[N][L]{||&aClique Para Ativar na sua Coleção &8(&7/tags&8)}[L][G][KEY]{tags☢&4Devorador de Almas}[KEY]\1.0
+    - '397:3\1\[N]{&bStack de Maquinas}[N][L]{||&fQuantidade: &a+8}[L][URL]{582705730f2505700333958fcaf2f18d58aa3780ebc19f4ca37795510e644406}[URL][KEY]{stack-maquinas☢8}[KEY]\50.0'
+    - '397:3\1\[N]{&bStack de Spawners}[N][L]{||&fQuantidade: &a+8}[L][URL]{8dfd15dbf5c3ffac8a48843381492bf0703f41ecf5b6b0336ddfa61754403d67}[URL][KEY]{stack-spawner☢8}[KEY]\50.0'
+    - '397:3\1\[N]{&eLimite de Armazém}[N][L]{||&fQuantidade: &a+8}[L][URL]{7fd36422815d810f10a9a12afe5dcd1960a7f714f60d1157360cd7dd746a0d78}[URL][KEY]{limitearmazem☢8}[KEY]\50.0'
+    - '263:0\1\[N]{&eCombustível}[N][L]{||&fQuantidade: &a45||||&7Usado para abastecer
+      a sua maquina}[L][KEY]{combu☢eyJxdWFudGlkYWRlIjo0NS4wLCJ0aXBvIjoiY29tYnVzdGl2ZWwifQ==}[KEY]\80.0'
+    - '397:3\1\[N]{&cUpdate}[N][L]{||&fQuantidade: &a8||||&7Usado para aprimorar a
+      sua maquina}[L][URL]{f9ff98842cb66405d20a8e6b2effac46010b8f5602ea7326d4d185b9b5dce06}[URL][KEY]{update☢eyJxdWFudGlkYWRlIjo4LjAsInRpcG8iOiJ1cGRhdGUifQ==}[KEY]\35.0'
+    reach: 0.0
+    cmds: []
+    mensagem-spawnou: []
+    mensagem-matou: []
+    
+    
+  10golem:
+    tipo: IRON_GOLEM
+    vida: 100000.0
+    nome: §f§lColosso de Ferro
+    nome-qnt: §b@qntx
+    baby: false
+    capacete: 0\1\0
+    peito: 0\1\0
+    calça: 0\1\0
+    bota: 0\1\0
+    mao: 0\1\0
+    item-ovo: 383:56\[N]{&f&lColosso de Ferro}[N][L]{&r||&7Invoca este poderoso Boss.||&7Derrote-o e conquiste||&7recompensas especiais!||&7}[L]
+    IA: false
+    dano: 95
+    potion: 'null'
+    effecthit: 'null'
+    stack: false
+    velocidade: 1.5
+    quantidade: 1
+    exp: 3000
+    max-distance: 30.0
+    armor: 0.0
+    range: 0.0
+    attackrate: 0.0
+    npc: true
+    drops:
+    - 397:3\1\[N]{&fColosso de Ferro}[N][L]{§7||§7Esse item e utilizado para várias||§7coisas como rankup e trocas}[L][URL]{b69d0d4711153a089c5567a749b27879c769d3bdcea6fda9d6f66e93dd8c4512}[URL]\80.0
+    - 122:0\1\[N]{&fColosso de Ferro}[N][L]{||&7Utilize ele para spawnar||&7um boss no seu terreno}[L][KEY]{ovoboss☢golem}[KEY]\5.0
+    - 384:0\64\1\40.0
+    - 421:0\1\[N]{&f&lColosso de Ferro}[N][L]{||&aClique Para Ativar na sua Coleção &8(&7/tags&8)}[L][G][KEY]{tags☢&f&lColosso de Ferro}[KEY]\1.0
+    - '397:3\1\[N]{&bStack de Maquinas}[N][L]{||&fQuantidade: &a+9}[L][URL]{582705730f2505700333958fcaf2f18d58aa3780ebc19f4ca37795510e644406}[URL][KEY]{stack-maquinas☢9}[KEY]\50.0'
+    - '397:3\1\[N]{&bStack de Spawners}[N][L]{||&fQuantidade: &a+9}[L][URL]{8dfd15dbf5c3ffac8a48843381492bf0703f41ecf5b6b0336ddfa61754403d67}[URL][KEY]{stack-spawner☢9}[KEY]\50.0'
+    - '397:3\1\[N]{&eLimite de Armazém}[N][L]{||&fQuantidade: &a+9}[L][URL]{7fd36422815d810f10a9a12afe5dcd1960a7f714f60d1157360cd7dd746a0d78}[URL][KEY]{limitearmazem☢9}[KEY]\50.0'
+    - '263:0\1\[N]{&eCombustível}[N][L]{||&fQuantidade: &a50||||&7Usado para abastecer
+      a sua maquina}[L][KEY]{combu☢eyJxdWFudGlkYWRlIjo1MC4wLCJ0aXBvIjoiY29tYnVzdGl2ZWwifQ==}[KEY]\80.0'
+    - '397:3\1\[N]{&cUpdate}[N][L]{||&fQuantidade: &a9||||&7Usado para aprimorar a
+      sua maquina}[L][URL]{f9ff98842cb66405d20a8e6b2effac46010b8f5602ea7326d4d185b9b5dce06}[URL][KEY]{update☢eyJxdWFudGlkYWRlIjo5LjAsInRpcG8iOiJ1cGRhdGUifQ==}[KEY]\35.0'
+    reach: 0.0
+    skills: []
+    cmds: []
+    mensagem-spawnou: []
+    mensagem-matou: []
+    
+    
+  1cavalo:
+    tipo: HORSE
+    vida: 5000.0
+    nome: §4§lCavalo Assassino
+    nome-qnt: §b@qntx
+    baby: false
+    capacete: 0\1
+    peito: 0\1
+    calça: 0\1
+    bota: 0\1
+    mao: 0\1
+    item-ovo: 383:100\[N]{&4&lCavalo Assasino}[N][L]{&r||&7Invoca este poderoso Boss.||&7Derrote-o e conquiste||&7recompensas especiais!||&7}[L]
+    IA: false
+    dano: 4
+    potion: 'null'
+    effecthit: 'null'
+    stack: false
+    velocidade: 1.5
+    quantidade: 1
+    exp: 200
+    max-distance: 10.0
+    armor: 0.0
+    range: 0.0
+    reach: 0.0
+    attackrate: 0.0
+    npc: true
+    drops: []
+    skills: []
+    cmds: []
+    mensagem-spawnou: []
+    mensagem-matou: []
+    
+    
+  2ovelha:
+    tipo: SHEEP
+    vida: 10000.0
+    nome: §f§lOvelha Maluca
+    nome-qnt: §b@qntx
+    baby: false
+    capacete: 0\1
+    peito: 0\1
+    calça: 0\1
+    bota: 0\1
+    mao: 0\1
+    item-ovo: 383:91\[N]{&f&lOvelha Maluca}[N][L]{&r||&7Invoca este poderoso Boss.||&7Derrote-o e conquiste||&7recompensas especiais!||&7}[L]
+    IA: false
+    dano: 6
+    potion: 'null'
+    effecthit: 'null'
+    stack: false
+    velocidade: 1.5
+    quantidade: 1
+    exp: 350
+    max-distance: 10.0
+    armor: 0.0
+    range: 0.0
+    reach: 0.0
+    attackrate: 0.0
+    npc: true
+    drops: []
+    skills: []
+    cmds: []
+    mensagem-spawnou: []
+    mensagem-matou: []
+    
+    
+  3galinha:
+    tipo: CHICKEN
+    vida: 20000.0
+    nome: §b§lRainha das Penosas
+    nome-qnt: §b@qntx
+    baby: false
+    capacete: 0\1
+    peito: 0\1
+    calça: 0\1
+    bota: 0\1
+    mao: 0\1 
+    item-ovo: 383:93\[N]{&b&lRainha das Penosas}[N][L]{&r||&7Invoca este poderoso Boss.||&7Derrote-o e conquiste||&7recompensas especiais!||&7}[L]
+    IA: false
+    dano: 8
+    potion: 'null'
+    effecthit: 'null'
+    stack: false
+    velocidade: 1.5
+    quantidade: 1
+    exp: 500
+    max-distance: 30.0
+    armor: 0.0
+    range: 0.0
+    attackrate: 0.0
+    npc: true
+    drops: []
+    reach: 0.0
+    skills: []
+    cmds: []
+    mensagem-spawnou: []
+    mensagem-matou: []
+    
+    
+  4silverfish:
+    tipo: SILVERFISH
+    vida: 30000.0
+    nome: §b§lRei Traça
+    nome-qnt: §b@qntx
+    baby: false
+    capacete: 0\1
+    peito: 0\1
+    calça: 0\1
+    bota: 0\1
+    mao: 0\1
+    item-ovo: 383:60\[N]{&b&lRei Traça}[N][L]{&r||&7Invoca este poderoso Boss.||&7Derrote-o e conquiste||&7recompensas especiais!||&7}[L]
+    IA: false
+    dano: 10
+    potion: 'null'
+    effecthit: 'null'
+    stack: false
+    velocidade: 1.5
+    quantidade: 1
+    exp: 800
+    max-distance: 10.0
+    armor: 0.0
+    range: 0.0
+    reach: 0.0
+    attackrate: 0.0
+    npc: true
+    drops: []
+    skills: []
+    cmds: []
+    mensagem-spawnou: []
+    mensagem-matou: []
