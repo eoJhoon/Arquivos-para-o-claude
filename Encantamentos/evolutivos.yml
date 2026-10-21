@@ -1,4 +1,3 @@
-
 sem-permissao-para-pegar: '&7[&4&l!&7] &cVocê não tem permissão digitar esse comando.'
 corprogress: '&a'
 corsemprogress: '&7'
@@ -17,14 +16,14 @@ itensevolutivos:
 
     item-nome: '&b&lBota Evolutiva &8[@nivel]'
     item-lore:
-      - '&8&m----------------------------------'
-      - '&f ✦ Nível: &a@nivel'
-      - '&f ✦ Experiência: &a@exp&8/&c@maxexp &8(&a@porcentagem%&8)'
-      - '&f ✦ Progresso: &a@simbolo'
-      - ''
-      - '&e&lCONTROLES:'
-      - '&f ✦ Botão Direito + Shift para abrir o menu.'
-      - '&8&m----------------------------------'
+    - '&8&m----------------------------------'
+    - '&f ✦ Nível: &a@nivel'
+    - '&f ✦ Experiência: &a@exp&8/&c@maxexp &8(&a@porcentagem%&8)'
+    - '&f ✦ Progresso: &a@simbolo'
+    - ''
+    - '&e&lCONTROLES:'
+    - '&f ✦ Botão Direito + Shift para abrir o menu.'
+    - '&8&m----------------------------------'
 
     #blocos quebrados
     blocos: true
@@ -56,12 +55,10 @@ itensevolutivos:
       pode-abrir-apenas-fora-de-combat: true
       necessario-shift-abrir-menu: true
       itens:
-        - '278\[N]{&b&lInformações do Item}[N][L]{||&8&m----------------------------------||&f ✦ Nível Atual: &a@level||&f ✦ Progresso: &a@simbolo||&f ✦ Próximo Nível: &a@nextporcentagem%||&f ✦ Experiência: &a@exp &8/ &c@maxexp|| ||&e&lCONTROLES:||&f ✦ Clique para alterar a Skin.||&8&m----------------------------------}[L]\skins\3'
-        - '421\[N]{&e&lRenomear Item}[N][L]{||&8&m----------------------------------||&7Dê um nome único e personalizado||&7para o seu equipamento evolutivo.|| ||&f ✦ Nível Atual: &a@level|| ||&e&lCONTROLES:||&f ✦ Clique para renomear||&8&m----------------------------------}[L]\renomear\5'
-        - '388\[N]{&6&lFortuna}[N][L]{||&8&m----------------------------------||&7Aumente a quantidade de &aDinheiro||&7recebida durante suas atividades.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&c&lREQUISITOS:||&f ✦ Lápis-lazúli: &a@LAPIS_ORE&8/&a@reqLAPIS_ORE||&f ✦ Outros Blocos: &a@*&8/&a@req*|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\LOOT_BONUS_BLOCKS\10'
-        - '1\[N]{&a&lBooster de Money}[N][L]{||&8&m----------------------------------||&7Multiplique drasticamente seus||&7ganhos de &aDinheiro&7.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\booster_money\11'
-        - '2\[N]{&c&lDesconto Evolutivo}[N][L]{||&8&m----------------------------------||&7Reduza o custo de evolução||&7dos seus próximos encantamentos.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\desconto_money\12'
-
+      - '278\[N]{&b&lInformações do Item}[N][L]{||&8&m----------------------------------||&f ✦ Nível Atual: &a@level||&f ✦ Progresso: &a@simbolo||&f ✦ Próximo Nível: &a@nextporcentagem%||&f ✦ Experiência: &a@exp &8/ &c@maxexp|| ||&e&lCONTROLES:||&f ✦ Clique para alterar a Skin.||&8&m----------------------------------}[L]\skins\3'
+      - '421\[N]{&e&lRenomear Item}[N][L]{||&8&m----------------------------------||&7Dê um nome único e personalizado||&7para o seu equipamento evolutivo.|| ||&f ✦ Nível Atual: &a@level|| ||&e&lCONTROLES:||&f ✦ Clique para renomear||&8&m----------------------------------}[L]\renomear\5'
+      - '388\[N]{&6&lFortuna}[N][L]{||&8&m----------------------------------||&7Aumente a quantidade de &aDinheiro||&7recebida durante suas atividades.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&c&lREQUISITOS:||&f ✦ Lápis-lazúli: &a@LAPIS_ORE&8/&a@reqLAPIS_ORE||&f ✦ Outros Blocos: &a@*&8/&a@req*|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\LOOT_BONUS_BLOCKS\10'
+      - '2\[N]{&c&lDesconto Evolutivo}[N][L]{||&8&m----------------------------------||&7Reduza o custo de evolução||&7dos seus próximos encantamentos.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\desconto_money\12'
   calça:
     item-inicial: '312\[E]{0:4,34:3}[E][I]'
 
@@ -73,14 +70,14 @@ itensevolutivos:
 
     item-nome: '&b&lCalça Evolutiva &8[@nivel]'
     item-lore:
-      - '&8&m----------------------------------'
-      - '&f ✦ Nível: &a@nivel'
-      - '&f ✦ Experiência: &a@exp&8/&c@maxexp &8(&a@porcentagem%&8)'
-      - '&f ✦ Progresso: &a@simbolo'
-      - ''
-      - '&e&lCONTROLES:'
-      - '&f ✦ Botão Direito + Shift para abrir o menu.'
-      - '&8&m----------------------------------'
+    - '&8&m----------------------------------'
+    - '&f ✦ Nível: &a@nivel'
+    - '&f ✦ Experiência: &a@exp&8/&c@maxexp &8(&a@porcentagem%&8)'
+    - '&f ✦ Progresso: &a@simbolo'
+    - ''
+    - '&e&lCONTROLES:'
+    - '&f ✦ Botão Direito + Shift para abrir o menu.'
+    - '&8&m----------------------------------'
 
     #blocos quebrados
     blocos: true
@@ -112,12 +109,10 @@ itensevolutivos:
       pode-abrir-apenas-fora-de-combat: true
       necessario-shift-abrir-menu: true
       itens:
-        - '278\[N]{&b&lInformações do Item}[N][L]{||&8&m----------------------------------||&f ✦ Nível Atual: &a@level||&f ✦ Progresso: &a@simbolo||&f ✦ Próximo Nível: &a@nextporcentagem%||&f ✦ Experiência: &a@exp &8/ &c@maxexp|| ||&e&lCONTROLES:||&f ✦ Clique para alterar a Skin.||&8&m----------------------------------}[L]\skins\3'
-        - '421\[N]{&e&lRenomear Item}[N][L]{||&8&m----------------------------------||&7Dê um nome único e personalizado||&7para o seu equipamento evolutivo.|| ||&f ✦ Nível Atual: &a@level|| ||&e&lCONTROLES:||&f ✦ Clique para renomear||&8&m----------------------------------}[L]\renomear\5'
-        - '388\[N]{&6&lFortuna}[N][L]{||&8&m----------------------------------||&7Aumente a quantidade de &aDinheiro||&7recebida durante suas atividades.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&c&lREQUISITOS:||&f ✦ Lápis-lazúli: &a@LAPIS_ORE&8/&a@reqLAPIS_ORE||&f ✦ Outros Blocos: &a@*&8/&a@req*|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\LOOT_BONUS_BLOCKS\10'
-        - '1\[N]{&a&lBooster de Money}[N][L]{||&8&m----------------------------------||&7Multiplique drasticamente seus||&7ganhos de &aDinheiro&7.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\booster_money\11'
-        - '2\[N]{&c&lDesconto Evolutivo}[N][L]{||&8&m----------------------------------||&7Reduza o custo de evolução||&7dos seus próximos encantamentos.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\desconto_money\12'
-
+      - '278\[N]{&b&lInformações do Item}[N][L]{||&8&m----------------------------------||&f ✦ Nível Atual: &a@level||&f ✦ Progresso: &a@simbolo||&f ✦ Próximo Nível: &a@nextporcentagem%||&f ✦ Experiência: &a@exp &8/ &c@maxexp|| ||&e&lCONTROLES:||&f ✦ Clique para alterar a Skin.||&8&m----------------------------------}[L]\skins\3'
+      - '421\[N]{&e&lRenomear Item}[N][L]{||&8&m----------------------------------||&7Dê um nome único e personalizado||&7para o seu equipamento evolutivo.|| ||&f ✦ Nível Atual: &a@level|| ||&e&lCONTROLES:||&f ✦ Clique para renomear||&8&m----------------------------------}[L]\renomear\5'
+      - '388\[N]{&6&lFortuna}[N][L]{||&8&m----------------------------------||&7Aumente a quantidade de &aDinheiro||&7recebida durante suas atividades.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&c&lREQUISITOS:||&f ✦ Lápis-lazúli: &a@LAPIS_ORE&8/&a@reqLAPIS_ORE||&f ✦ Outros Blocos: &a@*&8/&a@req*|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\LOOT_BONUS_BLOCKS\10'
+      - '2\[N]{&c&lDesconto Evolutivo}[N][L]{||&8&m----------------------------------||&7Reduza o custo de evolução||&7dos seus próximos encantamentos.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\desconto_money\12'
   peito:
     item-inicial: '311\[E]{0:4,34:3}[E][I]'
 
@@ -129,14 +124,14 @@ itensevolutivos:
 
     item-nome: '&b&lPeitoral Evolutivo &8[@nivel]'
     item-lore:
-      - '&8&m----------------------------------'
-      - '&f ✦ Nível: &a@nivel'
-      - '&f ✦ Experiência: &a@exp&8/&c@maxexp &8(&a@porcentagem%&8)'
-      - '&f ✦ Progresso: &a@simbolo'
-      - ''
-      - '&e&lCONTROLES:'
-      - '&f ✦ Botão Direito + Shift para abrir o menu.'
-      - '&8&m----------------------------------'
+    - '&8&m----------------------------------'
+    - '&f ✦ Nível: &a@nivel'
+    - '&f ✦ Experiência: &a@exp&8/&c@maxexp &8(&a@porcentagem%&8)'
+    - '&f ✦ Progresso: &a@simbolo'
+    - ''
+    - '&e&lCONTROLES:'
+    - '&f ✦ Botão Direito + Shift para abrir o menu.'
+    - '&8&m----------------------------------'
 
     #blocos quebrados
     blocos: true
@@ -168,12 +163,10 @@ itensevolutivos:
       pode-abrir-apenas-fora-de-combat: true
       necessario-shift-abrir-menu: true
       itens:
-        - '278\[N]{&b&lInformações do Item}[N][L]{||&8&m----------------------------------||&f ✦ Nível Atual: &a@level||&f ✦ Progresso: &a@simbolo||&f ✦ Próximo Nível: &a@nextporcentagem%||&f ✦ Experiência: &a@exp &8/ &c@maxexp|| ||&e&lCONTROLES:||&f ✦ Clique para alterar a Skin.||&8&m----------------------------------}[L]\skins\3'
-        - '421\[N]{&e&lRenomear Item}[N][L]{||&8&m----------------------------------||&7Dê um nome único e personalizado||&7para o seu equipamento evolutivo.|| ||&f ✦ Nível Atual: &a@level|| ||&e&lCONTROLES:||&f ✦ Clique para renomear||&8&m----------------------------------}[L]\renomear\5'
-        - '388\[N]{&6&lFortuna}[N][L]{||&8&m----------------------------------||&7Aumente a quantidade de &aDinheiro||&7recebida durante suas atividades.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&c&lREQUISITOS:||&f ✦ Lápis-lazúli: &a@LAPIS_ORE&8/&a@reqLAPIS_ORE||&f ✦ Outros Blocos: &a@*&8/&a@req*|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\LOOT_BONUS_BLOCKS\10'
-        - '1\[N]{&a&lBooster de Money}[N][L]{||&8&m----------------------------------||&7Multiplique drasticamente seus||&7ganhos de &aDinheiro&7.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\booster_money\11'
-        - '2\[N]{&c&lDesconto Evolutivo}[N][L]{||&8&m----------------------------------||&7Reduza o custo de evolução||&7dos seus próximos encantamentos.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\desconto_money\12'
-
+      - '278\[N]{&b&lInformações do Item}[N][L]{||&8&m----------------------------------||&f ✦ Nível Atual: &a@level||&f ✦ Progresso: &a@simbolo||&f ✦ Próximo Nível: &a@nextporcentagem%||&f ✦ Experiência: &a@exp &8/ &c@maxexp|| ||&e&lCONTROLES:||&f ✦ Clique para alterar a Skin.||&8&m----------------------------------}[L]\skins\3'
+      - '421\[N]{&e&lRenomear Item}[N][L]{||&8&m----------------------------------||&7Dê um nome único e personalizado||&7para o seu equipamento evolutivo.|| ||&f ✦ Nível Atual: &a@level|| ||&e&lCONTROLES:||&f ✦ Clique para renomear||&8&m----------------------------------}[L]\renomear\5'
+      - '388\[N]{&6&lFortuna}[N][L]{||&8&m----------------------------------||&7Aumente a quantidade de &aDinheiro||&7recebida durante suas atividades.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&c&lREQUISITOS:||&f ✦ Lápis-lazúli: &a@LAPIS_ORE&8/&a@reqLAPIS_ORE||&f ✦ Outros Blocos: &a@*&8/&a@req*|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\LOOT_BONUS_BLOCKS\10'
+      - '2\[N]{&c&lDesconto Evolutivo}[N][L]{||&8&m----------------------------------||&7Reduza o custo de evolução||&7dos seus próximos encantamentos.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\desconto_money\12'
   capacete:
     item-inicial: '310\[E]{0:4,34:3}[E][I]'
 
@@ -185,14 +178,14 @@ itensevolutivos:
 
     item-nome: '&b&lCapacete Evolutivo &8[@nivel]'
     item-lore:
-      - '&8&m----------------------------------'
-      - '&f ✦ Nível: &a@nivel'
-      - '&f ✦ Experiência: &a@exp&8/&c@maxexp &8(&a@porcentagem%&8)'
-      - '&f ✦ Progresso: &a@simbolo'
-      - ''
-      - '&e&lCONTROLES:'
-      - '&f ✦ Botão Direito + Shift para abrir o menu.'
-      - '&8&m----------------------------------'
+    - '&8&m----------------------------------'
+    - '&f ✦ Nível: &a@nivel'
+    - '&f ✦ Experiência: &a@exp&8/&c@maxexp &8(&a@porcentagem%&8)'
+    - '&f ✦ Progresso: &a@simbolo'
+    - ''
+    - '&e&lCONTROLES:'
+    - '&f ✦ Botão Direito + Shift para abrir o menu.'
+    - '&8&m----------------------------------'
 
     #blocos quebrados
     blocos: true
@@ -224,11 +217,10 @@ itensevolutivos:
       pode-abrir-apenas-fora-de-combat: true
       necessario-shift-abrir-menu: true
       itens:
-        - '278\[N]{&b&lInformações do Item}[N][L]{||&8&m----------------------------------||&f ✦ Nível Atual: &a@level||&f ✦ Progresso: &a@simbolo||&f ✦ Próximo Nível: &a@nextporcentagem%||&f ✦ Experiência: &a@exp &8/ &c@maxexp|| ||&e&lCONTROLES:||&f ✦ Clique para alterar a Skin.||&8&m----------------------------------}[L]\skins\3'
-        - '421\[N]{&e&lRenomear Item}[N][L]{||&8&m----------------------------------||&7Dê um nome único e personalizado||&7para o seu equipamento evolutivo.|| ||&f ✦ Nível Atual: &a@level|| ||&e&lCONTROLES:||&f ✦ Clique para renomear||&8&m----------------------------------}[L]\renomear\5'
-        - '388\[N]{&6&lFortuna}[N][L]{||&8&m----------------------------------||&7Aumente a quantidade de &aDinheiro||&7recebida durante suas atividades.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&c&lREQUISITOS:||&f ✦ Lápis-lazúli: &a@LAPIS_ORE&8/&a@reqLAPIS_ORE||&f ✦ Outros Blocos: &a@*&8/&a@req*|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\LOOT_BONUS_BLOCKS\10'
-        - '1\[N]{&a&lBooster de Money}[N][L]{||&8&m----------------------------------||&7Multiplique drasticamente seus||&7ganhos de &aDinheiro&7.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\booster_money\11'
-        - '2\[N]{&c&lDesconto Evolutivo}[N][L]{||&8&m----------------------------------||&7Reduza o custo de evolução||&7dos seus próximos encantamentos.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\desconto_money\12'
+      - '278\[N]{&b&lInformações do Item}[N][L]{||&8&m----------------------------------||&f ✦ Nível Atual: &a@level||&f ✦ Progresso: &a@simbolo||&f ✦ Próximo Nível: &a@nextporcentagem%||&f ✦ Experiência: &a@exp &8/ &c@maxexp|| ||&e&lCONTROLES:||&f ✦ Clique para alterar a Skin.||&8&m----------------------------------}[L]\skins\3'
+      - '421\[N]{&e&lRenomear Item}[N][L]{||&8&m----------------------------------||&7Dê um nome único e personalizado||&7para o seu equipamento evolutivo.|| ||&f ✦ Nível Atual: &a@level|| ||&e&lCONTROLES:||&f ✦ Clique para renomear||&8&m----------------------------------}[L]\renomear\5'
+      - '388\[N]{&6&lFortuna}[N][L]{||&8&m----------------------------------||&7Aumente a quantidade de &aDinheiro||&7recebida durante suas atividades.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&c&lREQUISITOS:||&f ✦ Lápis-lazúli: &a@LAPIS_ORE&8/&a@reqLAPIS_ORE||&f ✦ Outros Blocos: &a@*&8/&a@req*|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\LOOT_BONUS_BLOCKS\10'
+      - '2\[N]{&c&lDesconto Evolutivo}[N][L]{||&8&m----------------------------------||&7Reduza o custo de evolução||&7dos seus próximos encantamentos.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&8&m----------------------------------}[L]\desconto_money\12'
     skins:
       skin-1:
         item-menu: '270\[N]{&8&lPicareta Inicial}[N][L]{|||| @possui}[L]'
@@ -237,36 +229,31 @@ itensevolutivos:
           money: 10000
         bonus:
           #bonus money +10%
-          money: 10
+          {}
       skin-2:
-        item-menu: '274\[N]{&7&lPicareta de Pedra}[N][L]{||&8&m----------------------------------||&7Resistente e eficiente!|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+15%||&f ✦ Gemas: &a+15%|| ||&d&lPODER ESPECIAL:||&f ✦ Chance: &70.07%||&f ✦ Efeito: &7Spawna um &aSlime&7 explosivo (7x7).|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
+        item-menu: '274\[N]{&7&lPicareta de Pedra}[N][L]{||&8&m----------------------------------||&7Resistente e eficiente!|| ||&e&lBÔNUS ATIVOS:|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
         slot: 11
         custo:
           money: 20000
-        bonus:
-          money: 20
+        bonus: {}
       skin-3:
-        item-menu: '285\[N]{&6&lPicareta de Ouro}[N][L]{||&8&m----------------------------------||&7Rica em valor, afiada em lucro!|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+25%||&f ✦ Gemas: &a+25%|| ||&d&lPODER ESPECIAL:||&f ✦ Chance: &70.08%||&f ✦ Efeito: &7Spawna um &aPigman&7 explosivo (9x9).|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
+        item-menu: '285\[N]{&6&lPicareta de Ouro}[N][L]{||&8&m----------------------------------||&7Rica em valor, afiada em lucro!|| ||&e&lBÔNUS ATIVOS:|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
         slot: 12
         custo:
           money: 30000
-        bonus:
-          money: 30
+        bonus: {}
       skin-4:
-        item-menu: '257\[N]{&f&lPicareta de Ferro}[N][L]{||&8&m----------------------------------||&7Ferramenta forjada no fogo!|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+45%||&f ✦ Gemas: &a+45%|| ||&d&lPODER ESPECIAL:||&f ✦ Chance: &70.09%||&f ✦ Efeito: &7Spawna um &cBlaze&7 explosivo (13x13).|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
+        item-menu: '257\[N]{&f&lPicareta de Ferro}[N][L]{||&8&m----------------------------------||&7Ferramenta forjada no fogo!|| ||&e&lBÔNUS ATIVOS:|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
         slot: 13
         custo:
           money: 40000
-        bonus:
-          money: 40
+        bonus: {}
       skin-5:
-        item-menu: '278\[N]{&b&lPicareta de Dima}[N][L]{||&8&m----------------------------------||&7A rainha da mineração cósmica!|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+75%||&f ✦ Gemas: &a+75%|| ||&d&lPODER ESPECIAL:||&f ✦ Chance: &70.10%||&f ✦ Efeito: &7Spawna um &aCreeper&7 aniquilador (15x15).|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
+        item-menu: '278\[N]{&b&lPicareta de Dima}[N][L]{||&8&m----------------------------------||&7A rainha da mineração cósmica!|| ||&e&lBÔNUS ATIVOS:|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
         slot: 14
         custo:
           money: 50000
-        bonus:
-          money: 50
-
+        bonus: {}
   picareta:
     item-inicial: '270\[E]{32:32000,34:32000}[E][I]'
 
@@ -279,14 +266,14 @@ itensevolutivos:
     #item-nome: '&b&lPicareta Evolutiva &8[@nivel]'
     item-nome: '&b&lPicareta Evolutiva'
     item-lore:
-      - '&8&m----------------------------------'
-      - '&f ✦ Nível: &a@nivel'
-      - '&f ✦ Experiência: &a@exp&8/&c@maxexp &8(&a@porcentagem%&8)'
-      - '&f ✦ Progresso: &a@simbolo'
-      - ''
-      - '&e&lCONTROLES:'
-      - '&f ✦ Botão Direito + Shift para abrir o menu.'
-      - '&8&m----------------------------------'
+    - '&8&m----------------------------------'
+    - '&f ✦ Nível: &a@nivel'
+    - '&f ✦ Experiência: &a@exp&8/&c@maxexp &8(&a@porcentagem%&8)'
+    - '&f ✦ Progresso: &a@simbolo'
+    - ''
+    - '&e&lCONTROLES:'
+    - '&f ✦ Botão Direito + Shift para abrir o menu.'
+    - '&8&m----------------------------------'
 
     #blocos quebrados
     blocos: true
@@ -308,7 +295,16 @@ itensevolutivos:
       subtitle-levelup-msg: '&aPicareta Evoluída!'
 
       itens-exp:
-        STAINED_CLAY: 1
+        STAINED_CLAY: 0.59
+        COBBLESTONE: 0.76
+        LAPIS_BLOCK: 0.96
+        PRISMARINE: 1.15
+        GOLD_BLOCK: 1.28
+        IRON_BLOCK: 1.4
+        QUARTZ_BLOCK: 1.53
+        COAL_BLOCK: 1.66
+        REDSTONE_BLOCK: 1.79
+        EMERALD_BLOCK: 0.61
     menu-evolutivo:
       nome: '&8Picareta Evolutiva'
       tamanho: 54
@@ -317,71 +313,54 @@ itensevolutivos:
       pode-abrir-apenas-fora-de-combat: true
       necessario-shift-abrir-menu: false
       itens:
-      
         #- '421\[N]{&e&lRenomear Picareta}[N][L]{||&8&m----------------------------------||&7Dê um nome único e personalizado||&7para a sua ferramenta evolutiva.|| ||&f ✦ Nível Atual: &a@level|| ||&e&lCONTROLES:||&f ✦ Clique para renomear||&8&m----------------------------------}[L]\renomear\1'
         #- '388\[N]{&e&lFortuna}[N][L]{||&8&m----------------------------------||&7Aumente a quantidade de &aDinheiro||&7recebida ao quebrar blocos.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &2$ &a@money|| ||&c&lREQUISITOS:||&f ✦ Lápis-lazúli: &a@LAPIS_ORE&8/&a@reqLAPIS_ORE||&f ✦ Outros Blocos: &a@*&8/&a@req*||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L]\LOOT_BONUS_BLOCKS\11'
-        
-        - '278\[N]{&b&lInformações da Picareta}[N][L]{||&8&m----------------------------------||&e&lCONTROLES:||&f ✦ Clique para alterar a Skin.||&8&m----------------------------------}[L]\skins\4'
-        - '388\[N]{&a&lFortuna Aprimorada}[N][L]{||&8&m----------------------------------||&7Aumente substancialmente a quantia||&7de &aDinheiro&7 extraída.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Aumento em: &7@enchantbooster%||&f ✦ Custo: &2$@money&7▐ &d❒@gemas ||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L]\booster_money\10'
-        - '131\[N]{&a&lChaveiro}[N][L]{||&8&m----------------------------------||&7Aumenta a quantidade de chaves recebidas ao minerar|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Aumento em: &7@enchantbooster%||&f ✦ Custo: &2$@money&7▐ &d❒@gemas ||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L]\booster_chaveiro\19'
-        - '351:5\[N]{&d&lGemado}[N][L]{||&8&m----------------------------------||&7Aumente a taxa de drop para||&7minerar mais &dGemas&7.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Aumento em: &7@enchantbooster%||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L]\booster_gemas\11'
-        - '351:5\[N]{&b&lMultiplicador de Prisma}[N][L]{||&8&m----------------------------------||&7Aumente a taxa de drop para||&7minerar muito mais &bPrismas&7.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Aumento em: &7@enchantbooster%||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L]\booster_prisma\20'
-        #- '397:3\[N]{&e&lLuckyBlocker}[N][L]{||&8&m----------------------------------||&7Aumenta a chance de minerar||&7as famosas &eLuckyBlocks&7!|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &a✧ @gemas Gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{ac4970ea91ab06ece59d45fce7604d255431f2e03a737b226082c4cce1aca1c4}[URL]\LuckyBlock\12'
-        - '397:3\[N]{&c&lImpacto Explosivo}[N][L]{||&8&m----------------------------------||&7Destrói blocos em uma vasta área||&7da mina simultaneamente.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{48179b175daa79f73c665b61163364f6627e3d02b7253d427ebd2ff6818de6ce}[URL]\Explosivo\14'
-        - '397:3\[N]{&7&lFenda (Trincheira)}[N][L]{||&8&m----------------------------------||&7Cria uma ruptura diagonal devastadora||&7rasgando a mina até o final!|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{85558485271237921fb32d83566d4bac2c16e621bb2219a97f01cda219ab61a4}[URL]\trincheira\15'
-        - '397:3\[N]{&6&lTempestade de Fogo}[N][L]{||&8&m----------------------------------||&7Invoca 5 meteoros flamejantes||&7que pulverizam áreas 6x6 da mina!|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{7c79d42386ca039f99d0f36064d637fc0febbeefbece4f68a9f62c2f6770e8d1}[URL]\tempestadedefogo\16'
-        - '397:3\[N]{&a&lChuva Ácida}[N][L]{||&8&m----------------------------------||&7Derrete verticalmente as pedras,||&7limpando um raio de 5x5x15!|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{fbc87d30621358ffe493d2cb681b298733161e0b73f9313f18d1e831e632b95c}[URL]\chuvaacida\25'
-        #- '397:3\[N]{&d&lEnergizador}[N][L]{||&8&m----------------------------------||&7Energiza sua ferramenta para||&7dropar mais XP por bloco quebrado.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &a✧ @gemas Gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{ca64ac33eaeb690ac11d83d9ededec8a06674ef94f10d8d3bbacb9d55b5008bb}[URL]\Energizador\28'
-        - '397:3\[N]{&f&lAtaque em Cruz}[N][L]{||&8&m----------------------------------||&7Desfere uma quebra sagrada em||&7formato de cruz, quebrando blocos.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{35992706a2231e37bc578509c96c8ae6b4f425f3ef4ef5c68f57bbd980878669}[URL]\cruz\23'
-        - '397:3\[N]{&4&lLaser de Perfuração}[N][L]{||&8&m----------------------------------||&7Dispara um laser cruzado em "X"||&7pulverizando a mina inteira.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{49508695edee877e1e6d0b1705220564ea967f0c1a573f337802f6d1dc51b0f}[URL]\laser\34'
-        - '397:3\[N]{&9&lImpacto Meteoro}[N][L]{||&8&m----------------------------------||&7Chama um meteoro do espaço para||&7obliterar um raio 10x10 da mina.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{c1147d89d2498f9e21f36ad3e5356b2327c8f855183d3e69f4d660e5bc210abb}[URL]\meteoro\33'
-        - '397:3\[N]{&c&lDetonação Nuclear}[N][L]{||&8&m----------------------------------||&7O poder máximo! Ative para vaporizar||&7toda a mina em um instante.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7Explode a mina inteira||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{77f528a0005fd66e6860935d9ec743bceca84598256402d7979e5ad354b841fa}[URL]\nuclear\32'
-        - '397:3\[N]{&e&lHaste (Pressa)}[N][L]{||&8&m----------------------------------||&7Concede o efeito de Haste contínuo||&7para minerar na velocidade da luz.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{f29bdbceeab716c05713871dc9d8cad324d069177a787830bf268da3276b0d25}[URL]\haste\37'
-        - '397:3\[N]{&b&lSpeed (Velocidade)}[N][L]{||&8&m----------------------------------||&7Concede o efeito de Velocidade||&7para correr rapidamente pela mina.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{5cbac3c84e21e65ec88007604c4eba1da391e185544b90252fc16ca695c59b4b}[URL]\speed\38'
-        #- '397:3\[N]{&d&lBônus de Sorte}[N][L]{||&8&m----------------------------------||&7Multiplica drasticamente a chance||&7de choverem LuckyBlocks na mineração!|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &a✧ @gemas Gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{c71e9683e80383541ef9feff39c8f814a42684149502424c0a9341d726f40d8a}[URL]\Bonus\20'
-        #- '397:3\[N]{&3&lAlma de Aventureiro}[N][L]{||&8&m----------------------------------||&7Quebre os limites do servidor!||&7Aumenta limites de máquinas, spawners||&7e muito mais.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7%ghostenchants_infoenchant_Aventureiro_0%%||&f ✦ Custo: &a✧ @gemas Gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{7663b73b13bd2392161161aed6561ff33bd1e47900fd2b63944bc0275f3a4981}[URL]\Aventureiro\21'
-        #- '397:3\[N]{&2&lSorte de Ebisu}[N][L]{||&8&m----------------------------------||&7Abençoa suas ferramentas para que||&7as LuckyBlocks dropem prêmios divinos!|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Custo: &a✧ @gemas Gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{fdb88f26c7fca450a54b6939b6f74d324c84ef2138967046e09ce996b4a48923}[URL]\Ebisu\29'
-        - '397:3\[N]{&8&lDestruidor}[N][L]{||&8&m----------------------------------||&7Varre uma camada inteira da mina,||&7transformando os blocos em pó.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7Quebra 1 camada da mina inteira||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{f4eb183db620468a5a19d855038e0e2235425247c100e7f39b819035491a7396}[URL]\destruidor\24'
-        - '397:3\[N]{&a&lDrill (Broca)}[N][L]{||&8&m----------------------------------||&7Ativa uma broca de perfuração que||&7destrói um grande túnel na mina.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][URL]{463982ac28dd6a41f4a00794728228b1cbc24a3ca420a572fe17ba1df3665296}[URL]\Drill\41'
-        - '397:3\[N]{&c&lMob Explosivo}[N][L]{||&8&m----------------------------------||&7Invoca entidades caóticas que||&7explodem e limpam a área ao redor.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][URL]{d27977d86521554ffce6b9267c034d60c0aa34ba82cef3032ff120e2f0efcede}[URL]\mobexplosivo\42'
+      - '278\[N]{&b&lInformações da Picareta}[N][L]{||&8&m----------------------------------||&e&lCONTROLES:||&f ✦ Clique para alterar a Skin.||&8&m----------------------------------}[L]\skins\4'
+      - '388\[N]{&a&lFortuna Aprimorada}[N][L]{||&8&m----------------------------------||&7Aumente substancialmente a quantia||&7de &aDinheiro&7 extraída.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Aumento em: &7@enchantbooster%||&f ✦ Custo: &2$@money&7▐ &d❒@gemas ||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L]\booster_money\10'
+      - '131\[N]{&a&lChaveiro}[N][L]{||&8&m----------------------------------||&7Aumenta a quantidade de chaves recebidas ao minerar|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Aumento em: &7@enchantbooster%||&f ✦ Custo: &2$@money&7▐ &d❒@gemas ||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L]\booster_chaveiro\19'
+      - '351:5\[N]{&d&lGemado}[N][L]{||&8&m----------------------------------||&7Aumente a taxa de drop para||&7minerar mais &dGemas&7.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Aumento em: &7@enchantbooster%||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L]\booster_gemas\11'
+      - '397:3\[N]{&c&lImpacto Explosivo}[N][L]{||&8&m----------------------------------||&7Destrói blocos em uma vasta área||&7da mina simultaneamente.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{48179b175daa79f73c665b61163364f6627e3d02b7253d427ebd2ff6818de6ce}[URL]\Explosivo\14'
+      - '397:3\[N]{&7&lFenda (Trincheira)}[N][L]{||&8&m----------------------------------||&7Cria uma ruptura diagonal devastadora||&7rasgando a mina até o final!|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{85558485271237921fb32d83566d4bac2c16e621bb2219a97f01cda219ab61a4}[URL]\trincheira\15'
+      - '397:3\[N]{&6&lTempestade de Fogo}[N][L]{||&8&m----------------------------------||&7Invoca 5 meteoros flamejantes||&7que pulverizam áreas 6x6 da mina!|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{7c79d42386ca039f99d0f36064d637fc0febbeefbece4f68a9f62c2f6770e8d1}[URL]\tempestadedefogo\16'
+      - '397:3\[N]{&a&lChuva Ácida}[N][L]{||&8&m----------------------------------||&7Derrete verticalmente as pedras,||&7limpando um raio de 5x5x15!|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{fbc87d30621358ffe493d2cb681b298733161e0b73f9313f18d1e831e632b95c}[URL]\chuvaacida\25'
+      - '397:3\[N]{&f&lAtaque em Cruz}[N][L]{||&8&m----------------------------------||&7Desfere uma quebra sagrada em||&7formato de cruz, quebrando blocos.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{35992706a2231e37bc578509c96c8ae6b4f425f3ef4ef5c68f57bbd980878669}[URL]\cruz\23'
+      - '397:3\[N]{&4&lLaser de Perfuração}[N][L]{||&8&m----------------------------------||&7Dispara um laser cruzado em "X"||&7pulverizando a mina inteira.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{49508695edee877e1e6d0b1705220564ea967f0c1a573f337802f6d1dc51b0f}[URL]\laser\34'
+      - '397:3\[N]{&9&lImpacto Meteoro}[N][L]{||&8&m----------------------------------||&7Chama um meteoro do espaço para||&7obliterar um raio 10x10 da mina.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{c1147d89d2498f9e21f36ad3e5356b2327c8f855183d3e69f4d660e5bc210abb}[URL]\meteoro\33'
+      - '397:3\[N]{&c&lDetonação Nuclear}[N][L]{||&8&m----------------------------------||&7O poder máximo! Ative para vaporizar||&7toda a mina em um instante.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7Explode a mina inteira||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{77f528a0005fd66e6860935d9ec743bceca84598256402d7979e5ad354b841fa}[URL]\nuclear\32'
+      - '397:3\[N]{&e&lHaste (Pressa)}[N][L]{||&8&m----------------------------------||&7Concede o efeito de Haste contínuo||&7para minerar na velocidade da luz.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{f29bdbceeab716c05713871dc9d8cad324d069177a787830bf268da3276b0d25}[URL]\haste\37'
+      - '397:3\[N]{&b&lSpeed (Velocidade)}[N][L]{||&8&m----------------------------------||&7Concede o efeito de Velocidade||&7para correr rapidamente pela mina.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{5cbac3c84e21e65ec88007604c4eba1da391e185544b90252fc16ca695c59b4b}[URL]\speed\38'
+      - '397:3\[N]{&8&lDestruidor}[N][L]{||&8&m----------------------------------||&7Varre uma camada inteira da mina,||&7transformando os blocos em pó.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7Quebra 1 camada da mina inteira||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][G][URL]{f4eb183db620468a5a19d855038e0e2235425247c100e7f39b819035491a7396}[URL]\destruidor\24'
+      - '397:3\[N]{&a&lDrill (Broca)}[N][L]{||&8&m----------------------------------||&7Ativa uma broca de perfuração que||&7destrói um grande túnel na mina.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][URL]{463982ac28dd6a41f4a00794728228b1cbc24a3ca420a572fe17ba1df3665296}[URL]\Drill\41'
+      - '397:3\[N]{&c&lMob Explosivo}[N][L]{||&8&m----------------------------------||&7Invoca entidades caóticas que||&7explodem e limpam a área ao redor.|| ||&e&lSTATUS ATUAL:||&f ✦ Nível: &c@nivel&8/&a@maxnivel||&f ✦ Ativação: &7@enchantchance%||&f ✦ Raio: &7@enchantradios||&f ✦ Custo: &2$@money&7▐ &d❒@gemas||||&a&lUPGRADE:||&f ✦ Botão Esquerdo &7➔ &aUpar +1 Nível||&f ✦ Botão Direito  &7➔ &aUpar +10 Níveis||&f ✦ Shift + Clique &7➔ &aMáximo Possível||&8&m----------------------------------}[L][URL]{d27977d86521554ffce6b9267c034d60c0aa34ba82cef3032ff120e2f0efcede}[URL]\mobexplosivo\42'
     menu-skins:
       nome: '&8Skins Disponíveis'
       tamanho: 27
     skins:
       skin-1:
-        item-menu: '270\[N]{&8&lPicareta de Madeira}[N][L]{||&8&m----------------------------------||&7Uma ferramenta humilde, o início||&7de uma longa jornada estelar.|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+10%|| ||&a▶ @possui||&8&m----------------------------------}[L]'
+        item-menu: '270\[N]{&8&lPicareta de Madeira}[N][L]{||&8&m----------------------------------||&7Uma ferramenta humilde, o início||&7de uma longa jornada estelar.|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+0%|| ||&a▶ @possui||&8&m----------------------------------}[L]'
         slot: 10
         custo: {}
         bonus: {}
       skin-2:
-        item-menu: '274\[N]{&7&lPicareta de Pedra}[N][L]{||&8&m----------------------------------||&7Resistente e eficiente!|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+15%||&f ✦ Gemas: &a+15%|| ||&d&lPODER ESPECIAL:||&f ✦ Chance: &70.07%||&f ✦ Efeito: &7Spawna um &aSlime&7 explosivo (7x7).|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
+        item-menu: '274\[N]{&7&lPicareta de Pedra}[N][L]{||&8&m----------------------------------||&7Resistente e eficiente!|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+3%|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
         slot: 11
-        custo:
-          money: 20000
-        bonus:
-          money: 20
+        custo: {money: 1620}
+        bonus: {money: 3}
       skin-3:
-        item-menu: '285\[N]{&6&lPicareta de Ouro}[N][L]{||&8&m----------------------------------||&7Rica em valor, afiada em lucro!|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+25%||&f ✦ Gemas: &a+25%|| ||&d&lPODER ESPECIAL:||&f ✦ Chance: &70.08%||&f ✦ Efeito: &7Spawna um &aPigman&7 explosivo (9x9).|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
+        item-menu: '285\[N]{&6&lPicareta de Ouro}[N][L]{||&8&m----------------------------------||&7Rica em valor, afiada em lucro!|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+6%|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
         slot: 12
-        custo:
-          money: 30000
-        bonus:
-          money: 30
+        custo: {money: 39600}
+        bonus: {money: 6}
       skin-4:
-        item-menu: '257\[N]{&f&lPicareta de Ferro}[N][L]{||&8&m----------------------------------||&7Ferramenta forjada no fogo!|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+45%||&f ✦ Gemas: &a+45%|| ||&d&lPODER ESPECIAL:||&f ✦ Chance: &70.09%||&f ✦ Efeito: &7Spawna um &cBlaze&7 explosivo (13x13).|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
+        item-menu: '257\[N]{&f&lPicareta de Ferro}[N][L]{||&8&m----------------------------------||&7Ferramenta forjada no fogo!|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+9%|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
         slot: 13
-        custo:
-          money: 40000
-        bonus:
-          money: 40
+        custo: {money: 1040000}
+        bonus: {money: 9}
       skin-5:
-        item-menu: '278\[N]{&b&lPicareta de Diamante}[N][L]{||&8&m----------------------------------||&7A rainha da mineração cósmica!|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+75%||&f ✦ Gemas: &a+75%|| ||&d&lPODER ESPECIAL:||&f ✦ Chance: &70.10%||&f ✦ Efeito: &7Spawna um &aCreeper&7 aniquilador (15x15).|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
+        item-menu: '278\[N]{&b&lPicareta de Diamante}[N][L]{||&8&m----------------------------------||&7A rainha da mineração cósmica!|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+12%|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
         slot: 14
-        custo:
-          money: 50000
-        bonus:
-          money: 50
-
+        custo: {money: 32500000}
+        bonus: {money: 12}
 menu-skins: 'Skins Evolutiva\27'
 possui: '&aClique para alterar a skin'
 nao-possui: '&cClique para comprar essa skin'
