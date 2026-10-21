@@ -1,0 +1,201 @@
+# HIPÓTESES e PROPOSTAS do modelo.
+# Nada aqui foi medido. Duas espécies:
+#  - "como o servidor se comporta" (ex.: velocidade nas minas avançadas): trocar por medido quando testarem.
+#  - "proposta" de design (ex.: quanto tempo em cada rank): o Enzo e o João podem mudar à vontade.
+# Cada item diz como validar. A lista completa do que medir sai em economia/saida/o-que-medir.md.
+
+# ---------------------------------------------------------------- comportamento do servidor
+servidor:
+  velocidade_igual_em_todas_as_minas:
+    valor: true
+    tipo: hipotese
+    fonte: "Picareta tem Eficiência 32.000 (quebra instantânea). Validar: repetir o teste de 5 min na mina Dragão"
+  chance_em_porcentagem:
+    valor: true
+    tipo: hipotese
+    fonte: "Encantamentos de combate usam 100 = sempre; ver docs/como-o-plugin-funciona.md 1.1"
+  booster_soma_porcentagem:
+    valor: true
+    tipo: hipotese
+    fonte: "Placeholder %ghostencantamentos_booster_money% = 300 vira +300%. Validar: Fortuna Aprimorada 1000, quebrar 100 blocos na mina 1, deve dar 400"
+  blocos_area_rolam_chave:
+    valor: true
+    tipo: hipotese
+    fonte: "Enzo (21/10): cada bloco quebrado tem chance de chave. Validar contando chaves com e sem Explosivo"
+  blocos_area_dao_exp:
+    valor: false
+    tipo: hipotese
+    fonte: "Conservador: o modelo conta EXP só do bloco que o jogador quebra. Se a área também der EXP, a picareta sobe mais rápido (trava mais frouxa, sem risco de inflação)"
+  ocupacao_media_da_mina:
+    valor: 0.80
+    tipo: hipotese
+    fonte: "A mina reseta ao chegar em 40% quebrada, então fica entre 100% e 60% cheia (média 80%)"
+  speed_haste_aumentam_producao:
+    valor: false
+    tipo: hipotese
+    fonte: "Quebra já é instantânea e o Fly não mudou nada no teste. Validar: 5 min com Haste II"
+  exp_aumento_linear:
+    valor: true
+    tipo: hipotese
+    fonte: "EXP para o nível n = 2500 + 39 x n. Validar no menu da picareta (Experiência @exp/@maxexp)"
+  cenoura_quebras_por_hora:
+    valor: 153000
+    tipo: hipotese
+    fonte: "Prompt mestre 3.4: igual ao Fungo. Validar: 1 min colhendo cenoura"
+  melancia_quebras_por_hora:
+    valor: 100000
+    tipo: hipotese
+    fonte: "Não medido. Crescimento 75 a 100 s (mais lento que fungo). Validar: 1 min colhendo"
+  cana_quebras_por_hora:
+    valor: 100000
+    tipo: hipotese
+    fonte: "Não medido. Crescimento 90 s. Validar: 1 min colhendo"
+  golpes_por_segundo:
+    valor: 4
+    tipo: hipotese
+    fonte: "Cliques efetivos por segundo num boss. Validar: cronometrar uma luta"
+  mobs_por_spawn_por_spawner:
+    valor: 1
+    tipo: hipotese
+    fonte: "Cada spawner empilhado solta 1 mob a cada 30 s. Validar: 1 spawner por 5 min, contar mobs"
+
+# ---------------------------------------------------------------- propostas de design
+design:
+  razao_money_entre_minas:
+    valor: 2.5
+    tipo: hipotese
+    fonte: "Proposta: cada mina nova paga 2,5x a anterior (salto que o jogador sente; a antiga do ChatGPT também subia ~2,5x)"
+  razao_gemas_entre_minas:
+    valor: 1.6
+    tipo: hipotese
+    fonte: "Proposta: gemas crescem mais devagar para os números de gemas ficarem legíveis. Os preços em gemas acompanham"
+  peso_horas_por_rank:
+    valor: [5, 8, 12, 16, 20, 24, 28, 33, 38, 46]
+    tipo: hipotese
+    fonte: "Proposta: horas do jogador ativo em cada rank (soma 230). Começo rápido, final pesado"
+  crescimento_dentro_do_rank:
+    valor: 0.10
+    tipo: hipotese
+    fonte: "Proposta: cada subnível (I a X) leva 10% mais tempo que o anterior"
+  fracao_do_tempo_por_atividade:
+    valor:
+      - {mina: 1.00, agricultura: 0.00, combate: 0.00}
+      - {mina: 1.00, agricultura: 0.00, combate: 0.00}
+      - {mina: 0.85, agricultura: 0.15, combate: 0.00}
+      - {mina: 0.75, agricultura: 0.15, combate: 0.10}
+      - {mina: 0.70, agricultura: 0.15, combate: 0.15}
+      - {mina: 0.70, agricultura: 0.15, combate: 0.15}
+      - {mina: 0.70, agricultura: 0.15, combate: 0.15}
+      - {mina: 0.70, agricultura: 0.15, combate: 0.15}
+      - {mina: 0.70, agricultura: 0.15, combate: 0.15}
+      - {mina: 0.70, agricultura: 0.15, combate: 0.15}
+    tipo: hipotese
+    fonte: "Proposta: como o jogador ativo divide o tempo em cada rank (Cidadão primeiro). Os requisitos de rank (cabeças, fragmentos) forçam isso"
+  money_agricultura_vs_mina:
+    valor: 0.55
+    tipo: hipotese
+    fonte: "Proposta: média das plantações em money (Fungo 70%, Cana 45%, Cenoura e Melancia menos). Sai do bloco agricultura"
+  fracao_money_para_picareta:
+    valor: 0.5
+    tipo: hipotese
+    fonte: "Proposta: o jogador típico gasta metade do money na picareta e metade em rank. Define o peso das gemas (esforço 50/50)"
+  payback_horas_inicio:
+    valor: 0.25
+    tipo: hipotese
+    fonte: "Proposta: no começo do jogo um upgrade se paga em 15 min de mineração"
+  payback_horas_fim:
+    valor: 10
+    tipo: hipotese
+    fonte: "Proposta calibrada no simulador: com 10 h no fim, gastar 20% ou 80% do money na picareta dá quase o mesmo tempo (nenhuma estratégia muito melhor). Com 25 h, correr para o rank ficava 16% mais rápido"
+  desbloqueio_horas:
+    valor: 1.0
+    tipo: hipotese
+    fonte: "Proposta: liberar um encantamento de área (comprar o nível 1) custa 1 h de renda de quem está nesse ponto do jogo"
+  picareta_max_na_fracao:
+    valor: 1.5
+    tipo: hipotese
+    fonte: "Proposta: o jogador típico chega no Dragão X com a picareta perto do nível 750. Picareta 1000 e tudo no máximo levam 50% a mais (prestígios)"
+  curva_picareta_expoente:
+    valor: 0.7
+    tipo: hipotese
+    fonte: "Proposta: a picareta sobe mais rápido no começo (nível = 1000 x fração do jogo ^ 0,7). Ex.: 5 h de jogo = nível 68"
+  chaveiro_valor_da_chave:
+    valor: 0.15
+    tipo: hipotese
+    fonte: "Proposta: o que as caixas devolvem vale uns 15% da renda. Define o preço do Chaveiro"
+  chance_chave_pct:
+    valor: 0.02
+    tipo: hipotese
+    fonte: "Proposta: 1 chave a cada 5.000 blocos (13 por hora na mina 1 sem encantamento). Os 0,10% de hoje dariam 67/h e, com área, centenas"
+  chaveiro_pct_por_nivel:
+    valor: 0.10
+    tipo: hipotese
+    fonte: "Proposta: +0,10% relativo por nível (+100% no 1000, o dobro de chaves)"
+  fragmento_mineracao_chance_pct:
+    valor: 0.0015
+    tipo: hipotese
+    fonte: "Proposta: 1 Fragmento de Mineração a cada ~67.000 blocos (1 por hora de mina pura). Só cai minerando de verdade"
+  exp_folga_picareta:
+    valor: 1.10
+    tipo: hipotese
+    fonte: "Proposta: a picareta (EXP) anda 10% à frente do nível típico dos encantamentos, para travar só quem pula a mineração"
+  prestigio_horas_cada:
+    valor: 35
+    tipo: hipotese
+    fonte: "Proposta: a 1a volta de prestígio leva ~35 h de um jogador ativo com a picareta que já tem"
+  prestigio_crescimento:
+    valor: 1.3
+    tipo: hipotese
+    fonte: "Proposta: cada prestígio seguinte custa 30% a mais que o anterior (a picareta continua crescendo)"
+
+# Encantamentos de área. contribuicao = blocos extras por bloco quebrado no nível 1000.
+# blocos = estimativa de blocos que uma ativação quebra no nível máximo (mina cheia).
+# A chance sai daqui: chance = contribuicao / blocos. Se o Enzo medir os blocos de verdade,
+# troque "blocos" e a chance se corrige sozinha, sem mudar a economia.
+encantamentos_area:
+  valor:
+    Explosivo:        {contribuicao: 0.30, blocos: 27,     radios: [3, 3, 3],    libera_picareta: 0}
+    cruz:             {contribuicao: 0.30, blocos: 560,    radios: [10, 7, 8],   libera_picareta: 30}
+    Drill:            {contribuicao: 0.25, blocos: 135,    radios: [1, 15],      libera_picareta: 60}
+    laser:            {contribuicao: 0.30, blocos: 960,    radios: [4, 30],      libera_picareta: 100}
+    mobexplosivo:     {contribuicao: 0.25, blocos: 125,    radios: [5, 5, 5],    libera_picareta: 150}
+    trincheira:       {contribuicao: 0.30, blocos: 5922,   radios: [9, 7],       libera_picareta: 200}
+    meteoro:          {contribuicao: 0.30, blocos: 1000,   radios: [10],         libera_picareta: 280}
+    tempestadedefogo: {contribuicao: 0.30, blocos: 1080,   radios: [10, 12],     libera_picareta: 360}
+    chuvaacida:       {contribuicao: 0.30, blocos: 2500,   radios: [10, 10, 25], libera_picareta: 440}
+    destruidor:       {contribuicao: 0.35, blocos: 8836,   radios: [],           libera_picareta: 520}
+    nuclear:          {contribuicao: 0.35, blocos: 751060, radios: [],           libera_picareta: 600}
+  tipo: hipotese
+  fonte: "Proposta. Blocos: produto das medidas do radios atual (Cruz, Laser, Fenda e Chuva superestimados de propósito, o lado seguro). Validar: ativar cada um numa parede e contar"
+escala_area_por_faixa:
+  valor: {'1-250': 0.5, '251-500': 0.67, '501-750': 0.83, '751-1000': 1.0}
+  tipo: hipotese
+  fonte: "Proposta: a área cresce nos marcos 250/500/750/1000 até o tamanho que vocês já usam hoje"
+
+# Agricultura
+plantacoes:
+  valor:
+    fungo:    {libera_rank: 20, money_vs_mina: 0.70, sementes_por_unidade: 0.05}
+    cenoura:  {libera_rank: 24, money_vs_mina: 0.20, sementes_por_unidade: 0.10, chance_item_pct: 0.02}
+    melancia: {libera_rank: 30, money_vs_mina: 0.15, sementes_por_unidade: 1.00}
+    cana:     {libera_rank: 34, money_vs_mina: 0.45, sementes_por_unidade: 0.45}
+    cacto:    {libera_rank: 40, money_vs_mina_por_hora_max: 0.10, sementes_por_unidade: 0.25}
+  tipo: hipotese
+  fonte: "Proposta. libera_rank: posição 0 a 99 (20 = Guerreiro I). money_vs_mina: renda em money comparada com minerar no mesmo rank"
+armazem:
+  valor:
+    capacidade_inicial: 1000
+    item_cenoura_capacidade: 1000
+    capacidade_maxima: 2000000
+    horas_afk_maximas: 8
+  tipo: hipotese
+  fonte: "Proposta. Capacidade em unidades de item. Validar quanto +1 de 'Limite de Armazém' soma de verdade"
+combate:
+  valor:
+    spawners: [ZOMBIE, SKELETON, COW, PIG, IRON_GOLEM]
+    limite_spawners: [1, 2, 4, 8, 12, 16, 24, 32, 48, 64]
+    matadora_dano: [1000, 2500, 6000, 15000, 35000, 80000, 180000, 400000, 900000, 2000000]
+    luta_segundos: [60, 75, 90, 105, 120, 135, 150, 165, 180, 240]
+    boss_cooldown_horas: [0.5, 0.5, 1, 1, 2, 2, 3, 4, 6, 8]
+  tipo: hipotese
+  fonte: "Proposta. Dano das Matadoras mantido da proposta antiga (escala boa); vida dos bosses sai do dano x tempo de luta"

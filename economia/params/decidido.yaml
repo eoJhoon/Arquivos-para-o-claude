@@ -1,0 +1,126 @@
+# Decisões do Enzo e do João (e regras do prompt mestre).
+# Só eles mudam isto. Se mudarem, rodem o gerador de novo (o GitHub faz sozinho).
+
+metas:
+  horas_ativo_total:
+    valor: 230
+    tipo: decidido
+    fonte: "Prompt mestre, seção 2: 220 a 240 horas efetivas para um jogador ativo terminar"
+  perfis:
+    valor:
+      casual: {horas_dia: 1.5, semanas_min: 12, semanas_max: 18}
+      ativo: {horas_dia: 4, semanas_min: 7, semanas_max: 9}
+      muito_ativo: {horas_dia: 7, semanas_min: 4, semanas_max: 6}
+      hardcore: {horas_dia: 10, semanas_min: 3, semanas_max: 99}
+    tipo: decidido
+    fonte: "Prompt mestre, seção 2 (tabela de perfis)"
+
+ranks:
+  nomes:
+    valor: [Cidadão, Explorador, Guerreiro, Tritão, Guardião, Monge, Avatar, Yeti, Necromante, Dragão]
+    tipo: decidido
+    fonte: "Prompt mestre, seção 4: 10 ranks com níveis I a X"
+  prestigio_reseta:
+    valor: {rank: true, picareta: false, dinheiro: false}
+    tipo: decidido
+    fonte: "Enzo (21/10/2026): prestígio dá +1 prestígio e reseta os ranks; picareta e dinheiro não"
+  prestigios:
+    valor: 10
+    tipo: decidido
+    fonte: "Enzo (20/10/2026): sem temporadas, precisa de prestígio no final. Quantidade proposta: 10"
+
+minas:
+  uma_por_rank:
+    valor: true
+    tipo: decidido
+    fonte: "Enzo (21/10): no rank Cidadão minera na mina Cidadão, e assim por diante"
+  vip_multiplicador_da_mina_cidadao:
+    valor: 2.0
+    tipo: decidido
+    fonte: "Enzo (21/10): a mina VIP paga o dobro da mina normal (que paga 1 money e 1 gema)"
+  mina1_money_por_bloco:
+    valor: 1
+    tipo: decidido
+    fonte: "Prompt mestre 3.1 e Enzo (21/10): mina Cidadão paga 1 money e 1 gema"
+  mina1_gemas_por_bloco:
+    valor: 1
+    tipo: decidido
+    fonte: "Prompt mestre 3.1 e Enzo (21/10)"
+
+picareta:
+  niveis_maximos:
+    valor:
+      speed: 2
+      haste: 2
+      fortuna: 1000
+      gemado: 1000
+      chaveiro: 1000
+      Explosivo: 1000
+      cruz: 1000
+      Drill: 1000
+      laser: 1000
+      mobexplosivo: 1000
+      trincheira: 1000
+      meteoro: 1000
+      tempestadedefogo: 1000
+      chuvaacida: 1000
+      destruidor: 1000
+      nuclear: 1000
+    tipo: decidido
+    fonte: "Prompt mestre, seção 6: 16 encantamentos"
+  fortuna_pct_por_nivel:
+    valor: 0.30
+    tipo: decidido
+    fonte: "Prompt mestre 6.1: +0,30% de money por nível (+300% no 1.000). Referência mais recente"
+  gemado_pct_por_nivel:
+    valor: 0.20
+    tipo: decidido
+    fonte: "Prompt mestre 6.2: +0,20% de gemas por nível (+200% no 1.000)"
+  exp_em_todas_as_minas:
+    valor: true
+    tipo: decidido
+    fonte: "Enzo (21/10): a picareta ganha EXP em todas as minas, não igualmente"
+  usar_booster_money_em_armadura:
+    valor: false
+    tipo: decidido
+    fonte: "Enzo (21/10): não vamos usar booster de money. A Fortuna Aprimorada da picareta continua (é ela que dá o +money)"
+  multiplicador_prisma:
+    valor: false
+    tipo: decidido
+    fonte: "Enzo (21/10): não existe Multiplicador de Prisma, remover"
+
+regras:
+  multicontas_permitidas:
+    valor: true
+    tipo: decidido
+    fonte: "Enzo (21/10): pode ter várias contas por jogador, conta fake e tudo mais"
+  limite_diario:
+    valor: false
+    tipo: decidido
+    fonte: "Enzo (21/10): não tem limite diário"
+  item_preso_na_conta:
+    valor: false
+    tipo: decidido
+    fonte: "Enzo (20/10): não queremos item preso à conta"
+  taxa_pay_leilao:
+    valor: false
+    tipo: decidido
+    fonte: "Enzo (20/10): sem taxa no /pay e no leilão"
+
+agricultura:
+  plantacao_comprada_uma_vez:
+    valor: true
+    tipo: decidido
+    fonte: "Enzo (20/10), premissa 2 aceita: compra uma vez e regenera"
+  fungo_fracao_da_mina:
+    valor: 0.70
+    tipo: decidido
+    fonte: "Enzo (20/10), premissa 2 aceita: Fungo rende uns 70% da mina do mesmo estágio"
+  libera_depois_da_mina:
+    valor: true
+    tipo: decidido
+    fonte: "Enzo (20/10): plantação só depois de passar pela mina e conseguir o básico"
+  colheita_travada_por_rank:
+    valor: true
+    tipo: decidido
+    fonte: "Enzo (20/10): cada plantação só pode ser colhida a partir de um rank (o simulador propõe qual)"

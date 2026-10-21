@@ -1,0 +1,3 @@
+__pycache__/
+.pytest_cache/
+economia/saida/log_geracao.txt

@@ -1,0 +1,77 @@
+# Dados MEDIDOS: testes feitos no servidor ou valores lidos nos configs reais.
+# Cada item: valor, tipo (sempre "medido" aqui) e fonte.
+# Se um teste novo for feito, troque o valor e a fonte. O resto se recalcula sozinho.
+
+mineracao:
+  blocos_por_hora:
+    valor: 67440
+    tipo: medido
+    fonte: "Enzo, teste na mina Cidadão: 5.620 blocos em 5 min com picareta padrão sem Fortuna"
+  fly_multiplicador:
+    valor: 1.0
+    tipo: medido
+    fonte: "Enzo, teste com Fly: igual ou pior que sem Fly"
+  area_dispara_outro_encantamento:
+    valor: false
+    tipo: medido
+    fonte: "Enzo, teste 1 (21/10/2026): Cruz não saiu do meio de uma explosão. Só 1 teste, repetir se der"
+  area_paga_bloco_inteiro:
+    valor: true
+    tipo: medido
+    fonte: "Enzo, teste 2 (21/10/2026): bloco quebrado pela explosão paga"
+
+mina:
+  blocos_total:
+    valor: 751060
+    tipo: medido
+    fonte: "MinaReset/minas.yml: 94 x 85 x 94 = 751.060 (todas as minas de rank)"
+  camada_blocos:
+    valor: 8836
+    tipo: medido
+    fonte: "MinaReset/minas.yml: uma camada 94 x 94"
+  reset_segundos:
+    valor: 1200
+    tipo: medido
+    fonte: "MinaReset/minas.yml, reset: 1200"
+  reset_porcentagem:
+    valor: 40
+    tipo: medido
+    fonte: "MinaReset/minas.yml, porcentagem: 40 (reseta ao quebrar 40%)"
+  chance_chave_atual_pct:
+    valor: 0.10
+    tipo: medido
+    fonte: "MinaReset/blocos.yml e Enzo (21/10): 0,10% por bloco quebrado"
+
+agricultura:
+  fungo_quebras_por_hora:
+    valor: 153000
+    tipo: medido
+    fonte: "Enzo, teste: 2.550 fungos por minuto, sem Fortuna"
+  crescimento_segundos:
+    valor: {cana: 90, melancia: 87.5, cenoura: 60, fungo: 37.5}
+    tipo: medido
+    fonte: "Armazem/config.yml, crescimento-tempo (média de min e max)"
+  cacto_por_segundo_por_planta:
+    valor: 0.0222222
+    tipo: medido
+    fonte: "Armazem/armazem.yml, cacto gerarporsegundo (80 por hora por cacto)"
+
+picareta:
+  exp_inicial:
+    valor: 2500
+    tipo: medido
+    fonte: "Encantamentos/evolutivos.yml, picareta exp-inicial"
+  exp_aumento:
+    valor: 39
+    tipo: medido
+    fonte: "Encantamentos/evolutivos.yml, picareta aumento (lido como +39 de EXP por nível, ver hipoteses)"
+
+spawners:
+  tempo_spawn_segundos:
+    valor: 30
+    tipo: medido
+    fonte: "Spawners/mobs.yml, tempo-spawn de todos os mobs"
+  cabecas_por_morte_sem_pilhagem:
+    valor: 1.5
+    tipo: medido
+    fonte: "Spawners/mobs.yml, looting 0: min 1, max 2 (média 1,5)"
