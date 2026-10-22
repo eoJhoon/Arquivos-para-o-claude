@@ -5,7 +5,7 @@ blocos:
         funciona: true
         desativar-drops-no-chao: true
         drops:
-        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.02\padrao\padrao'
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.1\padrao\padrao'
         cmds: {}
         XP:
           min: 4
@@ -101,7 +101,7 @@ blocos:
         funciona: true
         desativar-drops-no-chao: true
         drops:
-        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.02\padrao\padrao'
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.1\padrao\padrao'
         cmds: {}
         XP:
           min: 4
@@ -142,7 +142,7 @@ blocos:
         funciona: true
         desativar-drops-no-chao: true
         drops:
-        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.02\padrao\padrao'
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.1\padrao\padrao'
         cmds: {}
         XP:
           min: 4
@@ -183,7 +183,7 @@ blocos:
         funciona: true
         desativar-drops-no-chao: true
         drops:
-        - '131:0\1\[N]{&7Chave &lMineração}[N][L]{&bClique com o botão direito na Caixa Mineração.||&b||&7Uma chave robusta distribuída para os mineradores de elite,||&7capaz de abrir caixas básicas e liberar ferramentas e recursos valiosos.||&b||&6Raridade: &9&l&oRARA}[L][G][KEY]{chave☢Mineracaoo}[KEY]\0.02\correio\padrao'
+        - '131:0\1\[N]{&7Chave &lMineração}[N][L]{&bClique com o botão direito na Caixa Mineração.||&b||&7Uma chave robusta distribuída para os mineradores de elite,||&7capaz de abrir caixas básicas e liberar ferramentas e recursos valiosos.||&b||&6Raridade: &9&l&oRARA}[L][G][KEY]{chave☢Mineracaoo}[KEY]\0.1\correio\padrao'
         cmds: {}
         XP:
           min: 4
@@ -224,7 +224,7 @@ blocos:
         funciona: true
         desativar-drops-no-chao: true
         drops:
-        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.02\padrao\padrao'
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.1\padrao\padrao'
         cmds: {}
         XP:
           min: 4
@@ -265,7 +265,7 @@ blocos:
         funciona: true
         desativar-drops-no-chao: true
         drops:
-        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.02\padrao\padrao'
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.1\padrao\padrao'
         cmds: {}
         XP:
           min: 4
@@ -306,7 +306,7 @@ blocos:
         funciona: true
         desativar-drops-no-chao: true
         drops:
-        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.02\padrao\padrao'
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.1\padrao\padrao'
         cmds: {}
         XP:
           min: 4
@@ -347,7 +347,7 @@ blocos:
         funciona: true
         desativar-drops-no-chao: true
         drops:
-        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.02\padrao\padrao'
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.1\padrao\padrao'
         cmds: {}
         XP:
           min: 4
@@ -388,7 +388,7 @@ blocos:
         funciona: true
         desativar-drops-no-chao: true
         drops:
-        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.02\padrao\padrao'
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.1\padrao\padrao'
         cmds: {}
         XP:
           min: 4
@@ -429,7 +429,7 @@ blocos:
         funciona: true
         desativar-drops-no-chao: true
         drops:
-        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.02\padrao\padrao'
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.1\padrao\padrao'
         cmds: {}
         XP:
           min: 4
@@ -498,7 +498,7 @@ blocos:
         funciona: true
         desativar-drops-no-chao: true
         drops:
-        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.02\padrao\padrao'
+        - '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]\0.1\padrao\padrao'
         cmds: {}
         XP:
           min: 4

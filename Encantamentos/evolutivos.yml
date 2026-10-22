@@ -295,16 +295,16 @@ itensevolutivos:
       subtitle-levelup-msg: '&aPicareta Evoluída!'
 
       itens-exp:
-        STAINED_CLAY: 0.59
-        COBBLESTONE: 0.76
-        LAPIS_BLOCK: 0.96
-        PRISMARINE: 1.15
-        GOLD_BLOCK: 1.28
-        IRON_BLOCK: 1.4
-        QUARTZ_BLOCK: 1.53
-        COAL_BLOCK: 1.66
-        REDSTONE_BLOCK: 1.79
-        EMERALD_BLOCK: 0.61
+        STAINED_CLAY: 0.74
+        COBBLESTONE: 0.99
+        LAPIS_BLOCK: 1.27
+        PRISMARINE: 1.54
+        GOLD_BLOCK: 1.71
+        IRON_BLOCK: 1.88
+        QUARTZ_BLOCK: 2.06
+        COAL_BLOCK: 2.24
+        REDSTONE_BLOCK: 2.42
+        EMERALD_BLOCK: 0.75
     menu-evolutivo:
       nome: '&8Picareta Evolutiva'
       tamanho: 54
@@ -344,22 +344,22 @@ itensevolutivos:
       skin-2:
         item-menu: '274\[N]{&7&lPicareta de Pedra}[N][L]{||&8&m----------------------------------||&7Resistente e eficiente!|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+3%|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
         slot: 11
-        custo: {money: 1620}
+        custo: {money: 1660}
         bonus: {money: 3}
       skin-3:
         item-menu: '285\[N]{&6&lPicareta de Ouro}[N][L]{||&8&m----------------------------------||&7Rica em valor, afiada em lucro!|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+6%|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
         slot: 12
-        custo: {money: 39600}
+        custo: {money: 43300}
         bonus: {money: 6}
       skin-4:
         item-menu: '257\[N]{&f&lPicareta de Ferro}[N][L]{||&8&m----------------------------------||&7Ferramenta forjada no fogo!|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+9%|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
         slot: 13
-        custo: {money: 1040000}
+        custo: {money: 1210000}
         bonus: {money: 9}
       skin-5:
         item-menu: '278\[N]{&b&lPicareta de Diamante}[N][L]{||&8&m----------------------------------||&7A rainha da mineração cósmica!|| ||&e&lBÔNUS ATIVOS:||&f ✦ Dinheiro: &a+12%|| ||&3&lCOMO OBTER:||&7Abra &1L&2u&3c&4k&5y&6B&7l&8o&9c&ak &bSkins&7!|| ||&a▶ @possui||&8&m----------------------------------}[L]'
         slot: 14
-        custo: {money: 32500000}
+        custo: {money: 40900000}
         bonus: {money: 12}
 menu-skins: 'Skins Evolutiva\27'
 possui: '&aClique para alterar a skin'

@@ -85,20 +85,20 @@ animais:
   WOLF: 'Lobo'
 
 digite-no-chat-moeda:
-- ""
-- "&fDigite no chat a moeda que deseja adicionar."
-- "&fDigite &c'cancelar' &fpara cancelar."
-- ""
-- "&fExemplo:"
-- ""
-- "&ffunciona-fortuna = sim ou não"
-- "&fmoeda = moeda do multimoedas ou vault"
-- "&ftipo-msg = actionbar ou mensagem ou semmensagem"
-- "&fmsg = a mensagem que o jogador vai receber"
-- ""
-- "&fquantia moeda funciona-fortuna tipo-msg msg"
-- "&f1000 money sim actionbar Você recebeu @quantia"
-- ""
+  - ""
+  - "&fDigite no chat a moeda que deseja adicionar."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+  - "&fExemplo:"
+  - ""
+  - "&ffunciona-fortuna = sim ou não"
+  - "&fmoeda = moeda do multimoedas ou vault"
+  - "&ftipo-msg = actionbar ou mensagem ou semmensagem"
+  - "&fmsg = a mensagem que o jogador vai receber"
+  - ""
+  - "&fquantia moeda funciona-fortuna tipo-msg msg"
+  - "&f1000 money sim actionbar Você recebeu @quantia"
+  - ""
 
 removeu-holograma: '&7[&a&l!&7] &fVocê removeu o holograma.'
 setou-holograma: '&7[&a&l!&7] &fVocê setou o holograma.'
@@ -112,7 +112,9 @@ removeu-npc: '&7[&a&l!&7] &fVocê removeu o npc de stack spawners.'
 nao-setado-npc: '&7[&4&l!&7] &cEsse top não foi setado.'
 comando-loja-spawners: 'warp spawners'
 
-spawner: '52\[N]{&bSpawner de @tipo}[N][L]{ ||&fTipo: &a@tipo ||&fQuantidade: &a@qnt||&a}[L]'
+spawner: '52\[N]{&bSpawner de @tipo}[N][L]{
+||&fTipo: &a@tipo
+||&fQuantidade: &a@qnt||&a}[L]'
 
 drop-inv-cheio: 'armazem'
 drop-inv-vazio: 'armazem'
@@ -120,9 +122,9 @@ drop-inv-vazio: 'armazem'
 #ATIVAR OU DESATIVAR STACK POR PLAYER
 #Não = INFINITO
 #Sim = Os jogadores podem coloca stack de acordo com quantos eles tem
-stack-por-player: true
+stack-por-player: false
 #MAXIMO DE STACK QUE O JOGADOR PODE ATIVAR
-max-stack-spawners: 64.0
+max-stack-spawners: 10000.0
 stack-mobs: 10.0
 limite-mobs: 100000.0
 shiftkill: true
@@ -132,10 +134,10 @@ adicional-holograma:
   z: 0
 
 holograma-spawners:
-- 'Holograma'
-- '@dono'
-- '@spawner'
-- 'Holograma'
+  - 'Holograma'
+  - '@dono'
+  - '@spawner'
+  - 'Holograma'
 
 publica: '&7[&4&l!&7] &fVocê Colocou seu spawners para &aPúblico&2! &8(&7Todos podem hitar&8)&7.'
 nao-publica: '&7[&4&l!&7] &fVocê Colocou seu spawners para &cPrivado&4! &8(&7Só você pode hitar&8)&7.'
@@ -165,96 +167,96 @@ fora-do-terreno: '&7[&4&l!&7] &cVocê não pode setar o local de spawn fora do t
 precisa-colocar-porcentagem: '&7[&4&l!&7] &cVocê precisa colocar uma 0%25 | ID%CHANCE'
 
 digite-no-chat-o-limite:
-- ""
-- "&fDigite no chat o máximo de mobs que vai spawnar."
-- "&fDigite &c'cancelar' &fpara cancelar."
-- ""
+  - ""
+  - "&fDigite no chat o máximo de mobs que vai spawnar."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
 
 digite-no-chat-o-tempo:
-- ""
-- "&fDigite no chat o tempo que vai spawnar."
-- "&fDigite &c'cancelar' &fpara cancelar."
-- ""
+  - ""
+  - "&fDigite no chat o tempo que vai spawnar."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
 
 digite-no-chat-o-exp:
-- ""
-- "&fDigite no chat o EXP que vai dropar do mob."
-- "&fDigite &c'cancelar' &fpara cancelar."
-- ""
+  - ""
+  - "&fDigite no chat o EXP que vai dropar do mob."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
 
 digite-no-chat-a-porcentagem:
-- ""
-- "&fDigite no chat a nova chance do drop."
-- "&fDigite &c'cancelar' &fpara cancelar."
-- ""
+  - ""
+  - "&fDigite no chat a nova chance do drop."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
 
 digite-no-chat-comandos:
-- ""
-- "&fDigite no chat o comando que deseja adicionar."
-- "&fOu digite o número que deseja excluir abaixo."
-- "&fDigite &c'cancelar' &fpara cancelar a operação."
-- "&fAltere a chance de um comando EX: &aID%CHANCE &f| &a0%25"
-- "&fVariáveis: &a@jogador"
+  - ""
+  - "&fDigite no chat o comando que deseja adicionar."
+  - "&fOu digite o número que deseja excluir abaixo."
+  - "&fDigite &c'cancelar' &fpara cancelar a operação."
+  - "&fAltere a chance de um comando EX: &aID%CHANCE &f| &a0%25"
+  - "&fVariáveis: &a@jogador"
 
 comandos-msg: '@numero - @comando | chance: @chance'
 
 ajuda:
-- ''
-- '&e&lComandos de Spawners &7- &4&lADMIN'
-- ''
-- '&a/spawnersadmin spawners <nick> <nome> <quantidade> &7- pegar um spawner.'
-- '&a/spawnersadmin stack <nick> <quantidade> &7- pegar o item de stack.'
-- '&a/spawnersadmin setnpc <1/2/3> &7- setar npc top stack spawners.'
-- '&a/spawnersadmin delnpc <1/2/3> &7- remove npc top stack spawners.'
-- '&a/spawnersadmin holograma &7- colocar holograma de top stack spawners.'
-- '&a/spawnersadmin delholograma &7- remover holograma de top stack spawners.'
-- '&a/spawnersadmin reload &7- recarregar o plugin.'
+  - ''
+  - '&e&lComandos de Spawners &7- &4&lADMIN'
+  - ''
+  - '&a/spawnersadmin spawners <nick> <nome> <quantidade> &7- pegar um spawner.'
+  - '&a/spawnersadmin stack <nick> <quantidade> &7- pegar o item de stack.'
+  - '&a/spawnersadmin setnpc <1/2/3> &7- setar npc top stack spawners.'
+  - '&a/spawnersadmin delnpc <1/2/3> &7- remove npc top stack spawners.'
+  - '&a/spawnersadmin holograma &7- colocar holograma de top stack spawners.'
+  - '&a/spawnersadmin delholograma &7- remover holograma de top stack spawners.'
+  - '&a/spawnersadmin reload &7- recarregar o plugin.'
 
 digite-no-chat-a-min:
-- ""
-- "&fDigite no chat o minimo geral drops da looting."
-- "&fDigite &c'cancelar' &fpara cancelar."
-- ""
-- "&a0-@max &ftodas as lootings que existem"
-- ""
-- "&fExemplo:"
-- ""
-- "&f5 0-10 10"
-- ""
-- "&f5 &7= &adrop minimo"
-- "&f0-@max &7= &alootings alteradas"
-- "&f10 &7= &aaumenta &f10% &apor cada um"
-- ""
+  - ""
+  - "&fDigite no chat o minimo geral drops da looting."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+  - "&a0-@max &ftodas as lootings que existem"
+  - ""
+  - "&fExemplo:"
+  - ""
+  - "&f5 0-10 10"
+  - ""
+  - "&f5 &7= &adrop minimo"
+  - "&f0-@max &7= &alootings alteradas"
+  - "&f10 &7= &aaumenta &f10% &apor cada um"
+  - ""
 
 
 digite-no-chat-a-max:
-- ""
-- "&fDigite no chat o máximo geral drops da looting."
-- "&fDigite &c'cancelar' &fpara cancelar."
-- ""
-- "&a0-@max &ftodas as lootings que existem"
-- ""
-- "&fExemplo:"
-- ""
-- "&f5 0-10 10"
-- ""
-- "&f5 &7= &adrop máximo"
-- "&f0-@max &7= &lootings alteradas"
-- "&f10 &7= &aaumenta &f10% &apor cada um"
-- ""
+  - ""
+  - "&fDigite no chat o máximo geral drops da looting."
+  - "&fDigite &c'cancelar' &fpara cancelar."
+  - ""
+  - "&a0-@max &ftodas as lootings que existem"
+  - ""
+  - "&fExemplo:"
+  - ""
+  - "&f5 0-10 10"
+  - ""
+  - "&f5 &7= &adrop máximo"
+  - "&f0-@max &7= &lootings alteradas"
+  - "&f10 &7= &aaumenta &f10% &apor cada um"
+  - ""
 
 digite-no-chat-a-looting:
-- ""
-- "&fDigite no chat a quantia minima e máxima da looting."
-- "&fDigite &c'cancelar' &apara cancelar"
-- ""
-- "&fExemplo:"
-- ""
-- "&f1-5"
-- ""
-- "&f1 &7= &aMinimo drop"
-- "&f5 &7= &aMáximo drop"
-- ""
+  - ""
+  - "&fDigite no chat a quantia minima e máxima da looting."
+  - "&fDigite &c'cancelar' &apara cancelar"
+  - ""
+  - "&fExemplo:"
+  - ""
+  - "&f1-5"
+  - ""
+  - "&f1 &7= &aMinimo drop"
+  - "&f5 &7= &aMáximo drop"
+  - ""
 
 precisa-colocar-looting: '&7[&4&l!&7] &fPrecisa colocar o valor da looting.'
 precisa-colocar-um-numero: '&7[&4&l!&7] &fO valor precisa ser um número.'

@@ -12,6 +12,7 @@ from dataclasses import dataclass, field
 from .modelo import Modelo, TODOS, FIXOS, AREA
 
 PASSO_H = 1 / 30  # 2 minutos
+LIMITE_PAYBACK_H = 20  # jogador real não compra upgrade que leva mais de 20 h para se pagar
 FRACOES = {'equilibrado': 0.5, 'ingenuo': 0.2}
 
 
@@ -55,7 +56,9 @@ class Jogador:
         f = self.frac[m]
         mina_money = mo.R * mo.mina_money(m) * M * mo.F(n['fortuna'])
         mina_gemas = mo.R * mo.mina_gemas(m) * M * mo.G(n['gemado'])
-        money = f['mina'] * mina_money + f['agricultura'] * self.agro * mo.renda_ref(s)[0]
+        # chaves: o que as caixas devolvem vale uma fração da renda da mina (sobe com o Chaveiro)
+        caixas = mo.P['design.chaveiro_valor_da_chave'] * mina_money * mo.K(n['chaveiro'])
+        money = f['mina'] * (mina_money + caixas) + f['agricultura'] * self.agro * mo.renda_ref(s)[0]
         gemas = f['mina'] * mina_gemas
         return money, gemas, M
 
@@ -64,7 +67,7 @@ class Jogador:
         if e == 'fortuna':
             return mo.f_fort / mo.F(n[e])
         if e == 'gemado':
-            return mo.f_gem / mo.G(n[e])
+            return 0.5 * mo.f_gem / mo.G(n[e])   # gemas são metade do preço da picareta
         if e == 'chaveiro':
             return mo.P['design.chaveiro_valor_da_chave'] * mo.f_chav / mo.K(n[e])
         if e in FIXOS:
@@ -92,13 +95,15 @@ class Jogador:
             ganho = self.ganho(e, M)
             if L == 1 and e in AREA:
                 # o 1o nível é caro (desbloqueio): avalia o pacote até onde a picareta deixa
-                teto = min(self.mo.teto_por_picareta(e, p), 1000)
+                teto = min(self.mo.teto_por_picareta(e, p), 200)   # avalia liberar + os primeiros 200 níveis
                 custo_pac = sum(self.mo.preco(e, x)[0] for x in range(1, teto + 1))
                 ganho, cm_eq = ganho * teto, custo_pac
             else:
                 cm_eq = cm
             horas = max(cm_eq / max(money_h, 1e-9), cg / max(gemas_h, 1e-9) * self.mo.sigma)
             roi = ganho / max(horas, 1e-12)
+            if roi < 1 / LIMITE_PAYBACK_H and e not in FIXOS:
+                continue   # não vale a pena: demora demais para se pagar
             if melhor is None or roi > melhor[0]:
                 melhor = (roi, e, L, cm, cg)
         if melhor_fora:

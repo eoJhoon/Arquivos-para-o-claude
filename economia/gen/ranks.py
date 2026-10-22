@@ -17,14 +17,6 @@ def gerar(custos, multiplicadores, pasta=None):
     chaves = list(ranks.keys())
     assert len(chaves) == 100, f'esperava 100 ranks, achei {len(chaves)}'
     for s, k in enumerate(chaves):
-        pres = ranks[k]['prestigio']
-        base = pres['1']
-        base['custo']['money'] = float(custos[s])
-        # apaga prestígios antigos e recria a partir da volta 1
-        for p in [x for x in pres.keys() if str(x) != '1']:
-            del pres[p]
-        for P in range(1, len(multiplicadores)):
-            novo = copy.deepcopy(base)
-            novo['custo']['money'] = float(round(custos[s] * multiplicadores[P]))
-            pres[str(P + 1)] = novo
+        # prestígio usa os mesmos preços (pedido de formato simples); só a 1a volta é escrita
+        ranks[k]['prestigio']['1']['custo']['money'] = float(custos[s])
     return escrever(ARQ, d, pasta)
