@@ -111,7 +111,7 @@ add(tabela(['Rank', 'Chave no arquivo', 'money', 'leitura', 'horas no rank'],
 
 // ---------------------------------------------------------------- minas
 add(H1('2. Minas'));
-add(P(['Arquivo ', B('MinaReset/blocos.yml'), ', campos ', B('moeda: money: quantia'), ' e ', B('moeda: gemas: quantia'), '. A chance da chave continua 0.10 (não mexer).']));
+add(P(['Arquivo ', B('MinaReset/blocos.yml'), ', campos ', B('moeda: money: quantia'), ' e ', B('moeda: gemas: quantia'), '. A chance da chave não muda (fica como está em cada mina).']));
 add(tabela(['Mina', 'Bloco', 'money por bloco', 'gemas por bloco'],
   d.minas.map(x => [x.mina, x.bloco, n(x.money), n(x.gemas)]), [3000, 2638, 2000, 2000]));
 add(P('A mina VIP paga o dobro da Cidadão, como vocês pediram. Na VIP, troquem o formato antigo (quantia 2000 de gemas) pelo mesmo formato das outras minas (money e gemas separados).', { before: 120 }));

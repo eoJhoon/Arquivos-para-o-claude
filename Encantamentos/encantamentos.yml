@@ -1577,7 +1577,7 @@ encantamentos:
     level-necessario:
       #NÍVEL DA PICARETA ENTRE 0 - 5
       '0-59': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 0, mensagem: '&f[&c&l!&f] &cLibera no nível 60 da picareta'}
-      '60-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cNível máximo'}
+      '60-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cLibera no nível 60 da picareta'}
   Vampirismo:
 
     nome: 'Vampirismo'
@@ -3518,7 +3518,7 @@ encantamentos:
     level-necessario:
       #NÍVEL DA PICARETA ENTRE 0 - 5
       '0-149': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 0, mensagem: '&f[&c&l!&f] &cLibera no nível 150 da picareta'}
-      '150-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cNível máximo'}
+      '150-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cLibera no nível 150 da picareta'}
   cruz:
 
     nome: 'Cruz'
@@ -3573,7 +3573,7 @@ encantamentos:
     level-necessario:
       #NÍVEL DA PICARETA ENTRE 0 - 5
       '0-29': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 0, mensagem: '&f[&c&l!&f] &cLibera no nível 30 da picareta'}
-      '30-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cNível máximo'}
+      '30-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cLibera no nível 30 da picareta'}
   laser:
 
     nome: 'Laser'
@@ -3630,7 +3630,7 @@ encantamentos:
     level-necessario:
       #NÍVEL DA PICARETA ENTRE 0 - 5
       '0-99': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 0, mensagem: '&f[&c&l!&f] &cLibera no nível 100 da picareta'}
-      '100-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cNível máximo'}
+      '100-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cLibera no nível 100 da picareta'}
   meteoro:
 
     nome: 'Meteoro'
@@ -3689,7 +3689,7 @@ encantamentos:
     level-necessario:
       #NÍVEL DA PICARETA ENTRE 0 - 5
       '0-279': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 0, mensagem: '&f[&c&l!&f] &cLibera no nível 280 da picareta'}
-      '280-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cNível máximo'}
+      '280-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cLibera no nível 280 da picareta'}
   speed:
 
     nome: 'Speed'
@@ -3881,7 +3881,7 @@ encantamentos:
     level-necessario:
       #NÍVEL DA PICARETA ENTRE 0 - 5
       '0-359': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 0, mensagem: '&f[&c&l!&f] &cLibera no nível 360 da picareta'}
-      '360-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cNível máximo'}
+      '360-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cLibera no nível 360 da picareta'}
   chuvaacida:
 
     nome: 'Chuva Acida'
@@ -3938,7 +3938,7 @@ encantamentos:
     level-necessario:
       #NÍVEL DA PICARETA ENTRE 0 - 5
       '0-439': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 0, mensagem: '&f[&c&l!&f] &cLibera no nível 440 da picareta'}
-      '440-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cNível máximo'}
+      '440-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cLibera no nível 440 da picareta'}
   nuclear:
 
     nome: 'Nuclear'
@@ -3993,7 +3993,7 @@ encantamentos:
     level-necessario:
       #NÍVEL DA PICARETA ENTRE 0 - 5
       '0-599': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 0, mensagem: '&f[&c&l!&f] &cLibera no nível 600 da picareta'}
-      '600-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cNível máximo'}
+      '600-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cLibera no nível 600 da picareta'}
   destruidor:
 
     nome: 'Destruidor'
@@ -4048,7 +4048,7 @@ encantamentos:
     level-necessario:
       #NÍVEL DA PICARETA ENTRE 0 - 5
       '0-519': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 0, mensagem: '&f[&c&l!&f] &cLibera no nível 520 da picareta'}
-      '520-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cNível máximo'}
+      '520-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cLibera no nível 520 da picareta'}
   trincheira:
 
     nome: 'Trincheira'
@@ -4103,7 +4103,7 @@ encantamentos:
     level-necessario:
       #NÍVEL DA PICARETA ENTRE 0 - 5
       '0-199': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 0, mensagem: '&f[&c&l!&f] &cLibera no nível 200 da picareta'}
-      '200-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cNível máximo'}
+      '200-1000': {requisitos: {}, aumento-requisitos: {}, nivel-máximo: 1000, mensagem: '&f[&c&l!&f] &cLibera no nível 200 da picareta'}
   selo:
 
     nome: 'Selo'

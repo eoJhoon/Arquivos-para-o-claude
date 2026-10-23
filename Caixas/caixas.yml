@@ -314,7 +314,7 @@ caixa:
     armorstand: true
   mineracao:
     item: 54:0\1\[N]{&fCaixa}[N]
-    item-chave: '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢mineracao}[KEY]'
+    item-chave: '131:0\1\[N]{&7&lChave Mineracao}[N][L]{||&e&l* &bComo Utilizar:||&7Vá até o &e&n/warp caixas&7 e clique com o||&7botão direito na caixa correspondente.||&e* &bRaridade: &7&lCOMUM}[L][KEY]{chave☢vip}[KEY]'
     item-chao: 95:7\1\[KEY]{caixachao☢mineracao}[KEY]
     item-virtual: '54:0\1\[N]{&f@caixa}[N][L]{||&fQuantia: &a@quantidade||&fLimite: &a@limite||&7}[L]'
     quantidade: 1
