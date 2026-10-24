@@ -15,6 +15,7 @@ if str(ECON) not in sys.path:
 
 from sim.modelo import Modelo, BOOST, AREA, FIXOS, CHAVE_PLUGIN   # noqa: E402
 from gen.planilha import NOME_ENC                                 # noqa: E402
+from gen.encantamentos import chance_area                         # noqa: E402
 
 CAB = Font(bold=True, color='FFFFFF')
 FUNDO = PatternFill('solid', fgColor='1F4E78')
@@ -59,6 +60,8 @@ def gerar():
         '',
         'Uma aba por encantamento. Cada linha é um upgrade: "do nível 0 para o 1", "do 1 para o 2"...',
         'Money e Gemas = quanto custa aquele upgrade.',
+        'Fortuna, Gemado e Chaveiro: a 2a coluna é o bônus (%) que o encantamento dá no nível novo.',
+        'Encantamentos de área: a 2a coluna é a chance de ativar (%) a cada bloco quebrado, no nível novo.',
         'Total acumulado = quanto custa sair do nível 0 até aquele nível.',
         '',
         'Estes valores NÃO precisam ser digitados um por um. No encantamentos.yml ficam só as faixas',
@@ -71,19 +74,32 @@ def gerar():
         ws.cell(i, 1, t).font = Font(bold=(i == 1), size=13 if i == 1 else 11)
     ws.column_dimensions['A'].width = 110
 
+    pct_boost = {'fortuna': mo.P['picareta.fortuna_pct_por_nivel'], 'gemado': mo.P['picareta.gemado_pct_por_nivel'],
+                 'chaveiro': mo.P['design.chaveiro_pct_por_nivel']}
+    nome_efeito = {'fortuna': 'Bônus de money no nível novo (%)', 'gemado': 'Bônus de gemas no nível novo (%)',
+                   'chaveiro': 'Bônus de chaves no nível novo (%)'}
     for e in BOOST + AREA:
         faixas = mo.faixas_preco(e)
         tab = mo.tabela_precos(e)
+        if e in BOOST:
+            por_nivel, titulo, casas = pct_boost[e], nome_efeito[e], 1
+        else:
+            por_nivel, titulo, casas = chance_area(mo, e), 'Chance de ativação no nível novo (% por bloco)', 8
         linhas, acm, acg = [], 0, 0
         for a, b, *_ in faixas:
             for n in range(a, b + 1):
                 m, g = tab[n]
                 acm += m
                 acg += g
-                linhas.append([f'{n} → {n + 1}', int(m), int(g), f"'{a}-{b}'", int(acm), int(acg)])
-        aba(wb, NOME_ENC[e], linhas,
-            ['Upgrade (nível)', 'Money', 'Gemas', 'Faixa no arquivo', 'Total acumulado money', 'Total acumulado gemas'],
-            [16, 18, 16, 17, 24, 24])
+                efeito = round(por_nivel * (n + 1), casas)
+                linhas.append([f'{n} → {n + 1}', efeito, int(m), int(g), f"'{a}-{b}'", int(acm), int(acg)])
+        ws = aba(wb, NOME_ENC[e], linhas,
+                 ['Upgrade (nível)', titulo, 'Money', 'Gemas', 'Faixa no arquivo', 'Total acumulado money',
+                  'Total acumulado gemas'],
+                 [16, 24, 18, 16, 17, 24, 24])
+        for linha in ws.iter_rows(min_row=2, min_col=2, max_col=2):
+            linha[0].number_format = '0.0' if e in BOOST else '0.00000000'
+            linha[0].alignment = Alignment(horizontal='right')
     linhas = []
     for e in FIXOS:
         for L in (1, 2):
