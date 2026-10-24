@@ -107,14 +107,18 @@ design:
     valor: 10
     tipo: hipotese
     fonte: "Proposta calibrada no simulador: com 10 h no fim, gastar 20% ou 80% do money na picareta dá quase o mesmo tempo (nenhuma estratégia muito melhor). Com 25 h, correr para o rank ficava 16% mais rápido"
+  faixas_preco:
+    valor: [[0, 0], [1, 10], [11, 50], [51, 100], [101, 250], [251, 500], [501, 750], [751, 900], [901, 999]]
+    tipo: hipotese
+    fonte: "Formato que o Enzo já usava (0-10, 11-50 ... 901-1000), com o nível 0 separado (liberar o encantamento custa mais)"
   desbloqueio_horas:
-    valor: 1.0
+    valor: 0.1
     tipo: hipotese
-    fonte: "Proposta: liberar um encantamento de área (comprar o nível 1) custa 1 h de renda de quem está nesse ponto do jogo"
+    fonte: "Proposta: liberar um encantamento de área (nível 1) custa 6 min de renda de quem está nesse ponto. Com 1 h ninguém liberava os últimos"
   picareta_max_na_fracao:
-    valor: 1.5
+    valor: 1.2
     tipo: hipotese
-    fonte: "Proposta: o jogador típico chega no Dragão X com a picareta perto do nível 750. Picareta 1000 e tudo no máximo levam 50% a mais (prestígios)"
+    fonte: "Proposta: o jogador típico chega no Dragão X com os encantamentos perto de 850 a 900. O 1000 fica para os prestígios"
   curva_picareta_expoente:
     valor: 0.7
     tipo: hipotese
@@ -124,9 +128,9 @@ design:
     tipo: hipotese
     fonte: "Proposta: o que as caixas devolvem vale uns 15% da renda. Define o preço do Chaveiro"
   chance_chave_pct:
-    valor: 0.02
+    valor: 0.10
     tipo: hipotese
-    fonte: "Proposta: 1 chave a cada 5.000 blocos (13 por hora na mina 1 sem encantamento). Os 0,10% de hoje dariam 67/h e, com área, centenas"
+    fonte: "Mantido o valor de hoje (Enzo, 21/10). Atenção: blocos de área também rolam chave, então com área sobe bastante"
   chaveiro_pct_por_nivel:
     valor: 0.10
     tipo: hipotese
@@ -138,7 +142,7 @@ design:
   exp_folga_picareta:
     valor: 1.10
     tipo: hipotese
-    fonte: "Proposta: a picareta (EXP) anda 10% à frente do nível típico dos encantamentos, para travar só quem pula a mineração"
+    fonte: "Proposta: a picareta (EXP) anda 10% à frente do jogador típico. Hoje ela só serve para liberar os encantamentos"
   prestigio_horas_cada:
     valor: 35
     tipo: hipotese
@@ -168,9 +172,9 @@ encantamentos_area:
   tipo: hipotese
   fonte: "Proposta. Blocos: produto das medidas do radios atual (Cruz, Laser, Fenda e Chuva superestimados de propósito, o lado seguro). Validar: ativar cada um numa parede e contar"
 escala_area_por_faixa:
-  valor: {'1-250': 0.5, '251-500': 0.67, '501-750': 0.83, '751-1000': 1.0}
+  valor: {'1-1000': 1.0}
   tipo: hipotese
-  fonte: "Proposta: a área cresce nos marcos 250/500/750/1000 até o tamanho que vocês já usam hoje"
+  fonte: "Enzo (21/10) pediu formato simples: área igual à de hoje do nível 1 ao 1000; só a chance sobe"
 
 # Agricultura
 plantacoes:

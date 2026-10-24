@@ -35,26 +35,36 @@ def dims_faixa(dims, esc):
 
 
 def upgrade(mo, e, maximo):
+    """Preço em faixas (formato do plugin): custo no início da faixa + aumento por nível."""
     up = CommentedMap()
-    for L in range(1, maximo + 1):
-        cm, cg = mo.preco(e, L)
-        up[Q(f'{L - 1}-{L - 1}')] = mapa(custo=mapa(gemas=cg, money=cm), aumento=mapa(gemas=0, money=0),
-                                      requisitos=mapa(), **{'aumento-requisitos': mapa()})
+    if e in FIXOS:
+        for L in range(1, maximo + 1):
+            cm, cg = mo.preco(e, L)
+            up[Q(f'{L - 1}-{L - 1}')] = mapa(custo=mapa(gemas=cg, money=cm), aumento=mapa(gemas=0, money=0),
+                                          requisitos=mapa(), **{'aumento-requisitos': mapa()})
+        return up
+    for a, b, cm, am, cg, ag in mo.faixas_preco(e):
+        up[Q(f'{a}-{b}')] = mapa(custo=mapa(gemas=cg, money=cm), aumento=mapa(gemas=ag, money=am),
+                                 requisitos=mapa(), **{'aumento-requisitos': mapa()})
     return up
 
 
 def level_necessario(mo, e, mensagem):
+    """Libera o encantamento só a partir do nível u da picareta."""
     ln = CommentedMap()
     u = mo.libera(e)
-    for a in range(0, 1001, 10):
-        b = min(1000, a + 9)
-        teto = mo.teto_por_picareta(e, a)
-        msg = mensagem if teto >= 1000 else (
-            f'&f[&c&l!&f] &cLibera no nível {u} da picareta' if teto == 0 else
-            '&f[&c&l!&f] &cSuba o nível da picareta para liberar mais níveis')
-        ln[Q(f'{a}-{b}')] = mapa(requisitos=mapa(), **{'aumento-requisitos': mapa(), 'nivel-máximo': teto,
-                                                     'mensagem': msg})
+    if u > 0:
+        ln[Q(f'0-{u - 1}')] = mapa(requisitos=mapa(), **{'aumento-requisitos': mapa(), 'nivel-máximo': 0,
+                                                          'mensagem': f'&f[&c&l!&f] &cLibera no nível {u} da picareta'})
+    ln[Q(f'{u}-1000')] = mapa(requisitos=mapa(), **{'aumento-requisitos': mapa(), 'nivel-máximo': 1000,
+                                                     'mensagem': mensagem})
     return ln
+
+
+def chance_area(mo, e):
+    """Chance no formato do plugin (1 faixa): chance(L) = aumento x L. Igual ao formato que vocês já usam."""
+    por_nivel = mo.chance_pct(e, 1000, 1.0) / 1000
+    return round(por_nivel, 10)
 
 
 def gerar(mo, pasta=None):
@@ -63,28 +73,23 @@ def gerar(mo, pasta=None):
     for e in AREA:
         v = enc[e]
         faixa0 = next(iter(v['efeito'].values()))
-        extras = {k: faixa0[k] for k in ('mob', 'tempo') if k in faixa0}
+        pn = chance_area(mo, e)
+        campos = {'chance': pn, 'aumento-por-nivel': pn}
+        dims = mo.area[e]['radios']          # medida original de vocês (params)
+        if dims:
+            campos['radios'] = 'x'.join(str(x) for x in dims) if len(dims) > 1 else str(dims[0])
+        for k in ('mob', 'tempo'):
+            if k in faixa0:
+                campos[k] = faixa0[k]
         ef = CommentedMap()
-        for L in range(1, 1001):
-            esc = escala_da_faixa(mo, L)
-            campos = {'chance': round(mo.chance_pct(e, L, esc), 9), 'aumento-por-nivel': 0}
-            r = radios(mo, e, esc)
-            if r:
-                campos['radios'] = r
-            campos.update(extras)
-            ef[Q(f'{L}-{L}')] = mapa(**campos)
+        ef[Q('1-1000')] = mapa(**campos)
         v['efeito'] = ef
     for e in BOOST:
         v = enc[CHAVE_PLUGIN[e]]
         pct = mo.P[BONUS_PCT[e]]
         bo = CommentedMap()
-        for L in range(1, 1001):
-            bo[Q(f'{L}-{L}')] = mapa(quantidade=round(pct * L, 4), **{'aumento-por-nivel': 0})
+        bo[Q('1-1000')] = mapa(quantidade=pct, **{'aumento-por-nivel': pct})
         v['booster'] = bo
-    for e in FIXOS:
-        v = enc[e]
-        for faixa in v['efeito'].values():
-            faixa['chance'] = 100   # efeito contínuo enquanto minera (a descrição promete isso)
     for e in AREA + BOOST + FIXOS:
         chave = CHAVE_PLUGIN.get(e, e)
         v = enc[chave]

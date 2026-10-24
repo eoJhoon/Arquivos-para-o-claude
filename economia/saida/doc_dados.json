@@ -1,0 +1,3363 @@
+{
+ "resumo": {
+  "horas_ativo": 223.3,
+  "horas_otim": 222.43,
+  "horas_rush": 225.2,
+  "semanas": {
+   "casual": 21.3,
+   "ativo": 8.0,
+   "muito_ativo": 4.6,
+   "hardcore": 3.2
+  },
+  "prestigio_horas": [
+   118.7,
+   121.4,
+   117.7,
+   119.4,
+   124.0,
+   118.8,
+   121.3,
+   117.7,
+   119.4
+  ],
+  "niveis_fim": {
+   "Speed": 2,
+   "Haste": 2,
+   "Fortuna Aprimorada": 825,
+   "Gemado": 774,
+   "Chaveiro": 824,
+   "Impacto Explosivo": 824,
+   "Ataque em Cruz": 818,
+   "Drill": 812,
+   "Laser de Perfuração": 805,
+   "Mob Explosivo": 796,
+   "Fenda": 787,
+   "Impacto Meteoro": 774,
+   "Tempestade de Fogo": 762,
+   "Chuva Ácida": 746,
+   "Destruidor": 684,
+   "Detonação Nuclear": 597
+  }
+ },
+ "ranks": [
+  {
+   "rank": "Cidadão I",
+   "chave": "default",
+   "preco": 15600,
+   "horas": 0.367,
+   "acum": 0.367
+  },
+  {
+   "rank": "Cidadão II",
+   "chave": "rank1",
+   "preco": 19300,
+   "horas": 0.367,
+   "acum": 0.734
+  },
+  {
+   "rank": "Cidadão III",
+   "chave": "rank2",
+   "preco": 22600,
+   "horas": 0.4,
+   "acum": 1.134
+  },
+  {
+   "rank": "Cidadão IV",
+   "chave": "rank3",
+   "preco": 24900,
+   "horas": 0.433,
+   "acum": 1.567
+  },
+  {
+   "rank": "Cidadão V",
+   "chave": "rank4",
+   "preco": 29000,
+   "horas": 0.5,
+   "acum": 2.067
+  },
+  {
+   "rank": "Cidadão VI",
+   "chave": "rank5",
+   "preco": 31100,
+   "horas": 0.533,
+   "acum": 2.6
+  },
+  {
+   "rank": "Cidadão VII",
+   "chave": "rank6",
+   "preco": 33600,
+   "horas": 0.533,
+   "acum": 3.133
+  },
+  {
+   "rank": "Cidadão VIII",
+   "chave": "rank7",
+   "preco": 36900,
+   "horas": 0.6,
+   "acum": 3.733
+  },
+  {
+   "rank": "Cidadão IX",
+   "chave": "rank8",
+   "preco": 39200,
+   "horas": 0.6,
+   "acum": 4.333
+  },
+  {
+   "rank": "Cidadão X",
+   "chave": "rank9",
+   "preco": 42900,
+   "horas": 0.667,
+   "acum": 5.0
+  },
+  {
+   "rank": "Explorador I",
+   "chave": "rank10",
+   "preco": 93200,
+   "horas": 0.567,
+   "acum": 5.567
+  },
+  {
+   "rank": "Explorador II",
+   "chave": "rank11",
+   "preco": 106000,
+   "horas": 0.567,
+   "acum": 6.134
+  },
+  {
+   "rank": "Explorador III",
+   "chave": "rank12",
+   "preco": 127000,
+   "horas": 0.7,
+   "acum": 6.8340000000000005
+  },
+  {
+   "rank": "Explorador IV",
+   "chave": "rank13",
+   "preco": 138000,
+   "horas": 0.7,
+   "acum": 7.534000000000001
+  },
+  {
+   "rank": "Explorador V",
+   "chave": "rank14",
+   "preco": 158000,
+   "horas": 0.767,
+   "acum": 8.301
+  },
+  {
+   "rank": "Explorador VI",
+   "chave": "rank15",
+   "preco": 182000,
+   "horas": 0.833,
+   "acum": 9.134
+  },
+  {
+   "rank": "Explorador VII",
+   "chave": "rank16",
+   "preco": 203000,
+   "horas": 0.9,
+   "acum": 10.034
+  },
+  {
+   "rank": "Explorador VIII",
+   "chave": "rank17",
+   "preco": 222000,
+   "horas": 0.933,
+   "acum": 10.967
+  },
+  {
+   "rank": "Explorador IX",
+   "chave": "rank18",
+   "preco": 227000,
+   "horas": 1.0,
+   "acum": 11.967
+  },
+  {
+   "rank": "Explorador X",
+   "chave": "rank19",
+   "preco": 244000,
+   "horas": 1.033,
+   "acum": 13.0
+  },
+  {
+   "rank": "Guerreiro I",
+   "chave": "rank20",
+   "preco": 447000,
+   "horas": 0.833,
+   "acum": 13.833
+  },
+  {
+   "rank": "Guerreiro II",
+   "chave": "rank21",
+   "preco": 488000,
+   "horas": 0.9,
+   "acum": 14.733
+  },
+  {
+   "rank": "Guerreiro III",
+   "chave": "rank22",
+   "preco": 549000,
+   "horas": 1.0,
+   "acum": 15.733
+  },
+  {
+   "rank": "Guerreiro IV",
+   "chave": "rank23",
+   "preco": 615000,
+   "horas": 1.067,
+   "acum": 16.8
+  },
+  {
+   "rank": "Guerreiro V",
+   "chave": "rank24",
+   "preco": 686000,
+   "horas": 1.167,
+   "acum": 17.967000000000002
+  },
+  {
+   "rank": "Guerreiro VI",
+   "chave": "rank25",
+   "preco": 725000,
+   "horas": 1.233,
+   "acum": 19.200000000000003
+  },
+  {
+   "rank": "Guerreiro VII",
+   "chave": "rank26",
+   "preco": 794000,
+   "horas": 1.333,
+   "acum": 20.533
+  },
+  {
+   "rank": "Guerreiro VIII",
+   "chave": "rank27",
+   "preco": 851000,
+   "horas": 1.4,
+   "acum": 21.933
+  },
+  {
+   "rank": "Guerreiro IX",
+   "chave": "rank28",
+   "preco": 914000,
+   "horas": 1.5,
+   "acum": 23.433
+  },
+  {
+   "rank": "Guerreiro X",
+   "chave": "rank29",
+   "preco": 986000,
+   "horas": 1.567,
+   "acum": 25.0
+  },
+  {
+   "rank": "Tritão I",
+   "chave": "rank30",
+   "preco": 1640000,
+   "horas": 1.1,
+   "acum": 26.1
+  },
+  {
+   "rank": "Tritão II",
+   "chave": "rank31",
+   "preco": 1910000,
+   "horas": 1.2,
+   "acum": 27.3
+  },
+  {
+   "rank": "Tritão III",
+   "chave": "rank32",
+   "preco": 2120000,
+   "horas": 1.333,
+   "acum": 28.633
+  },
+  {
+   "rank": "Tritão IV",
+   "chave": "rank33",
+   "preco": 2570000,
+   "horas": 1.433,
+   "acum": 30.066
+  },
+  {
+   "rank": "Tritão V",
+   "chave": "rank34",
+   "preco": 4890000,
+   "horas": 1.567,
+   "acum": 31.633
+  },
+  {
+   "rank": "Tritão VI",
+   "chave": "rank35",
+   "preco": 5320000,
+   "horas": 1.667,
+   "acum": 33.3
+  },
+  {
+   "rank": "Tritão VII",
+   "chave": "rank36",
+   "preco": 5720000,
+   "horas": 1.733,
+   "acum": 35.032999999999994
+  },
+  {
+   "rank": "Tritão VIII",
+   "chave": "rank37",
+   "preco": 5820000,
+   "horas": 1.8,
+   "acum": 36.83299999999999
+  },
+  {
+   "rank": "Tritão IX",
+   "chave": "rank38",
+   "preco": 5820000,
+   "horas": 1.733,
+   "acum": 38.56599999999999
+  },
+  {
+   "rank": "Tritão X",
+   "chave": "rank39",
+   "preco": 5820000,
+   "horas": 2.467,
+   "acum": 41.03299999999999
+  },
+  {
+   "rank": "Guardião I",
+   "chave": "rank40",
+   "preco": 5820000,
+   "horas": 1.4,
+   "acum": 42.432999999999986
+  },
+  {
+   "rank": "Guardião II",
+   "chave": "rank41",
+   "preco": 6510000,
+   "horas": 1.533,
+   "acum": 43.96599999999999
+  },
+  {
+   "rank": "Guardião III",
+   "chave": "rank42",
+   "preco": 7500000,
+   "horas": 1.633,
+   "acum": 45.59899999999999
+  },
+  {
+   "rank": "Guardião IV",
+   "chave": "rank43",
+   "preco": 8590000,
+   "horas": 1.8,
+   "acum": 47.39899999999999
+  },
+  {
+   "rank": "Guardião V",
+   "chave": "rank44",
+   "preco": 9640000,
+   "horas": 1.933,
+   "acum": 49.33199999999999
+  },
+  {
+   "rank": "Guardião VI",
+   "chave": "rank45",
+   "preco": 11100000,
+   "horas": 2.067,
+   "acum": 51.39899999999999
+  },
+  {
+   "rank": "Guardião VII",
+   "chave": "rank46",
+   "preco": 22500000,
+   "horas": 2.233,
+   "acum": 53.631999999999984
+  },
+  {
+   "rank": "Guardião VIII",
+   "chave": "rank47",
+   "preco": 24100000,
+   "horas": 2.2,
+   "acum": 55.83199999999999
+  },
+  {
+   "rank": "Guardião IX",
+   "chave": "rank48",
+   "preco": 24100000,
+   "horas": 2.667,
+   "acum": 58.49899999999999
+  },
+  {
+   "rank": "Guardião X",
+   "chave": "rank49",
+   "preco": 27100000,
+   "horas": 2.3,
+   "acum": 60.798999999999985
+  },
+  {
+   "rank": "Monge I",
+   "chave": "rank50",
+   "preco": 27100000,
+   "horas": 1.867,
+   "acum": 62.66599999999998
+  },
+  {
+   "rank": "Monge II",
+   "chave": "rank51",
+   "preco": 31700000,
+   "horas": 1.833,
+   "acum": 64.49899999999998
+  },
+  {
+   "rank": "Monge III",
+   "chave": "rank52",
+   "preco": 61100000,
+   "horas": 1.967,
+   "acum": 66.46599999999998
+  },
+  {
+   "rank": "Monge IV",
+   "chave": "rank53",
+   "preco": 67400000,
+   "horas": 2.167,
+   "acum": 68.63299999999998
+  },
+  {
+   "rank": "Monge V",
+   "chave": "rank54",
+   "preco": 73100000,
+   "horas": 2.333,
+   "acum": 70.96599999999998
+  },
+  {
+   "rank": "Monge VI",
+   "chave": "rank55",
+   "preco": 74300000,
+   "horas": 2.333,
+   "acum": 73.29899999999998
+  },
+  {
+   "rank": "Monge VII",
+   "chave": "rank56",
+   "preco": 74300000,
+   "horas": 2.767,
+   "acum": 76.06599999999997
+  },
+  {
+   "rank": "Monge VIII",
+   "chave": "rank57",
+   "preco": 93900000,
+   "horas": 2.833,
+   "acum": 78.89899999999997
+  },
+  {
+   "rank": "Monge IX",
+   "chave": "rank58",
+   "preco": 96800000,
+   "horas": 2.8,
+   "acum": 81.69899999999997
+  },
+  {
+   "rank": "Monge X",
+   "chave": "rank59",
+   "preco": 96800000,
+   "horas": 2.767,
+   "acum": 84.46599999999997
+  },
+  {
+   "rank": "Avatar I",
+   "chave": "rank60",
+   "preco": 96800000,
+   "horas": 2.333,
+   "acum": 86.79899999999996
+  },
+  {
+   "rank": "Avatar II",
+   "chave": "rank61",
+   "preco": 157000000,
+   "horas": 2.133,
+   "acum": 88.93199999999996
+  },
+  {
+   "rank": "Avatar III",
+   "chave": "rank62",
+   "preco": 204000000,
+   "horas": 2.3,
+   "acum": 91.23199999999996
+  },
+  {
+   "rank": "Avatar IV",
+   "chave": "rank63",
+   "preco": 208000000,
+   "horas": 2.333,
+   "acum": 93.56499999999996
+  },
+  {
+   "rank": "Avatar V",
+   "chave": "rank64",
+   "preco": 208000000,
+   "horas": 2.9,
+   "acum": 96.46499999999996
+  },
+  {
+   "rank": "Avatar VI",
+   "chave": "rank65",
+   "preco": 276000000,
+   "horas": 2.9,
+   "acum": 99.36499999999997
+  },
+  {
+   "rank": "Avatar VII",
+   "chave": "rank66",
+   "preco": 300000000,
+   "horas": 3.1,
+   "acum": 102.46499999999996
+  },
+  {
+   "rank": "Avatar VIII",
+   "chave": "rank67",
+   "preco": 321000000,
+   "horas": 3.267,
+   "acum": 105.73199999999996
+  },
+  {
+   "rank": "Avatar IX",
+   "chave": "rank68",
+   "preco": 333000000,
+   "horas": 3.333,
+   "acum": 109.06499999999996
+  },
+  {
+   "rank": "Avatar X",
+   "chave": "rank69",
+   "preco": 333000000,
+   "horas": 3.3,
+   "acum": 112.36499999999995
+  },
+  {
+   "rank": "Yeti I",
+   "chave": "rank70",
+   "preco": 333000000,
+   "horas": 2.633,
+   "acum": 114.99799999999995
+  },
+  {
+   "rank": "Yeti II",
+   "chave": "rank71",
+   "preco": 345000000,
+   "horas": 2.5,
+   "acum": 117.49799999999995
+  },
+  {
+   "rank": "Yeti III",
+   "chave": "rank72",
+   "preco": 435000000,
+   "horas": 2.733,
+   "acum": 120.23099999999995
+  },
+  {
+   "rank": "Yeti IV",
+   "chave": "rank73",
+   "preco": 890000000,
+   "horas": 2.967,
+   "acum": 123.19799999999995
+  },
+  {
+   "rank": "Yeti V",
+   "chave": "rank74",
+   "preco": 988000000,
+   "horas": 3.2,
+   "acum": 126.39799999999995
+  },
+  {
+   "rank": "Yeti VI",
+   "chave": "rank75",
+   "preco": 1040000000,
+   "horas": 3.367,
+   "acum": 129.76499999999996
+  },
+  {
+   "rank": "Yeti VII",
+   "chave": "rank76",
+   "preco": 1150000000,
+   "horas": 3.633,
+   "acum": 133.39799999999997
+  },
+  {
+   "rank": "Yeti VIII",
+   "chave": "rank77",
+   "preco": 1240000000,
+   "horas": 3.9,
+   "acum": 137.29799999999997
+  },
+  {
+   "rank": "Yeti IX",
+   "chave": "rank78",
+   "preco": 1280000000,
+   "horas": 3.9,
+   "acum": 141.19799999999998
+  },
+  {
+   "rank": "Yeti X",
+   "chave": "rank79",
+   "preco": 1280000000,
+   "horas": 3.833,
+   "acum": 145.03099999999998
+  },
+  {
+   "rank": "Necromante I",
+   "chave": "rank80",
+   "preco": 1280000000,
+   "horas": 3.067,
+   "acum": 148.09799999999998
+  },
+  {
+   "rank": "Necromante II",
+   "chave": "rank81",
+   "preco": 1340000000,
+   "horas": 2.9,
+   "acum": 150.998
+  },
+  {
+   "rank": "Necromante III",
+   "chave": "rank82",
+   "preco": 2200000000,
+   "horas": 3.167,
+   "acum": 154.165
+  },
+  {
+   "rank": "Necromante IV",
+   "chave": "rank83",
+   "preco": 3430000000,
+   "horas": 3.4,
+   "acum": 157.565
+  },
+  {
+   "rank": "Necromante V",
+   "chave": "rank84",
+   "preco": 3730000000,
+   "horas": 3.667,
+   "acum": 161.232
+  },
+  {
+   "rank": "Necromante VI",
+   "chave": "rank85",
+   "preco": 4020000000,
+   "horas": 3.933,
+   "acum": 165.165
+  },
+  {
+   "rank": "Necromante VII",
+   "chave": "rank86",
+   "preco": 4400000000,
+   "horas": 4.233,
+   "acum": 169.398
+  },
+  {
+   "rank": "Necromante VIII",
+   "chave": "rank87",
+   "preco": 4680000000,
+   "horas": 4.4,
+   "acum": 173.798
+  },
+  {
+   "rank": "Necromante IX",
+   "chave": "rank88",
+   "preco": 4980000000,
+   "horas": 4.633,
+   "acum": 178.431
+  },
+  {
+   "rank": "Necromante X",
+   "chave": "rank89",
+   "preco": 4980000000,
+   "horas": 4.467,
+   "acum": 182.89800000000002
+  },
+  {
+   "rank": "Dragão I",
+   "chave": "rank90",
+   "preco": 4980000000,
+   "horas": 3.6,
+   "acum": 186.49800000000002
+  },
+  {
+   "rank": "Dragão II",
+   "chave": "rank91",
+   "preco": 9200000000,
+   "horas": 3.5,
+   "acum": 189.99800000000002
+  },
+  {
+   "rank": "Dragão III",
+   "chave": "rank92",
+   "preco": 11400000000,
+   "horas": 3.8,
+   "acum": 193.79800000000003
+  },
+  {
+   "rank": "Dragão IV",
+   "chave": "rank93",
+   "preco": 12700000000,
+   "horas": 4.167,
+   "acum": 197.96500000000003
+  },
+  {
+   "rank": "Dragão V",
+   "chave": "rank94",
+   "preco": 13700000000,
+   "horas": 4.4,
+   "acum": 202.36500000000004
+  },
+  {
+   "rank": "Dragão VI",
+   "chave": "rank95",
+   "preco": 15000000000,
+   "horas": 4.767,
+   "acum": 207.13200000000003
+  },
+  {
+   "rank": "Dragão VII",
+   "chave": "rank96",
+   "preco": 16300000000,
+   "horas": 5.1,
+   "acum": 212.23200000000003
+  },
+  {
+   "rank": "Dragão VIII",
+   "chave": "rank97",
+   "preco": 17700000000,
+   "horas": 5.367,
+   "acum": 217.59900000000002
+  },
+  {
+   "rank": "Dragão IX",
+   "chave": "rank98",
+   "preco": 19000000000,
+   "horas": 5.7,
+   "acum": 223.299
+  },
+  {
+   "rank": "Dragão X",
+   "chave": "rank99",
+   "preco": 19000000000,
+   "horas": null,
+   "acum": null
+  }
+ ],
+ "minas": [
+  {
+   "mina": "Cidadão (rank1)",
+   "bloco": "STAINED_CLAY",
+   "money": 1.0,
+   "gemas": 1.0,
+   "chave_pct": 0.1
+  },
+  {
+   "mina": "Explorador (rank2)",
+   "bloco": "STAINED_CLAY",
+   "money": 2.5,
+   "gemas": 1.6,
+   "chave_pct": 0.1
+  },
+  {
+   "mina": "Guerreiro (rank3)",
+   "bloco": "COBBLESTONE",
+   "money": 6.2,
+   "gemas": 2.6,
+   "chave_pct": 0.1
+  },
+  {
+   "mina": "Tritão (rank4)",
+   "bloco": "LAPIS_BLOCK",
+   "money": 16,
+   "gemas": 4.1,
+   "chave_pct": 0.1
+  },
+  {
+   "mina": "Guardião (rank5)",
+   "bloco": "PRISMARINE",
+   "money": 39,
+   "gemas": 6.6,
+   "chave_pct": 0.1
+  },
+  {
+   "mina": "Monge (rank6)",
+   "bloco": "GOLD_BLOCK",
+   "money": 98,
+   "gemas": 10,
+   "chave_pct": 0.1
+  },
+  {
+   "mina": "Avatar (rank7)",
+   "bloco": "IRON_BLOCK",
+   "money": 240,
+   "gemas": 17,
+   "chave_pct": 0.1
+  },
+  {
+   "mina": "Yeti (rank8)",
+   "bloco": "QUARTZ_BLOCK",
+   "money": 610,
+   "gemas": 27,
+   "chave_pct": 0.1
+  },
+  {
+   "mina": "Necromante (rank9)",
+   "bloco": "COAL_BLOCK",
+   "money": 1500,
+   "gemas": 43,
+   "chave_pct": 0.1
+  },
+  {
+   "mina": "Dragão (rank10)",
+   "bloco": "REDSTONE_BLOCK",
+   "money": 3800,
+   "gemas": 69,
+   "chave_pct": 0.1
+  },
+  {
+   "mina": "VIP",
+   "bloco": "EMERALD_BLOCK",
+   "money": 2.0,
+   "gemas": 2.0,
+   "chave_pct": 0.1
+  }
+ ],
+ "exp": {
+  "STAINED_CLAY": 0.74,
+  "COBBLESTONE": 0.99,
+  "LAPIS_BLOCK": 1.27,
+  "PRISMARINE": 1.54,
+  "GOLD_BLOCK": 1.71,
+  "IRON_BLOCK": 1.88,
+  "QUARTZ_BLOCK": 2.06,
+  "COAL_BLOCK": 2.24,
+  "REDSTONE_BLOCK": 2.42,
+  "EMERALD_BLOCK": 0.75
+ },
+ "area": [
+  {
+   "nome": "Impacto Explosivo",
+   "chave": "Explosivo",
+   "chance": 0.0013888889,
+   "aumento": 0.0013888889,
+   "radios": "3x3x3",
+   "libera": 0,
+   "chance_1000": 1.388889,
+   "ativ_h_1000": 936.67
+  },
+  {
+   "nome": "Ataque em Cruz",
+   "chave": "cruz",
+   "chance": 6.69643e-05,
+   "aumento": 6.69643e-05,
+   "radios": "10x7x8",
+   "libera": 30,
+   "chance_1000": 0.066964,
+   "ativ_h_1000": 45.16
+  },
+  {
+   "nome": "Drill",
+   "chave": "Drill",
+   "chance": 0.0002314815,
+   "aumento": 0.0002314815,
+   "radios": "1x15",
+   "libera": 60,
+   "chance_1000": 0.231482,
+   "ativ_h_1000": 156.11
+  },
+  {
+   "nome": "Laser de Perfuração",
+   "chave": "laser",
+   "chance": 3.90625e-05,
+   "aumento": 3.90625e-05,
+   "radios": "4x30",
+   "libera": 100,
+   "chance_1000": 0.039062,
+   "ativ_h_1000": 26.34
+  },
+  {
+   "nome": "Mob Explosivo",
+   "chave": "mobexplosivo",
+   "chance": 0.00025,
+   "aumento": 0.00025,
+   "radios": "5x5x5",
+   "libera": 150,
+   "chance_1000": 0.25,
+   "ativ_h_1000": 168.6
+  },
+  {
+   "nome": "Fenda",
+   "chave": "trincheira",
+   "chance": 6.3323e-06,
+   "aumento": 6.3323e-06,
+   "radios": "9x7",
+   "libera": 200,
+   "chance_1000": 0.006332,
+   "ativ_h_1000": 4.27
+  },
+  {
+   "nome": "Impacto Meteoro",
+   "chave": "meteoro",
+   "chance": 3.75e-05,
+   "aumento": 3.75e-05,
+   "radios": "10",
+   "libera": 280,
+   "chance_1000": 0.0375,
+   "ativ_h_1000": 25.29
+  },
+  {
+   "nome": "Tempestade de Fogo",
+   "chave": "tempestadedefogo",
+   "chance": 3.47222e-05,
+   "aumento": 3.47222e-05,
+   "radios": "10x12",
+   "libera": 360,
+   "chance_1000": 0.034722,
+   "ativ_h_1000": 23.42
+  },
+  {
+   "nome": "Chuva Ácida",
+   "chave": "chuvaacida",
+   "chance": 1.5e-05,
+   "aumento": 1.5e-05,
+   "radios": "10x10x25",
+   "libera": 440,
+   "chance_1000": 0.015,
+   "ativ_h_1000": 10.12
+  },
+  {
+   "nome": "Destruidor",
+   "chave": "destruidor",
+   "chance": 4.9513e-06,
+   "aumento": 4.9513e-06,
+   "radios": "-",
+   "libera": 520,
+   "chance_1000": 0.004951,
+   "ativ_h_1000": 3.34
+  },
+  {
+   "nome": "Detonação Nuclear",
+   "chave": "nuclear",
+   "chance": 5.83e-08,
+   "aumento": 5.83e-08,
+   "radios": "-",
+   "libera": 600,
+   "chance_1000": 5.8e-05,
+   "ativ_h_1000": 0.04
+  }
+ ],
+ "boost": [
+  {
+   "nome": "Fortuna Aprimorada",
+   "chave": "booster_money",
+   "quantidade": 0.3,
+   "aumento": 0.3,
+   "no_1000": 300.0
+  },
+  {
+   "nome": "Gemado",
+   "chave": "booster_gemas",
+   "quantidade": 0.2,
+   "aumento": 0.2,
+   "no_1000": 200.0
+  },
+  {
+   "nome": "Chaveiro",
+   "chave": "booster_chaveiro",
+   "quantidade": 0.1,
+   "aumento": 0.1,
+   "no_1000": 100.0
+  }
+ ],
+ "precos": {
+  "Fortuna Aprimorada (booster_money)": [
+   {
+    "faixa": "0-0",
+    "money": 50,
+    "aum_money": 0,
+    "gemas": 101,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "1-10",
+    "money": 51,
+    "aum_money": 0,
+    "gemas": 102,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "11-50",
+    "money": 57,
+    "aum_money": 1,
+    "gemas": 108,
+    "aum_gemas": 1
+   },
+   {
+    "faixa": "51-100",
+    "money": 119,
+    "aum_money": 3,
+    "gemas": 157,
+    "aum_gemas": 2
+   },
+   {
+    "faixa": "101-250",
+    "money": 318,
+    "aum_money": 25,
+    "gemas": 268,
+    "aum_gemas": 6
+   },
+   {
+    "faixa": "251-500",
+    "money": 4230,
+    "aum_money": 942,
+    "gemas": 1290,
+    "aum_gemas": 71
+   },
+   {
+    "faixa": "501-750",
+    "money": 242000,
+    "aum_money": 43204,
+    "gemas": 19400,
+    "aum_gemas": 1159
+   },
+   {
+    "faixa": "751-900",
+    "money": 11200000,
+    "aum_money": 581879,
+    "gemas": 311000,
+    "aum_gemas": 9389
+   },
+   {
+    "faixa": "901-999",
+    "money": 99500000,
+    "aum_money": 3790816,
+    "gemas": 1740000,
+    "aum_gemas": 66326
+   }
+  ],
+  "Gemado (booster_gemas)": [
+   {
+    "faixa": "0-0",
+    "money": 33,
+    "aum_money": 0,
+    "gemas": 67,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "1-10",
+    "money": 34,
+    "aum_money": 0,
+    "gemas": 67,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "11-50",
+    "money": 39,
+    "aum_money": 1,
+    "gemas": 72,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "51-100",
+    "money": 83,
+    "aum_money": 2,
+    "gemas": 109,
+    "aum_gemas": 1
+   },
+   {
+    "faixa": "101-250",
+    "money": 230,
+    "aum_money": 20,
+    "gemas": 194,
+    "aum_gemas": 5
+   },
+   {
+    "faixa": "251-500",
+    "money": 3290,
+    "aum_money": 785,
+    "gemas": 1000,
+    "aum_gemas": 60
+   },
+   {
+    "faixa": "501-750",
+    "money": 202000,
+    "aum_money": 37622,
+    "gemas": 16100,
+    "aum_gemas": 1007
+   },
+   {
+    "faixa": "751-900",
+    "money": 9700000,
+    "aum_money": 514093,
+    "gemas": 270000,
+    "aum_gemas": 8322
+   },
+   {
+    "faixa": "901-999",
+    "money": 87600000,
+    "aum_money": 3381632,
+    "gemas": 1530000,
+    "aum_gemas": 59081
+   }
+  ],
+  "Chaveiro (booster_chaveiro)": [
+   {
+    "faixa": "0-0",
+    "money": 2,
+    "aum_money": 0,
+    "gemas": 5,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "1-10",
+    "money": 2,
+    "aum_money": 0,
+    "gemas": 5,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "11-50",
+    "money": 2,
+    "aum_money": 0,
+    "gemas": 5,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "51-100",
+    "money": 6,
+    "aum_money": 0,
+    "gemas": 8,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "101-250",
+    "money": 18,
+    "aum_money": 1,
+    "gemas": 15,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "251-500",
+    "money": 296,
+    "aum_money": 78,
+    "gemas": 90,
+    "aum_gemas": 6
+   },
+   {
+    "faixa": "501-750",
+    "money": 20200,
+    "aum_money": 4015,
+    "gemas": 1610,
+    "aum_gemas": 108
+   },
+   {
+    "faixa": "751-900",
+    "money": 1040000,
+    "aum_money": 57046,
+    "gemas": 28900,
+    "aum_gemas": 926
+   },
+   {
+    "faixa": "901-999",
+    "money": 9690000,
+    "aum_money": 381734,
+    "gemas": 169000,
+    "aum_gemas": 6683
+   }
+  ],
+  "Impacto Explosivo (Explosivo)": [
+   {
+    "faixa": "0-0",
+    "money": 6770,
+    "aum_money": 0,
+    "gemas": 13500,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "1-10",
+    "money": 5,
+    "aum_money": 0,
+    "gemas": 10,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "11-50",
+    "money": 5,
+    "aum_money": 0,
+    "gemas": 11,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "51-100",
+    "money": 13,
+    "aum_money": 0,
+    "gemas": 17,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "101-250",
+    "money": 38,
+    "aum_money": 3,
+    "gemas": 32,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "251-500",
+    "money": 573,
+    "aum_money": 120,
+    "gemas": 174,
+    "aum_gemas": 9
+   },
+   {
+    "faixa": "501-750",
+    "money": 31000,
+    "aum_money": 4574,
+    "gemas": 2480,
+    "aum_gemas": 120
+   },
+   {
+    "faixa": "751-900",
+    "money": 1180000,
+    "aum_money": 57583,
+    "gemas": 32900,
+    "aum_gemas": 926
+   },
+   {
+    "faixa": "901-999",
+    "money": 9920000,
+    "aum_money": 416122,
+    "gemas": 173000,
+    "aum_gemas": 7285
+   }
+  ],
+  "Ataque em Cruz (cruz)": [
+   {
+    "faixa": "0-0",
+    "money": 11400,
+    "aum_money": 0,
+    "gemas": 18000,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "1-10",
+    "money": 8,
+    "aum_money": 0,
+    "gemas": 13,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "11-50",
+    "money": 10,
+    "aum_money": 0,
+    "gemas": 15,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "51-100",
+    "money": 25,
+    "aum_money": 0,
+    "gemas": 25,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "101-250",
+    "money": 66,
+    "aum_money": 5,
+    "gemas": 45,
+    "aum_gemas": 1
+   },
+   {
+    "faixa": "251-500",
+    "money": 842,
+    "aum_money": 148,
+    "gemas": 223,
+    "aum_gemas": 10
+   },
+   {
+    "faixa": "501-750",
+    "money": 38200,
+    "aum_money": 5107,
+    "gemas": 2870,
+    "aum_gemas": 130
+   },
+   {
+    "faixa": "751-900",
+    "money": 1330000,
+    "aum_money": 59530,
+    "gemas": 35700,
+    "aum_gemas": 961
+   },
+   {
+    "faixa": "901-999",
+    "money": 10400000,
+    "aum_money": 411224,
+    "gemas": 182000,
+    "aum_gemas": 7193
+   }
+  ],
+  "Drill (Drill)": [
+   {
+    "faixa": "0-0",
+    "money": 20500,
+    "aum_money": 0,
+    "gemas": 24900,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "1-10",
+    "money": 13,
+    "aum_money": 0,
+    "gemas": 16,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "11-50",
+    "money": 17,
+    "aum_money": 0,
+    "gemas": 18,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "51-100",
+    "money": 36,
+    "aum_money": 1,
+    "gemas": 29,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "101-250",
+    "money": 91,
+    "aum_money": 6,
+    "gemas": 51,
+    "aum_gemas": 1
+   },
+   {
+    "faixa": "251-500",
+    "money": 1040,
+    "aum_money": 150,
+    "gemas": 239,
+    "aum_gemas": 10
+   },
+   {
+    "faixa": "501-750",
+    "money": 39000,
+    "aum_money": 4783,
+    "gemas": 2770,
+    "aum_gemas": 117
+   },
+   {
+    "faixa": "751-900",
+    "money": 1250000,
+    "aum_money": 51812,
+    "gemas": 32400,
+    "aum_gemas": 836
+   },
+   {
+    "faixa": "901-999",
+    "money": 9100000,
+    "aum_money": 338775,
+    "gemas": 159000,
+    "aum_gemas": 5928
+   }
+  ],
+  "Laser de Perfuração (laser)": [
+   {
+    "faixa": "0-0",
+    "money": 45800,
+    "aum_money": 0,
+    "gemas": 39000,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "1-10",
+    "money": 38,
+    "aum_money": 0,
+    "gemas": 32,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "11-50",
+    "money": 46,
+    "aum_money": 1,
+    "gemas": 36,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "51-100",
+    "money": 93,
+    "aum_money": 2,
+    "gemas": 55,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "101-250",
+    "money": 205,
+    "aum_money": 11,
+    "gemas": 90,
+    "aum_gemas": 1
+   },
+   {
+    "faixa": "251-500",
+    "money": 1980,
+    "aum_money": 251,
+    "gemas": 389,
+    "aum_gemas": 14
+   },
+   {
+    "faixa": "501-750",
+    "money": 65500,
+    "aum_money": 6684,
+    "gemas": 4160,
+    "aum_gemas": 155
+   },
+   {
+    "faixa": "751-900",
+    "money": 1750000,
+    "aum_money": 65436,
+    "gemas": 43400,
+    "aum_gemas": 1057
+   },
+   {
+    "faixa": "901-999",
+    "money": 11700000,
+    "aum_money": 398979,
+    "gemas": 204000,
+    "aum_gemas": 6979
+   }
+  ],
+  "Mob Explosivo (mobexplosivo)": [
+   {
+    "faixa": "0-0",
+    "money": 113000,
+    "aum_money": 0,
+    "gemas": 65000,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "1-10",
+    "money": 85,
+    "aum_money": 1,
+    "gemas": 49,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "11-50",
+    "money": 99,
+    "aum_money": 1,
+    "gemas": 53,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "51-100",
+    "money": 179,
+    "aum_money": 3,
+    "gemas": 77,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "101-250",
+    "money": 377,
+    "aum_money": 17,
+    "gemas": 124,
+    "aum_gemas": 2
+   },
+   {
+    "faixa": "251-500",
+    "money": 3020,
+    "aum_money": 307,
+    "gemas": 484,
+    "aum_gemas": 16
+   },
+   {
+    "faixa": "501-750",
+    "money": 80700,
+    "aum_money": 6623,
+    "gemas": 4550,
+    "aum_gemas": 145
+   },
+   {
+    "faixa": "751-900",
+    "money": 1750000,
+    "aum_money": 58053,
+    "gemas": 41300,
+    "aum_gemas": 937
+   },
+   {
+    "faixa": "901-999",
+    "money": 10500000,
+    "aum_money": 324489,
+    "gemas": 184000,
+    "aum_gemas": 5673
+   }
+  ],
+  "Fenda (trincheira)": [
+   {
+    "faixa": "0-0",
+    "money": 251000,
+    "aum_money": 0,
+    "gemas": 104000,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "1-10",
+    "money": 249,
+    "aum_money": 3,
+    "gemas": 102,
+    "aum_gemas": 1
+   },
+   {
+    "faixa": "11-50",
+    "money": 288,
+    "aum_money": 5,
+    "gemas": 112,
+    "aum_gemas": 1
+   },
+   {
+    "faixa": "51-100",
+    "money": 489,
+    "aum_money": 9,
+    "gemas": 157,
+    "aum_gemas": 1
+   },
+   {
+    "faixa": "101-250",
+    "money": 961,
+    "aum_money": 37,
+    "gemas": 242,
+    "aum_gemas": 4
+   },
+   {
+    "faixa": "251-500",
+    "money": 6590,
+    "aum_money": 523,
+    "gemas": 864,
+    "aum_gemas": 24
+   },
+   {
+    "faixa": "501-750",
+    "money": 139000,
+    "aum_money": 9401,
+    "gemas": 7040,
+    "aum_gemas": 196
+   },
+   {
+    "faixa": "751-900",
+    "money": 2510000,
+    "aum_money": 73758,
+    "gemas": 56400,
+    "aum_gemas": 1205
+   },
+   {
+    "faixa": "901-999",
+    "money": 13700000,
+    "aum_money": 378571,
+    "gemas": 239000,
+    "aum_gemas": 6632
+   }
+  ],
+  "Impacto Meteoro (meteoro)": [
+   {
+    "faixa": "0-0",
+    "money": 830000,
+    "aum_money": 0,
+    "gemas": 210000,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "1-10",
+    "money": 959,
+    "aum_money": 12,
+    "gemas": 242,
+    "aum_gemas": 2
+   },
+   {
+    "faixa": "11-50",
+    "money": 1090,
+    "aum_money": 15,
+    "gemas": 262,
+    "aum_gemas": 2
+   },
+   {
+    "faixa": "51-100",
+    "money": 1720,
+    "aum_money": 24,
+    "gemas": 355,
+    "aum_gemas": 3
+   },
+   {
+    "faixa": "101-250",
+    "money": 2980,
+    "aum_money": 90,
+    "gemas": 512,
+    "aum_gemas": 7
+   },
+   {
+    "faixa": "251-500",
+    "money": 16700,
+    "aum_money": 876,
+    "gemas": 1620,
+    "aum_gemas": 34
+   },
+   {
+    "faixa": "501-750",
+    "money": 237000,
+    "aum_money": 12140,
+    "gemas": 10400,
+    "aum_gemas": 233
+   },
+   {
+    "faixa": "751-900",
+    "money": 3300000,
+    "aum_money": 81208,
+    "gemas": 69000,
+    "aum_gemas": 1342
+   },
+   {
+    "faixa": "901-999",
+    "money": 15600000,
+    "aum_money": 360204,
+    "gemas": 273000,
+    "aum_gemas": 6285
+   }
+  ],
+  "Tempestade de Fogo (tempestadedefogo)": [
+   {
+    "faixa": "0-0",
+    "money": 2490000,
+    "aum_money": 0,
+    "gemas": 407000,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "1-10",
+    "money": 3450,
+    "aum_money": 41,
+    "gemas": 562,
+    "aum_gemas": 4
+   },
+   {
+    "faixa": "11-50",
+    "money": 3860,
+    "aum_money": 48,
+    "gemas": 604,
+    "aum_gemas": 4
+   },
+   {
+    "faixa": "51-100",
+    "money": 5820,
+    "aum_money": 68,
+    "gemas": 795,
+    "aum_gemas": 6
+   },
+   {
+    "faixa": "101-250",
+    "money": 9270,
+    "aum_money": 208,
+    "gemas": 1090,
+    "aum_gemas": 12
+   },
+   {
+    "faixa": "251-500",
+    "money": 40600,
+    "aum_money": 1636,
+    "gemas": 3000,
+    "aum_gemas": 52
+   },
+   {
+    "faixa": "501-750",
+    "money": 452000,
+    "aum_money": 15212,
+    "gemas": 16200,
+    "aum_gemas": 270
+   },
+   {
+    "faixa": "751-900",
+    "money": 4280000,
+    "aum_money": 89395,
+    "gemas": 84000,
+    "aum_gemas": 1496
+   },
+   {
+    "faixa": "901-999",
+    "money": 17800000,
+    "aum_money": 337755,
+    "gemas": 310000,
+    "aum_gemas": 5918
+   }
+  ],
+  "Chuva Ácida (chuvaacida)": [
+   {
+    "faixa": "0-0",
+    "money": 6870000,
+    "aum_money": 0,
+    "gemas": 757000,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "1-10",
+    "money": 11700,
+    "aum_money": 122,
+    "gemas": 1280,
+    "aum_gemas": 8
+   },
+   {
+    "faixa": "11-50",
+    "money": 13000,
+    "aum_money": 148,
+    "gemas": 1370,
+    "aum_gemas": 10
+   },
+   {
+    "faixa": "51-100",
+    "money": 19000,
+    "aum_money": 197,
+    "gemas": 1770,
+    "aum_gemas": 11
+   },
+   {
+    "faixa": "101-250",
+    "money": 29000,
+    "aum_money": 496,
+    "gemas": 2360,
+    "aum_gemas": 22
+   },
+   {
+    "faixa": "251-500",
+    "money": 104000,
+    "aum_money": 2730,
+    "gemas": 5720,
+    "aum_gemas": 74
+   },
+   {
+    "faixa": "501-750",
+    "money": 790000,
+    "aum_money": 18835,
+    "gemas": 24400,
+    "aum_gemas": 307
+   },
+   {
+    "faixa": "751-900",
+    "money": 5520000,
+    "aum_money": 97181,
+    "gemas": 102000,
+    "aum_gemas": 1671
+   },
+   {
+    "faixa": "901-999",
+    "money": 20200000,
+    "aum_money": 313265,
+    "gemas": 354000,
+    "aum_gemas": 5469
+   }
+  ],
+  "Destruidor (destruidor)": [
+   {
+    "faixa": "0-0",
+    "money": 19000000,
+    "aum_money": 0,
+    "gemas": 1410000,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "1-10",
+    "money": 47300,
+    "aum_money": 311,
+    "gemas": 3490,
+    "aum_gemas": 16
+   },
+   {
+    "faixa": "11-50",
+    "money": 50400,
+    "aum_money": 441,
+    "gemas": 3660,
+    "aum_gemas": 21
+   },
+   {
+    "faixa": "51-100",
+    "money": 68200,
+    "aum_money": 648,
+    "gemas": 4500,
+    "aum_gemas": 27
+   },
+   {
+    "faixa": "101-250",
+    "money": 101000,
+    "aum_money": 1154,
+    "gemas": 5880,
+    "aum_gemas": 41
+   },
+   {
+    "faixa": "251-500",
+    "money": 275000,
+    "aum_money": 5281,
+    "gemas": 12100,
+    "aum_gemas": 121
+   },
+   {
+    "faixa": "501-750",
+    "money": 1600000,
+    "aum_money": 26506,
+    "gemas": 42600,
+    "aum_gemas": 403
+   },
+   {
+    "faixa": "751-900",
+    "money": 8270000,
+    "aum_money": 123691,
+    "gemas": 145000,
+    "aum_gemas": 2161
+   },
+   {
+    "faixa": "901-999",
+    "money": 26900000,
+    "aum_money": 332653,
+    "gemas": 471000,
+    "aum_gemas": 5806
+   }
+  ],
+  "Detonação Nuclear (nuclear)": [
+   {
+    "faixa": "0-0",
+    "money": 50600000,
+    "aum_money": 0,
+    "gemas": 2580000,
+    "aum_gemas": 0
+   },
+   {
+    "faixa": "1-10",
+    "money": 160000,
+    "aum_money": 1000,
+    "gemas": 8160,
+    "aum_gemas": 33
+   },
+   {
+    "faixa": "11-50",
+    "money": 170000,
+    "aum_money": 1025,
+    "gemas": 8490,
+    "aum_gemas": 36
+   },
+   {
+    "faixa": "51-100",
+    "money": 211000,
+    "aum_money": 1265,
+    "gemas": 9940,
+    "aum_gemas": 42
+   },
+   {
+    "faixa": "101-250",
+    "money": 275000,
+    "aum_money": 2818,
+    "gemas": 12100,
+    "aum_gemas": 73
+   },
+   {
+    "faixa": "251-500",
+    "money": 699000,
+    "aum_money": 8799,
+    "gemas": 23200,
+    "aum_gemas": 168
+   },
+   {
+    "faixa": "501-750",
+    "money": 2900000,
+    "aum_money": 33734,
+    "gemas": 65400,
+    "aum_gemas": 532
+   },
+   {
+    "faixa": "751-900",
+    "money": 11400000,
+    "aum_money": 128187,
+    "gemas": 199000,
+    "aum_gemas": 2241
+   },
+   {
+    "faixa": "901-999",
+    "money": 30700000,
+    "aum_money": 293877,
+    "gemas": 537000,
+    "aum_gemas": 5132
+   }
+  ]
+ },
+ "fixos": [
+  {
+   "nome": "Speed",
+   "nivel": 1,
+   "faixa": "0-0",
+   "money": 47500,
+   "gemas": 81500
+  },
+  {
+   "nome": "Speed",
+   "nivel": 2,
+   "faixa": "1-1",
+   "money": 2150000,
+   "gemas": 1270000
+  },
+  {
+   "nome": "Haste",
+   "nivel": 1,
+   "faixa": "0-0",
+   "money": 59100,
+   "gemas": 91800
+  },
+  {
+   "nome": "Haste",
+   "nivel": 2,
+   "faixa": "1-1",
+   "money": 3870000,
+   "gemas": 1780000
+  }
+ ],
+ "skins": [
+  {
+   "skin": 1,
+   "bonus_pct": 0,
+   "preco_money": 0,
+   "posicao": 0
+  },
+  {
+   "skin": 2,
+   "bonus_pct": 3,
+   "preco_money": 1660,
+   "posicao": 10
+  },
+  {
+   "skin": 3,
+   "bonus_pct": 6,
+   "preco_money": 43300,
+   "posicao": 30
+  },
+  {
+   "skin": 4,
+   "bonus_pct": 9,
+   "preco_money": 1210000,
+   "posicao": 50
+  },
+  {
+   "skin": 5,
+   "bonus_pct": 12,
+   "preco_money": 40900000,
+   "posicao": 70
+  }
+ ],
+ "plantas": [
+  {
+   "nome": "Fungo",
+   "libera": "Guerreiro I",
+   "money": 4.93,
+   "sementes": 0.05,
+   "compra": 1240000,
+   "loja": 64000,
+   "por_hora": 153000
+  },
+  {
+   "nome": "Cenoura",
+   "libera": "Guerreiro V",
+   "money": 1.41,
+   "sementes": 0.1,
+   "compra": 1920000,
+   "loja": 18300,
+   "por_hora": 153000
+  },
+  {
+   "nome": "Melancia",
+   "libera": "Tritão I",
+   "money": 1.62,
+   "sementes": 1.0,
+   "compra": 5800000,
+   "loja": 21000,
+   "por_hora": 100000
+  },
+  {
+   "nome": "Cana",
+   "libera": "Tritão V",
+   "money": 4.85,
+   "sementes": 0.45,
+   "compra": 9100000,
+   "loja": 63000,
+   "por_hora": 100000
+  },
+  {
+   "nome": "Cacto",
+   "libera": "Guardião I",
+   "money": 1.35,
+   "sementes": 0.25,
+   "compra": null,
+   "loja": null,
+   "por_hora": null
+  }
+ ],
+ "lucro": [
+  {
+   "rank": "Guerreiro",
+   "grupos": "rank20",
+   "lucro": 0
+  },
+  {
+   "rank": "Tritão",
+   "grupos": "rank30",
+   "lucro": 217
+  },
+  {
+   "rank": "Guardião",
+   "grupos": "rank40",
+   "lucro": 922
+  },
+  {
+   "rank": "Monge",
+   "grupos": "rank50",
+   "lucro": 3248
+  },
+  {
+   "rank": "Avatar",
+   "grupos": "rank60",
+   "lucro": 10997
+  },
+  {
+   "rank": "Yeti",
+   "grupos": "rank70",
+   "lucro": 37252
+  },
+  {
+   "rank": "Necromante",
+   "grupos": "rank80",
+   "lucro": 128063
+  },
+  {
+   "rank": "Dragão",
+   "grupos": "rank90",
+   "lucro": 432742
+  }
+ ],
+ "cacto": [
+  {
+   "nivel": 1,
+   "cactos": 50,
+   "libera": "Guardião I",
+   "money_h": 55187.944812000016,
+   "sementes_h": 999.999,
+   "custo_money": 773000,
+   "custo_sementes": 200000,
+   "retorno_horas": 14,
+   "vs_mina_pct": 0.9
+  },
+  {
+   "nivel": 2,
+   "cactos": 100,
+   "libera": "Guardião VII",
+   "money_h": 110375.88962400003,
+   "sementes_h": 1999.998,
+   "custo_money": 883000,
+   "custo_sementes": 400000,
+   "retorno_horas": 16,
+   "vs_mina_pct": 0.9
+  },
+  {
+   "nivel": 3,
+   "cactos": 200,
+   "libera": "Monge III",
+   "money_h": 723167.276832,
+   "sementes_h": 3999.996,
+   "custo_money": 6510000,
+   "custo_sementes": 600000,
+   "retorno_horas": 18,
+   "vs_mina_pct": 2.9
+  },
+  {
+   "nivel": 4,
+   "cactos": 300,
+   "libera": "Monge IX",
+   "money_h": 1084750.915248,
+   "sementes_h": 5999.994000000001,
+   "custo_money": 7230000,
+   "custo_sementes": 800000,
+   "retorno_horas": 20,
+   "vs_mina_pct": 2.1
+  },
+  {
+   "nivel": 5,
+   "cactos": 400,
+   "libera": "Avatar V",
+   "money_h": 4793899.206096001,
+   "sementes_h": 7999.992,
+   "custo_money": 26400000,
+   "custo_sementes": 1000000,
+   "retorno_horas": 22,
+   "vs_mina_pct": 4.5
+  },
+  {
+   "nivel": 6,
+   "cactos": 500,
+   "libera": "Yeti I",
+   "money_h": 20170059.82992,
+   "sementes_h": 9999.99,
+   "custo_money": 96800000,
+   "custo_sementes": 1200000,
+   "retorno_horas": 24,
+   "vs_mina_pct": 9.1
+  },
+  {
+   "nivel": 7,
+   "cactos": 600,
+   "libera": "Yeti VII",
+   "money_h": 24204071.795904003,
+   "sementes_h": 11999.988000000001,
+   "custo_money": 105000000,
+   "custo_sementes": 1400000,
+   "retorno_horas": 26,
+   "vs_mina_pct": 5.3
+  },
+  {
+   "nivel": 8,
+   "cactos": 700,
+   "libera": "Necromante III",
+   "money_h": 96891131.10877201,
+   "sementes_h": 13999.986,
+   "custo_money": 388000000,
+   "custo_sementes": 1600000,
+   "retorno_horas": 28,
+   "vs_mina_pct": 10.1
+  },
+  {
+   "nivel": 9,
+   "cactos": 850,
+   "libera": "Necromante IX",
+   "money_h": 117653516.34636602,
+   "sementes_h": 16999.983,
+   "custo_money": 623000000,
+   "custo_sementes": 1800000,
+   "retorno_horas": 30,
+   "vs_mina_pct": 5.9
+  },
+  {
+   "nivel": 10,
+   "cactos": 1000,
+   "libera": "Dragão V",
+   "money_h": 467468892.53064007,
+   "sementes_h": 19999.98,
+   "custo_money": 2240000000,
+   "custo_sementes": 2000000,
+   "retorno_horas": 32,
+   "vs_mina_pct": 11.3
+  }
+ ],
+ "armazem": {
+  "inicial": 1000,
+  "por_item": 1000,
+  "maximo": 2000000,
+  "chance_item": 0.02,
+  "itens_h": 30.6
+ },
+ "spawners": [
+  {
+   "nome": "Vaca",
+   "libera": "Tritão I",
+   "preco": 2900000,
+   "almas_cabeca": 1,
+   "almas_h": 180.0
+  },
+  {
+   "nome": "Porco",
+   "libera": "Guardião I",
+   "preco": 9310000,
+   "almas_cabeca": 2.5,
+   "almas_h": 450.0
+  },
+  {
+   "nome": "Zumbi",
+   "libera": "Monge I",
+   "preco": 30300000,
+   "almas_cabeca": 6,
+   "almas_h": 1080.0
+  },
+  {
+   "nome": "Esqueleto",
+   "libera": "Avatar I",
+   "preco": 100000000,
+   "almas_cabeca": 15,
+   "almas_h": 2700.0
+  },
+  {
+   "nome": "Golem",
+   "libera": "Yeti I",
+   "preco": 334000000,
+   "almas_cabeca": 40,
+   "almas_h": 7200.0
+  }
+ ],
+ "limite_spawners": {
+  "Tritão": 2,
+  "Guardião": 4,
+  "Monge": 8,
+  "Avatar": 16,
+  "Yeti": 24,
+  "Necromante": 48,
+  "Dragão": 64
+ },
+ "matadoras": [
+  {
+   "matadora": 1,
+   "dano": 1000,
+   "libera": "Tritão VI",
+   "preco_money": 10200000,
+   "preco_almas": 1440,
+   "fragmentos_arena": 0,
+   "exige_matadora_anterior": false
+  },
+  {
+   "matadora": 2,
+   "dano": 2500,
+   "libera": "Guardião II",
+   "preco_money": 20800000,
+   "preco_almas": 7200,
+   "fragmentos_arena": 0,
+   "exige_matadora_anterior": true
+  },
+  {
+   "matadora": 3,
+   "dano": 6000,
+   "libera": "Guardião VIII",
+   "preco_money": 42000000,
+   "preco_almas": 7200,
+   "fragmentos_arena": 0,
+   "exige_matadora_anterior": true
+  },
+  {
+   "matadora": 4,
+   "dano": 15000,
+   "libera": "Monge IV",
+   "preco_money": 85300000,
+   "preco_almas": 34600,
+   "fragmentos_arena": 0,
+   "exige_matadora_anterior": true
+  },
+  {
+   "matadora": 5,
+   "dano": 35000,
+   "libera": "Monge X",
+   "preco_money": 177000000,
+   "preco_almas": 34600,
+   "fragmentos_arena": 0,
+   "exige_matadora_anterior": true
+  },
+  {
+   "matadora": 6,
+   "dano": 80000,
+   "libera": "Avatar VI",
+   "preco_money": 359000000,
+   "preco_almas": 173000,
+   "fragmentos_arena": 0,
+   "exige_matadora_anterior": true
+  },
+  {
+   "matadora": 7,
+   "dano": 180000,
+   "libera": "Yeti II",
+   "preco_money": 750000000,
+   "preco_almas": 691000,
+   "fragmentos_arena": 0,
+   "exige_matadora_anterior": true
+  },
+  {
+   "matadora": 8,
+   "dano": 400000,
+   "libera": "Yeti VIII",
+   "preco_money": 1550000000,
+   "preco_almas": 691000,
+   "fragmentos_arena": 0,
+   "exige_matadora_anterior": true
+  },
+  {
+   "matadora": 9,
+   "dano": 900000,
+   "libera": "Necromante IV",
+   "preco_money": 3250000000,
+   "preco_almas": 1380000,
+   "fragmentos_arena": 10,
+   "exige_matadora_anterior": true
+  },
+  {
+   "matadora": 10,
+   "dano": 2000000,
+   "libera": "Necromante X",
+   "preco_money": 6840000000,
+   "preco_almas": 1380000,
+   "fragmentos_arena": 30,
+   "exige_matadora_anterior": true
+  }
+ ],
+ "bosses": [
+  {
+   "boss": 1,
+   "vida": 240000,
+   "luta_s": 60,
+   "matadora": 1,
+   "cooldown_h": 0.5,
+   "invocar_almas": 360,
+   "libera": "Tritão VI",
+   "nome": "Cavalo Assassino",
+   "chave_config": "1cavalo",
+   "limite": 20,
+   "stack": 1,
+   "chave_caixa": null
+  },
+  {
+   "boss": 2,
+   "vida": 750000,
+   "luta_s": 75,
+   "matadora": 2,
+   "cooldown_h": 0.5,
+   "invocar_almas": 1800,
+   "libera": "Guardião II",
+   "nome": "Ovelha Maluca",
+   "chave_config": "2ovelha",
+   "limite": 30,
+   "stack": 1,
+   "chave_caixa": null
+  },
+  {
+   "boss": 3,
+   "vida": 2160000,
+   "luta_s": 90,
+   "matadora": 3,
+   "cooldown_h": 1,
+   "invocar_almas": 1800,
+   "libera": "Guardião VIII",
+   "nome": "Rainha das Penosas",
+   "chave_config": "3galinha",
+   "limite": 40,
+   "stack": 1,
+   "chave_caixa": "magica"
+  },
+  {
+   "boss": 4,
+   "vida": 6300000,
+   "luta_s": 105,
+   "matadora": 4,
+   "cooldown_h": 1,
+   "invocar_almas": 8640,
+   "libera": "Monge IV",
+   "nome": "Rei Traça",
+   "chave_config": "4silverfish",
+   "limite": 50,
+   "stack": 1,
+   "chave_caixa": "magica"
+  },
+  {
+   "boss": 5,
+   "vida": 16800000,
+   "luta_s": 120,
+   "matadora": 5,
+   "cooldown_h": 2,
+   "invocar_almas": 8640,
+   "libera": "Monge X",
+   "nome": "Vaca Braba",
+   "chave_config": "5vaca",
+   "limite": 60,
+   "stack": 2,
+   "chave_caixa": "magica"
+  },
+  {
+   "boss": 6,
+   "vida": 43200000,
+   "luta_s": 135,
+   "matadora": 6,
+   "cooldown_h": 2,
+   "invocar_almas": 43200,
+   "libera": "Avatar VI",
+   "nome": "O Magnata de Esmeraldas",
+   "chave_config": "6aldeao",
+   "limite": 80,
+   "stack": 2,
+   "chave_caixa": "magica"
+  },
+  {
+   "boss": 7,
+   "vida": 108000000,
+   "luta_s": 150,
+   "matadora": 7,
+   "cooldown_h": 3,
+   "invocar_almas": 173000,
+   "libera": "Yeti II",
+   "nome": "Arqueiro Mistico",
+   "chave_config": "7esqueleto",
+   "limite": 100,
+   "stack": 2,
+   "chave_caixa": "magma"
+  },
+  {
+   "boss": 8,
+   "vida": 264000000,
+   "luta_s": 165,
+   "matadora": 8,
+   "cooldown_h": 4,
+   "invocar_almas": 173000,
+   "libera": "Yeti VIII",
+   "nome": "Aracton",
+   "chave_config": "8aranha",
+   "limite": 120,
+   "stack": 4,
+   "chave_caixa": "magma"
+  },
+  {
+   "boss": 9,
+   "vida": 648000000,
+   "luta_s": 180,
+   "matadora": 9,
+   "cooldown_h": 6,
+   "invocar_almas": 346000,
+   "libera": "Necromante IV",
+   "nome": "Devorador de Almas",
+   "chave_config": "9whiteresqueleto",
+   "limite": 150,
+   "stack": 4,
+   "chave_caixa": "draconica"
+  },
+  {
+   "boss": 10,
+   "vida": 1920000000,
+   "luta_s": 240,
+   "matadora": 10,
+   "cooldown_h": 8,
+   "invocar_almas": 346000,
+   "libera": "Necromante X",
+   "nome": "Colosso de Ferro",
+   "chave_config": "10golem",
+   "limite": 200,
+   "stack": 4,
+   "chave_caixa": "draconica"
+  }
+ ],
+ "caixas": {
+  "livro": [
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0101
+   },
+   {
+    "item": "Livro Encantado",
+    "chance": 1.0102
+   }
+  ],
+  "vip": [
+   {
+    "item": "Rainha das Penosas",
+    "chance": 0.863
+   },
+   {
+    "item": "Chave Mágica",
+    "chance": 0.2157
+   },
+   {
+    "item": "Chave Farm",
+    "chance": 0.863
+   },
+   {
+    "item": "Azar",
+    "chance": 17.26
+   },
+   {
+    "item": "Capacete de diamante (encant. 0:4,34:3)",
+    "chance": 4.315
+   },
+   {
+    "item": "Peitoral de diamante (encant. 0:4,34:3)",
+    "chance": 4.315
+   },
+   {
+    "item": "Calça de diamante (encant. 0:4,34:3)",
+    "chance": 4.315
+   },
+   {
+    "item": "Bota de diamante (encant. 0:4,34:3)",
+    "chance": 4.315
+   },
+   {
+    "item": "Picareta de diamante (encant. 32:4,34:3)",
+    "chance": 2.1575
+   },
+   {
+    "item": "Pá de diamante (encant. 32:4,34:3)",
+    "chance": 2.1575
+   },
+   {
+    "item": "Enxada de diamante (encant. 32:4,34:3)",
+    "chance": 2.1575
+   },
+   {
+    "item": "Machado de diamante (encant. 32:4,34:3)",
+    "chance": 2.1575
+   },
+   {
+    "item": "16x Maçã dourada encantada",
+    "chance": 8.63
+   },
+   {
+    "item": "Cheque money 2000",
+    "chance": 0.4315
+   },
+   {
+    "item": "Cheque gemas 2000",
+    "chance": 0.4315
+   },
+   {
+    "item": "Espada de diamante (encant. 16:4,34:3)",
+    "chance": 2.1575
+   },
+   {
+    "item": "32x Frasco de XP",
+    "chance": 21.575
+   },
+   {
+    "item": "32x Diamante",
+    "chance": 21.575
+   },
+   {
+    "item": "Cheque cash 50",
+    "chance": 0.1078
+   }
+  ],
+  "farm": [
+   {
+    "item": "64x Cacto",
+    "chance": 0.8807
+   },
+   {
+    "item": "64x Fungo",
+    "chance": 3.5227
+   },
+   {
+    "item": "64x Areia",
+    "chance": 1.7613
+   },
+   {
+    "item": "64x Areia das almas",
+    "chance": 3.5227
+   },
+   {
+    "item": "64x Linha",
+    "chance": 1.7613
+   },
+   {
+    "item": "64x Cana",
+    "chance": 8.8067
+   },
+   {
+    "item": "64x Semente de melancia",
+    "chance": 8.8067
+   },
+   {
+    "item": "Machado de diamante (encant. 32:5,34:3)",
+    "chance": 17.6134
+   },
+   {
+    "item": "Machado de diamante (encant. 32:5,34:3,35:1)",
+    "chance": 13.21
+   },
+   {
+    "item": "Machado de diamante (encant. 32:5,34:3,35:2)",
+    "chance": 8.8067
+   },
+   {
+    "item": "Machado de diamante (encant. 32:5,34:3,35:3)",
+    "chance": 4.4033
+   },
+   {
+    "item": "Machado de diamante (encant. 32:5,34:3,35:4)",
+    "chance": 2.2017
+   },
+   {
+    "item": "Machado de diamante (encant. 32:5,34:3,35:5)",
+    "chance": 0.4403
+   },
+   {
+    "item": "Chave VIP",
+    "chance": 0.044
+   },
+   {
+    "item": "Falhou...",
+    "chance": 24.2185
+   }
+  ],
+  "magica": [
+   {
+    "item": "Azar",
+    "chance": 24.2424
+   },
+   {
+    "item": "Cheque cash 100",
+    "chance": 0.202
+   },
+   {
+    "item": "Vaca Braba",
+    "chance": 1.6162
+   },
+   {
+    "item": "Capacete de diamante (encant. 0:4,34:3)",
+    "chance": 8.0808
+   },
+   {
+    "item": "Peitoral de diamante (encant. 0:4,34:3)",
+    "chance": 8.0808
+   },
+   {
+    "item": "Calça de diamante (encant. 0:4,34:3)",
+    "chance": 8.0808
+   },
+   {
+    "item": "Bota de diamante (encant. 0:4,34:3)",
+    "chance": 8.0808
+   },
+   {
+    "item": "Pá de diamante (encant. 32:4,34:3)",
+    "chance": 4.0404
+   },
+   {
+    "item": "Enxada de diamante (encant. 32:4,34:3)",
+    "chance": 4.0404
+   },
+   {
+    "item": "Machado de diamante (encant. 32:4,34:3)",
+    "chance": 4.0404
+   },
+   {
+    "item": "Picareta de diamante (encant. 32:4,34:3)",
+    "chance": 4.0404
+   },
+   {
+    "item": "Cheque gemas 3000",
+    "chance": 0.8081
+   },
+   {
+    "item": "Cheque money 3000",
+    "chance": 0.8081
+   },
+   {
+    "item": "Chave Magma",
+    "chance": 0.404
+   },
+   {
+    "item": "Chave Farm",
+    "chance": 2.4242
+   },
+   {
+    "item": "32x Maçã dourada encantada",
+    "chance": 16.1616
+   },
+   {
+    "item": "Limite de Armazém",
+    "chance": 2.4242
+   },
+   {
+    "item": "Stack de Spawners",
+    "chance": 2.4244
+   }
+  ],
+  "magma": [
+   {
+    "item": "Azar",
+    "chance": 12.966
+   },
+   {
+    "item": "Cheque cash 200",
+    "chance": 0.1621
+   },
+   {
+    "item": "Arqueiro Mistico",
+    "chance": 1.2966
+   },
+   {
+    "item": "Cheque money 4000",
+    "chance": 0.6483
+   },
+   {
+    "item": "Cheque gemas 4000",
+    "chance": 0.6483
+   },
+   {
+    "item": "Capacete de diamante (encant. 0:5,34:3)",
+    "chance": 9.7245
+   },
+   {
+    "item": "Peitoral de diamante (encant. 0:5,34:3)",
+    "chance": 9.7245
+   },
+   {
+    "item": "Calça de diamante (encant. 0:5,34:3)",
+    "chance": 9.7245
+   },
+   {
+    "item": "Bota de diamante (encant. 0:5,34:3)",
+    "chance": 9.7245
+   },
+   {
+    "item": "Espada de diamante (encant. 16:5,34:3)",
+    "chance": 6.483
+   },
+   {
+    "item": "Enxada de diamante (encant. 32:5,34:3)",
+    "chance": 6.483
+   },
+   {
+    "item": "Pá de diamante (encant. 32:5,34:3)",
+    "chance": 6.483
+   },
+   {
+    "item": "Picareta de diamante (encant. 32:5,34:3)",
+    "chance": 6.483
+   },
+   {
+    "item": "Stack de Spawners",
+    "chance": 1.9449
+   },
+   {
+    "item": "Limite de Armazém",
+    "chance": 1.9449
+   },
+   {
+    "item": "Chave Farm",
+    "chance": 2.269
+   },
+   {
+    "item": "Chave Draconica",
+    "chance": 0.3241
+   },
+   {
+    "item": "48x Maçã dourada encantada",
+    "chance": 12.9658
+   }
+  ],
+  "draconica": [
+   {
+    "item": "Azar",
+    "chance": 6.9324
+   },
+   {
+    "item": "Cheque cash 300",
+    "chance": 0.1733
+   },
+   {
+    "item": "Devorador de Almas",
+    "chance": 1.3865
+   },
+   {
+    "item": "Cheque gemas 5000",
+    "chance": 0.6932
+   },
+   {
+    "item": "Cheque money 5000",
+    "chance": 0.6932
+   },
+   {
+    "item": "Limite de Armazém",
+    "chance": 2.0797
+   },
+   {
+    "item": "Stack de Spawners",
+    "chance": 2.0797
+   },
+   {
+    "item": "Chave Farm",
+    "chance": 2.773
+   },
+   {
+    "item": "Capacete de diamante (encant. 0:6,34:4)",
+    "chance": 10.3986
+   },
+   {
+    "item": "Peitoral de diamante (encant. 0:6,34:4)",
+    "chance": 10.3986
+   },
+   {
+    "item": "Calça de diamante (encant. 0:6,34:4)",
+    "chance": 10.3986
+   },
+   {
+    "item": "Bota de diamante (encant. 0:6,34:4)",
+    "chance": 10.3986
+   },
+   {
+    "item": "Espada de diamante (encant. 16:6,34:4)",
+    "chance": 6.9324
+   },
+   {
+    "item": "Enxada de diamante (encant. 32:6,34:3)",
+    "chance": 6.9324
+   },
+   {
+    "item": "Pá de diamante (encant. 32:6,34:4)",
+    "chance": 6.9324
+   },
+   {
+    "item": "Picareta de diamante (encant. 32:6,34:4)",
+    "chance": 6.9324
+   },
+   {
+    "item": "64x Maçã dourada encantada",
+    "chance": 13.865
+   }
+  ],
+  "mineracao": [
+   {
+    "item": "Capacete de diamante (encant. 0:3,34:3)",
+    "chance": 3.0257
+   },
+   {
+    "item": "Peitoral de diamante (encant. 0:3,34:3)",
+    "chance": 3.0257
+   },
+   {
+    "item": "Calça de diamante (encant. 0:3,34:3)",
+    "chance": 3.0257
+   },
+   {
+    "item": "Bota de diamante (encant. 0:3,34:3)",
+    "chance": 3.0257
+   },
+   {
+    "item": "Picareta de diamante (encant. 32:3,34:3)",
+    "chance": 1.5129
+   },
+   {
+    "item": "Enxada de diamante (encant. 32:3,34:3)",
+    "chance": 1.5129
+   },
+   {
+    "item": "Pá de diamante (encant. 32:3,34:3)",
+    "chance": 1.5129
+   },
+   {
+    "item": "Machado de diamante (encant. 32:3,34:3)",
+    "chance": 1.5129
+   },
+   {
+    "item": "16x Maçã dourada encantada",
+    "chance": 4.5386
+   },
+   {
+    "item": "Espada de diamante (encant. 16:3,34:3)",
+    "chance": 3.0257
+   },
+   {
+    "item": "Cheque money 1000",
+    "chance": 0.3026
+   },
+   {
+    "item": "Cheque gemas 1000",
+    "chance": 0.3026
+   },
+   {
+    "item": "Cavalo Assasino",
+    "chance": 0.6051
+   },
+   {
+    "item": "32x Frasco de XP",
+    "chance": 15.1286
+   },
+   {
+    "item": "Chave VIP",
+    "chance": 0.1513
+   },
+   {
+    "item": "8x Poção de força",
+    "chance": 15.1286
+   },
+   {
+    "item": "8x Poção de velocidade",
+    "chance": 15.1286
+   },
+   {
+    "item": "16x Diamante",
+    "chance": 9.0772
+   },
+   {
+    "item": "Poção Berserker",
+    "chance": 3.0257
+   },
+   {
+    "item": "Chave Farm",
+    "chance": 0.3026
+   },
+   {
+    "item": "Azar",
+    "chance": 15.1284
+   }
+  ]
+ },
+ "requisitos": [
+  {
+   "posicao": "Tritão V",
+   "s": 34,
+   "cabecas": "720 Cabeças de Vaca"
+  },
+  {
+   "posicao": "Tritão X",
+   "s": 39,
+   "cabecas": "1400 Cabeças de Vaca",
+   "boss": "3 Cabeça do boss 1"
+  },
+  {
+   "posicao": "Guardião V",
+   "s": 44,
+   "cabecas": "1400 Cabeças de Porco",
+   "boss": "1 Cabeça do boss 2"
+  },
+  {
+   "posicao": "Guardião X",
+   "s": 49,
+   "cabecas": "2900 Cabeças de Porco",
+   "boss": "3 Cabeça do boss 3"
+  },
+  {
+   "posicao": "Monge V",
+   "s": 54,
+   "cabecas": "2900 Cabeças de Zumbi",
+   "boss": "1 Cabeça do boss 4"
+  },
+  {
+   "posicao": "Monge X",
+   "s": 59,
+   "cabecas": "5800 Cabeças de Zumbi",
+   "boss": "3 Cabeça do boss 5"
+  },
+  {
+   "posicao": "Avatar V",
+   "s": 64,
+   "cabecas": "5800 Cabeças de Esqueleto",
+   "boss": "1 Cabeça do boss 5",
+   "fragmentos": "2 Fragmentos de Mineração"
+  },
+  {
+   "posicao": "Avatar X",
+   "s": 69,
+   "cabecas": "12000 Cabeças de Esqueleto",
+   "boss": "3 Cabeça do boss 6",
+   "fragmentos": "4 Fragmentos de Mineração"
+  },
+  {
+   "posicao": "Yeti V",
+   "s": 74,
+   "cabecas": "8600 Cabeças de Golem",
+   "boss": "1 Cabeça do boss 7",
+   "fragmentos": "4 Fragmentos de Mineração"
+  },
+  {
+   "posicao": "Yeti X",
+   "s": 79,
+   "cabecas": "17000 Cabeças de Golem",
+   "boss": "3 Cabeça do boss 8",
+   "fragmentos": "8 Fragmentos de Mineração"
+  },
+  {
+   "posicao": "Necromante V",
+   "s": 84,
+   "cabecas": "17000 Cabeças de Golem",
+   "boss": "1 Cabeça do boss 9",
+   "fragmentos": "6 Fragmentos de Mineração"
+  },
+  {
+   "posicao": "Necromante X",
+   "s": 89,
+   "cabecas": "35000 Cabeças de Golem",
+   "boss": "3 Cabeça do boss 10",
+   "fragmentos": "12 Fragmentos de Mineração"
+  },
+  {
+   "posicao": "Dragão V",
+   "s": 94,
+   "cabecas": "23000 Cabeças de Golem",
+   "boss": "1 Cabeça do boss 10",
+   "fragmentos": "8 Fragmentos de Mineração"
+  }
+ ],
+ "conferencia": []
+}

@@ -46,22 +46,13 @@ def evolutivos(mo, pasta=None):
     for bloco, vals in novo.items():
         ie[bloco] = round(sum(vals) / len(vals), 2)
     ie['EMERALD_BLOCK'] = exp[0]          # mina VIP
-    pic['menu-evolutivo']['itens'] = [x for x in pic['menu-evolutivo']['itens'] if '\\booster_prisma\\' not in str(x)]
-    for parte in ('bota', 'calça', 'peito', 'capacete'):
-        mn = itens[parte]['menu-evolutivo']
-        mn['itens'] = [x for x in mn['itens'] if '\\booster_money\\' not in str(x)]
+    # Prisma e booster das armaduras ficam como sugestão no documento (não mexer sem pedido)
     tab = skins(mo)
     for i, sk in enumerate(tab, 1):
         alvo = pic['skins'][f'skin-{i}']
         alvo['bonus'] = mapa(money=sk['bonus_pct']) if sk['bonus_pct'] else mapa()
         alvo['custo'] = mapa(money=sk['preco_money']) if sk['preco_money'] else mapa()
         alvo['item-menu'] = _lore_skin(str(alvo['item-menu']), sk['bonus_pct'])
-    if 'skins' in itens['capacete']:
-        for i in range(1, 6):
-            sk = itens['capacete']['skins'].get(f'skin-{i}')
-            if sk is not None:
-                sk['bonus'] = mapa()   # skins do capacete: só visual (booster de money fora, decisão do Enzo)
-                sk['item-menu'] = re.sub(r'\|\|&f ✦ Dinheiro: &a\+\d+%', '', _lore_skin(str(sk['item-menu']), 0))
     escrever(arq, d, pasta)
     return {'exp_por_bloco': dict(ie), 'skins': tab}
 
@@ -88,10 +79,7 @@ def minas(mo, pasta=None):
         e = b[bloco][dado][mina]
         e['moeda']['money']['quantia'] = float(mo.mina_money(m))
         e['moeda']['gemas']['quantia'] = float(mo.mina_gemas(m))
-        drops = list(e.get('drops') or [])
-        drops = [x for x in drops if 'chave' not in str(x)]
-        drops.insert(0, _troca_chance(modelo_chave, chave_pct))
-        e['drops'] = drops
+        # drops (chave) ficam como estão
         tabela.append({'mina': mo.P['ranks.nomes'][m], 'bloco': bloco, 'money': mo.mina_money(m),
                        'gemas': mo.mina_gemas(m), 'chave_pct': chave_pct})
     vip = b['EMERALD_BLOCK']['0']['vip']
@@ -100,7 +88,6 @@ def minas(mo, pasta=None):
                     'gemas': {'quantia': float(mo.mina_gemas(0) * mult), 'chance': 100.0, 'funcionafortuna': False}}
     vip['moeda-tipo-msg'] = 'actionbar'
     vip['moeda-mensagem'] = '@formatmensagem'
-    vip['drops'] = [_troca_chance(x, chave_pct) if 'chave' in str(x) else x for x in vip['drops']]
     tabela.append({'mina': 'VIP', 'bloco': 'EMERALD_BLOCK', 'money': mo.mina_money(0) * mult,
                    'gemas': mo.mina_gemas(0) * mult, 'chave_pct': chave_pct})
     escrever(arq, d, pasta)
@@ -216,7 +203,7 @@ def caixas(mo, pasta=None):
     arq = 'Caixas/caixas.yml'
     d = ler(arq)
     cx = d['caixa']
-    cx['mineracao']['item-chave'] = str(cx['mineracao']['item-chave']).replace('chave☢vip', 'chave☢mineracao')
+    # a correção da chave da caixa Mineração fica como sugestão no documento
     chaves = {}
     resumo = {}
     for nome, c in cx.items():

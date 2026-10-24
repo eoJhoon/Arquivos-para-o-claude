@@ -8,8 +8,11 @@ mobs:
     lootingfunciona: true
     tipo-msg: actionbar
     mensagem: '&aRecebeu @formatmoney @formatalmas'
+    moedas:
+      money: 1.2
+      almas: 1.5
     itens:
-    - 397:2\@qnt\[N]{&bCabeça de Zumbi}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L]\100.0\armazem
+    - 367:0\@qnt\1\25\correio
     cmds: []
     looting:
       '0':
@@ -55,6 +58,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Vaca}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{8f8ce3915a21168d8394214552cdb5652e855e9e382001d596972fe3c009ea7d}[URL]\100.0\armazem
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -140,7 +145,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Enderman}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{913c9cdda0a302303275351060a8b4499a7116b204586aa996c40446f7b3857b}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -224,7 +230,8 @@ mobs:
     tempo-spawn: 30
     limite-mobs: 10000.0
     itens:
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     - 397:3\@qnt\[N]{&bCabeça de Coelho}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{317f4b5fff1d37a5ec1382edbf6676506842612375c2095a192fbc0d1453db56}[URL]\100.0\armazem
     cmds: []
     looting:
@@ -268,7 +275,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Mula}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{a0486a742e7dda0bae61ce2f55fa13527f1c3b334c57c034bb4cf132fb5f5f}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -311,7 +319,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Traça}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{da91dab8391af5fda54acd2c0b18fbd819b865e1a8f1d623813fa761e924540}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -354,7 +363,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Endermite}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{5a1a0831aa03afb4212adcbb24e5dfaa7f476a1173fce259ef75a85855}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -397,7 +407,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Fantasma}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{8f8ce3915a21168d8394214552cdb5652e855e9e382001d596972fe3c009ea7d}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -525,7 +536,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Slime}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{6061f98aaff1e406e06f6f13ffe06005873f3d1eaddb1b59e19dda0ed9ffb270}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -568,7 +580,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Burro}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{3b25266d40cecd93d053156e4a4a784140d034255c721cc375d1c3648342b6fd}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -611,7 +624,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Aranha}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{35e248da2e108f09813a6b848a0fcef111300978180eda41d3d1a7a8e4dba3c3}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -654,7 +668,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Aranha das Cavernas}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{5617f7dd5ed16f3bd186440517cd440a170015b1cc6fcb2e993c05de33f}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -697,7 +712,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Burro}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{3b25266d40cecd93d053156e4a4a784140d034255c721cc375d1c3648342b6fd}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -740,7 +756,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Mula}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{a0486a742e7dda0bae61ce2f55fa13527f1c3b334c57c034bb4cf132fb5f5f}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -783,7 +800,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Cavalo-Zumbi}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{d22950f2d3efddb18de86f8f55ac518dce73f12a6e0f8636d551d8eb480ceec}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -826,7 +844,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Cavalo-Esqueleto}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{47effce35132c86ff72bcae77dfbb1d22587e94df3cbc2570ed17cf8973a}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -869,7 +888,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Cavalo}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{2990821951fd9ab9301aebf5d76a9b60f15ebf619e1c9e8d668919d394d9a933}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -912,7 +932,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Guardião}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{fbe694a6d7f73b9278f3323dbd3a799118247a2da756128a771b22275af19518}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -997,7 +1018,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Lula}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{e4268b99d2f655a830aba07f9efdf720c815a5dedcdf8a94533cd17515edf961}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -1040,7 +1062,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Morcego}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{b4ab587167c4bcb81a9c45db3e632c95c406f686b90b2716572d43a366070ba3}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -1083,7 +1106,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Aldeão}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{ffa9b5a8a998c60d57f60e8e25beb7ca5e9b6db32ae53bf56c197e456a9dd750}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -1126,7 +1150,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Ovelha}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{e068d332aabe9b87740b3fadf5572452bef679f7aa57e8ec1e017678971ae807}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Porco Dourado}[N][L]{&7||&7Raridade: &e✮&7✮✮✮✮||&7||&eClique
+      para abrir!}[L][URL]{8223c657212e76923398b3dc82f47d0c24a4f6522358d21221991dc747d80251}[URL][KEY]{caixa☢porco}[KEY]\5\correio'
     cmds: []
     looting:
       '0':
@@ -1168,7 +1193,7 @@ mobs:
     tempo-spawn: 30
     limite-mobs: 10000.0
     itens:
-    - 397:3\@qnt\[N]{&bCabeça de Porco}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{319b7fcd8ab72e293edbdb1c615d658908d2ed354880eb6964634a4657898c60}[URL]\100.0\armazem
+    - 319:0\@qnt\1\100.0\chao
     cmds: []
     looting:
       '0':
@@ -1210,7 +1235,8 @@ mobs:
     tempo-spawn: 30
     limite-mobs: 10000.0
     itens:
-    - 397:0\@qnt\[N]{&bCabeça de Esqueleto}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L]\100.0\armazem
+    - 397:0\1\[N]{&bCabeça de Esqueleto}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L]\5.0\chao
+    - 352:0\@qnt\1\100.0\chao
     looting:
       '0':
         min: 1
@@ -1295,7 +1321,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Magma Cube}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{a1c97a06efde04d00287bf20416404ab2103e10f08623087e1b0c1264a1c0f0c}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Lobo Dourado}[N][L]{&7||&7Raridade: &e✮✮✮&7✮✮||&7||&eClique para abrir!}[L][URL]{66ea0e33799b7bc58212445e23642e1fad9b731041c21b23f4b5a236741d8b1d}[URL][KEY]{caixa☢lobo}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Lobo Dourado}[N][L]{&7||&7Raridade: &e✮✮✮&7✮✮||&7||&eClique para
+      abrir!}[L][URL]{66ea0e33799b7bc58212445e23642e1fad9b731041c21b23f4b5a236741d8b1d}[URL][KEY]{caixa☢lobo}[KEY]\5\correio'
     looting:
       '0':
         min: 1
@@ -1422,7 +1449,8 @@ mobs:
     tempo-spawn: 30
     limite-mobs: 10000.0
     itens:
-    - 397:3\@qnt\[N]{&bCabeça de Iron Golem}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{e13f34227283796bc017244cb46557d64bd562fa9dab0e12af5d23ad699cf697}[URL]\100.0\armazem
+    - 397:3\1\[N]{&bCabeça de Iron Golem}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{e13f34227283796bc017244cb46557d64bd562fa9dab0e12af5d23ad699cf697}[URL]\5.0\chao
+    - 38:0\@qnt\1\100.0\chao
     looting:
       '0':
         min: 1
@@ -1465,7 +1493,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Snowman}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{36fd977b66f02f90b16562115f7023aa4798289916b5db6562c443848076d3e}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Golem Dourado}[N][L]{&7||&7Raridade: &e✮✮✮✮✮||&7||&eClique para abrir!}[L][URL]{a27ff679a5d3d21c8cda72c013acc422f3e681162bc4d87420ca24677fbb6237}[URL][KEY]{caixa☢golem}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Golem Dourado}[N][L]{&7||&7Raridade: &e✮✮✮✮✮||&7||&eClique para
+      abrir!}[L][URL]{a27ff679a5d3d21c8cda72c013acc422f3e681162bc4d87420ca24677fbb6237}[URL][KEY]{caixa☢golem}[KEY]\5\correio'
     looting:
       '0':
         min: 1
@@ -1508,7 +1537,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de Esqueleto do Wither}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{74f328f5044129b5d1f96affd1b8c05bcde6bd8e756aff5c5020585eef8a3daf}[URL]\100.0\chao
-    - '397:3\1\[N]{&6Golem Dourado}[N][L]{&7||&7Raridade: &e✮✮✮✮✮||&7||&eClique para abrir!}[L][URL]{a27ff679a5d3d21c8cda72c013acc422f3e681162bc4d87420ca24677fbb6237}[URL][KEY]{caixa☢golem}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Golem Dourado}[N][L]{&7||&7Raridade: &e✮✮✮✮✮||&7||&eClique para
+      abrir!}[L][URL]{a27ff679a5d3d21c8cda72c013acc422f3e681162bc4d87420ca24677fbb6237}[URL][KEY]{caixa☢golem}[KEY]\5\correio'
     looting:
       '0':
         min: 1
@@ -1551,7 +1581,8 @@ mobs:
     limite-mobs: 10000.0
     itens:
     - 397:3\@qnt\[N]{&bCabeça de PigZombie}[N][L]{&7||&7Use o comando &a/acougue &7para||&7guardar e juntar suas cabeças.||&7||&4&lOBS:||&e★ &fAcumule para upar de rank!||&e★ &fCompacte suas cabeças com &a/compactar}[L][URL]{d61ac2e475ad8072fe3d88b1c4fc6da4fa62b2bd141781d66e8e8d0f97640488}[URL]\100.0\armazem
-    - '397:3\1\[N]{&6Vaca Dourada}[N][L]{&7||&7Raridade: &e✮✮&7✮✮✮||&7||&eClique para abrir!}[L][URL]{8d103358d8f1bdaef1214bfa77c4da641433186bd4bc44d857c16811476fe}[URL][KEY]{caixa☢vaca}[KEY]\5\correio'
+    - '397:3\1\[N]{&6Vaca Dourada}[N][L]{&7||&7Raridade: &e✮✮&7✮✮✮||&7||&eClique para
+      abrir!}[L][URL]{8d103358d8f1bdaef1214bfa77c4da641433186bd4bc44d857c16811476fe}[URL][KEY]{caixa☢vaca}[KEY]\5\correio'
     looting:
       '0':
         min: 1

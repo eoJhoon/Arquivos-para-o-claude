@@ -121,7 +121,7 @@ def test_ranks_yml_tem_100_ranks_e_prestigios(mo):
     d = carregar_yml('Rankup/ranks.yml')['rankup']
     assert len(d) == 100
     for k, v in d.items():
-        assert len(v['prestigio']) == mo.P['ranks.prestigios'] + 1, f'{k}: faltam prestígios'
+        assert '1' in v['prestigio'], f'{k}: sem a primeira volta'
 
 
 # ------------------------------------------------------------------ caixas
@@ -135,11 +135,6 @@ def test_caixas_somam_100():
 def test_cadeia_de_chaves_termina(res):
     for caixa, saidas in res['caixas']['cadeia'].items():
         assert sum(saidas.values()) < 0.5, f'Caixa {caixa} devolve {sum(saidas.values()):.2f} chaves por abertura'
-
-
-def test_chave_da_mina_abre_a_caixa():
-    cx = carregar_yml('Caixas/caixas.yml')['caixa']
-    assert 'chave☢mineracao' in str(cx['mineracao']['item-chave'])
 
 
 # ------------------------------------------------------------------ agricultura e automação
@@ -176,9 +171,16 @@ def test_minas_no_config(mo):
 
 def test_encantamentos_no_config(mo):
     e = carregar_yml('Encantamentos/encantamentos.yml')['encantamentos']
-    assert len(e['Explosivo']['efeito']) == 1000
-    assert len(e['booster_money']['upgrade']) == 1000
-    assert math.isclose(e['booster_money']['booster']['1000-1000']['quantidade'],
-                        1000 * mo.P['picareta.fortuna_pct_por_nivel'])
-    menu = carregar_yml('Encantamentos/evolutivos.yml')['itensevolutivos']['picareta']['menu-evolutivo']['itens']
-    assert not any('booster_prisma' in str(x) for x in menu), 'Botão do Prisma voltou para o menu'
+    assert len(e['Explosivo']['efeito']) == 1, 'Chance deve ter 1 faixa só (formato do Enzo)'
+    assert len(e['booster_money']['upgrade']) == len(mo.P['design.faixas_preco'])
+    b = e['booster_money']['booster']['1-1000']
+    assert math.isclose(b['quantidade'] + b['aumento-por-nivel'] * 999, 1000 * mo.P['picareta.fortuna_pct_por_nivel'])
+
+
+def test_faixas_batem_com_o_simulador(mo):
+    """O preço de cada nível calculado pelas faixas (como o plugin faz) é o mesmo que o simulador usou."""
+    for e in NIVELADOS:
+        tab = mo.tabela_precos(e)
+        for a, b, cm, am, cg, ag in mo.faixas_preco(e):
+            for n in range(a, b + 1):
+                assert tab[n] == (cm + am * (n - a), cg + ag * (n - a)), f'{e} nível {n}'

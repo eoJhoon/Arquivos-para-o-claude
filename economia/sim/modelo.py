@@ -109,10 +109,8 @@ class Modelo:
 
     def teto_por_picareta(self, e, p):
         """Nível máximo do encantamento que a picareta de nível p permite."""
-        u = self.libera(e)
-        if p < u:
-            return 0
-        return int(min(1000, math.floor((p - u) / (1000 - u) * 1000))) if u < 1000 else 0
+        # formato simples (pedido do Enzo): o encantamento só libera no nível u da picareta, depois vai até 1000
+        return 0 if p < self.libera(e) else 1000
 
     # ------------------------------------------------------------------ efeitos
     def mult_area(self, niveis):
@@ -162,7 +160,38 @@ class Modelo:
         return self.tabela_precos(e)[L - 1]
 
     @lru_cache(maxsize=None)
+    def faixas_preco(self, e):
+        """Preço no formato do plugin: poucas faixas com custo + aumento por nível (números inteiros).
+
+        Em cada faixa [a, b] (nível atual), o preço para subir de n para n+1 é custo + aumento x (n - a).
+        custo = preço exato no início da faixa; aumento = reta até o preço exato no fim da faixa.
+        """
+        exato = self._tabela_exata(e)
+        out = []
+        fim_ant = [0, 0]
+        for a, b in self.P['design.faixas_preco']:
+            linha = []
+            for k in (0, 1):
+                c = max(1, int(arred(exato[a][k])))
+                if not (a == 1 and e in AREA):          # depois do desbloqueio o preço pode recomeçar baixo
+                    c = max(c, fim_ant[k])               # nunca mais barato que o fim da faixa anterior
+                aum = max(0, int((exato[b][k] - c) // (b - a))) if b > a else 0
+                linha += [c, aum]
+                fim_ant[k] = c + aum * (b - a)
+            out.append((a, b, linha[0], linha[1], linha[2], linha[3]))
+        return tuple(out)
+
+    @lru_cache(maxsize=None)
     def tabela_precos(self, e):
+        """Preço de cada nível exatamente como fica no plugin (a partir das faixas)."""
+        tab = []
+        for a, b, cm, am, cg, ag in self.faixas_preco(e):
+            for n in range(a, b + 1):
+                tab.append((cm + am * (n - a), cg + ag * (n - a)))
+        return tuple(tab)
+
+    @lru_cache(maxsize=None)
+    def _tabela_exata(self, e):
         tab, ant_m, ant_g = [], 0, 0
         for L in range(1, 1001):
             m, g = self._preco_bruto(e, L)
@@ -191,7 +220,14 @@ class Modelo:
         n = self.niveis_ref(s)
         M = self.mult_area(n)
         rm, rg = self.renda_ref(s)
-        horas = self.payback(min(1.0, self.tau_do_nivel(p))) * self.ganho_relativo(e, L, M)
+        tau = self.tau_do_nivel(p)
+        if tau > 1:
+            # níveis acima do que se compra até o Dragão X: a renda continua crescendo no mesmo ritmo do último rank
+            r90, r99 = self.renda_ref(90)[0], self.renda_ref(99)[0]
+            ritmo = math.log(r99 / r90) / (self.tau(99) - self.tau(90))
+            fator = math.exp(ritmo * (tau - 1))
+            rm, rg = rm * fator, rg * fator
+        horas = self.payback(tau) * self.ganho_relativo(e, L, M)
         if L == 1 and e in AREA:
             horas += self.P['design.desbloqueio_horas']   # comprar o 1o nível = liberar o encantamento
         return arred(horas * rm), arred(horas * rg / self.sigma)
